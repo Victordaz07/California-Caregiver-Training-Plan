@@ -5,72 +5,75 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.lazy.item
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.outlined.Info
-import androidx.compose.material.icons.outlined.Medication
-import androidx.compose.material.icons.outlined.Warning
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
-import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.unit.dp
 import com.caregiverproca.app.content.Disclaimers
+import com.caregiverproca.app.content.Flashcard
+import com.caregiverproca.app.content.Flashcards
+import com.caregiverproca.app.content.Scenario
+import com.caregiverproca.app.content.ScenarioOutcome
+import com.caregiverproca.app.content.Scenarios
+import com.caregiverproca.app.content.curriculumDayFor
+import com.caregiverproca.app.content.rubricCriterion
+import com.caregiverproca.app.data.LearningRepository
+import com.caregiverproca.app.data.UserPreferencesRepository
+import com.caregiverproca.app.data.UserPreferencesState
+import com.caregiverproca.app.domain.ReviewRating
 import com.caregiverproca.app.ui.components.DetailScaffold
 import com.caregiverproca.app.ui.components.DisclaimerBanner
-import com.caregiverproca.app.ui.components.LabeledProgress
-import com.caregiverproca.app.ui.components.NumberedStep
 import com.caregiverproca.app.ui.components.SectionCard
 import com.caregiverproca.app.ui.components.StatusPill
 import com.caregiverproca.app.ui.navigation.Screen
+import kotlinx.coroutines.launch
 
 /**
- * Mirrors /screens/escenarios-y-flashcards.html. Corrected per A-014/A-039:
- * this is an internal practice protocol, not a "Protocolo CDSS California",
- * and the scenario case is explicitly labeled fictional.
+ * Mirrors /screens/escenarios-y-flashcards.html, rewritten to use the real
+ * content bank (39 cards, 13 branching scenarios — content/Flashcards.kt,
+ * content/Scenarios.kt) and a real due-queue backed by Room
+ * (data/LearningRepository.kt + domain/ReviewScheduler.kt), instead of one
+ * hardcoded card and one hardcoded case.
  */
 @Composable
 fun EscenariosFlashcardsScreen(onBack: () -> Unit) {
+    val context = LocalContext.current
+    val learningRepository = remember { LearningRepository(context) }
+    val userPreferencesRepository = remember { UserPreferencesRepository(context) }
+    val scope = rememberCoroutineScope()
+
+    val prefs by userPreferencesRepository.state.collectAsState(
+        initial = UserPreferencesState(pathwayId = null, onboardingCompleted = false, currentPlanDay = 1, completedBlocksToday = 0),
+    )
+    val currentWeek = curriculumDayFor(prefs.currentPlanDay)?.week ?: 1
+    val todaysScenario = Scenarios.firstOrNull { it.week == currentWeek } ?: Scenarios.first()
+
+    var dueQueue by remember { mutableStateOf<List<String>>(emptyList()) }
+    var queueIndex by remember { mutableStateOf(0) }
+    var revealed by remember { mutableStateOf(false) }
+
+    LaunchedEffect(Unit) {
+        dueQueue = learningRepository.dueCardIds(Flashcards.map { it.id })
+    }
+
+    val currentCard: Flashcard? = dueQueue.getOrNull(queueIndex)?.let { id -> Flashcards.firstOrNull { it.id == id } }
+
     DetailScaffold(title = Screen.EscenariosFlashcards.title, onBack = onBack) {
         item { DisclaimerBanner(text = Disclaimers.FictionalCase) }
-        item {
-            SectionCard {
-                Row(
-                    modifier = Modifier.fillMaxWidth(),
-                    horizontalArrangement = Arrangement.SpaceBetween,
-                    verticalAlignment = Alignment.CenterVertically,
-                ) {
-                    Column {
-                        Text(
-                            "Simulaciones Clínicas",
-                            style = MaterialTheme.typography.headlineSmall,
-                            color = MaterialTheme.colorScheme.onSurface,
-                        )
-                        Text(
-                            "Práctica interna · CA Caregiver",
-                            style = MaterialTheme.typography.bodySmall,
-                            color = MaterialTheme.colorScheme.onSurfaceVariant,
-                        )
-                    }
-                    StatusPill(text = "🔥 RACHA: 5 DÍAS")
-                }
-                LabeledProgress(
-                    label = "Distribución del día (10 actividades)",
-                    progress = 0.8f,
-                    trailingLabel = "8/10 completadas",
-                )
-                Text(
-                    "60% Límites y Dignidad · 20% Emergencias · 20% Repaso previo",
-                    style = MaterialTheme.typography.bodySmall,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant,
-                )
-            }
-        }
 
         item {
             SectionCard {
@@ -79,133 +82,164 @@ fun EscenariosFlashcardsScreen(onBack: () -> Unit) {
                     horizontalArrangement = Arrangement.SpaceBetween,
                     verticalAlignment = Alignment.CenterVertically,
                 ) {
+                    Column {
+                        Text("Repaso Activo", style = MaterialTheme.typography.headlineSmall, color = MaterialTheme.colorScheme.onSurface)
+                        Text("Práctica interna · Semana $currentWeek", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    }
+                    StatusPill(text = "${dueQueue.size} PENDIENTES")
+                }
+            }
+        }
+
+        item {
+            if (currentCard == null) {
+                SectionCard {
                     Text(
-                        "Flashcard Situacional Activa",
-                        style = MaterialTheme.typography.headlineSmall,
+                        "No hay tarjetas pendientes de repaso ahora mismo. Vuelve más tarde o avanza en tu plan diario.",
+                        style = MaterialTheme.typography.bodyMedium,
                         color = MaterialTheme.colorScheme.onSurface,
                     )
-                    Text(
-                        "Tarjeta 4 de 10",
-                        style = MaterialTheme.typography.labelMedium,
-                        color = MaterialTheme.colorScheme.outline,
-                    )
                 }
-                Row(horizontalArrangement = Arrangement.spacedBy(6.dp), verticalAlignment = Alignment.CenterVertically) {
-                    Icon(Icons.Outlined.Medication, contentDescription = null, tint = MaterialTheme.colorScheme.secondary)
-                    Text(
-                        "Manejo Seguro de Fármacos",
-                        style = MaterialTheme.typography.labelMedium,
-                        color = MaterialTheme.colorScheme.secondary,
-                    )
-                }
-                Text(
-                    "“Encuentro una pastilla suelta sin identificar en el piso de la habitación del cliente. " +
-                        "¿Qué acciones están estrictamente dentro de mi función como cuidador en California?”",
-                    style = MaterialTheme.typography.bodyLarge.copy(fontStyle = FontStyle.Italic),
-                    color = MaterialTheme.colorScheme.onSurface,
+            } else {
+                FlashcardReview(
+                    card = currentCard,
+                    total = dueQueue.size,
+                    index = queueIndex,
+                    revealed = revealed,
+                    onReveal = { revealed = true },
+                    onRate = { rating ->
+                        scope.launch { learningRepository.rateCard(currentCard.id, rating) }
+                        revealed = false
+                        queueIndex += 1
+                    },
                 )
-                Text(
-                    "Tómate 10 segundos para estructurar tus límites regulatorios antes de comprobar la respuesta oficial.",
-                    style = MaterialTheme.typography.bodySmall,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant,
-                )
-                Button(
-                    onClick = { },
-                    colors = ButtonDefaults.buttonColors(
-                        containerColor = MaterialTheme.colorScheme.primary,
-                        contentColor = MaterialTheme.colorScheme.onPrimary,
-                    ),
-                ) {
-                    Text("Ver Ficha de Aprendizaje")
-                }
             }
         }
 
-        item {
-            SectionCard {
-                Text(
-                    "Protocolo Interno de Práctica (4 Pasos Clave)",
-                    style = MaterialTheme.typography.headlineSmall,
-                    color = MaterialTheme.colorScheme.onSurface,
-                )
-                NumberedStep(1, "Proteger sin suministrar", "Jamás asumir qué pastilla es ni dársela al cliente. No desecharla en la basura común.")
-                NumberedStep(2, "Aislar el hallazgo", "Colocarla en un recipiente limpio etiquetado “Encontrada en piso” sin mezclarla con el pastillero oficial.")
-                NumberedStep(3, "Notificación expedita", "Contactar al supervisor de agencia, enfermero a cargo o familiar responsable designado de inmediato.")
-                NumberedStep(4, "Registro de Turno", "Consignar hora precisa, lugar exacto del hallazgo, aspecto visual y persona notificada.")
+        item { ScenarioPractice(scenario = todaysScenario) }
+    }
+}
+
+@Composable
+private fun FlashcardReview(
+    card: Flashcard,
+    total: Int,
+    index: Int,
+    revealed: Boolean,
+    onReveal: () -> Unit,
+    onRate: (ReviewRating) -> Unit,
+) {
+    SectionCard {
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceBetween,
+            verticalAlignment = Alignment.CenterVertically,
+        ) {
+            Text("Flashcard Situacional", style = MaterialTheme.typography.headlineSmall, color = MaterialTheme.colorScheme.onSurface)
+            Text("Tarjeta ${index + 1} de $total", style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.outline)
+        }
+        if (card.critical) {
+            StatusPill(
+                text = "TEMA CRÍTICO DE SEGURIDAD",
+                containerColor = MaterialTheme.colorScheme.errorContainer,
+                contentColor = MaterialTheme.colorScheme.onErrorContainer,
+            )
+        }
+        Text(
+            card.questionEs,
+            style = MaterialTheme.typography.bodyLarge.copy(fontStyle = FontStyle.Italic),
+            color = MaterialTheme.colorScheme.onSurface,
+        )
+        if (!revealed) {
+            Text(
+                "Respóndete a ti mismo antes de revelar la respuesta.",
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
+            Button(
+                onClick = onReveal,
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = MaterialTheme.colorScheme.primary,
+                    contentColor = MaterialTheme.colorScheme.onPrimary,
+                ),
+            ) {
+                Text("Revelar Respuesta")
+            }
+        } else {
+            Text(
+                card.answerEs,
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.onSurface,
+            )
+            Text(
+                "¿Qué tan bien la recordaste?",
+                style = MaterialTheme.typography.labelMedium,
+                color = MaterialTheme.colorScheme.outline,
+            )
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.spacedBy(8.dp),
+            ) {
+                listOf(
+                    ReviewRating.AGAIN to "Otra vez",
+                    ReviewRating.HARD to "Difícil",
+                    ReviewRating.GOOD to "Bien",
+                    ReviewRating.EASY to "Fácil",
+                ).forEach { (rating, label) ->
+                    OutlinedButton(onClick = { onRate(rating) }, modifier = Modifier.weight(1f)) {
+                        Text(label, style = MaterialTheme.typography.labelMedium)
+                    }
+                }
             }
         }
+    }
+}
 
-        item {
-            SectionCard {
-                Text(
-                    "Autoevaluación de asimilación (Algoritmo SM-2)",
-                    style = MaterialTheme.typography.headlineSmall,
-                    color = MaterialTheme.colorScheme.onSurface,
-                )
-                Row(
+@Composable
+private fun ScenarioPractice(scenario: Scenario) {
+    var selectedChoiceId by remember(scenario.id) { mutableStateOf<String?>(null) }
+
+    SectionCard {
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceBetween,
+            verticalAlignment = Alignment.CenterVertically,
+        ) {
+            Text("Escenario de la Semana · ${scenario.titleEs}", style = MaterialTheme.typography.headlineSmall, color = MaterialTheme.colorScheme.onSurface)
+        }
+        StatusPill(text = "CASO FICTICIO · SEMANA ${scenario.week}")
+        Text(scenario.stemEs, style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.onSurface)
+
+        val selectedChoice = scenario.choices.firstOrNull { it.id == selectedChoiceId }
+        if (selectedChoice == null) {
+            Text(
+                "Elige una respuesta antes de ver la retroalimentación.",
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
+            scenario.choices.forEach { choice ->
+                OutlinedButton(
+                    onClick = { selectedChoiceId = choice.id },
                     modifier = Modifier.fillMaxWidth(),
-                    horizontalArrangement = Arrangement.spacedBy(8.dp),
                 ) {
-                    listOf("Difícil" to "En 1 día", "Bien" to "En 3 días", "Fácil" to "En 7 días").forEach { (label, sub) ->
-                        OutlinedButton(onClick = { }, modifier = Modifier.weight(1f)) {
-                            Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                                Text(label, style = MaterialTheme.typography.labelLarge)
-                                Text(sub, style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.outline)
-                            }
-                        }
-                    }
+                    Text(choice.textEs, style = MaterialTheme.typography.bodyMedium)
                 }
             }
-        }
-
-        item {
-            SectionCard {
-                Row(
-                    modifier = Modifier.fillMaxWidth(),
-                    horizontalArrangement = Arrangement.SpaceBetween,
-                    verticalAlignment = Alignment.CenterVertically,
-                ) {
-                    Row(horizontalArrangement = Arrangement.spacedBy(6.dp), verticalAlignment = Alignment.CenterVertically) {
-                        Icon(Icons.Outlined.Warning, contentDescription = null, tint = MaterialTheme.colorScheme.secondary)
-                        Text(
-                            "Simulación Deliberada · Caso Ficticio #42",
-                            style = MaterialTheme.typography.headlineSmall,
-                            color = MaterialTheme.colorScheme.onSurface,
-                        )
-                    }
-                    Text("03:42", style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.secondary)
-                }
-                StatusPill(text = "DEMENTIA & DIGNITY")
-                Text(
-                    "El cliente rechaza bañarse y muestra visible frustración.",
-                    style = MaterialTheme.typography.bodyLarge,
-                    color = MaterialTheme.colorScheme.onSurface,
-                )
-                Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                    Icon(Icons.Outlined.Info, contentDescription = null, tint = MaterialTheme.colorScheme.tertiary)
-                    Column {
-                        Text(
-                            "Principio de Práctica",
-                            style = MaterialTheme.typography.labelMedium,
-                            color = MaterialTheme.colorScheme.tertiary,
-                        )
-                        Text(
-                            "Ningún cuidador debe usar contención física ni coacción verbal. Prioriza la dignidad y el consentimiento de la persona, y sigue su plan de cuidado.",
-                            style = MaterialTheme.typography.bodySmall,
-                            color = MaterialTheme.colorScheme.onSurfaceVariant,
-                        )
-                    }
-                }
-                LabeledProgress(
-                    label = "Algoritmo de Acción (Paso a Paso)",
-                    progress = 2f / 6f,
-                    trailingLabel = "2 de 6 listos",
-                )
-                Text(
-                    "1. Seguridad inmediata verificada",
-                    style = MaterialTheme.typography.bodyMedium,
-                    color = MaterialTheme.colorScheme.onSurface,
-                )
+        } else {
+            val (label, containerColor, contentColor) = when (selectedChoice.outcome) {
+                ScenarioOutcome.Safe -> Triple("RESPUESTA SEGURA", MaterialTheme.colorScheme.primaryContainer, MaterialTheme.colorScheme.onPrimaryContainer)
+                ScenarioOutcome.CriticalFail -> Triple("FALLO CRÍTICO INTERNO", MaterialTheme.colorScheme.errorContainer, MaterialTheme.colorScheme.onErrorContainer)
+                ScenarioOutcome.NeedsCorrection -> Triple("NECESITA CORRECCIÓN", MaterialTheme.colorScheme.secondaryContainer, MaterialTheme.colorScheme.onSecondaryContainer)
+            }
+            StatusPill(text = label, containerColor = containerColor, contentColor = contentColor)
+            Text(selectedChoice.feedbackEs, style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurface)
+            Text(
+                "Criterios observados: " + scenario.rubricIds.mapNotNull { rubricCriterion(it)?.labelEs }.joinToString(", "),
+                style = MaterialTheme.typography.labelSmall,
+                color = MaterialTheme.colorScheme.outline,
+            )
+            OutlinedButton(onClick = { selectedChoiceId = null }) {
+                Text("Reintentar")
             }
         }
     }

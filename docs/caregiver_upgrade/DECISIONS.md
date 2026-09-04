@@ -54,6 +54,28 @@
 - Consecuencias: A-032/Fase 8 (localización real) sigue pendiente.
 - Revisión futura: mover todo el texto de UI a `strings.xml` con `values-en/`, y completar los campos `*En` que faltan en los modelos de contenido.
 
+## ADR-006 — Sin Media3; MediaPlayer/MediaRecorder de plataforma en su lugar
+
+- Fecha: 2026-09-04
+- Estado: accepted
+- Contexto: al importar `AUDIO_EPISODE_OUTLINES.csv` se confirmó (búsqueda de `.mp3`/`.wav`/`.m4a`/`.ogg` en todo el paquete de auditoría, incluida `06_SOURCE_REFERENCE` y `04_DESIGN_ASSETS/ASSET_MANIFEST.md`) que **el paquete no incluye ningún archivo de audio real** — solo 13 guiones/transcripciones con frase clave, pronunciación aproximada y prompt de práctica. No hay nada que Media3 pudiera reproducir como "lección narrada"; producir esa narración exigiría grabarla de verdad o usar un servicio de texto a voz, y esto último es exactamente el tipo de "servicio externo" que esta sesión debía evitar para el primer proyecto Android del usuario.
+- Decisión: no añadir la dependencia Media3/ExoPlayer en este lote. `AudioLeccionesScreen` y `BibliotecaAudiosScreen` ahora muestran los 13 guiones reales como contenido de lectura/práctica (ya disponible sin conexión porque está compilado en el APK, sin necesidad de "descargar" nada). Para la única reproducción de audio real posible — la propia voz grabada del alumno — se usa `android.media.MediaRecorder`/`MediaPlayer` (parte del framework de Android, sin dependencia nueva) en `audio/VoiceRecorderController.kt`, expuesto en pantalla vía `ui/components/VoiceRecordCard.kt`.
+- Alternativas consideradas: (a) añadir Media3 igualmente con un archivo de silencio de relleno, para dejar el "cableado" listo — rechazada porque sería fingir una función (mostrar controles de reproducción de "lección" que en realidad reproducen silencio) y el prompt maestro prohíbe explícitamente simular funciones; (b) generar narración con un servicio de texto a voz — rechazada porque el usuario pidió explícitamente evitar servicios externos en su primera app.
+- Consecuencias: A-024 (audio real) y A-025 (descargas verificables) siguen sin resolver para *narración*, pero A-026/A-041 (grabación con consentimiento) sí quedan resueltos con este lote, con una implementación real, no simulada.
+- Riesgos: si más adelante se consigue narración real (grabada o por un servicio de TTS que el usuario apruebe explícitamente), Media3 sí será necesario para streaming/descargas — la decisión de esta sesión no lo descarta, solo lo pospone a que exista contenido real que reproducir.
+- Revisión futura: cuando exista audio narrado real, añadir Media3 + `DownloadService` y aplicar el mismo cuidado de verificación de versión que se describe en ADR-002 para Room.
+
+## ADR-007 — Room añadido en este lote, con riesgo de versión sin verificar
+
+- Fecha: 2026-09-04
+- Estado: accepted (supersede parcialmente a ADR-002)
+- Contexto: ADR-002 (sesión anterior) evitó Room por el riesgo de una versión de KSP inventada rompiendo el build sin forma de detectarlo. El usuario pidió explícitamente en esta sesión aplicar "todo de una", incluyendo persistencia real de progreso y repetición espaciada — funciones que si dependen únicamente de DataStore no pueden modelar bien (cola de repaso por tarjeta, intentos, fechas de vencimiento).
+- Decisión: añadir Room 2.6.1 + KSP `2.0.21-1.0.27` (ver ADR-001 "Riesgos de verificación" abajo — esta versión de KSP NO se pudo confirmar que exista/compile en este entorno). Se usó `ksp { arg("room.schemaLocation", "$projectDir/schemas") }` en vez del plugin `androidx.room` más nuevo (`room { schemaDirectory(...) }`), porque ese plugin adicional habría sido otra pieza de versión sin verificar apilada sobre KSP.
+- Alternativas consideradas: mantener ADR-002 (solo DataStore) — rechazada porque el usuario pidió explícitamente la funcionalidad completa y DataStore no modela bien datos por-tarjeta con cola de vencimiento.
+- Consecuencias: `LearningRepository` (progreso de currículo, estado de repaso) depende de que Gradle resuelva `com.google.devtools.ksp:com.google.devtools.ksp.gradle.plugin:2.0.21-1.0.27` y `androidx.room:room-compiler:2.6.1` — ninguno de los dos se pudo descargar/verificar aquí (mismo bloqueo de `dl.google.com`/Maven que impide compilar cualquier cosa en este entorno).
+- Riesgos: si `2.0.21-1.0.27` no existe exactamente, Android Studio lo señalará como un error de resolución de plugin claro y con solución de un clic ("Actualizar versión") — ver `docs/caregiver_upgrade/ANDROID_STUDIO_SETUP.md` paso 3.
+- Revisión futura: primera vez que se compile con SDK real, confirmar la versión de KSP y ajustar si Android Studio sugiere una distinta.
+
 ## Riesgos de verificación (para la primera compilación real)
 
 Suposiciones hechas sin poder verificarlas, en orden de riesgo:
@@ -63,5 +85,8 @@ Suposiciones hechas sin poder verificarlas, en orden de riesgo:
 3. `ColorScheme` acepta los parámetros `primaryFixed`, `primaryFixedDim`, `onPrimaryFixed`, `onPrimaryFixedVariant` (y sus equivalentes secondary/tertiary) en `lightColorScheme(...)` — añadidos en una versión de material3 relativamente reciente. Mismo riesgo que el punto 2.
 4. `androidx.datastore:datastore-preferences:1.1.1` es compatible con `compileSdk 34` / Kotlin 2.0.21 sin fricción — es una suposición razonable (es una librería muy estable) pero no verificada aquí.
 5. El patrón de navegación inferior (`popUpTo(navController.graph.findStartDestination().id) { saveState = true }`) usa `androidx.navigation.NavGraph.Companion.findStartDestination`, disponible en `navigation-compose:2.8.1`.
+6. `androidx.room:room-compiler:2.6.1` vía KSP `2.0.21-1.0.27` (ver ADR-007) — el par de versiones exacto no se pudo confirmar. `@Upsert` en los DAOs es una anotación de Room 2.5+, debería existir en 2.6.1.
+7. `rememberSaveable { mutableIntStateOf(0) }` / `mutableStateOf(false)` (usados para el temporizador de la sesión diaria) usan los savers integrados de Compose para `MutableIntState`/`MutableState` — estándar desde hace varias versiones de `androidx.compose.runtime`, riesgo bajo.
+8. `@Suppress("DEPRECATION") MediaRecorder()` (constructor sin argumentos) en `audio/VoiceRecorderController.kt` — es la API correcta para `minSdk 26` (el constructor `MediaRecorder(Context)` requiere API 31); si Android Studio marca la deprecación como error en vez de advertencia por la configuración de lint del proyecto, hay que ajustar `lint` o usar `MediaRecorder(context)` con una rama condicional por versión de SDK.
 
 Ninguno de estos se pudo confirmar compilando. Revisar esta lista primero si el primer `./gradlew :app:assembleDebug` en Android Studio falla.

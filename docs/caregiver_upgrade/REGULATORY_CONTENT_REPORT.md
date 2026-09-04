@@ -53,6 +53,9 @@ Todos estos claims están implementados en `content/LegalRequirements.kt` y se r
 | "100% VERIFICADO CA 2025 · REV. MARZO 2025" | A-042 — fecha obsoleta | "REVISADO 2026-09-04 (VER FECHA POR FUENTE)" | RecursosSemanaScreen.kt |
 | "IMPACTO SALARIO +35% Est." | A-017/A-018 | Reemplazado por "LÍNEA APS" (dato real: 1-833-401-0832) | RecursosSemanaScreen.kt |
 | "Caso #42" / "Caso #15" sin etiqueta | A-039 | "Caso Ficticio #42", banner `Disclaimers.FictionalCase` en 3 pantallas de escenarios | EscenariosFlashcardsScreen.kt, SimulacionTurnoScreen.kt, RolePlayBilingueScreen.kt |
+| "Evaluación de IA — 94% (C2 Care)" / porcentajes de "Criterios Evaluados en Tiempo Real" | A-028 — no hay backend de IA ni modelo de evaluación real conectado; las cifras eran inventadas | Autoevaluación honesta con lista de verificación (`ChecklistRow`) sobre la propia grabación de voz del usuario, sin ninguna puntuación automática | RolePlayBilingueScreen.kt, SimulacionTurnoScreen.kt |
+| "18 de 52 episodios descargados" / "420 MB / 1.2 GB" (barra de progreso de descarga) | A-025 — no existía ninguna descarga real; el paquete no incluye audio narrado (ver `DECISIONS.md` ADR-006) | "Los 13 guiones están incluidos en la app: disponibles sin conexión, sin nada que descargar" | BibliotecaAudiosScreen.kt |
+| Botón "Escuchar Audio" sin `onClick` (simulaba reproducción de narración inexistente) | A-024/A-026 — no hay archivos de audio narrado en el paquete de origen | `VoiceRecordCard`: el usuario graba y escucha su propia voz practicando el guion (no hay narración pregrabada que reproducir) | AudioLeccionesScreen.kt, RolePlayBilingueScreen.kt, SimulacionTurnoScreen.kt |
 
 ## Rutas
 

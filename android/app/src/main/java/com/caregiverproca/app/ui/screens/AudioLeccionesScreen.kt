@@ -5,40 +5,52 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.lazy.item
+import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.AutoAwesome
-import androidx.compose.material.icons.outlined.Mic
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
+import com.caregiverproca.app.content.AudioEpisodeOutline
+import com.caregiverproca.app.content.AudioEpisodeOutlines
+import com.caregiverproca.app.content.audioEpisodeFor
+import com.caregiverproca.app.content.curriculumDayFor
+import com.caregiverproca.app.data.UserPreferencesRepository
+import com.caregiverproca.app.data.UserPreferencesState
 import com.caregiverproca.app.ui.components.DetailScaffold
-import com.caregiverproca.app.ui.components.LabeledProgress
 import com.caregiverproca.app.ui.components.SectionCard
 import com.caregiverproca.app.ui.components.StatusPill
+import com.caregiverproca.app.ui.components.VoiceRecordCard
 import com.caregiverproca.app.ui.navigation.Screen
-
-private data class Chapter(val time: String, val title: String, val description: String, val status: String)
-
-private val chapters = listOf(
-    Chapter("00:00", "1. El Escenario Real", "Qué se siente cuando Don Arturo aparta el plato o niega con firmeza la asistencia matutina.", "Escuchado"),
-    Chapter("02:30", "2. Desglose Conversacional", "Por qué la técnica de validación emocional en 3 pasos desactiva la frustración antes del conflicto.", "En curso"),
-    Chapter("06:15", "3. Diálogos Modelo: lo que NUNCA debes decir", "Comparativa sonora: la frase que genera resistencia vs. la Frase Mágica de Calma.", "Pendiente"),
-    Chapter("09:30", "4. Tres Puntos de Apoyo Centrado en la Persona", "Autonomía del cliente, no forzamiento y práctica de reporte DAR, explicados en lenguaje sencillo.", "Pendiente"),
-)
 
 /**
  * Mirrors /screens/audio-lecciones-gemini-manos-libres.html. Corrected per
- * A-028: renamed from "Audio-Tutor Gemini" a "orientación guiada" — no hay
- * backend de IA real conectado en esta app todavía, así que no se puede
- * llamar "IA en vivo" ni atribuir la narración a un modelo específico.
+ * A-028: renamed from "Audio-Tutor Gemini" to "orientación guiada" (no AI
+ * backend is connected). This screen now shows the real 13-episode outline
+ * bank (content/AudioEpisodes.kt) as read-along scripts — there is no
+ * narrated audio in the source pack to play, so the "-15s/Pausa/+30s" fake
+ * transport controls from the previous mock are gone. What IS real: a
+ * shadowing/recording exercise for today's key phrase via VoiceRecordCard.
+ * See docs/caregiver_upgrade/DECISIONS.md ADR-006.
  */
 @Composable
 fun AudioLeccionesScreen(onBack: () -> Unit) {
+    val context = LocalContext.current
+    val userPreferencesRepository = remember { UserPreferencesRepository(context) }
+    val prefs by userPreferencesRepository.state.collectAsState(
+        initial = UserPreferencesState(pathwayId = null, onboardingCompleted = false, currentPlanDay = 1, completedBlocksToday = 0),
+    )
+    val currentWeek = curriculumDayFor(prefs.currentPlanDay)?.week ?: 1
+    val todaysEpisode = audioEpisodeFor(currentWeek) ?: AudioEpisodeOutlines.first()
+
     DetailScaffold(title = Screen.AudioLecciones.title, onBack = onBack) {
         item {
             SectionCard(containerColor = MaterialTheme.colorScheme.primaryContainer) {
@@ -51,108 +63,78 @@ fun AudioLeccionesScreen(onBack: () -> Unit) {
                     )
                 }
                 Text(
-                    "Narración pre-grabada en tono cálido y bilingüe, como un micro-podcast para escuchar mientras cocinas, caminas o te trasladas entre turnos. Sin tecnicismos vacíos.",
+                    "Guiones de práctica bilingüe para leer en voz alta y grabarte practicando, como preparación para escuchar mientras cocinas, caminas o te trasladas entre turnos. Sin tecnicismos vacíos.",
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onPrimaryContainer,
                 )
-                Row(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalAlignment = Alignment.CenterVertically) {
-                    Icon(Icons.Outlined.Mic, contentDescription = null, tint = MaterialTheme.colorScheme.onPrimaryContainer)
-                    Text(
-                        "Manos Libres Activo — di “Pausa” o “Repite punto”",
-                        style = MaterialTheme.typography.labelSmall,
-                        color = MaterialTheme.colorScheme.onPrimaryContainer,
-                    )
-                }
             }
         }
 
         item {
             SectionCard {
                 Text(
-                    "Semana 1 · Plan 90 Días — Audio Conversacional",
+                    "Semana $currentWeek · Episodio de Hoy",
                     style = MaterialTheme.typography.labelMedium,
                     color = MaterialTheme.colorScheme.outline,
                 )
                 Text(
-                    "Lección 1.3: Cómo actuar ante el rechazo sin confrontar",
+                    todaysEpisode.titleEs,
                     style = MaterialTheme.typography.headlineSmall,
                     color = MaterialTheme.colorScheme.onSurface,
                 )
                 Text(
-                    "La regla de oro de la empatía práctica en el cuidado diario",
+                    "${todaysEpisode.targetMinutes} min sugeridos · ${todaysEpisode.learnerPromptEs}",
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )
-                LabeledProgress(label = "Capítulo 2 de 4", progress = 3.72f / 11.75f, trailingLabel = "03:42 / 11:45")
-                Row(
-                    modifier = Modifier.fillMaxWidth(),
-                    horizontalArrangement = Arrangement.SpaceBetween,
-                ) {
-                    OutlinedButton(onClick = { }) { Text("-15s") }
-                    OutlinedButton(onClick = { }) { Text("Pausa") }
-                    OutlinedButton(onClick = { }) { Text("+30s") }
-                }
-                Row(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
-                    StatusPill(text = "1.0x")
-                    StatusPill(text = "1.2x")
-                    StatusPill(text = "1.5x")
-                    StatusPill(text = "ES (CÁLIDO)")
-                }
+                Text("Frase clave en inglés", style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.primary)
+                Text(
+                    "“${todaysEpisode.keyPhraseEn}”",
+                    style = MaterialTheme.typography.bodyLarge,
+                    color = MaterialTheme.colorScheme.onSurface,
+                )
+                Text(
+                    "Pronunciación aproximada: ${todaysEpisode.pronunciationEs}",
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                )
             }
         }
 
-        item {
-            SectionCard {
-                Text(
-                    "Estructura del Episodio Conversacional · 4 Capítulos",
-                    style = MaterialTheme.typography.headlineSmall,
-                    color = MaterialTheme.colorScheme.onSurface,
-                )
-                Text(
-                    "Sin lecturas áridas. Cada segmento está diseñado para enseñarte con historias reales de turnos en California.",
-                    style = MaterialTheme.typography.bodySmall,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant,
-                )
-                chapters.forEach { chapter ->
-                    Row(
-                        modifier = Modifier.fillMaxWidth(),
-                        horizontalArrangement = Arrangement.SpaceBetween,
-                    ) {
-                        Column(modifier = Modifier.weight(1f)) {
-                            Text(
-                                "${chapter.time} · ${chapter.title}",
-                                style = MaterialTheme.typography.bodyLarge,
-                                color = MaterialTheme.colorScheme.onSurface,
-                            )
-                            Text(
-                                chapter.description,
-                                style = MaterialTheme.typography.bodySmall,
-                                color = MaterialTheme.colorScheme.onSurfaceVariant,
-                            )
-                        }
-                        Text(
-                            chapter.status,
-                            style = MaterialTheme.typography.labelMedium,
-                            color = MaterialTheme.colorScheme.primary,
-                        )
-                    }
-                }
-            }
-        }
+        item { VoiceRecordCard(promptLabel = "Practica y grábate diciendo la frase clave de esta semana.") }
 
         item {
-            SectionCard {
+            Text(
+                "Biblioteca de Guiones · 13 Semanas",
+                style = MaterialTheme.typography.headlineSmall,
+                color = MaterialTheme.colorScheme.onSurface,
+            )
+        }
+        items(AudioEpisodeOutlines) { episode -> AudioEpisodeCard(episode) }
+    }
+}
+
+@Composable
+private fun AudioEpisodeCard(episode: AudioEpisodeOutline) {
+    SectionCard {
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceBetween,
+            verticalAlignment = Alignment.CenterVertically,
+        ) {
+            Column(modifier = Modifier.weight(1f)) {
                 Text(
-                    "Repaso Formal al Terminar Turno",
-                    style = MaterialTheme.typography.headlineSmall,
+                    "Semana ${episode.week} · ${episode.titleEs}",
+                    style = MaterialTheme.typography.bodyLarge,
                     color = MaterialTheme.colorScheme.onSurface,
                 )
                 Text(
-                    "Práctica guiada y fuentes oficiales verificadas — no es un requisito impuesto por CDSS.",
+                    "“${episode.keyPhraseEn}”",
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )
             }
+            StatusPill(text = "${episode.targetMinutes} MIN")
         }
     }
 }

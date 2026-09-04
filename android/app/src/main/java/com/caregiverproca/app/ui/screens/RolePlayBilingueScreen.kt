@@ -3,19 +3,12 @@ package com.caregiverproca.app.ui.screens
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.item
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.Info
-import androidx.compose.material.icons.outlined.Mic
-import androidx.compose.material.icons.outlined.PlayArrow
-import androidx.compose.material3.Button
-import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -23,15 +16,23 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.unit.dp
 import com.caregiverproca.app.content.Disclaimers
-import com.caregiverproca.app.ui.components.ChecklistRow
 import com.caregiverproca.app.ui.components.DetailScaffold
 import com.caregiverproca.app.ui.components.DisclaimerBanner
 import com.caregiverproca.app.ui.components.LabeledProgress
 import com.caregiverproca.app.ui.components.SectionCard
 import com.caregiverproca.app.ui.components.StatusPill
+import com.caregiverproca.app.ui.components.VoiceRecordCard
 import com.caregiverproca.app.ui.navigation.Screen
 
-/** Mirrors /screens/role-play-audio-bilingue-semana-10.html. */
+/**
+ * Mirrors /screens/role-play-audio-bilingue-semana-10.html. Corrected per
+ * A-028: there is no AI backend evaluating pronunciation or tone, so the
+ * previous "Evaluación de IA — 94% (C2 Care)" section (fabricated scores) is
+ * replaced by a self-check against the model phrases, and the fake "Escuchar
+ * Audio"/"regrabar" controls are replaced by a real recording (see
+ * VoiceRecordCard — the source pack ships no narrated audio, only this
+ * script; see docs/caregiver_upgrade/DECISIONS.md ADR-006).
+ */
 @Composable
 fun RolePlayBilingueScreen(onBack: () -> Unit) {
     DetailScaffold(title = Screen.RolePlayBilingue.title, onBack = onBack) {
@@ -108,7 +109,7 @@ fun RolePlayBilingueScreen(onBack: () -> Unit) {
         item {
             SectionCard {
                 Text(
-                    "Audio del Escenario (Voz Evelyn) · 0:18 min",
+                    "Guion del Escenario (Voz Evelyn)",
                     style = MaterialTheme.typography.headlineSmall,
                     color = MaterialTheme.colorScheme.onSurface,
                 )
@@ -122,29 +123,15 @@ fun RolePlayBilingueScreen(onBack: () -> Unit) {
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )
-                OutlinedButton(onClick = { }) {
-                    Icon(Icons.Outlined.PlayArrow, contentDescription = null)
-                    Spacer(Modifier.width(6.dp))
-                    Text("Escuchar Audio")
-                }
                 Text(
-                    "Respuesta Grabada (Audio Listo) · 00:42 / 01:00 max",
-                    style = MaterialTheme.typography.labelLarge,
-                    color = MaterialTheme.colorScheme.primary,
+                    "Lee el guion en voz alta como si Evelyn te lo dijera; no hay audio narrado todavía, solo este texto.",
+                    style = MaterialTheme.typography.labelSmall,
+                    color = MaterialTheme.colorScheme.outline,
                 )
-                Button(
-                    onClick = { },
-                    colors = ButtonDefaults.buttonColors(
-                        containerColor = MaterialTheme.colorScheme.secondary,
-                        contentColor = MaterialTheme.colorScheme.onSecondary,
-                    ),
-                ) {
-                    Icon(Icons.Outlined.Mic, contentDescription = null)
-                    Spacer(Modifier.width(6.dp))
-                    Text("Toca para regrabar")
-                }
             }
         }
+
+        item { VoiceRecordCard(promptLabel = "Graba tu respuesta en inglés usando la frase modelo de abajo.") }
 
         item {
             SectionCard {
@@ -171,13 +158,22 @@ fun RolePlayBilingueScreen(onBack: () -> Unit) {
         item {
             SectionCard {
                 Text(
-                    "Evaluación de IA — Superado con Distinción",
+                    "Autoevaluación (sin IA conectada)",
                     style = MaterialTheme.typography.headlineSmall,
                     color = MaterialTheme.colorScheme.onSurface,
                 )
-                ChecklistRow(done = true, label = "Tono Empático y Asertivo", trailing = "100% Óptimo")
-                ChecklistRow(done = true, label = "Límite Legal Respetado (CDSS)", trailing = "Cumplido")
-                ChecklistRow(done = true, label = "Pronunciación en Inglés", trailing = "94% (C2 Care)")
+                Text(
+                    "Escucha tu grabación y compárala con la frase modelo. Esta app no tiene un backend de IA que evalúe tono o pronunciación — la evaluación es tuya.",
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                )
+                listOf(
+                    "¿Mantuviste un tono empático y asertivo?",
+                    "¿Respetaste tu límite de función sin dar instrucciones clínicas?",
+                    "¿Se entendió tu pronunciación en inglés?",
+                ).forEach { question ->
+                    Text("• $question", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurface)
+                }
             }
         }
     }
