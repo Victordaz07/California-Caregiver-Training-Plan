@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&amp;family=Manrope:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#f7faf8;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-error": "#ffffff", "inverse-primary": "#8fd3cc", "on-primary-fixed-variant": "#00504b", "secondary-fixed-dim": "#ffb4a1", "on-error-container": "#93000a", "primary-fixed": "#abefe8", "primary-container": "#115e59", "secondary-fixed": "#ffdbd2", "inverse-surface": "#2d3130", "surface-container": "#ebefed", "surface-container-low": "#f1f4f2", "on-primary-container": "#91d5ce", "error": "#ba1a1a", "on-tertiary-fixed": "#001e2d", "surface-container-high": "#e6e9e7", "secondary-container": "#fc9174", "on-surface": "#181c1b", "secondary": "#9a442d", "surface-bright": "#f7faf8", "on-primary-fixed": "#00201e", "outline": "#6f7977", "surface-container-highest": "#e0e3e1", "surface-variant": "#e0e3e1", "tertiary-fixed-dim": "#a2cce8", "on-secondary-fixed": "#3c0800", "tertiary-fixed": "#c5e7ff", "error-container": "#ffdad6", "background": "#f7faf8", "on-secondary-fixed-variant": "#7c2e19", "primary-fixed-dim": "#8fd3cc", "tertiary": "#134159", "outline-variant": "#bec9c7", "on-tertiary": "#ffffff", "on-background": "#181c1b", "on-secondary-container": "#742814", "tertiary-container": "#2f5971", "inverse-on-surface": "#eef1ef", "on-surface-variant": "#3f4947", "primary": "#004541", "on-tertiary-fixed-variant": "#1f4b63", "surface": "#f7faf8", "surface-dim": "#d7dbd9", "on-primary": "#ffffff", "on-tertiary-container": "#a5cfeb", "on-secondary": "#ffffff", "surface-tint": "#216963", "surface-container-lowest": "#ffffff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-mobile": "1rem", "margin-tablet": "2rem", "space-lg": "1.5rem", "space-2xl": "3rem", "space-xl": "2rem", "margin-mobile": "1rem", "space-sm": "0.75rem", "space-xxs": "0.25rem", "gutter-tablet": "1.5rem", "space-xs": "0.5rem", "touch-target-min": "3rem", "space-md": "1rem" }, "fontFamily": { "headline-sm": ["manrope"], "body-md": ["manrope"], "label-sm": ["jetbrainsMono"], "body-sm": ["manrope"], "headline-md": ["manrope"], "label-lg": ["jetbrainsMono"], "headline-lg": ["manrope"], "body-lg": ["manrope"], "display-lg-mobile": ["manrope"], "display-lg": ["manrope"], "label-md": ["jetbrainsMono"] }, "fontSize": { "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "500" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "display-lg-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "display-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-20 px-gutter-mobile flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-sm min-w-0"><img alt="Brand logo. - Primary color: #115e59
+- Font: manrope
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1V7zT7fFHJ8L9lnzfg3mulvXk1BpVTTK1FNouAbBqsU1M0O9xVm3jOn_SnhJj5yWPuDVpZ9CibVp4G6H6IeZJPxeNGZbWLAvqsoXPfa7wg3MAHysls0OMii7q834HD8xmKKVp6WtILC7TCAgo8t9N4sIPuJ8TLYVe1UXoZctzMMIm1dFoHd7_KRAnyny0da6O35UFrpxIspCeAuGHruHGtL_lVkd4uwe_5hNWD_o2vwDzhKtKkSuWOtpIs"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold truncate">CAREGIVER PRO CA</span><span class="px-space-xs py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-[9px] tracking-wide uppercase font-semibold hidden xs:inline-block">RECURSOS &amp; CARRERA</span></div><h1 class="font-headline-sm text-headline-sm text-on-surface truncate leading-tight">Analizador</h1></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><span class="px-space-xs py-0.5 rounded-full bg-secondary/10 text-secondary font-label-sm text-[9px] tracking-wide uppercase font-semibold xs:hidden">RECURSOS</span><button aria-label="Perfil de cuidador" class="relative flex items-center justify-center p-space-xxs rounded-full touch-target-min focus:outline-none focus:ring-2 focus:ring-secondary" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-primary/20" src="https://lh3.googleusercontent.com/aida/AEtjO1UHVb9rxNh3UzEmIaIrshWPOLA9hg7dXfutWVBJhRQ8IyVX2AlANIYP3s-cCkFRSa_OqQwus0ieGj1VjUV7_EAuFqzACM-zLGiV-jWyN1SLhC8KRmO5sHK8mPaaXfXbEd_kouRVFwuztqhrlysUu9bONnxD5WoqmWylZBaGXdcL-_WRd9X4faDR-iQGKQ6tlUlc7yj6cqklIPBy-p-wRBbFXewFWbwrICHFjAfvKXhpZM0EuMf7-Mdkx-U"/><span class="absolute bottom-1 right-1 w-2.5 h-2.5 rounded-full bg-primary-container ring-2 ring-surface"></span></button></div></div></header><main class="flex flex-col flex-1 w-full pt-20 pb-24 bg-surface"><div class="flex flex-col w-full px-gutter-mobile gap-space-lg pb-space-2xl">
+<!-- Encabezado Motivador & Estatus -->
+<section class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex items-center justify-between gap-space-xs">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+        PLAN PERSONALIZADO ACTIVO
+      </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-secondary">verified_user</span>
+        CA Registry Validado
+      </span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-1">
+      Analizador de Intereses y Metas
+    </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+      Descubre tu rumbo profesional en el cuidado de salud en California según tus fortalezas personales, preferencias y metas salariales.
+    </p>
+<!-- Mini Banner Motivador con Retrato -->
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-r from-primary-container to-tertiary-container p-space-md text-on-primary shadow-sm mt-1">
+<div class="flex items-center gap-space-md relative z-10">
+<img class="w-14 h-14 rounded-full object-cover shadow-md flex-shrink-0" data-alt="A warm, professional portrait of a smiling Hispanic female caregiver wearing contemporary teal medical scrubs, illuminated by soft golden California morning light inside an accessible residential home, hopeful and confident expression, cinematic documentary photography with authentic natural textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjFbFKfduE5KqEPgC_CY3in3_vxJYmE9xgk4sdeOUqmbZlqtAPyqDjSI_ZDENwwGTk-85SqhQAwhJZtBGT0e7vT7vPHawVfnKUm_abmcO7rFnpx_pqS3XKRnQfNZbI66jvyu4dEaRdFMdQo4bgoKZVB5zoojKauomw7IjwQUeDgcVPndKSyjwvv1iLxTYagV5kwiSdcxEWYG0r2JdOmVmBcv0NLW0gPETrK5dy99-SrctSQdbC6mTs"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-wider">Tu Diagnóstico de Carrera</span>
+<p class="font-headline-sm text-headline-sm text-on-primary truncate">Afinidad Máxima: Especialista Humano</p>
+<span class="font-body-sm text-body-sm text-on-primary-container">Potencial de ingreso hasta <span class="font-bold text-surface-lowest">$38/h</span> en CA</span>
+</div>
+</div>
+<div class="absolute -right-6 -bottom-8 w-28 h-28 rounded-full bg-surface-lowest/10 pointer-events-none"></div>
+</div>
+</section>
+<!-- 2. Analizador Vocacional Rápido (Dimensiones de Interés) -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">3 Dimensiones de Afinidad</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Resultado de tu test de vocación y ritmo laboral</p>
+</div>
+<button class="text-primary font-label-md text-label-md flex items-center gap-0.5 hover:underline" onclick="recalcularAfinidad()" type="button">
+<span class="material-symbols-outlined text-base">tune</span>
+        Calibrar
+      </button>
+</div>
+<!-- Dimension A: Humano y Compañía (85%) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs transition-all hover:shadow-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs min-w-0">
+<div class="w-8 h-8 rounded-lg bg-primary/10 text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">volunteer_activism</span>
+</div>
+<div class="min-w-0">
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase block truncate">Dimensión A • Prioridad Alta</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate">Enfoque Humano y Compañía</h4>
+</div>
+</div>
+<span class="font-label-lg text-label-lg text-primary font-bold bg-primary/10 px-2 py-0.5 rounded-lg">85%</span>
+</div>
+<!-- Barra de progreso SVG Inline -->
+<div class="w-full bg-surface-container-high h-2.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full transition-all duration-700" style="width: 85%;"></div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+        Cuidado domiciliario privado, apoyo emocional en demencias tempranas, cocina terapéutica y acompañamiento 1 a 1 sin la prisa de turnos hospitalarios saturados.
+      </p>
+<div class="flex items-center gap-2 mt-1">
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Empatía Activa</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Nutrición Geriátrica</span>
+<span class="px-2 py-0.5 rounded-md bg-primary-fixed/40 text-on-primary-fixed-variant font-label-sm text-label-sm font-semibold">Match Ideal</span>
+</div>
+</div>
+<!-- Dimension B: Independencia y Emprendimiento (75%) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs transition-all hover:shadow-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs min-w-0">
+<div class="w-8 h-8 rounded-lg bg-secondary/10 text-secondary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">storefront</span>
+</div>
+<div class="min-w-0">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase block truncate">Dimensión B • Alto Potencial</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate">Independencia y Emprendimiento</h4>
+</div>
+</div>
+<span class="font-label-lg text-label-lg text-secondary font-bold bg-secondary/10 px-2 py-0.5 rounded-lg">75%</span>
+</div>
+<div class="w-full bg-surface-container-high h-2.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full transition-all duration-700" style="width: 75%;"></div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+        Negociación directa con familias privadas (Private Pay), registro IHSS independiente o proyección hacia tu propia microagencia de cuidadores en California.
+      </p>
+<div class="flex items-center gap-2 mt-1">
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Contratos Directos</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Tarifa Propia</span>
+</div>
+</div>
+<!-- Dimension C: Ruta Técnica y Clínica (60%) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs transition-all hover:shadow-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs min-w-0">
+<div class="w-8 h-8 rounded-lg bg-tertiary/10 text-tertiary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">monitor_heart</span>
+</div>
+<div class="min-w-0">
+<span class="font-label-sm text-label-sm text-tertiary font-bold uppercase block truncate">Dimensión C • En Crecimiento</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate">Ruta Técnica y Clínica</h4>
+</div>
+</div>
+<span class="font-label-lg text-label-lg text-tertiary font-bold bg-tertiary/10 px-2 py-0.5 rounded-lg">60%</span>
+</div>
+<div class="w-full bg-surface-container-high h-2.5 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full transition-all duration-700" style="width: 60%;"></div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+        Monitoreo preciso de signos vitales, administración de fármacos asistida, y aspiración formal a CNA, LVN o Enfermería supervisada.
+      </p>
+<div class="flex items-center gap-2 mt-1">
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface-variant font-label-sm text-label-sm">CDPH Protocol</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Vía NNAAP</span>
+</div>
+</div>
+</section>
+<!-- 3. Rutas de Carrera Recomendadas -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex items-baseline justify-between">
+<h3 class="font-headline-md text-headline-md text-on-surface">Rutas de Carrera Recomendadas</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Basadas en California</span>
+</div>
+<!-- RUTA 1: RECOMENDADA DESTACADA -->
+<div class="relative bg-surface-container-lowest rounded-xl p-space-md shadow-md flex flex-col gap-space-sm overflow-hidden">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex flex-col gap-0.5 min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-bold tracking-wider uppercase">
+              RECOMENDADA PARA TI
+            </span>
+<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-medium">
+              Match 94%
+            </span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface mt-1">
+            Cuidador Senior en Demencia y Cuidados Paliativos
+          </h4>
+</div>
+</div>
+<!-- Métricas clave de la ruta 1 -->
+<div class="grid grid-cols-2 gap-space-xs bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Rango Salarial CA</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">$24 - $28 <span class="font-body-sm font-normal text-on-surface-variant">/hora</span></span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tiempo Estimado</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">6 a 12 meses</span>
+</div>
+</div>
+<!-- Pasos Clave -->
+<div class="flex flex-col gap-space-xs pt-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-primary text-base">checklist</span>
+          4 Pasos Clave para Consolidarlo:
+        </span>
+<ul class="flex flex-col gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-base flex-shrink-0 mt-0.5">check_circle</span>
+<span><strong class="text-on-surface">Paso 1:</strong> Concluir Plan 90D y registro HCA Guardian activo en CDSS.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-base flex-shrink-0 mt-0.5">radio_button_unchecked</span>
+<span><strong class="text-on-surface">Paso 2:</strong> Certificación <em class="font-semibold text-primary">essentiALZ</em> de Alzheimer's Association.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-base flex-shrink-0 mt-0.5">radio_button_unchecked</span>
+<span><strong class="text-on-surface">Paso 3:</strong> 500 horas verificadas con 3 cartas de recomendación familiares.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-base flex-shrink-0 mt-0.5">radio_button_unchecked</span>
+<span><strong class="text-on-surface">Paso 4:</strong> Módulo DAR Handoff &amp; Primeros auxilios geriátricos avanzados.</span>
+</li>
+</ul>
+</div>
+<button class="w-full h-touch-target-min bg-primary text-on-primary font-headline-sm text-headline-sm rounded-lg flex items-center justify-center gap-2 shadow-sm active:scale-[0.99] transition-transform" type="button">
+<span>Adoptar como Mi Ruta Principal</span>
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+</div>
+<!-- RUTA 2: CNA / HHA -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-space-xs">
+<div>
+<span class="font-label-sm text-label-sm text-tertiary font-bold uppercase tracking-wider">Ruta Clínica Formal</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">
+            Transición a Asistente de Enfermería Certificada (CNA / HHA)
+          </h4>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-1 rounded-md text-on-surface-variant flex-shrink-0">3 - 6 meses</span>
+</div>
+<div class="flex items-center justify-between text-body-sm text-on-surface-variant">
+<span>Ingreso en Hospital / CDPH Agency:</span>
+<span class="font-headline-sm text-headline-sm text-tertiary font-bold">$26 - $34 /h</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        120 a 160 horas clínicas aprobadas por CDPH California y aprobación del examen estatal NNAAP. Abre puertas a turnos de hospital, clínicas y beneficios completos.
+      </p>
+<div class="flex items-center gap-space-xs pt-1">
+<button class="text-tertiary font-label-md text-label-md flex items-center gap-1 hover:underline py-1" type="button">
+<span>Ver escuelas aprobadas en tu condado</span>
+<span class="material-symbols-outlined text-sm">open_in_new</span>
+</button>
+</div>
+</div>
+<!-- RUTA 3: CUIDADOR PRIVADO DE ÉLITE -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-space-xs">
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Alta Autonomía</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">
+            Cuidador Privado Independiente de Élite (Private Duty)
+          </h4>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-1 rounded-md text-on-surface-variant flex-shrink-0">Inmediato</span>
+</div>
+<div class="flex items-center justify-between text-body-sm text-on-surface-variant">
+<span>Tarifas Bay Area / LA / Orange Co.:</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">$30 - $40 /h</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Enfocado en familias particulares de alta exigencia. Requiere registro HCA vigente, póliza Liability Insurance individual y portafolio bilingüe verificado.
+      </p>
+<div class="flex items-center gap-space-xs pt-1">
+<button class="text-secondary font-label-md text-label-md flex items-center gap-1 hover:underline py-1" type="button">
+<span>Revisar requisitos de póliza de seguro</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- 4. Organizador de Metas y Plan de Acción Trimestral -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-md text-headline-md text-on-surface">Plan de Acción Trimestral</h3>
+<span class="font-label-sm text-label-sm text-primary font-semibold">1 de 4 en Curso</span>
+</div>
+<div class="relative flex flex-col gap-space-sm pl-4">
+<!-- Línea vertical de la línea temporal -->
+<div class="absolute left-6 top-3 bottom-6 w-0.5 bg-surface-container-highest"></div>
+<!-- Meta 30 Días (En Progreso 40%) -->
+<div class="relative flex items-start gap-space-md bg-surface-container-lowest p-space-md rounded-xl shadow-sm z-10">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm text-label-sm font-bold flex-shrink-0 shadow-sm mt-0.5">
+          30D
+        </div>
+<div class="flex flex-col gap-1 w-full min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-primary uppercase">Fase 1 • En Progreso (40%)</span>
+<span class="material-symbols-outlined text-secondary text-base">hourglass_top</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">
+            Examen HCA Guardian + Live Scan + CPR presencial
+          </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Huellas dactilares enviadas al Departamento de Justicia de California y práctica de compresiones completada.
+          </p>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden mt-1">
+<div class="bg-primary h-full rounded-full" style="width: 40%;"></div>
+</div>
+</div>
+</div>
+<!-- Meta 90 Días (Listo para Iniciar) -->
+<div class="relative flex items-start gap-space-md bg-surface-container-lowest p-space-md rounded-xl shadow-sm z-10">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-bold flex-shrink-0 mt-0.5 flex items-center justify-center">
+          90D
+        </div>
+<div class="flex flex-col gap-1 w-full min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Fase 2 • Siguiente Hito</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Listo</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">
+            Graduación 110h + Portafolio Bilingüe de 20 Audios
+          </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Consolidar 3 recomendaciones firmadas y dominar el reporte clínico DAR en inglés y español.
+          </p>
+</div>
+</div>
+<!-- Meta 6 Meses (Planificado) -->
+<div class="relative flex items-start gap-space-md bg-surface-container-lowest p-space-md rounded-xl shadow-sm z-10">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-bold flex-shrink-0 mt-0.5 flex items-center justify-center">
+          6M
+        </div>
+<div class="flex flex-col gap-1 w-full min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Fase 3 • Especialización</span>
+<span class="material-symbols-outlined text-on-surface-variant text-base">schedule</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">
+            Demencia NIA/Alzheimer + Ajuste a Tarifa Senior
+          </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Completar microcredencial clínica y ajustar cobro horario base a mínimo $26.00/h.
+          </p>
+</div>
+</div>
+<!-- Meta 1 Año (Decisión Clave) -->
+<div class="relative flex items-start gap-space-md bg-surface-container-lowest p-space-md rounded-xl shadow-sm z-10">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-bold flex-shrink-0 mt-0.5 flex items-center justify-center">
+          1A
+        </div>
+<div class="flex flex-col gap-1 w-full min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Fase 4 • Cumbre Profesional</span>
+<span class="material-symbols-outlined text-on-surface-variant text-base">flag</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">
+            Bifurcación: Escuela CNA Comunitaria o Cartera Privada
+          </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Elección fundamentada: ingreso a College de California para Enfermería o retención de 3 clientes fijos a $35/h.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Asistente Gemini de Orientación Vocacional -->
+<section class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-sm shadow-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-primary text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">auto_awesome</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Asistente AI de Orientación Vocacional</h4>
+<span class="font-label-sm text-label-sm text-primary font-medium">Asesoría contextual con regulaciones de California</span>
+</div>
+</div>
+<!-- Tarjeta de Diálogo con Microinteracción -->
+<div class="bg-surface-container-lowest p-space-sm rounded-lg flex flex-col gap-2 shadow-xs cursor-pointer hover:bg-surface-bright transition-colors" id="aiPromptBox" onclick="toggleAIChat()">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-lg flex-shrink-0 mt-0.5">chat_bubble</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+          “¿No estás seguro entre la ruta de agencia IHSS o cuidado privado independiente? Toca aquí para simular tu ingreso neto según tu código postal en California y horario semanal disponible.”
+        </p>
+</div>
+<div class="hidden flex flex-col gap-2 pt-2 bg-primary/5 p-space-sm rounded-lg" id="aiExpandedResult">
+<div class="flex items-center gap-1.5 text-primary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-sm">psychology</span>
+          RECOMENDACIÓN AI EN VIVO:
+        </div>
+<p class="font-body-sm text-body-sm text-on-surface leading-snug">
+          Para cuidadores bilingües en condados con alto costo de vida (ej. Los Ángeles, Santa Clara), el modelo híbrido (IHSS 20h para beneficios médicos + 1 cliente privado fin de semana a $32/h) ofrece la máxima estabilidad durante los primeros 9 meses.
+        </p>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Calculado con tasas 2024 IHSS &amp; Caregiver Private Survey</span>
+</div>
+</div>
+<!-- Botón CTA Primario para reajustar test -->
+<button class="w-full h-touch-target-min bg-surface-container-lowest text-primary font-headline-sm text-headline-sm rounded-lg flex items-center justify-center gap-2 shadow-sm hover:bg-surface-bright active:scale-[0.99] transition-all" type="button">
+<span class="material-symbols-outlined text-primary text-xl">tune</span>
+<span>Ajustar Mi Test de Intereses y Prioridades</span>
+</button>
+</section>
+</div>
+<script>
+  function toggleAIChat() {
+    var box = document.getElementById('aiExpandedResult');
+    if (box) {
+      box.classList.toggle('hidden');
+    }
+  }
+
+  function recalcularAfinidad() {
+    var notification = document.createElement('div');
+    notification.className = "fixed bottom-20 left-4 right-4 bg-primary text-on-primary p-space-sm rounded-xl font-body-sm text-body-sm shadow-xl flex items-center gap-2 z-50 transition-all duration-300 transform translate-y-0";
+    notification.innerHTML = "<span class='material-symbols-outlined text-sm'>autorenew</span><span>Recalibrando afinidades con tus últimas 30 horas registradas...</span>";
+    document.body.appendChild(notification);
+    setTimeout(function() {
+      notification.style.opacity = '0';
+      setTimeout(function() {
+        if (notification.parentNode) {
+          notification.parentNode.removeChild(notification);
+        }
+      }, 300);
+    }, 2200);
+  }
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-semibold"><div class="flex items-center justify-around h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-0.5 w-full h-full min-w-[56px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="rutina" href="#"><span class="material-symbols-outlined text-[22px]">timer</span><span class="font-label-sm text-[10px] leading-tight text-center truncate max-w-full">Rutina</span></a><a class="flex flex-col items-center justify-center gap-0.5 w-full h-full min-w-[56px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="plan-90d" href="#"><span class="material-symbols-outlined text-[22px]">calendar_month</span><span class="font-label-sm text-[10px] leading-tight text-center truncate max-w-full">Plan 90D</span></a><a class="flex flex-col items-center justify-center gap-0.5 w-full h-full min-w-[56px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="audio" href="#"><span class="material-symbols-outlined text-[22px]">headphones</span><span class="font-label-sm text-[10px] leading-tight text-center truncate max-w-full">Audio</span></a><a class="flex flex-col items-center justify-center gap-0.5 w-full h-full min-w-[56px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="carrera-regs" href="#"><span class="material-symbols-outlined text-[22px]">verified</span><span class="font-label-sm text-[10px] leading-tight text-center truncate max-w-full">Carrera</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 w-full h-full min-w-[56px] transition-colors text-primary font-semibold" data-path="analizador" href="#"><span class="material-symbols-outlined text-[22px]">explore</span><span class="font-label-sm text-[10px] leading-tight text-center truncate max-w-full">Metas</span></a></div></nav></body></html>

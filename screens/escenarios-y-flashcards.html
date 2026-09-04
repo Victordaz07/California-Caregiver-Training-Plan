@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><title>Caregiver Pro CA</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'on-primary-container': '#91d5ce', 'primary': '#004541', 'inverse-surface': '#2d3130', 'surface-dim': '#d7dbd9', 'secondary-container': '#fc9174', 'surface-variant': '#e0e3e1', 'on-secondary-fixed-variant': '#7c2e19', 'on-surface': '#181c1b', 'on-secondary-container': '#742814', 'surface-bright': '#f7faf8', 'on-tertiary-fixed': '#001e2d', 'background': '#f7faf8', 'error-container': '#ffdad6', 'outline-variant': '#bec9c7', 'secondary-fixed-dim': '#ffb4a1', 'primary-container': '#115e59', 'primary-fixed': '#abefe8', 'on-error': '#ffffff', 'on-secondary-fixed': '#3c0800', 'on-background': '#181c1b', 'surface': '#f7faf8', 'on-tertiary': '#ffffff', 'on-primary': '#ffffff', 'inverse-on-surface': '#eef1ef', 'error': '#ba1a1a', 'secondary': '#9a442d', 'surface-container-highest': '#e0e3e1', 'primary-fixed-dim': '#8fd3cc', 'on-primary-fixed-variant': '#00504b', 'tertiary-fixed': '#c5e7ff', 'tertiary-container': '#2f5971', 'surface-container-lowest': '#ffffff', 'tertiary': '#134159', 'surface-tint': '#216963', 'inverse-primary': '#8fd3cc', 'secondary-fixed': '#ffdbd2', 'surface-container': '#ebefed', 'surface-container-low': '#f1f4f2', 'surface-container-high': '#e6e9e7', 'outline': '#6f7977', 'on-secondary': '#ffffff', 'tertiary-fixed-dim': '#a2cce8', 'on-tertiary-container': '#a5cfeb', 'on-tertiary-fixed-variant': '#1f4b63', 'on-surface-variant': '#3f4947', 'on-error-container': '#93000a', 'on-primary-fixed': '#00201e' }, borderRadius: { DEFAULT: '0.25rem', lg: '0.5rem', xl: '0.75rem', full: '9999px' }, spacing: { 'space-md': '1rem', 'space-lg': '1.5rem', 'space-2xl': '3rem', 'touch-target-min': '3rem', 'space-xxs': '0.25rem', 'space-xs': '0.5rem', 'margin-mobile': '1rem', 'space-xl': '2rem', 'gutter-tablet': '1.5rem', 'space-sm': '0.75rem', 'gutter-mobile': '1rem', 'margin-tablet': '2rem' }, fontFamily: { 'display-lg': ['Manrope', 'sans-serif'], 'headline-md': ['Manrope', 'sans-serif'], 'headline-lg': ['Manrope', 'sans-serif'], 'label-lg': ['JetBrains Mono', 'monospace'], 'body-sm': ['Manrope', 'sans-serif'], 'body-lg': ['Manrope', 'sans-serif'], 'label-sm': ['JetBrains Mono', 'monospace'], 'display-lg-mobile': ['Manrope', 'sans-serif'], 'headline-sm': ['Manrope', 'sans-serif'], 'label-md': ['JetBrains Mono', 'monospace'], 'body-md': ['Manrope', 'sans-serif'] }, fontSize: { 'display-lg': ['36px', { lineHeight: '44px', letterSpacing: '-0.02em', fontWeight: '700' }], 'headline-md': ['20px', { lineHeight: '28px', fontWeight: '600' }], 'headline-lg': ['24px', { lineHeight: '32px', letterSpacing: '-0.01em', fontWeight: '600' }], 'label-lg': ['14px', { lineHeight: '20px', letterSpacing: '0.02em', fontWeight: '500' }], 'body-sm': ['13px', { lineHeight: '18px', fontWeight: '400' }], 'body-lg': ['16px', { lineHeight: '24px', fontWeight: '400' }], 'label-sm': ['10px', { lineHeight: '14px', letterSpacing: '0.06em', fontWeight: '500' }], 'display-lg-mobile': ['28px', { lineHeight: '34px', letterSpacing: '-0.01em', fontWeight: '700' }], 'headline-sm': ['18px', { lineHeight: '24px', fontWeight: '600' }], 'label-md': ['12px', { lineHeight: '16px', letterSpacing: '0.04em', fontWeight: '500' }], 'body-md': ['14px', { lineHeight: '20px', fontWeight: '400' }] } } } };</script><style>@layer base { html, body { width: 100vw; margin: 0; padding: 0; min-height: 100%; } body { overscroll-behavior: none; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-bright/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter-mobile flex items-center justify-between"><div class="flex items-center gap-space-xs"><img alt="Caregiver Pro California Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V7zT7fFHJ8L9lnzfg3mulvXk1BpVTTK1FNouAbBqsU1M0O9xVm3jOn_SnhJj5yWPuDVpZ9CibVp4G6H6IeZJPxeNGZbWLAvqsoXPfa7wg3MAHysls0OMii7q834HD8xmKKVp6WtILC7TCAgo8t9N4sIPuJ8TLYVe1UXoZctzMMIm1dFoHd7_KRAnyny0da6O35UFrpxIspCeAuGHruHGtL_lVkd4uwe_5hNWD_o2vwDzhKtKkSuWOtpIs"/><div class="flex flex-col"><div class="flex items-center gap-space-xxs"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">Caregiver Pro CA</span></div><div class="flex items-center gap-1"><span class="inline-flex items-center px-1.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm uppercase tracking-wide">Día 1 / 90 (Semana 1)</span><span class="hidden">Escenarios Y Flashcards</span></div></div></div><div class="flex items-center gap-space-xs"><button aria-label="Perfil de Cuidador" class="min-h-touch-target-min min-w-touch-target-min flex items-center justify-center" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDD_y4Af7TklE7bClwRvKMuDPAn5uJTH0KJER9MHJ3C7-L1UHjVBj1dmriuzEDlnX3zhMuDUqfweiyoK8LGzgcv-ajrJJcWU1KiMHAwFvXWvT6XQFUQe7cUIHepb4BVvWvrwSZLssE-sM6nqJ64fFjRwaqvhw2sZCrlPD2VCnIVaXO6dTM6kW5aSgwVmklwv1tVY305yC31mfd51RB7mVJLl6OQUdvUZbA5gbJVUjU7-DgmKPmKz564"/></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface"><div class="flex flex-col w-full px-margin-mobile space-y-space-lg pb-space-2xl">
+<!-- Interactive Header Status / Spaced Repetition Counter -->
+<section class="flex flex-col gap-space-xs mt-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="p-1.5 rounded-full bg-primary/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">psychology</span>
+</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary">Simulaciones Clínicas</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">CDSS In-Home Protocol · CA Caregiver</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5 px-space-xs py-1 rounded-full bg-surface-container-high">
+<span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<span class="font-label-md text-label-md text-secondary font-semibold">Racha: 5 días</span>
+</div>
+</div>
+<!-- Daily Curriculum Distribution -->
+<div class="p-space-sm rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">DISTRIBUCIÓN DEL DÍA (10 ACTIVIDADES)</span>
+<span class="font-label-sm text-label-sm text-primary font-medium">8/10 completadas</span>
+</div>
+<!-- Stacked Progress Bar -->
+<div class="w-full h-2.5 rounded-full bg-surface-container flex overflow-hidden">
+<div class="h-full bg-primary transition-all duration-500" style="width: 60%;" title="60% Tema de la Semana"></div>
+<div class="h-full bg-secondary transition-all duration-500" style="width: 20%;" title="20% Seguridad y Emergencias"></div>
+<div class="h-full bg-tertiary-container transition-all duration-500" style="width: 20%;" title="20% Repaso Previo"></div>
+</div>
+<!-- Legend Badges -->
+<div class="flex flex-wrap items-center gap-x-space-sm gap-y-1 pt-1">
+<div class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-label-sm text-label-sm text-on-surface">60% Límites y Dignidad</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface">20% Emergencias</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-tertiary-container"></span>
+<span class="font-label-sm text-label-sm text-on-surface">20% Repaso previo</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 1: Flashcard Activa con Efecto Flip y Repetición Espaciada -->
+<section class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between px-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-base">style</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Flashcard Situacional Activa</h2>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-semibold">
+        Tarjeta 4 de 10
+      </span>
+</div>
+<!-- Micro-Card Visual Anchor -->
+<div class="relative w-full rounded-2xl bg-surface-container-lowest shadow-md overflow-hidden transition-all duration-300">
+<div class="relative h-28 w-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A safe and sunlit home setting in California, cozy residential interior with clean wooden floors and soft natural sunlight casting gentle shadows on a bedside table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5xaIA96P6FHrv9n6zha7KLdMgUe43uXbDCFLeonDpzkArUap0hCHLGtAyyb3xcA0iqE_EWk4f9NEkISlkf0n_yFDd-W2LwJrK4hGB8vs1Il87Cx9rFN0DHg1QkeE3bC_bJsobCSbXzohO49Sn1E4z_IBMudNT28XrBwOluwXIieKv3m3n7J9DMWfHMyIrQ91UFkdcq9CAzPe-iqdRDSg74_kqThbksgXFug3uusM5bm67I9B6MlK9"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/70 to-transparent"></div>
+<div class="absolute top-3 left-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-bright/90 backdrop-blur-sm text-primary font-label-sm text-label-sm shadow-sm font-semibold">
+<span class="material-symbols-outlined text-xs">medication</span>
+            Manejo Seguro de Fármacos
+          </span>
+</div>
+<div class="absolute top-3 right-3">
+<button aria-label="Escuchar situación en audio" class="h-8 w-8 rounded-full bg-surface-bright/90 text-primary flex items-center justify-center shadow-sm active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-sm">volume_up</span>
+</button>
+</div>
+</div>
+<!-- Card Core Body -->
+<div class="p-space-md pt-0 flex flex-col gap-space-sm">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">Desafío In-Home No Médico</span>
+<p class="font-body-lg text-body-lg text-on-surface font-semibold leading-snug">
+            “Encuentro una pastilla suelta sin identificar en el piso de la habitación del cliente. ¿Qué acciones están estrictamente dentro de mi función como cuidador en California?”
+          </p>
+</div>
+<!-- Tap to Reveal Target Area -->
+<div class="flex flex-col gap-space-xs transition-all" id="flashcard-front">
+<div class="p-space-sm rounded-xl bg-surface-container-low flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-xl">lightbulb</span>
+<p class="font-body-sm text-body-sm">
+              Tómate 10 segundos para estructurar tus límites regulatorios antes de comprobar la respuesta oficial.
+            </p>
+</div>
+<button class="w-full h-touch-target-min rounded-lg bg-primary text-on-primary font-headline-sm text-headline-sm flex items-center justify-center gap-space-xs active:scale-[0.98] transition-transform shadow-sm" id="btn-reveal" onclick="document.getElementById('flashcard-front').classList.add('hidden'); document.getElementById('flashcard-back').classList.remove('hidden');" type="button">
+<span class="material-symbols-outlined text-xl">visibility</span>
+<span>Ver Estándar Regulado CA</span>
+</button>
+</div>
+<!-- Revealed Content -->
+<div class="hidden flex flex-col gap-space-sm transition-all duration-300" id="flashcard-back">
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center gap-1.5 text-primary font-semibold">
+<span class="material-symbols-outlined text-base">verified</span>
+<span class="font-label-md text-label-md uppercase tracking-wider">Protocolo CDSS California (4 Pasos Clave)</span>
+</div>
+<ol class="space-y-2 font-body-sm text-body-sm text-on-surface">
+<li class="flex items-start gap-2">
+<span class="w-5 h-5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-bold flex items-center justify-center shrink-0 mt-0.5">1</span>
+<div><strong class="text-primary">Proteger sin suministrar:</strong> Jamás asumir qué pastilla es ni dársela al cliente. No desecharla en la basura común.</div>
+</li>
+<li class="flex items-start gap-2">
+<span class="w-5 h-5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-bold flex items-center justify-center shrink-0 mt-0.5">2</span>
+<div><strong class="text-primary">Aislar el hallazgo:</strong> Colocarla en un recipiente limpio etiquetado “Encontrada en piso” sin mezclarla con el pastillero oficial.</div>
+</li>
+<li class="flex items-start gap-2">
+<span class="w-5 h-5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-bold flex items-center justify-center shrink-0 mt-0.5">3</span>
+<div><strong class="text-primary">Notificación expedita:</strong> Contactar al supervisor de agencia, enfermero a cargo o familiar responsable designado de inmediato.</div>
+</li>
+<li class="flex items-start gap-2">
+<span class="w-5 h-5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-bold flex items-center justify-center shrink-0 mt-0.5">4</span>
+<div><strong class="text-primary">Registro de Turno:</strong> Consignar hora precisa, lugar exacto del hallazgo, aspecto visual y persona notificada.</div>
+</li>
+</ol>
+</div>
+<!-- Spaced Repetition Buttons -->
+<div class="flex flex-col gap-space-xxs pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant text-center font-medium">
+              Autoevaluación de asimilación (Algoritmo SM-2)
+            </span>
+<div class="grid grid-cols-3 gap-2">
+<button class="h-12 rounded-lg bg-surface-container-high text-on-surface flex flex-col items-center justify-center active:scale-95 transition-transform" onclick="alert('Programada para repasar mañana')" type="button">
+<span class="font-label-md text-label-md font-semibold text-secondary">Difícil</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">En 1 día</span>
+</button>
+<button class="h-12 rounded-lg bg-surface-container-high text-on-surface flex flex-col items-center justify-center active:scale-95 transition-transform" onclick="alert('Programada para repasar en 3 días')" type="button">
+<span class="font-label-md text-label-md font-semibold text-primary">Bien</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">En 3 días</span>
+</button>
+<button class="h-12 rounded-lg bg-primary-fixed text-on-primary-fixed flex flex-col items-center justify-center active:scale-95 transition-transform shadow-sm" onclick="alert('Programada para repasar en 7 días')" type="button">
+<span class="font-label-md text-label-md font-bold text-on-primary-fixed-variant">Fácil</span>
+<span class="font-label-sm text-label-sm text-on-primary-fixed-variant">En 7 días</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Práctica Deliberada en Tiempo Real con Checklist de 6 Pasos -->
+<section class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between px-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-base">emergency_home</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Simulación Deliberada</h2>
+</div>
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span class="font-label-md text-label-md font-semibold" id="sim-timer">03:42</span>
+</div>
+</div>
+<!-- Simulation Master Card -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-md flex flex-col gap-space-md">
+<!-- Scenario Brief with Visual Cue -->
+<div class="flex items-start gap-space-sm">
+<div class="relative w-16 h-16 rounded-xl overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Senior person sitting gently in a comfortable armchair, looking cautious and communicating non-verbally with warm home ambient lighting, soft emotional portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQk5tPhAMNefZFnZq4KvCYYcWeIi1VA6t2X4txajUfdmqqPvYR5NGSkcnqTTvVOJVDztyPOpWQQoBIPewlXrApsDsjs9_d191KvyGSfcphdjvtxTVuKdtbLakk6tgSsLL4Ykp5eJ8IIovkV2JuTsd7FgRVOdMAoe-6UznhcnfqxTH5t_O89hcOsYuijm_rSAU_M2BfOvyie76WAu7nbuX3AUXtW9_j9V-6u0QTQbvuJ9t0F5w3cpaE"/>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold">Caso #42</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Dementia &amp; Dignity</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-snug pt-0.5">
+            El cliente rechaza bañarse y muestra visible frustración
+          </h3>
+</div>
+</div>
+<!-- Context Callout -->
+<div class="p-space-sm rounded-xl bg-surface-container-low text-on-surface-variant flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-base shrink-0 mt-0.5">info</span>
+<p class="font-body-sm text-body-sm">
+<strong>Regla California:</strong> Ningún cuidador debe usar contención física ni coacción verbal. Se debe priorizar la autonomía del adulto mayor y validar su estado emocional.
+        </p>
+</div>
+<!-- Algoritmo de 6 Pasos con Checklist Interactivo -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between pb-1">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold uppercase tracking-wider">
+            Algoritmo de Acción (Paso a Paso)
+          </span>
+<span class="font-label-sm text-label-sm font-semibold text-primary" id="steps-counter">2 de 6 listos</span>
+</div>
+<!-- Checklist Item 1 -->
+<label class="flex items-center gap-space-sm p-space-sm rounded-xl bg-surface-bright active:bg-surface-container cursor-pointer transition-colors">
+<input checked="" class="w-5 h-5 rounded text-primary focus:ring-primary accent-primary" onchange="updateStepProgress()" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface">1. Seguridad inmediata verificada</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sin riesgos de resbalón, piso seco, ambiente térmico templado.</span>
+</div>
+</label>
+<!-- Checklist Item 2 -->
+<label class="flex items-center gap-space-sm p-space-sm rounded-xl bg-surface-bright active:bg-surface-container cursor-pointer transition-colors">
+<input checked="" class="w-5 h-5 rounded text-primary focus:ring-primary accent-primary" onchange="updateStepProgress()" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface">2. Observar hechos objetivos</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Verificar signos no verbales: dolor articular, frío o temor a la regadera.</span>
+</div>
+</label>
+<!-- Checklist Item 3 -->
+<label class="flex items-center gap-space-sm p-space-sm rounded-xl bg-surface-bright active:bg-surface-container cursor-pointer transition-colors">
+<input class="w-5 h-5 rounded text-primary focus:ring-primary accent-primary" onchange="updateStepProgress()" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface">3. Consultar plan de cuidado y preferencias</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Revisar si prefiere lavado con toalla caliente o música ambiental.</span>
+</div>
+</label>
+<!-- Checklist Item 4 -->
+<label class="flex items-center gap-space-sm p-space-sm rounded-xl bg-surface-bright active:bg-surface-container cursor-pointer transition-colors">
+<input class="w-5 h-5 rounded text-primary focus:ring-primary accent-primary" onchange="updateStepProgress()" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface">4. No forzar; proponer alternativas respetuosas</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Pausa de 20 minutos. Proponer esponjado parcial para mantener higiene y confort.</span>
+</div>
+</label>
+<!-- Checklist Item 5 -->
+<label class="flex items-center gap-space-sm p-space-sm rounded-xl bg-surface-bright active:bg-surface-container cursor-pointer transition-colors">
+<input class="w-5 h-5 rounded text-primary focus:ring-primary accent-primary" onchange="updateStepProgress()" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface">5. Escalar si hay riesgo manifiesto</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Si persiste agitación severa o dolor, avisar a la familia/enfermero de guardia.</span>
+</div>
+</label>
+<!-- Checklist Item 6 -->
+<label class="flex items-center gap-space-sm p-space-sm rounded-xl bg-surface-bright active:bg-surface-container cursor-pointer transition-colors">
+<input class="w-5 h-5 rounded text-primary focus:ring-primary accent-primary" onchange="updateStepProgress()" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface">6. Documentar en nota objetiva de turno</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Escribir hechos: “10:15 AM Cliente refirió dolor al intentar ingresar; se aplicó baño de toalla con acuerdo”.</span>
+</div>
+</label>
+</div>
+<!-- Action Button & Micro-feedback -->
+<div class="flex flex-col gap-space-xs pt-1">
+<button class="w-full h-touch-target-min rounded-lg bg-secondary text-on-secondary font-headline-sm text-headline-sm flex items-center justify-center gap-space-xs active:scale-[0.98] transition-transform shadow-md" id="btn-complete-scenario" onclick="celebrateCompletion()" type="button">
+<span class="material-symbols-outlined text-xl">check_circle</span>
+<span>Validar Intervención Clínica</span>
+</button>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-center">
+          Cumple con la Sección 15610.05 del Código de Bienestar e Instituciones de California.
+        </p>
+</div>
+</div>
+</section>
+<!-- Section 3: Moment of Delight: Banner de Refuerzo Positivo -->
+<section class="p-space-md rounded-2xl bg-gradient-to-r from-primary-container to-primary text-on-primary shadow-sm flex items-center gap-space-sm">
+<div class="p-2 rounded-xl bg-surface-bright/10 shrink-0">
+<span class="material-symbols-outlined text-2xl text-primary-fixed" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold">¡Estás construyendo criterio experto!</span>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim leading-snug">
+        El 89% de incidentes en California se previenen con una observación objetiva en los primeros 3 minutos.
+      </p>
+</div>
+</section>
+</div>
+<script>
+  function updateStepProgress() {
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    const checked = Array.from(checkboxes).filter(cb => cb.checked).length;
+    const total = checkboxes.length;
+    const counter = document.getElementById('steps-counter');
+    if (counter) {
+      counter.textContent = `${checked} de ${total} listos`;
+      if (checked === total) {
+        counter.classList.add('text-secondary');
+      } else {
+        counter.classList.remove('text-secondary');
+      }
+    }
+  }
+
+  function celebrateCompletion() {
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    const checked = Array.from(checkboxes).filter(cb => cb.checked).length;
+    if (checked < 6) {
+      alert('Asegúrate de completar todos los pasos del algoritmo para certificar el caso clínico.');
+    } else {
+      alert('¡Excelente resolución! Registrado en tu portafolio de competencias CDSS California.');
+    }
+  }
+
+  let seconds = 222;
+  const timerElem = document.getElementById('sim-timer');
+  if (timerElem) {
+    setInterval(() => {
+      seconds++;
+      const mins = Math.floor(seconds / 60).toString().padStart(2, '0');
+      const secs = (seconds % 60).toString().padStart(2, '0');
+      timerElem.textContent = `${mins}:${secs}`;
+    }, 1000);
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-bright/90 backdrop-blur-xl shadow-[0_-4px_16px_rgba(17,94,89,0.06)]" data-active-classes="text-primary font-semibold"><div class="grid grid-cols-4 items-center h-16 px-1"><a class="min-h-touch-target-min flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-primary transition-colors" data-path="rutina-diaria" href="#"><span class="material-symbols-outlined text-2xl">local_fire_department</span><span class="font-label-sm text-label-sm text-center line-clamp-1">Rutina</span></a><a class="min-h-touch-target-min flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-primary transition-colors" data-path="plan-90-dias" href="#"><span class="material-symbols-outlined text-2xl">calendar_month</span><span class="font-label-sm text-label-sm text-center line-clamp-1">Plan 90D</span></a><a aria-current="page" class="min-h-touch-target-min flex flex-col items-center justify-center gap-0.5 transition-colors text-primary font-semibold" data-path="escenarios-y-flashcards" href="#"><span class="material-symbols-outlined text-2xl">style</span><span class="font-label-sm text-label-sm text-center line-clamp-1">Clínica</span></a><a class="min-h-touch-target-min flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-primary transition-colors" data-path="requisitos-ca" href="#"><span class="material-symbols-outlined text-2xl">verified</span><span class="font-label-sm text-label-sm text-center line-clamp-1">CDSS Regs</span></a></div></nav></body></html>
