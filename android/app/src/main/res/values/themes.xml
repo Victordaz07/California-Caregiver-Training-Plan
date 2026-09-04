@@ -1,0 +1,7 @@
+<resources>
+    <!-- Base Android theme used only for the launch window before Compose takes over. -->
+    <style name="Theme.CaregiverProCA" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/theme_background</item>
+        <item name="android:statusBarColor">@color/theme_background</item>
+    </style>
+</resources>

@@ -1,0 +1,4 @@
+<resources>
+    <!-- background / surface token from docs/design/DESIGN.md, used only for the pre-Compose launch window. -->
+    <color name="theme_background">#F7FAF8</color>
+</resources>

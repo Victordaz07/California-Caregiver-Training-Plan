@@ -41,9 +41,13 @@ docs/design/previews/    Capturas de referencia de cada pantalla
 
 Ver `docs/design/DESIGN.md` para la paleta de colores, tipografía, espaciado, elevación, formas y especificaciones de componentes ("Modern Clinical-Humanist").
 
+## App nativa de Android
+
+En `android/` vive una app nativa (Kotlin + Jetpack Compose) construida a partir de este mismo diseño. Es un esqueleto navegable con las 10 pantallas y el sistema de diseño aplicado, pero todavía sin lógica real de audio/temporizadores. Ver `android/README.md` para cómo abrirla en Android Studio y los próximos pasos.
+
 ## Próximos pasos sugeridos
 
-Estas pantallas son un prototipo visual: los contadores, temporizadores y barras de progreso funcionan en el navegador (JS embebido por pantalla), pero no hay backend, autenticación ni persistencia de datos entre pantallas. Los siguientes pasos típicos serían:
-- Elegir un framework (p. ej. Next.js) y convertir cada pantalla en un componente.
+Estas pantallas HTML son un prototipo visual: los contadores, temporizadores y barras de progreso funcionan en el navegador (JS embebido por pantalla), pero no hay backend, autenticación ni persistencia de datos entre pantallas. Los siguientes pasos típicos serían:
+- Seguir desarrollando la app nativa de Android en `android/` (ver su README).
 - Añadir estado/persistencia compartida (progreso del plan de 90 días, resultados de evaluaciones).
 - Conectar contenido real (lecciones, audios, recursos oficiales de CDSS/IHSS).
