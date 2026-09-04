@@ -8,17 +8,25 @@ import androidx.compose.foundation.lazy.item
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.AutoAwesome
+import androidx.compose.material.icons.outlined.PlayCircle
+import androidx.compose.material.icons.outlined.StopCircle
 import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
+import com.caregiverproca.app.audio.AudioNarrationController
+import com.caregiverproca.app.audio.audioResIdFor
 import com.caregiverproca.app.content.AudioEpisodeOutline
 import com.caregiverproca.app.content.AudioEpisodeOutlines
 import com.caregiverproca.app.content.audioEpisodeFor
@@ -34,12 +42,13 @@ import com.caregiverproca.app.ui.navigation.Screen
 /**
  * Mirrors /screens/audio-lecciones-gemini-manos-libres.html. Corrected per
  * A-028: renamed from "Audio-Tutor Gemini" to "orientación guiada" (no AI
- * backend is connected). This screen now shows the real 13-episode outline
- * bank (content/AudioEpisodes.kt) as read-along scripts — there is no
- * narrated audio in the source pack to play, so the "-15s/Pausa/+30s" fake
- * transport controls from the previous mock are gone. What IS real: a
- * shadowing/recording exercise for today's key phrase via VoiceRecordCard.
- * See docs/caregiver_upgrade/DECISIONS.md ADR-006.
+ * backend is connected). Shows the real 13-episode bank (content/AudioEpisodes.kt)
+ * with two real, distinct actions per episode: (1) listen to the narrated audio,
+ * generated offline with Google Cloud Text-to-Speech and bundled as a static
+ * res/raw resource — see docs/caregiver_upgrade/AUDIO_GENERATION_PROMPT.md — and
+ * (2) record yourself repeating the key phrase via VoiceRecordCard. Neither uses
+ * any backend at runtime; the TTS key was only ever used offline to produce these
+ * files. See docs/caregiver_upgrade/DECISIONS.md ADR-006 for the full history.
  */
 @Composable
 fun AudioLeccionesScreen(onBack: () -> Unit) {
@@ -50,6 +59,10 @@ fun AudioLeccionesScreen(onBack: () -> Unit) {
     )
     val currentWeek = curriculumDayFor(prefs.currentPlanDay)?.week ?: 1
     val todaysEpisode = audioEpisodeFor(currentWeek) ?: AudioEpisodeOutlines.first()
+
+    val narrationController = remember { AudioNarrationController(context) }
+    var playingEpisodeId by remember { mutableStateOf<String?>(null) }
+    DisposableEffect(Unit) { onDispose { narrationController.release() } }
 
     DetailScaffold(title = Screen.AudioLecciones.title, onBack = onBack) {
         item {
@@ -63,7 +76,7 @@ fun AudioLeccionesScreen(onBack: () -> Unit) {
                     )
                 }
                 Text(
-                    "Guiones de práctica bilingüe para leer en voz alta y grabarte practicando, como preparación para escuchar mientras cocinas, caminas o te trasladas entre turnos. Sin tecnicismos vacíos.",
+                    "Guiones narrados bilingües, ya incluidos sin conexión: escúchalos y luego grábate practicando, como preparación para el trabajo mientras cocinas, caminas o te trasladas entre turnos.",
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onPrimaryContainer,
                 )
@@ -82,11 +95,19 @@ fun AudioLeccionesScreen(onBack: () -> Unit) {
                     style = MaterialTheme.typography.headlineSmall,
                     color = MaterialTheme.colorScheme.onSurface,
                 )
-                Text(
-                    "${todaysEpisode.targetMinutes} min sugeridos · ${todaysEpisode.learnerPromptEs}",
-                    style = MaterialTheme.typography.bodySmall,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant,
-                )
+                Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                    NarrationPlayButton(
+                        episode = todaysEpisode,
+                        controller = narrationController,
+                        playingEpisodeId = playingEpisodeId,
+                        onPlayingEpisodeIdChange = { playingEpisodeId = it },
+                    )
+                    Text(
+                        "${todaysEpisode.targetMinutes} min sugeridos · ${todaysEpisode.learnerPromptEs}",
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    )
+                }
                 Text("Frase clave en inglés", style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.primary)
                 Text(
                     "“${todaysEpisode.keyPhraseEn}”",
@@ -101,7 +122,7 @@ fun AudioLeccionesScreen(onBack: () -> Unit) {
             }
         }
 
-        item { VoiceRecordCard(promptLabel = "Practica y grábate diciendo la frase clave de esta semana.") }
+        item { VoiceRecordCard(promptLabel = "Escucha la narración y luego grábate repitiendo la frase clave de esta semana.") }
 
         item {
             Text(
@@ -110,12 +131,50 @@ fun AudioLeccionesScreen(onBack: () -> Unit) {
                 color = MaterialTheme.colorScheme.onSurface,
             )
         }
-        items(AudioEpisodeOutlines) { episode -> AudioEpisodeCard(episode) }
+        items(AudioEpisodeOutlines) { episode ->
+            AudioEpisodeCard(
+                episode = episode,
+                controller = narrationController,
+                playingEpisodeId = playingEpisodeId,
+                onPlayingEpisodeIdChange = { playingEpisodeId = it },
+            )
+        }
     }
 }
 
 @Composable
-private fun AudioEpisodeCard(episode: AudioEpisodeOutline) {
+private fun NarrationPlayButton(
+    episode: AudioEpisodeOutline,
+    controller: AudioNarrationController,
+    playingEpisodeId: String?,
+    onPlayingEpisodeIdChange: (String?) -> Unit,
+) {
+    val resId = remember(episode.episodeId) { audioResIdFor(episode.episodeId) } ?: return
+    val isPlaying = playingEpisodeId == episode.episodeId
+    IconButton(onClick = {
+        if (isPlaying) {
+            controller.stop()
+            onPlayingEpisodeIdChange(null)
+        } else {
+            controller.play(resId) { onPlayingEpisodeIdChange(null) }
+            onPlayingEpisodeIdChange(episode.episodeId)
+        }
+    }) {
+        Icon(
+            imageVector = if (isPlaying) Icons.Outlined.StopCircle else Icons.Outlined.PlayCircle,
+            contentDescription = if (isPlaying) "Detener narración" else "Escuchar narración real",
+            tint = MaterialTheme.colorScheme.primary,
+        )
+    }
+}
+
+@Composable
+private fun AudioEpisodeCard(
+    episode: AudioEpisodeOutline,
+    controller: AudioNarrationController,
+    playingEpisodeId: String?,
+    onPlayingEpisodeIdChange: (String?) -> Unit,
+) {
     SectionCard {
         Row(
             modifier = Modifier.fillMaxWidth(),
@@ -134,6 +193,7 @@ private fun AudioEpisodeCard(episode: AudioEpisodeOutline) {
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )
             }
+            NarrationPlayButton(episode, controller, playingEpisodeId, onPlayingEpisodeIdChange)
             StatusPill(text = "${episode.targetMinutes} MIN")
         }
     }

@@ -4,7 +4,7 @@ App nativa de Android para el plan de entrenamiento de 90 días, construida en *
 
 ## Estado actual
 
-Navegación, contenido legal, currículo completo, motor de aprendizaje y grabación de voz reales; audio narrado real y pruebas automatizadas todavía no:
+Navegación, contenido legal, currículo completo, motor de aprendizaje, grabación de voz y audio narrado reales; pruebas automatizadas todavía no:
 
 - ✅ Onboarding con selección explícita de una de **6 rutas** (cuidador familiar, proveedor IHSS, HCA afiliado a HCO, cuidador privado, HHA, CNA) — ninguna se trata como sinónimo de otra.
 - ✅ Shell de navegación estable de **5 pestañas**: Hoy / Plan / Práctica / Audio / Carrera (`ui/navigation/MainTab.kt`).
@@ -14,7 +14,7 @@ Navegación, contenido legal, currículo completo, motor de aprendizaje y grabac
 - ✅ **Currículo completo de 90 días** (`content/Curriculum.kt`), 39 tarjetas, 13 escenarios ramificados, 34 rúbricas y 30 términos de glosario — todo copiado del paquete de auditoría, no datos de muestra.
 - ✅ **Motor de aprendizaje real**: sesión diaria con temporizador de 75 minutos en 5 bloques (`RutinaDiariaScreen`), repetición espaciada con heurística SM-2-like y reloj inyectable (`domain/ReviewScheduler.kt`), progreso y cola de repaso persistidos con **Room** (`data/local/`, `data/LearningRepository.kt`).
 - ✅ **Grabación de voz real**: el usuario graba y escucha su propia práctica (Role Play, Simulación de Turno, Audio Lecciones) vía `MediaRecorder`/`MediaPlayer` de plataforma, con permiso de micrófono solicitado en contexto (`audio/VoiceRecorderController.kt`, `ui/components/VoiceRecordCard.kt`).
-- ❌ Sin audio narrado real reproducible: el paquete de origen no incluye ningún archivo de audio (ver `DECISIONS.md` ADR-006) — las lecciones de audio son guiones de lectura + la propia grabación del usuario, no narración profesional.
+- ✅ **Audio narrado real**: 13 episodios generados con Google Cloud Text-to-Speech (fuera de la app, sin key embebida) y empaquetados como recursos locales (`res/raw/audio_w01.mp3`…`audio_w13.mp3`), reproducidos con `MediaPlayer` real en Audio Lecciones y Biblioteca de Audios (`audio/AudioNarrationController.kt`, ver `DECISIONS.md` ADR-008).
 - ❌ Sin pruebas automatizadas (aunque `ReviewScheduler` ya está escrito para ser fácilmente testeable).
 - ❌ Sin Hilt, sin localización real a inglés, sin revisión de accesibilidad en dispositivo (ver deuda pendiente en `FINAL_AUDIT.md`).
 
@@ -69,7 +69,7 @@ app/src/main/java/com/caregiverproca/app/
 
 1. **Compilar de verdad**: abrir en Android Studio con internet normal y resolver cualquier error de compilación, empezando por la versión de KSP si falla (ver `ANDROID_STUDIO_SETUP.md` y "Riesgos de verificación" en `DECISIONS.md`).
 2. **Pruebas automatizadas**: una vez que compile, añadir un test JUnit para `domain/ReviewScheduler.kt` (ya escrito con reloj inyectable para esto) y Compose UI tests (A-043 en la auditoría).
-3. **Audio narrado real**: conseguir o producir narración real para los 13 guiones de `content/AudioEpisodes.kt` (el paquete de origen no incluye ningún archivo de audio, ver ADR-006) e integrar Media3 para reproducirla.
+3. **Evaluar la narración generada**: escuchar los 13 episodios de `res/raw/` en un dispositivo real y confirmar que la pronunciación del inglés dentro de la voz `es-US-Neural2-A` es lo bastante clara (ver `DECISIONS.md` ADR-008) — si no, regenerar con `docs/caregiver_upgrade/AUDIO_GENERATION_PROMPT.md` usando otra voz o locución humana.
 4. **Evidencia de competencias en 3 niveles** (A-040): separar "conocimiento" (tarjetas), "práctica" (escenarios/grabación) y "observado" en el modelo de progreso, en vez de solo "día completado".
 5. **Fuentes reales**: agregar los `.ttf` de Manrope y JetBrains Mono en `app/src/main/res/font/` (ahora mismo usa las fuentes del sistema).
 6. **Localización a inglés**: mover el texto de UI a recursos (`strings.xml`) para que el "inglés de apoyo" que pide el producto sea real, no solo los campos `titleEn` que ya existen en `content/Pathway.kt`.

@@ -1,10 +1,23 @@
-# Prompt para generar el audio real de las 13 lecciones (con Gemini)
+# Guion narrado de las 13 lecciones (ya generado con Cloud Text-to-Speech)
 
-Este documento resuelve A-024/A-025 (ver `DECISIONS.md` ADR-006): el paquete de auditoría
-nunca incluyó archivos de audio, solo los 13 outlines de `content/AudioEpisodes.kt`. Este
-prompt convierte cada outline en un guion narrado completo, fiel al contenido original
-(frase clave, pronunciación, contexto), sin agregar ninguna afirmación legal o regulatoria
-nueva.
+**Actualización:** este documento se escribió originalmente como un prompt para generar el
+audio con Gemini. En la práctica, Gemini no genera audio narrado directamente — el camino
+real fue **Google Cloud Text-to-Speech API** (un producto distinto, con su propia API key).
+El usuario creó esa key, y los 13 audios **ya se generaron y están en el proyecto**
+(`app/src/main/res/raw/audio_w01.mp3` … `audio_w13.mp3`, ~4.1 MB), reproducidos con
+`MediaPlayer` real en `AudioLeccionesScreen`/`BibliotecaAudiosScreen`. Ver
+`docs/caregiver_upgrade/DECISIONS.md` ADR-008 para el detalle completo (voz usada:
+`es-US-Neural2-A`, con SSML para pausas y repetición lenta de la frase clave).
+
+Este documento se conserva como referencia del guion exacto de cada episodio — útil si
+algún día quieres **regenerar** los audios (por ejemplo con otra voz, o con locución
+humana real en vez de TTS).
+
+Este documento resuelve A-024/A-025 (ver `DECISIONS.md` ADR-006 y ADR-008): el paquete de
+auditoría nunca incluyó archivos de audio, solo los 13 outlines de `content/AudioEpisodes.kt`.
+El guion de abajo convierte cada outline en una narración completa, fiel al contenido
+original (frase clave, pronunciación, contexto), sin agregar ninguna afirmación legal o
+regulatoria nueva.
 
 ## Cómo usarlo
 

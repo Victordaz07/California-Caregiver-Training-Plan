@@ -6,14 +6,23 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.lazy.item
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.outlined.CheckCircle
+import androidx.compose.material.icons.outlined.PlayCircle
+import androidx.compose.material.icons.outlined.StopCircle
 import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.DisposableEffect
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
+import com.caregiverproca.app.audio.AudioNarrationController
+import com.caregiverproca.app.audio.audioResIdFor
 import com.caregiverproca.app.content.AudioEpisodeOutlines
 import com.caregiverproca.app.ui.components.DetailScaffold
 import com.caregiverproca.app.ui.components.SectionCard
@@ -32,25 +41,30 @@ private val phases = listOf(
  * Mirrors /screens/biblioteca-audios-offline-13-semanas.html. Rewritten per
  * A-025: the previous "18 de 52 episodios descargados / 420 MB" state and the
  * "Descargar" button were fabricated (no real download ever happened). This
- * pack ships 13 real script outlines (content/AudioEpisodes.kt), bundled
- * directly in the app, so they are genuinely available offline already — no
- * download step exists or is needed. See docs/caregiver_upgrade/DECISIONS.md
- * ADR-006 for why there is no playable narrated audio yet.
+ * pack ships 13 real narrated episodes, generated offline with Google Cloud
+ * Text-to-Speech and bundled as static res/raw resources — see
+ * docs/caregiver_upgrade/AUDIO_GENERATION_PROMPT.md — so they are genuinely
+ * available offline already, with real playback, no download step needed.
  */
 @Composable
 fun BibliotecaAudiosScreen(onBack: () -> Unit) {
+    val context = LocalContext.current
+    val narrationController = remember { AudioNarrationController(context) }
+    var playingEpisodeId by remember { mutableStateOf<String?>(null) }
+    DisposableEffect(Unit) { onDispose { narrationController.release() } }
+
     DetailScaffold(title = Screen.BibliotecaAudios.title, onBack = onBack) {
         item {
             SectionCard {
                 Text(
-                    "Guiones de Práctica · 13 Semanas",
+                    "Guiones Narrados · 13 Semanas",
                     style = MaterialTheme.typography.headlineSmall,
                     color = MaterialTheme.colorScheme.onSurface,
                 )
                 Row(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalAlignment = Alignment.CenterVertically) {
-                    Icon(Icons.Outlined.CheckCircle, contentDescription = null, tint = MaterialTheme.colorScheme.primary)
+                    Icon(Icons.Outlined.PlayCircle, contentDescription = null, tint = MaterialTheme.colorScheme.primary)
                     Text(
-                        "Los ${AudioEpisodeOutlines.size} guiones están incluidos en la app: disponibles sin conexión, sin nada que descargar.",
+                        "Los ${AudioEpisodeOutlines.size} episodios están incluidos en la app con audio narrado real: disponibles sin conexión, sin nada que descargar.",
                         style = MaterialTheme.typography.bodySmall,
                         color = MaterialTheme.colorScheme.onSurfaceVariant,
                     )
@@ -84,7 +98,25 @@ fun BibliotecaAudiosScreen(onBack: () -> Unit) {
                                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                                 )
                             }
-                            Icon(Icons.Outlined.CheckCircle, contentDescription = "Disponible sin conexión", tint = MaterialTheme.colorScheme.primary)
+                            val resId = remember(episode.episodeId) { audioResIdFor(episode.episodeId) }
+                            val isPlaying = playingEpisodeId == episode.episodeId
+                            if (resId != null) {
+                                IconButton(onClick = {
+                                    if (isPlaying) {
+                                        narrationController.stop()
+                                        playingEpisodeId = null
+                                    } else {
+                                        narrationController.play(resId) { playingEpisodeId = null }
+                                        playingEpisodeId = episode.episodeId
+                                    }
+                                }) {
+                                    Icon(
+                                        imageVector = if (isPlaying) Icons.Outlined.StopCircle else Icons.Outlined.PlayCircle,
+                                        contentDescription = if (isPlaying) "Detener narración" else "Escuchar narración real",
+                                        tint = MaterialTheme.colorScheme.primary,
+                                    )
+                                }
+                            }
                         }
                     }
                 }

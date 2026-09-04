@@ -1,6 +1,6 @@
 # Informe de pruebas — Caregiver Pro CA (Android)
 
-Fecha: 2026-09-04 (dos lotes de trabajo el mismo día — ver `IMPLEMENTATION_CHANGELOG.md`)
+Fecha: 2026-09-04 (tres lotes de trabajo el mismo día — ver `IMPLEMENTATION_CHANGELOG.md`)
 Commit: ver `git log --oneline -1` en el momento de este commit.
 
 ## Entorno
@@ -27,6 +27,8 @@ Commit: ver `git log --oneline -1` en el momento de este commit.
 | brace/paren balance, los 50 archivos `.kt` del proyecto | — | 0 desbalances | — |
 | chequeo de imports duplicados, los 50 archivos | — | 0 duplicados | — |
 | `find . -iname "*.mp3" -o -iname "*.wav" -o -iname "*.m4a" -o -iname "*.ogg"` sobre el paquete de auditoría completo | — | 0 resultados — confirma que no hay audio narrado real en el paquete (ver `DECISIONS.md` ADR-006) | — |
+| Generación de los 13 episodios con Google Cloud Text-to-Speech (`texttospeech.googleapis.com/v1/text:synthesize`, voz `es-US-Neural2-A`, SSML) | 0 (13/13 llamadas OK) | 13 archivos `.mp3` generados, 4.1 MB en total; copiados a `app/src/main/res/raw/` | Ver `DECISIONS.md` ADR-008 |
+| brace/paren balance + imports duplicados, los 51 archivos `.kt` del proyecto (tras agregar `audio/AudioNarrationController.kt` y la reproducción en `AudioLeccionesScreen.kt`/`BibliotecaAudiosScreen.kt`) | — | 0 desbalances, 0 duplicados | — |
 
 **No se pudo ejecutar**: `./gradlew :app:assembleDebug`, `:app:testDebugUnitTest`, `:app:lint`, `:app:connectedAndroidTest`, ni cualquier prueba de UI/instrumentación — todas requieren el Android SDK, que este entorno no puede descargar (ver `BASELINE_AUDIT.md`).
 
@@ -38,7 +40,7 @@ No existe una suite de pruebas automatizadas en el proyecto (A-043 sigue sin res
 
 ### Modo avión
 
-Bloqueado — no hay audio narrado real (A-024/A-025 siguen pendientes, ver ADR-006). Lo que sí es real y debería sobrevivir modo avión sin ninguna prueba adicional: el contenido de `content/*.kt` (currículo, tarjetas, escenarios, guiones) está compilado en el APK, no requiere red bajo ninguna circunstancia.
+Bloqueado por falta de emulador/dispositivo (no se pudo probar en vivo). Revisión de código: todo el contenido de `content/*.kt` (currículo, tarjetas, escenarios, guiones) y los 13 archivos de audio narrado (`res/raw/audio_w01.mp3`…`audio_w13.mp3`, ver ADR-008) están compilados/empaquetados en el APK — `MediaPlayer.create(context, resId)` lee un recurso local, no una URL, así que debería reproducir sin red bajo cualquier circunstancia. Sin confirmación en dispositivo real todavía.
 
 ### Process death
 
@@ -69,4 +71,4 @@ Los otros 9 controles del Lote 1 (temporizador de sesión, reproducción/grabaci
 
 ## Conclusión
 
-Sigue sin poder marcarse `pass` en ningún caso que requiera compilar, ejecutar o instrumentar la app — todo eso está `blocked` por la falta de Android SDK en este entorno. Lo nuevo en este lote: el proyecto ahora incluye Room + KSP, cuya resolución de versión es un riesgo adicional no verificable aquí (documentado en `DECISIONS.md` ADR-007) — la evidencia de que Gradle sigue llegando al mismo punto de fallo (AGP, no KSP) indica que el archivo de configuración es sintácticamente correcto, pero no confirma que la versión de KSP exista. La primera compilación real debe hacerse en Android Studio; ver `ANDROID_STUDIO_SETUP.md` para qué hacer si falla.
+Sigue sin poder marcarse `pass` en ningún caso que requiera compilar, ejecutar o instrumentar la app — todo eso está `blocked` por la falta de Android SDK en este entorno. Lo nuevo en el segundo lote: el proyecto ahora incluye Room + KSP, cuya resolución de versión es un riesgo adicional no verificable aquí (documentado en `DECISIONS.md` ADR-007). Lo nuevo en el tercer lote: los 13 episodios de audio ya no son solo guiones de texto — son narración real generada con Google Cloud Text-to-Speech, verificada fuera de la app (13/13 llamadas HTTP exitosas, archivos MP3 con tamaño no nulo) pero **no reproducida todavía dentro de un build real de la app** (ver `DECISIONS.md` ADR-008, riesgo 10). La primera compilación real debe hacerse en Android Studio; ver `ANDROID_STUDIO_SETUP.md` para qué hacer si falla, y escuchar los 13 episodios ahí para confirmar que `MediaPlayer` los reproduce sin error y que la pronunciación es aceptable.

@@ -59,6 +59,17 @@
 - Pruebas: bloqueadas (sin dispositivo con micrófono disponible aquí).
 - Decisiones/deuda: ver `DECISIONS.md` ADR-006.
 
+### Lote 6 — Narración real con Google Cloud Text-to-Speech
+
+- Motivo: A-024/A-025, restantes tras el Lote 5. El usuario decidió producir narración real él mismo (creó un proyecto en Google Cloud Console, habilitó "Cloud Text-to-Speech API" y generó una API key restringida solo a esa API) en vez de esperar a una locución humana.
+- Archivos: `audio/AudioNarrationController.kt` (nuevo, envuelve `MediaPlayer.create(context, resId)` y mapea `episodeId` → `R.raw.*`). Reescritos: `AudioLeccionesScreen.kt` (botón de reproducción real en el episodio de hoy y en cada fila de la biblioteca), `BibliotecaAudiosScreen.kt` (botón de reproducción real por episodio, reemplazando el ícono estático de "disponible"). Nuevos recursos binarios: `app/src/main/res/raw/audio_w01.mp3` … `audio_w13.mp3` (13 archivos, 4.1 MB en total).
+- Cómo se generaron: un script ejecutado una sola vez en esta sesión (fuera de la app) llamó a `texttospeech.googleapis.com/v1/text:synthesize` con la voz `es-US-Neural2-A` y SSML (frase clave a ritmo normal, luego repetida lento, guía de pronunciación, pausa final de 2s para practicar), usando exactamente el contenido ya existente en `content/AudioEpisodes.kt` — sin agregar ningún dato legal o regulatorio nuevo. Ver `docs/caregiver_upgrade/AUDIO_GENERATION_PROMPT.md` para el guion completo.
+- Comportamiento anterior: la biblioteca de audio mostraba los 13 guiones como texto de lectura, con un ícono estático de "disponible sin conexión" pero sin ningún botón de reproducción real (A-024/A-025 seguían abiertos desde el Lote 5).
+- Comportamiento nuevo: cada episodio (el de hoy y los 13 de la biblioteca) tiene un botón real de reproducir/detener que suena la narración generada, empaquetada como recurso local — no requiere red en tiempo de ejecución. `VoiceRecordCard` (grabación de la propia voz) sigue exactamente igual; ahora el flujo completo es "escuchar la narración real" → "grabarte practicando".
+- Compatibilidad/migración: N/A (recursos nuevos, sin esquema de datos involucrado).
+- Pruebas: la generación se verificó fuera de la app (13/13 llamadas HTTP exitosas, tamaño de archivo no nulo) — ver `TEST_REPORT.md`. La reproducción dentro de un build real de Android sigue bloqueada por falta de SDK en este entorno (ver `DECISIONS.md` ADR-001/ADR-008, riesgo 10).
+- Decisiones/deuda: ver `DECISIONS.md` ADR-008. La API key de Cloud TTS **no** forma parte del código ni de la app — se usó una sola vez, fuera del proyecto, para producir los 13 archivos; el usuario fue instruido a restringirla/rotarla en Cloud Console después.
+
 ## Archivos creados
 
 | Archivo | Propósito | Consumidor |
@@ -92,6 +103,9 @@
 | `audio/VoiceRecorderController.kt` | Envoltorio de `MediaRecorder`/`MediaPlayer` de plataforma | VoiceRecordCard |
 | `ui/components/VoiceRecordCard.kt` | UI de grabar/escuchar/borrar con permiso en contexto | AudioLecciones, RolePlay, SimulaciónTurno |
 | `docs/caregiver_upgrade/ANDROID_STUDIO_SETUP.md` | Guía de primera compilación para un desarrollador Android primerizo | Usuario (fuera del código) |
+| `audio/AudioNarrationController.kt` | Reproduce los 13 episodios narrados (`res/raw/*.mp3`) vía `MediaPlayer.create`; mapea `episodeId` → recurso | AudioLeccionesScreen, BibliotecaAudiosScreen |
+| `app/src/main/res/raw/audio_w01.mp3` … `audio_w13.mp3` | Narración real de los 13 episodios, generada con Google Cloud Text-to-Speech (ver ADR-008) | AudioNarrationController |
+| `docs/caregiver_upgrade/AUDIO_GENERATION_PROMPT.md` | Guion narrado completo usado para generar los 13 audios; documenta cómo regenerarlos | Referencia para el usuario/futuras sesiones |
 
 ## Archivos modificados
 
@@ -114,7 +128,8 @@
 | `ui/screens/RolePlayBilingueScreen.kt` | Reescrito: guion real + `VoiceRecordCard`; se retira la evaluación de IA falsa | Medio |
 | `ui/screens/SimulacionTurnoScreen.kt` | Reescrito: `VoiceRecordCard` + autorevisión honesta; se retiran los porcentajes en tiempo real falsos | Medio |
 | `ui/screens/AudioLeccionesScreen.kt` | Reescrito: episodio real del día + librería completa de 13 guiones + `VoiceRecordCard` | Medio |
-| `ui/screens/BibliotecaAudiosScreen.kt` | Reescrito: agrupado por 4 fases con datos reales; se retiran las cifras de descarga falsas | Medio |
+| `ui/screens/BibliotecaAudiosScreen.kt` | Reescrito: agrupado por 4 fases con datos reales; se retiran las cifras de descarga falsas; luego se agrega botón de reproducción real por episodio (Lote 6) | Medio |
+| `ui/screens/AudioLeccionesScreen.kt` | (Lote 6, adicional al Lote 5) Se agrega botón de reproducción real de la narración, en el episodio de hoy y en cada fila de la biblioteca | Bajo |
 
 ## Archivos retirados
 
