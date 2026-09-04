@@ -26,12 +26,17 @@ private data class Chapter(val time: String, val title: String, val description:
 
 private val chapters = listOf(
     Chapter("00:00", "1. El Escenario Real", "Qué se siente cuando Don Arturo aparta el plato o niega con firmeza la asistencia matutina.", "Escuchado"),
-    Chapter("02:30", "2. Desglose Conversacional de Gemini", "Por qué la técnica de validación emocional en 3 pasos desactiva la frustración antes del conflicto.", "En curso"),
+    Chapter("02:30", "2. Desglose Conversacional", "Por qué la técnica de validación emocional en 3 pasos desactiva la frustración antes del conflicto.", "En curso"),
     Chapter("06:15", "3. Diálogos Modelo: lo que NUNCA debes decir", "Comparativa sonora: la frase que genera resistencia vs. la Frase Mágica de Calma.", "Pendiente"),
-    Chapter("09:30", "4. Los 3 Puntos Inviolables de California", "CDSS Title 22 en lenguaje humano: autonomía del cliente, no forzamiento y reporte DAR.", "Pendiente"),
+    Chapter("09:30", "4. Tres Puntos de Apoyo Centrado en la Persona", "Autonomía del cliente, no forzamiento y práctica de reporte DAR, explicados en lenguaje sencillo.", "Pendiente"),
 )
 
-/** Mirrors /screens/audio-lecciones-gemini-manos-libres.html. */
+/**
+ * Mirrors /screens/audio-lecciones-gemini-manos-libres.html. Corrected per
+ * A-028: renamed from "Audio-Tutor Gemini" a "orientación guiada" — no hay
+ * backend de IA real conectado en esta app todavía, así que no se puede
+ * llamar "IA en vivo" ni atribuir la narración a un modelo específico.
+ */
 @Composable
 fun AudioLeccionesScreen(onBack: () -> Unit) {
     DetailScaffold(title = Screen.AudioLecciones.title, onBack = onBack) {
@@ -40,20 +45,20 @@ fun AudioLeccionesScreen(onBack: () -> Unit) {
                 Row(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalAlignment = Alignment.CenterVertically) {
                     Icon(Icons.Outlined.AutoAwesome, contentDescription = null, tint = MaterialTheme.colorScheme.onPrimaryContainer)
                     Text(
-                        "Audio-Tutor Gemini: Síntesis Dinámica",
+                        "Orientación Guiada: Audio Conversacional",
                         style = MaterialTheme.typography.headlineSmall,
                         color = MaterialTheme.colorScheme.onPrimary,
                     )
                 }
                 Text(
-                    "Narrado con calidez humana por IA bilingüe. Creado como un micro-podcast para escuchar mientras cocinas, caminas o te trasladas entre turnos. Sin tecnicismos vacíos.",
+                    "Narración pre-grabada en tono cálido y bilingüe, como un micro-podcast para escuchar mientras cocinas, caminas o te trasladas entre turnos. Sin tecnicismos vacíos.",
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onPrimaryContainer,
                 )
                 Row(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalAlignment = Alignment.CenterVertically) {
                     Icon(Icons.Outlined.Mic, contentDescription = null, tint = MaterialTheme.colorScheme.onPrimaryContainer)
                     Text(
-                        "Manos Libres Activo — di “Gemini pausa” o “repite punto”",
+                        "Manos Libres Activo — di “Pausa” o “Repite punto”",
                         style = MaterialTheme.typography.labelSmall,
                         color = MaterialTheme.colorScheme.onPrimaryContainer,
                     )
@@ -143,7 +148,7 @@ fun AudioLeccionesScreen(onBack: () -> Unit) {
                     color = MaterialTheme.colorScheme.onSurface,
                 )
                 Text(
-                    "Protocolo Oficial y Verificación CDSS.",
+                    "Práctica guiada y fuentes oficiales verificadas — no es un requisito impuesto por CDSS.",
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )

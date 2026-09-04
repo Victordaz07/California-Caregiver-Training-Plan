@@ -13,7 +13,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import com.caregiverproca.app.content.ApsStatewidePhone
+import com.caregiverproca.app.content.Disclaimers
+import com.caregiverproca.app.content.PathwayId
+import com.caregiverproca.app.content.officialResourcesFor
 import com.caregiverproca.app.ui.components.DetailScaffold
+import com.caregiverproca.app.ui.components.DisclaimerBanner
 import com.caregiverproca.app.ui.components.SectionCard
 import com.caregiverproca.app.ui.components.StatusPill
 import com.caregiverproca.app.ui.navigation.Screen
@@ -41,7 +46,7 @@ private val weekResources = listOf(
     ),
     WeekResource(
         "Semana 3 · Soporte Vital", "Emergencias, SVB y Primeros Auxilios", "Presencial",
-        "AHA BLS (Basic Life Support) y American Red Cross Adult/Pediatric CPR/AED. Obligatorio según § 1796.43 antes de la asignación domiciliaria independiente.",
+        "AHA BLS (Basic Life Support) y American Red Cross Adult/Pediatric CPR/AED. Puede ser recomendado o exigido por tu empleador, programa o puesto — HSC §1796.43 no establece un mandato general de CPR/AED; verifica tu ruta.",
         "Cruz Roja / AHA BLS Provider", "Práctica presencial obligatoria", "Sedes CA",
     ),
     WeekResource(
@@ -56,13 +61,18 @@ private val weekResources = listOf(
     ),
 )
 
-/** Mirrors /screens/recursos-oficiales-certificaciones-semana.html. */
+/**
+ * Mirrors /screens/recursos-oficiales-certificaciones-semana.html. Corrected
+ * per A-042 (fecha de verificación actualizada) y A-017 (se retira el
+ * "+35% Est." de salario sin fuente/condado/fecha/método, per A-018).
+ */
 @Composable
-fun RecursosSemanaScreen(onBack: () -> Unit) {
+fun RecursosSemanaScreen(pathwayId: PathwayId, onBack: () -> Unit) {
     DetailScaffold(title = Screen.RecursosSemana.title, onBack = onBack) {
+        item { DisclaimerBanner(text = Disclaimers.Sources) }
         item {
             SectionCard {
-                StatusPill(text = "100% VERIFICADO CA 2025 · REV. MARZO 2025")
+                StatusPill(text = "REVISADO 2026-09-04 (VER FECHA POR FUENTE)")
                 Text(
                     "Recursos Oficiales, Licencias y Certificaciones",
                     style = MaterialTheme.typography.headlineSmall,
@@ -80,7 +90,7 @@ fun RecursosSemanaScreen(onBack: () -> Unit) {
                     listOf(
                         "PORTALES CA" to "6 Activos",
                         "MICRO-CRÉDITOS" to "4 Gratuitos",
-                        "IMPACTO SALARIO" to "+35% Est.",
+                        "LÍNEA APS" to ApsStatewidePhone,
                     ).forEach { (label, value) ->
                         Column(horizontalAlignment = Alignment.CenterHorizontally) {
                             Text(value, style = MaterialTheme.typography.headlineSmall, color = MaterialTheme.colorScheme.primary)
@@ -146,6 +156,24 @@ fun RecursosSemanaScreen(onBack: () -> Unit) {
                     color = MaterialTheme.colorScheme.outline,
                 )
                 OutlinedButton(onClick = { }) { Text(resource.actionLabel) }
+            }
+        }
+
+        item {
+            Text(
+                "Enlaces oficiales de tu ruta",
+                style = MaterialTheme.typography.headlineSmall,
+                color = MaterialTheme.colorScheme.onSurface,
+            )
+        }
+        items(officialResourcesFor(pathwayId)) { resource ->
+            SectionCard {
+                Text(resource.titleEs, style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.onSurface)
+                Text(resource.agency, style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.outline)
+                Text(resource.url, style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.primary)
+                if (resource.phone != null) {
+                    Text("Teléfono: ${resource.phone}", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.secondary)
+                }
             }
         }
     }

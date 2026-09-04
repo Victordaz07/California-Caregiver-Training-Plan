@@ -22,8 +22,10 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.unit.dp
+import com.caregiverproca.app.content.Disclaimers
 import com.caregiverproca.app.ui.components.ChecklistRow
 import com.caregiverproca.app.ui.components.DetailScaffold
+import com.caregiverproca.app.ui.components.DisclaimerBanner
 import com.caregiverproca.app.ui.components.LabeledProgress
 import com.caregiverproca.app.ui.components.SectionCard
 import com.caregiverproca.app.ui.components.StatusPill
@@ -33,6 +35,8 @@ import com.caregiverproca.app.ui.navigation.Screen
 @Composable
 fun RolePlayBilingueScreen(onBack: () -> Unit) {
     DetailScaffold(title = Screen.RolePlayBilingue.title, onBack = onBack) {
+        item { DisclaimerBanner(text = Disclaimers.FictionalCase) }
+        item { DisclaimerBanner(text = Disclaimers.Voice) }
         item {
             SectionCard {
                 Text(
@@ -87,7 +91,7 @@ fun RolePlayBilingueScreen(onBack: () -> Unit) {
                     Icon(Icons.Outlined.Info, contentDescription = null, tint = MaterialTheme.colorScheme.tertiary)
                     Column {
                         Text(
-                            "Regla de Oro: CDSS Title 22 (No-Médico)",
+                            "Límite de tu Función (No Médico)",
                             style = MaterialTheme.typography.labelMedium,
                             color = MaterialTheme.colorScheme.tertiary,
                         )

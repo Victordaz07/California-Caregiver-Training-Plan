@@ -19,16 +19,25 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import com.caregiverproca.app.content.Disclaimers
 import com.caregiverproca.app.ui.components.ChecklistRow
 import com.caregiverproca.app.ui.components.DetailScaffold
+import com.caregiverproca.app.ui.components.DisclaimerBanner
 import com.caregiverproca.app.ui.components.SectionCard
 import com.caregiverproca.app.ui.components.StatusPill
 import com.caregiverproca.app.ui.navigation.Screen
 
-/** Mirrors /screens/simulacion-de-turno-y-handoff.html. */
+/**
+ * Mirrors /screens/simulacion-de-turno-y-handoff.html. Corrected per A-014 /
+ * A-039: DAR is labeled as a practice format (not an official CDSS/SOC form),
+ * "Elena Morales" is marked fictional, and the "supervisión CDSS" and
+ * "alcance CDSS Title 22" mis-attributions from COPY_REPLACEMENTS.csv are
+ * removed.
+ */
 @Composable
 fun SimulacionTurnoScreen(onBack: () -> Unit) {
     DetailScaffold(title = Screen.SimulacionTurno.title, onBack = onBack) {
+        item { DisclaimerBanner(text = Disclaimers.FictionalCase) }
         item {
             SectionCard {
                 Row(
@@ -83,7 +92,7 @@ fun SimulacionTurnoScreen(onBack: () -> Unit) {
                             color = MaterialTheme.colorScheme.onSecondaryFixedVariant,
                         )
                         Text(
-                            "Cero omisiones en entrega de guardia (Handoff). Todo evento imprevisto debe comunicarse bajo el estándar legal DAR (Datos, Acción, Respuesta) sin diagnósticos no autorizados.",
+                            "Cero omisiones en entrega de guardia (Handoff). Todo evento imprevisto se practica aquí con la estructura DAR (Datos, Acción, Respuesta) — una técnica de práctica que debes adaptar al formato real de tu empleador y plan de cuidado, sin diagnósticos no autorizados.",
                             style = MaterialTheme.typography.bodySmall,
                             color = MaterialTheme.colorScheme.onSecondaryContainer,
                         )
@@ -100,7 +109,7 @@ fun SimulacionTurnoScreen(onBack: () -> Unit) {
                     color = MaterialTheme.colorScheme.onSurface,
                 )
                 Text(
-                    "Evaluación oral para supervisión CDSS",
+                    "Práctica oral con rúbrica interna",
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )
@@ -143,7 +152,7 @@ fun SimulacionTurnoScreen(onBack: () -> Unit) {
                 )
                 ChecklistRow(done = true, label = "Identificación clara del cliente, hora y estado de alerta", trailing = "100%")
                 ChecklistRow(done = true, label = "Hechos observables y signos objetivos (sin diagnósticos)", trailing = "100%")
-                ChecklistRow(done = true, label = "Acciones protocolarias según alcance CDSS Title 22", trailing = "100%")
+                ChecklistRow(done = true, label = "Acciones según el plan de cuidado y tu alcance de función", trailing = "100%")
                 ChecklistRow(done = false, label = "Transferencia clara de tareas pendientes a Marta S.", trailing = "Pendiente")
             }
         }
@@ -151,7 +160,7 @@ fun SimulacionTurnoScreen(onBack: () -> Unit) {
         item {
             SectionCard {
                 Text(
-                    "Bitácora Oficial del Turno (DAR) · 3 Entradas Clave",
+                    "Práctica de Bitácora del Turno (DAR) · 3 Entradas Clave",
                     style = MaterialTheme.typography.headlineSmall,
                     color = MaterialTheme.colorScheme.onSurface,
                 )

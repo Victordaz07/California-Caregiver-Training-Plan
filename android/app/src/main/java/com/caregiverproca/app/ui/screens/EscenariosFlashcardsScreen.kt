@@ -20,17 +20,24 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.unit.dp
+import com.caregiverproca.app.content.Disclaimers
 import com.caregiverproca.app.ui.components.DetailScaffold
+import com.caregiverproca.app.ui.components.DisclaimerBanner
 import com.caregiverproca.app.ui.components.LabeledProgress
 import com.caregiverproca.app.ui.components.NumberedStep
 import com.caregiverproca.app.ui.components.SectionCard
 import com.caregiverproca.app.ui.components.StatusPill
 import com.caregiverproca.app.ui.navigation.Screen
 
-/** Mirrors /screens/escenarios-y-flashcards.html. */
+/**
+ * Mirrors /screens/escenarios-y-flashcards.html. Corrected per A-014/A-039:
+ * this is an internal practice protocol, not a "Protocolo CDSS California",
+ * and the scenario case is explicitly labeled fictional.
+ */
 @Composable
 fun EscenariosFlashcardsScreen(onBack: () -> Unit) {
     DetailScaffold(title = Screen.EscenariosFlashcards.title, onBack = onBack) {
+        item { DisclaimerBanner(text = Disclaimers.FictionalCase) }
         item {
             SectionCard {
                 Row(
@@ -45,7 +52,7 @@ fun EscenariosFlashcardsScreen(onBack: () -> Unit) {
                             color = MaterialTheme.colorScheme.onSurface,
                         )
                         Text(
-                            "CDSS In-Home Protocol · CA Caregiver",
+                            "Práctica interna · CA Caregiver",
                             style = MaterialTheme.typography.bodySmall,
                             color = MaterialTheme.colorScheme.onSurfaceVariant,
                         )
@@ -109,7 +116,7 @@ fun EscenariosFlashcardsScreen(onBack: () -> Unit) {
                         contentColor = MaterialTheme.colorScheme.onPrimary,
                     ),
                 ) {
-                    Text("Ver Estándar Regulado CA")
+                    Text("Ver Ficha de Aprendizaje")
                 }
             }
         }
@@ -117,7 +124,7 @@ fun EscenariosFlashcardsScreen(onBack: () -> Unit) {
         item {
             SectionCard {
                 Text(
-                    "Protocolo CDSS California (4 Pasos Clave)",
+                    "Protocolo Interno de Práctica (4 Pasos Clave)",
                     style = MaterialTheme.typography.headlineSmall,
                     color = MaterialTheme.colorScheme.onSurface,
                 )
@@ -161,7 +168,7 @@ fun EscenariosFlashcardsScreen(onBack: () -> Unit) {
                     Row(horizontalArrangement = Arrangement.spacedBy(6.dp), verticalAlignment = Alignment.CenterVertically) {
                         Icon(Icons.Outlined.Warning, contentDescription = null, tint = MaterialTheme.colorScheme.secondary)
                         Text(
-                            "Simulación Deliberada · Caso #42",
+                            "Simulación Deliberada · Caso Ficticio #42",
                             style = MaterialTheme.typography.headlineSmall,
                             color = MaterialTheme.colorScheme.onSurface,
                         )
@@ -178,12 +185,12 @@ fun EscenariosFlashcardsScreen(onBack: () -> Unit) {
                     Icon(Icons.Outlined.Info, contentDescription = null, tint = MaterialTheme.colorScheme.tertiary)
                     Column {
                         Text(
-                            "Regla California",
+                            "Principio de Práctica",
                             style = MaterialTheme.typography.labelMedium,
                             color = MaterialTheme.colorScheme.tertiary,
                         )
                         Text(
-                            "Ningún cuidador debe usar contención física ni coacción verbal. Se debe priorizar la autonomía del adulto mayor y validar su estado emocional.",
+                            "Ningún cuidador debe usar contención física ni coacción verbal. Prioriza la dignidad y el consentimiento de la persona, y sigue su plan de cuidado.",
                             style = MaterialTheme.typography.bodySmall,
                             color = MaterialTheme.colorScheme.onSurfaceVariant,
                         )

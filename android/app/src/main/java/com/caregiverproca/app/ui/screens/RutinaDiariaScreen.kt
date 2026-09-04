@@ -21,16 +21,27 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.caregiverproca.app.ui.components.DetailScaffold
+import com.caregiverproca.app.content.Disclaimers
+import com.caregiverproca.app.ui.components.DisclaimerBanner
+import com.caregiverproca.app.ui.components.HubScaffold
 import com.caregiverproca.app.ui.components.LabeledProgress
 import com.caregiverproca.app.ui.components.SectionCard
 import com.caregiverproca.app.ui.components.StatusPill
-import com.caregiverproca.app.ui.navigation.Screen
 
-/** Mirrors /screens/rutina-diaria-75-minutos.html: the daily 75-minute guided session. */
+/**
+ * "Hoy" tab root. Mirrors /screens/rutina-diaria-75-minutos.html (the daily
+ * 75-minute guided session), corrected per A-008: an emergency always
+ * overrides the session timer, shown explicitly rather than implied.
+ *
+ * The "Iniciar Sesión" button is still a no-op — Fase 4 (motor de aprendizaje,
+ * cinco bloques reanudables) is not implemented in this session. See
+ * docs/caregiver_upgrade/DECISIONS.md.
+ */
 @Composable
-fun RutinaDiariaScreen(onBack: () -> Unit) {
-    DetailScaffold(title = Screen.RutinaDiaria.title, onBack = onBack) {
+fun RutinaDiariaScreen() {
+    HubScaffold(title = "Hoy", subtitle = "Día 1 · Semana 1") {
+        item { DisclaimerBanner(text = Disclaimers.Emergency, emergency = true) }
+
         item {
             SectionCard(containerColor = MaterialTheme.colorScheme.primaryContainer) {
                 StatusPill(
@@ -44,7 +55,7 @@ fun RutinaDiariaScreen(onBack: () -> Unit) {
                     color = MaterialTheme.colorScheme.onPrimary,
                 )
                 Text(
-                    "Construyendo la competencia y empatía requerida por el Código de Regulaciones de California (CDSS Title 22).",
+                    "Construyendo competencia y empatía dentro de tu alcance no médico. " + Disclaimers.Scope,
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onPrimaryContainer,
                 )
@@ -96,7 +107,7 @@ fun RutinaDiariaScreen(onBack: () -> Unit) {
                         )
                     }
                     Button(
-                        onClick = { /* Skeleton: la sesión guiada real se conecta en una próxima iteración. */ },
+                        onClick = { /* Pendiente: Fase 4 (motor de aprendizaje) no implementada en este lote. */ },
                         colors = ButtonDefaults.buttonColors(
                             containerColor = MaterialTheme.colorScheme.secondary,
                             contentColor = MaterialTheme.colorScheme.onSecondary,
@@ -120,12 +131,12 @@ fun RutinaDiariaScreen(onBack: () -> Unit) {
                     )
                     Column {
                         Text(
-                            "REGLA INVIOLABLE EN CALIFORNIA",
+                            "REGLA INVIOLABLE",
                             style = MaterialTheme.typography.labelSmall,
                             color = MaterialTheme.colorScheme.onSecondaryFixedVariant,
                         )
                         Text(
-                            "Cero errores críticos: jamás emitir diagnósticos médicos, prescribir ni realizar administración invasiva de fármacos. Tu rol protege la dignidad dentro del marco IHSS / No Médico.",
+                            "Cero errores críticos: jamás emitir diagnósticos médicos, prescribir ni realizar administración invasiva de fármacos. Tu rol protege la dignidad dentro del marco no médico.",
                             style = MaterialTheme.typography.bodySmall,
                             color = MaterialTheme.colorScheme.onSecondaryContainer,
                         )

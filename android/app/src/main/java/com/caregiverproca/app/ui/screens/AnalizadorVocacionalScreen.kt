@@ -12,7 +12,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import com.caregiverproca.app.content.Disclaimers
 import com.caregiverproca.app.ui.components.DetailScaffold
+import com.caregiverproca.app.ui.components.DisclaimerBanner
 import com.caregiverproca.app.ui.components.LabeledProgress
 import com.caregiverproca.app.ui.components.NumberedStep
 import com.caregiverproca.app.ui.components.SectionCard
@@ -39,17 +41,19 @@ private val dimensions = listOf(
     ),
 )
 
-/** Mirrors /screens/analizador-vocacional-metas-carrera.html. */
+/**
+ * Mirrors /screens/analizador-vocacional-metas-carrera.html. Corrected per
+ * A-017/A-018: unsourced salary figures ($38/h, $24–$28/hora) are removed —
+ * COPY_REPLACEMENTS.csv requires a source, county, date and method before any
+ * dollar amount can be shown. The "CA REGISTRY VALIDADO" pill is also removed:
+ * this app does not verify or validate a real CDSS registry entry.
+ */
 @Composable
 fun AnalizadorVocacionalScreen(onBack: () -> Unit) {
     DetailScaffold(title = Screen.AnalizadorVocacional.title, onBack = onBack) {
+        item { DisclaimerBanner(text = Disclaimers.Sources) }
         item {
             SectionCard(containerColor = MaterialTheme.colorScheme.primaryContainer) {
-                StatusPill(
-                    text = "CA REGISTRY VALIDADO",
-                    containerColor = MaterialTheme.colorScheme.primaryFixed,
-                    contentColor = MaterialTheme.colorScheme.onPrimaryFixedVariant,
-                )
                 Text(
                     "Tu Diagnóstico de Carrera",
                     style = MaterialTheme.typography.headlineMedium,
@@ -61,7 +65,7 @@ fun AnalizadorVocacionalScreen(onBack: () -> Unit) {
                     color = MaterialTheme.colorScheme.onPrimaryContainer,
                 )
                 Text(
-                    "Potencial de ingreso hasta \$38/h en CA",
+                    "Los rangos salariales varían por condado, empleador y experiencia. Consulta fuentes oficiales antes de tomar decisiones económicas.",
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onPrimaryContainer,
                 )
@@ -118,7 +122,7 @@ fun AnalizadorVocacionalScreen(onBack: () -> Unit) {
                     color = MaterialTheme.colorScheme.onSurface,
                 )
                 StatusPill(
-                    text = "RECOMENDADA PARA TI · MATCH 94%",
+                    text = "RECOMENDADA SEGÚN TUS RESPUESTAS",
                     containerColor = MaterialTheme.colorScheme.secondaryContainer,
                     contentColor = MaterialTheme.colorScheme.onSecondaryContainer,
                 )
@@ -128,7 +132,7 @@ fun AnalizadorVocacionalScreen(onBack: () -> Unit) {
                     color = MaterialTheme.colorScheme.onSurface,
                 )
                 Text(
-                    "Rango Salarial CA: \$24–\$28/hora · Tiempo Estimado: 6 a 12 meses",
+                    "Tiempo Estimado: 6 a 12 meses. El salario varía por condado, empleador y experiencia — consulta fuentes oficiales antes de decidir.",
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )
@@ -137,7 +141,7 @@ fun AnalizadorVocacionalScreen(onBack: () -> Unit) {
                     style = MaterialTheme.typography.labelLarge,
                     color = MaterialTheme.colorScheme.primary,
                 )
-                NumberedStep(1, "Concluir Plan 90D", "Registro HCA Guardian activo en CDSS.")
+                NumberedStep(1, "Concluir Plan 90D", "Registro HCA vigente en Guardian (CDSS), si tu ruta lo requiere.")
                 NumberedStep(2, "Certificación essentiALZ", "Certificación de especialista en demencia de Alzheimer's Association.")
             }
         }

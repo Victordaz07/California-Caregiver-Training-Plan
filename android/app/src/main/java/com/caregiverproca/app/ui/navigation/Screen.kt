@@ -4,18 +4,18 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.Assignment
 import androidx.compose.material.icons.outlined.AutoAwesome
 import androidx.compose.material.icons.outlined.DownloadForOffline
-import androidx.compose.material.icons.outlined.Gavel
 import androidx.compose.material.icons.outlined.Mic
 import androidx.compose.material.icons.outlined.Policy
 import androidx.compose.material.icons.outlined.Psychology
-import androidx.compose.material.icons.outlined.Timeline
 import androidx.compose.material.icons.outlined.TravelExplore
 import androidx.compose.material.icons.outlined.Verified
 import androidx.compose.ui.graphics.vector.ImageVector
 
 /**
- * One entry per screen of the Stitch export (see /docs/design/DESIGN.md and
- * the /screens *.html files at the repo root for the source design).
+ * Screens pushed on top of one of the five [MainTab] hubs (see
+ * INVENTARIO_PANTALLAS.md for the mapping from the original Stitch screens).
+ * "Rutina Diaria" and "Plan 90 Días" are not here anymore — they are the
+ * content of the Hoy/Plan hub roots themselves, not screens pushed from them.
  */
 enum class Screen(
     val route: String,
@@ -23,34 +23,28 @@ enum class Screen(
     val subtitle: String,
     val icon: ImageVector,
 ) {
-    RutinaDiaria(
-        route = "rutina_diaria",
-        title = "Rutina Diaria (75 min)",
-        subtitle = "Sesión guiada del día y progreso de 90 días",
-        icon = Icons.Outlined.Timeline,
-    ),
     EscenariosFlashcards(
         route = "escenarios_flashcards",
         title = "Escenarios y Flashcards",
-        subtitle = "Simulaciones clínicas y repaso espaciado",
+        subtitle = "Simulaciones y repaso espaciado",
         icon = Icons.Outlined.Psychology,
     ),
     SimulacionTurno(
         route = "simulacion_turno",
         title = "Simulación de Turno y Handoff",
-        subtitle = "Entrega de turno bajo el estándar DAR",
+        subtitle = "Práctica de entrega de turno con DAR",
         icon = Icons.Outlined.Assignment,
     ),
     RolePlayBilingue(
         route = "role_play_bilingue",
         title = "Role Play Bilingüe (Semana 10)",
-        subtitle = "Diálogos en español e inglés con evaluación de IA",
+        subtitle = "Diálogos en español e inglés",
         icon = Icons.Outlined.Mic,
     ),
     AudioLecciones(
         route = "audio_lecciones",
         title = "Audio Lecciones (Manos Libres)",
-        subtitle = "Micro-podcasts narrados por IA, sin pantalla",
+        subtitle = "Orientación guiada en audio",
         icon = Icons.Outlined.AutoAwesome,
     ),
     BibliotecaAudios(
@@ -61,8 +55,8 @@ enum class Screen(
     ),
     RequisitosCertificacion(
         route = "requisitos_certificacion",
-        title = "Requisitos y Certificación CA",
-        subtitle = "Home Care Aide Registry (CDSS · CCLD)",
+        title = "Requisitos por tu Ruta",
+        subtitle = "Registro, inscripción o certificación según tu ruta",
         icon = Icons.Outlined.Policy,
     ),
     RecursosSemana(
@@ -74,18 +68,7 @@ enum class Screen(
     AnalizadorVocacional(
         route = "analizador_vocacional",
         title = "Analizador Vocacional",
-        subtitle = "Afinidad de carrera y rutas salariales en CA",
+        subtitle = "Explora rutas dentro de tu ruta elegida",
         icon = Icons.Outlined.Verified,
     ),
-    Plan90Dias(
-        route = "plan_90_dias",
-        title = "Plan de 90 Días y Evaluaciones",
-        subtitle = "Trayectoria completa y regla de oro de seguridad",
-        icon = Icons.Outlined.Gavel,
-    ),
-    ;
-
-    companion object {
-        const val HOME_ROUTE = "home"
-    }
 }
