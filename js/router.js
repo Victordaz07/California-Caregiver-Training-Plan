@@ -52,8 +52,46 @@ const ROUTES = {
   "#/shift/login": { kind: "shift-auth", render: (data) => Screens.shiftLogin(data) },
   "#/shift/signup": { kind: "shift-auth", render: (data) => Screens.shiftSignup(data) },
   "#/shift": { kind: "hub", navGroup: "shift", tab: "turno", noHeader: true, render: (data) => Screens.shiftHub(data) },
+  "#/shift/paciente/:id": { kind: "detail", noHeader: true, back: () => "#/shift", render: (data, params) => Screens.shiftPaciente(data, params) },
+  "#/shift/llegada/:shiftId": { kind: "detail", noHeader: true, back: () => "#/shift", render: (data, params) => Screens.shiftLlegada(data, params) },
+  "#/shift/activo/:shiftId": { kind: "detail", noHeader: true, back: () => "#/shift", render: (data, params) => Screens.shiftActivo(data, params) },
+  "#/shift/salida/:shiftId": { kind: "detail", noHeader: true, back: () => "#/shift", render: (data, params) => Screens.shiftSalida(data, params) },
+
+  // Placeholders — built in a follow-up pass (Emergencia, Buscar por
+  // Problema, Audio Manos Ocupadas, Práctica de Frase, Micro-sesión for
+  // "Ayuda"; hours ledger for "Horas"; certificates for "Constancia").
+  "#/shift/ayuda": { kind: "hub", navGroup: "shift", tab: "ayuda", noHeader: true, render: () => Screens.shiftComingSoon("Ayuda", "Emergencia, buscar por problema y audio manos libres.") },
+  "#/shift/horas": { kind: "hub", navGroup: "shift", tab: "horas", noHeader: true, render: () => Screens.shiftComingSoon("Mis Horas", "Historial de turnos, verificación y exportar PDF.") },
+  "#/shift/constancia": { kind: "hub", navGroup: "shift", tab: "constancia", noHeader: true, render: () => Screens.shiftComingSoon("Constancia", "Certificados de horas y módulos completados.") },
 };
 
 function currentPath() {
   return window.location.hash || "#/hoy";
+}
+
+/**
+ * Matches `path` against ROUTES, supporting one dynamic `:param` segment
+ * style (e.g. "#/shift/paciente/:id"). Exact matches are tried first.
+ * Returns { route, params } or null.
+ */
+function matchRoute(path) {
+  if (ROUTES[path]) return { route: ROUTES[path], params: {} };
+  const pathParts = path.split("/");
+  for (const key in ROUTES) {
+    if (!key.includes(":")) continue;
+    const keyParts = key.split("/");
+    if (keyParts.length !== pathParts.length) continue;
+    const params = {};
+    let matched = true;
+    for (let i = 0; i < keyParts.length; i++) {
+      if (keyParts[i].startsWith(":")) {
+        params[keyParts[i].slice(1)] = decodeURIComponent(pathParts[i]);
+      } else if (keyParts[i] !== pathParts[i]) {
+        matched = false;
+        break;
+      }
+    }
+    if (matched) return { route: ROUTES[key], params };
+  }
+  return null;
 }

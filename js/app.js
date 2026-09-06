@@ -19,17 +19,21 @@
     return;
   }
 
-  function renderHeader(route) {
+  function backHref(route, params) {
+    return typeof route.back === "function" ? route.back(params) : route.back;
+  }
+
+  function renderHeader(route, params) {
     const header = document.getElementById("app-header");
     if (route.noHeader) {
       // Screen renders its own full-bleed banner; only float a back button
       // over it for pushed (detail) screens — hub tabs need no back arrow.
       header.innerHTML =
         route.kind === "detail"
-          ? `<a href="${route.back}" aria-label="Volver" class="absolute top-4 left-4 w-10 h-10 rounded-full bg-white/90 flex items-center justify-center" style="color:var(--teal-dark)">${UI.icon("arrow_back")}</a>`
+          ? `<a href="${backHref(route, params)}" aria-label="Volver" class="absolute top-4 left-4 w-10 h-10 rounded-full bg-white/90 flex items-center justify-center" style="color:var(--teal-dark)">${UI.icon("arrow_back")}</a>`
           : "";
     } else if (route.kind === "detail") {
-      header.innerHTML = UI.detailHeader(route.title, route.back);
+      header.innerHTML = UI.detailHeader(route.title, backHref(route, params));
     } else if (route.kind === "onboarding" || route.kind === "shift-auth") {
       header.innerHTML = "";
     } else {
@@ -84,13 +88,14 @@
       }
     }
 
-    const route = ROUTES[path] || ROUTES["#/hoy"];
-    renderHeader(route);
+    const matched = matchRoute(path) || { route: ROUTES["#/hoy"], params: {} };
+    const { route, params } = matched;
+    renderHeader(route, params);
     renderBottomNav(route);
 
     const view = document.getElementById("app-view");
     view.classList.toggle("pt-16", !route.noHeader);
-    const result = await route.render(data);
+    const result = await route.render(data, params);
     view.innerHTML = result.body;
     window.scrollTo(0, 0);
     if (result.afterRender) result.afterRender();
