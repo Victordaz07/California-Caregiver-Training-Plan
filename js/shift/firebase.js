@@ -21,10 +21,19 @@ var FirebaseApp = (() => {
       configured = false;
       return;
     }
-    app = firebase.initializeApp(window.FIREBASE_CONFIG);
-    auth = firebase.auth();
-    db = firebase.firestore();
-    configured = true;
+    try {
+      // `firebase` comes from the CDN <script> tags in index.html — if
+      // those failed to load (ad blocker, offline, network hiccup) this
+      // throws; fail soft instead of taking down the whole app with it.
+      app = firebase.initializeApp(window.FIREBASE_CONFIG);
+      auth = firebase.auth();
+      db = firebase.firestore();
+      configured = true;
+    } catch (err) {
+      console.error("No se pudo inicializar Firebase (¿el SDK no cargó?):", err);
+      app = null;
+      configured = false;
+    }
   }
 
   return {

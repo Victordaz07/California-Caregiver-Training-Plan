@@ -9,10 +9,10 @@
  * app (90-day course) is unaffected either way.
  */
 window.FIREBASE_CONFIG = {
-  apiKey: "REEMPLAZA_CON_TU_API_KEY",
-  authDomain: "REEMPLAZA_CON_TU_PROYECTO.firebaseapp.com",
-  projectId: "REEMPLAZA_CON_TU_PROYECTO",
-  storageBucket: "REEMPLAZA_CON_TU_PROYECTO.appspot.com",
-  messagingSenderId: "REEMPLAZA_CON_TU_SENDER_ID",
-  appId: "REEMPLAZA_CON_TU_APP_ID",
+  apiKey: "AIzaSyDHJ-qOceEN-L057tPpeHPO5nmA9Nae_7k",
+  authDomain: "caregiver-pro-a604e.firebaseapp.com",
+  projectId: "caregiver-pro-a604e",
+  storageBucket: "caregiver-pro-a604e.firebasestorage.app",
+  messagingSenderId: "880892806373",
+  appId: "1:880892806373:web:8e71c42f10f78ecccdc00c",
 };
