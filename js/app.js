@@ -5,7 +5,31 @@
  */
 (async function main() {
   if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("sw.js").catch((err) => console.warn("SW no registrado:", err));
+    navigator.serviceWorker
+      .register("sw.js")
+      .then((reg) => {
+        // Browsers don't always re-check for a new sw.js promptly on their
+        // own; ask explicitly every time the app opens so a fixed/updated
+        // service worker (like the cache-versioning fix that prompted this)
+        // reaches an already-installed PWA on its very next open.
+        reg.update().catch(() => {});
+      })
+      .catch((err) => console.warn("SW no registrado:", err));
+
+    // Once a *new* service worker takes over an already-open page, its old
+    // cached JS/CSS/JSON is stale until the page is reloaded — do that
+    // reload automatically, once, instead of leaving the user stuck on
+    // stale code until they notice and refresh themselves. "controllerchange"
+    // also fires once on a page's very first-ever load (no update involved),
+    // so only auto-reload when a controller already existed before that —
+    // i.e. this really is a worker replacing an earlier one.
+    const hadControllerAtLoad = !!navigator.serviceWorker.controller;
+    let reloadedForNewSw = false;
+    navigator.serviceWorker.addEventListener("controllerchange", () => {
+      if (!hadControllerAtLoad || reloadedForNewSw) return;
+      reloadedForNewSw = true;
+      window.location.reload();
+    });
   }
 
   AuthStore.init();

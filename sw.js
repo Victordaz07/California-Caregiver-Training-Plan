@@ -1,4 +1,4 @@
-const CACHE_VERSION = "caregiver-pro-ca-v1";
+const CACHE_VERSION = "caregiver-pro-ca-v2";
 const APP_SHELL = [
   "/",
   "/index.html",
@@ -32,10 +32,15 @@ self.addEventListener("activate", (event) => {
 
 /**
  * Strategy: HTML shell uses network-first (so a redeploy is picked up when
- * online), everything else (data/*.json, assets/audio/*.mp3, screens/*)
- * uses cache-first with a background network fill — once visited/loaded
- * once, it works fully offline, matching the "13 semanas offline" promise
- * this app already makes.
+ * online). Everything else (js/*, data/*.json, assets/*) uses
+ * stale-while-revalidate: respond from cache immediately when present (so
+ * the app stays instant and works fully offline), but always also fetch in
+ * the background and update the cache for next time — a pure cache-first
+ * strategy here previously meant a deploy's new JS/CSS/JSON was NEVER
+ * picked up by an already-installed PWA until someone bumped CACHE_VERSION
+ * by hand or the user manually cleared site data (a real bug hit in
+ * testing: a code fix shipped days earlier still wasn't visible on a
+ * device that had opened the app before that fix existed).
  */
 self.addEventListener("fetch", (event) => {
   const req = event.request;
@@ -59,14 +64,19 @@ self.addEventListener("fetch", (event) => {
 
   event.respondWith(
     caches.match(req).then((cached) => {
-      if (cached) return cached;
-      return fetch(req).then((res) => {
-        if (res.ok) {
-          const copy = res.clone();
-          caches.open(CACHE_VERSION).then((cache) => cache.put(req, copy));
-        }
-        return res;
-      });
+      const networkFetch = fetch(req)
+        .then((res) => {
+          if (res.ok) {
+            const copy = res.clone();
+            caches.open(CACHE_VERSION).then((cache) => cache.put(req, copy));
+          }
+          return res;
+        })
+        .catch(() => cached);
+      // Keep the background refresh alive even after we've already
+      // responded from cache below — respondWith() alone doesn't do that.
+      event.waitUntil(networkFetch);
+      return cached || networkFetch;
     }),
   );
 });
