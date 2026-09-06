@@ -8,7 +8,7 @@ composeBom = "2024.09.02"
 navigationCompose = "2.8.1"
 datastorePreferences = "1.1.1"
 room = "2.6.1"
-ksp = "2.0.21-1.0.27"
+ksp = "2.0.21-1.0.28"
 lifecycleViewmodelCompose = "2.8.6"
 
 [libraries]
