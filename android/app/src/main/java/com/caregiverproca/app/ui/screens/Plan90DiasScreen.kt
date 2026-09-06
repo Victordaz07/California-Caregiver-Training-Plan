@@ -89,14 +89,14 @@ fun Plan90DiasScreen() {
         }
 
         item {
-            SectionCard(containerColor = MaterialTheme.colorScheme.secondaryFixed) {
+            SectionCard(containerColor = MaterialTheme.colorScheme.secondaryContainer) {
                 Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
                     Icon(Icons.Outlined.Gavel, contentDescription = null, tint = MaterialTheme.colorScheme.secondary)
                     Column {
                         Text(
                             "CRITERIO INTERNO DE SEGURIDAD",
                             style = MaterialTheme.typography.labelSmall,
-                            color = MaterialTheme.colorScheme.onSecondaryFixedVariant,
+                            color = MaterialTheme.colorScheme.onSecondaryContainer,
                         )
                         Text(
                             "Un único error crítico de seguridad (contaminación cruzada grave, movilización sin frenos de silla o demora mayor a 60s en reporte de emergencia) invalida la evaluación interna en curso de forma inmediata. Esto es un criterio de esta app, no una política de CDSS.",

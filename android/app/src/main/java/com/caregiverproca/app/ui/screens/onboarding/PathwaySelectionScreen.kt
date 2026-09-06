@@ -69,8 +69,8 @@ private fun PathwayCard(pathway: Pathway, onSelect: (PathwayId) -> Unit) {
         if (!pathway.stateCredentialFromApp) {
             StatusPill(
                 text = "ESTA APP NO OTORGA CREDENCIAL ESTATAL",
-                containerColor = MaterialTheme.colorScheme.tertiaryFixed,
-                contentColor = MaterialTheme.colorScheme.onTertiaryFixedVariant,
+                containerColor = MaterialTheme.colorScheme.tertiaryContainer,
+                contentColor = MaterialTheme.colorScheme.onTertiaryContainer,
             )
         }
         Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {

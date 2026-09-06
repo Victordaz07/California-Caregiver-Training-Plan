@@ -46,18 +46,6 @@ private val CaregiverColorScheme = lightColorScheme(
     surfaceContainerHighest = SurfaceContainerHighest,
     surfaceContainerLow = SurfaceContainerLow,
     surfaceContainerLowest = SurfaceContainerLowest,
-    primaryFixed = PrimaryFixed,
-    primaryFixedDim = PrimaryFixedDim,
-    onPrimaryFixed = OnPrimaryFixed,
-    onPrimaryFixedVariant = OnPrimaryFixedVariant,
-    secondaryFixed = SecondaryFixed,
-    secondaryFixedDim = SecondaryFixedDim,
-    onSecondaryFixed = OnSecondaryFixed,
-    onSecondaryFixedVariant = OnSecondaryFixedVariant,
-    tertiaryFixed = TertiaryFixed,
-    tertiaryFixedDim = TertiaryFixedDim,
-    onTertiaryFixed = OnTertiaryFixed,
-    onTertiaryFixedVariant = OnTertiaryFixedVariant,
 )
 
 @Composable

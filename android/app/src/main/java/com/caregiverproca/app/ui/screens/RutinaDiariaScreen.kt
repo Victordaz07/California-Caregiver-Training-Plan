@@ -115,8 +115,8 @@ fun RutinaDiariaScreen() {
             SectionCard(containerColor = MaterialTheme.colorScheme.primaryContainer) {
                 StatusPill(
                     text = "MÓDULO: ${today?.moduleId?.uppercase() ?: "FUNDAMENTOS"}",
-                    containerColor = MaterialTheme.colorScheme.primaryFixed,
-                    contentColor = MaterialTheme.colorScheme.onPrimaryFixedVariant,
+                    containerColor = MaterialTheme.colorScheme.primaryContainer,
+                    contentColor = MaterialTheme.colorScheme.onPrimaryContainer,
                 )
                 Text(
                     today?.titleEs ?: "Plan completado",
@@ -201,7 +201,7 @@ fun RutinaDiariaScreen() {
         }
 
         item {
-            SectionCard(containerColor = MaterialTheme.colorScheme.secondaryFixed) {
+            SectionCard(containerColor = MaterialTheme.colorScheme.secondaryContainer) {
                 Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
                     Icon(
                         Icons.Outlined.PriorityHigh,
@@ -212,7 +212,7 @@ fun RutinaDiariaScreen() {
                         Text(
                             "REGLA INVIOLABLE",
                             style = MaterialTheme.typography.labelSmall,
-                            color = MaterialTheme.colorScheme.onSecondaryFixedVariant,
+                            color = MaterialTheme.colorScheme.onSecondaryContainer,
                         )
                         Text(
                             "Cero errores críticos: jamás emitir diagnósticos médicos, prescribir ni realizar administración invasiva de fármacos. Tu rol protege la dignidad dentro del marco no médico.",

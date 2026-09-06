@@ -70,8 +70,8 @@ fun SimulacionTurnoScreen(onBack: () -> Unit) {
                     listOf("Deterioro Cognitivo Leve", "Hipertensión", "Asistencia AVDS Nivel 2").forEach {
                         StatusPill(
                             text = it,
-                            containerColor = MaterialTheme.colorScheme.tertiaryFixed,
-                            contentColor = MaterialTheme.colorScheme.onTertiaryFixedVariant,
+                            containerColor = MaterialTheme.colorScheme.tertiaryContainer,
+                            contentColor = MaterialTheme.colorScheme.onTertiaryContainer,
                         )
                     }
                 }
@@ -79,14 +79,14 @@ fun SimulacionTurnoScreen(onBack: () -> Unit) {
         }
 
         item {
-            SectionCard(containerColor = MaterialTheme.colorScheme.secondaryFixed) {
+            SectionCard(containerColor = MaterialTheme.colorScheme.secondaryContainer) {
                 Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
                     Icon(Icons.Outlined.Warning, contentDescription = null, tint = MaterialTheme.colorScheme.secondary)
                     Column {
                         Text(
                             "REGLA DE SEGURIDAD CRÍTICA",
                             style = MaterialTheme.typography.labelSmall,
-                            color = MaterialTheme.colorScheme.onSecondaryFixedVariant,
+                            color = MaterialTheme.colorScheme.onSecondaryContainer,
                         )
                         Text(
                             "Cero omisiones en entrega de guardia (Handoff). Todo evento imprevisto se practica aquí con la estructura DAR (Datos, Acción, Respuesta) — una técnica de práctica que debes adaptar al formato real de tu empleador y plan de cuidado, sin diagnósticos no autorizados.",
