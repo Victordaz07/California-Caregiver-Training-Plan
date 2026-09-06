@@ -103,7 +103,7 @@ Screens.hoy = async (data) => {
           <p class="font-body-md text-body-md text-on-surface-variant">${UI.escapeHtml(curriculumDay.practiceEs)}</p>
         `)}
 
-        ${curriculumDay.criticalSafety ? UI.disclaimerBanner("Emergency", data.disclaimers) : ""}
+        ${curriculumDay.criticalSafety ? UI.brandScene(data, "safety-center") + UI.disclaimerBanner("Emergency", data.disclaimers) : ""}
       </div>
     </div>`;
 

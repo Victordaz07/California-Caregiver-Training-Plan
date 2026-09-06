@@ -108,6 +108,20 @@ const UI = (() => {
     </div>`;
   }
 
+  /**
+   * A brand scene illustration (assets/brand/scene-*.png) as a rounded
+   * banner at the top of a screen. `key` matches a substring of the file
+   * name (see data/brand_manifest.json > scenes[]) — e.g. "welcome-home",
+   * "practice", "progress", "safety-center", "official-sources",
+   * "career-portfolio". Returns "" if brand data isn't loaded or no scene
+   * matches, so callers can splice it in unconditionally.
+   */
+  function brandScene(data, key) {
+    const scene = data?.brand_manifest?.scenes?.find((s) => s.file.includes(key));
+    if (!scene) return "";
+    return `<img src="${scene.file}" alt="${escapeHtml(scene.altEs)}" class="w-full h-auto rounded-2xl block" loading="lazy"/>`;
+  }
+
   function screenNavCard({ title, subtitle, iconName, href, tileBg = "bg-primary-container", tileFg = "text-on-primary-container" }) {
     return `<a href="${href}" class="group flex items-center gap-space-md bg-surface-container-lowest border-2 border-surface-container-high rounded-xl p-space-md hover:border-primary/50 transition">
       <div class="w-12 h-12 rounded-xl ${tileBg} ${tileFg} flex items-center justify-center flex-shrink-0">
@@ -152,6 +166,7 @@ const UI = (() => {
     escapeHtml,
     icon,
     renderMarkdown,
+    brandScene,
     sectionCard,
     statusPill,
     disclaimerBanner,

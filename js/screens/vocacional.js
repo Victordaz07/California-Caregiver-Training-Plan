@@ -14,6 +14,7 @@ Screens.vocacional = async (data) => {
 
   const body = `
     <div class="flex flex-col w-full px-margin-mobile pb-space-2xl gap-space-lg">
+      <img src="assets/brand/mascots-duo-transparent.png" alt="Las dos protagonistas de Caregiver Pro CA" class="h-28 w-auto mx-auto"/>
       ${UI.sectionCard(`
         <h2 class="font-headline-sm text-headline-sm text-on-surface">Reflexiona, no adivines</h2>
         <p class="font-body-sm text-body-sm text-outline">Esta app no calcula un "match" ni cifras de salario — eso requeriría datos que no tenemos con fuente verificable. En su lugar, compara honestamente tu situación contra las seis rutas reales.</p>

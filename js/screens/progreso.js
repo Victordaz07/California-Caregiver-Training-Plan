@@ -72,6 +72,8 @@ Screens.progreso = async (data) => {
           </div>
         </div>
 
+        ${UI.brandScene(data, "progress")}
+
         <div class="relative overflow-hidden rounded-2xl p-space-md flex items-center gap-space-sm" style="background:var(--cream); border:3px solid var(--teal-dark)">
           <div class="w-14 h-14 flex-shrink-0 rounded-full bg-primary flex items-center justify-center" style="color:var(--tan)">${UI.icon("workspace_premium", "text-3xl")}</div>
           <div class="flex-1 min-w-0">

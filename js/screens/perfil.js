@@ -24,7 +24,7 @@ Screens.perfil = async (data) => {
   const body = `
     <div class="flex flex-col w-full gap-space-lg pb-space-2xl">
       <div class="bg-primary rounded-b-3xl px-margin-mobile pt-space-lg pb-space-md flex items-center gap-space-sm">
-        <div class="w-[62px] h-[62px] flex-shrink-0 rounded-2xl flex items-center justify-center" style="background:var(--tan); color:var(--tan-text)">${UI.icon("person", "text-3xl")}</div>
+        <img src="assets/brand/mascots-avatar-circle.png" alt="Avatar de Caregiver Pro CA" class="w-[62px] h-[62px] flex-shrink-0 rounded-2xl object-cover"/>
         <div class="flex-1 min-w-0">
           <div class="font-display text-2xl text-white leading-tight">${pathway ? UI.escapeHtml(pathway.titleEs) : "Elige tu ruta"}</div>
           ${pathway ? UI.statusPill(pathway.stateCredentialFromApp ? "Certificación estatal" : "Formación interna") : ""}

@@ -18,6 +18,7 @@ Screens.welcome = async (data) => {
   const order = ["General", "Emergency", "Scope", "FictionalCase", "HandsOn", "Certificate", "Voice", "Sources"];
   const body = `
     <div class="flex flex-col w-full px-margin-mobile pb-space-2xl gap-space-lg pt-space-xl">
+      ${UI.brandScene(data, "welcome-home")}
       <div class="flex flex-col items-center text-center gap-space-sm">
         <img alt="Caregiver Pro California" class="h-16 w-16" style="animation: omFloat 4s ease-in-out infinite" src="assets/logo.svg"/>
         <h1 class="font-display text-4xl leading-none text-primary">Caregiver Pro CA</h1>
@@ -42,7 +43,7 @@ Screens.pathwaySelection = async (data) => {
   const body = `
     <div class="flex flex-col w-full px-margin-mobile pb-space-2xl gap-space-lg pt-space-xl">
       <div class="flex flex-col gap-space-xxs">
-        <img alt="Caregiver Pro California" class="h-14 w-14 mb-2" style="animation: omFloat 4s ease-in-out infinite" src="assets/logo.svg"/>
+        <img alt="Caregiver Pro California" class="h-16 w-16 mb-2 rounded-2xl" style="animation: omFloat 4s ease-in-out infinite" src="assets/brand/mascots-avatar-square.png"/>
         <h1 class="font-display text-4xl leading-none text-primary">¿Cuál es<br>tu ruta?</h1>
         <p class="font-body-md text-body-md text-outline mt-2">Cada ruta tiene requisitos distintos en California. Elige una y armamos tu plan de 90 días.</p>
       </div>

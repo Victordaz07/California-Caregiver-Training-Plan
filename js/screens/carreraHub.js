@@ -6,6 +6,7 @@ Screens.carreraHub = async (data) => {
   const pathway = DataStore.pathwayById(data, state.pathwayId);
   const body = `
     <div class="flex flex-col w-full px-margin-mobile pb-space-2xl gap-space-md">
+      ${UI.brandScene(data, "career-portfolio")}
       <h1 class="font-headline-lg text-headline-lg uppercase text-on-surface">Carrera</h1>
       ${pathway ? UI.sectionCard(`<p class="font-label-sm text-label-sm text-outline uppercase">Tu ruta</p><p class="font-headline-sm text-headline-sm uppercase text-on-surface">${UI.escapeHtml(pathway.titleEs)}</p>`) : ""}
       ${UI.screenNavCard({ title: "Progreso", subtitle: "Días, audios, escenarios e insignias", iconName: "insights", href: "#/carrera/progreso", tileBg: "bg-secondary-container", tileFg: "text-secondary" })}

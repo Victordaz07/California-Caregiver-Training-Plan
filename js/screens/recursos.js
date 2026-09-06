@@ -8,6 +8,7 @@ Screens.recursos = async (data) => {
 
   const body = `
     <div class="flex flex-col w-full px-margin-mobile pb-space-2xl gap-space-lg">
+      ${UI.brandScene(data, "official-sources")}
       ${UI.sectionCard(`
         <span class="font-label-sm text-label-sm text-outline uppercase">Línea estatal APS</span>
         <p class="font-headline-sm text-headline-sm text-on-surface">${data.legal_requirements.find((r) => r.id === "mandated_reporting_home") ? "1-833-401-0832" : ""}</p>
