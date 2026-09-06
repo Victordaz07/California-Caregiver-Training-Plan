@@ -44,6 +44,7 @@ const ROUTES = {
   "#/carrera/requisitos": { kind: "detail", back: "#/carrera", title: "Requisitos y Certificación", render: (data) => Screens.requisitos(data) },
   "#/carrera/recursos": { kind: "detail", back: "#/carrera", title: "Recursos por Semana", render: (data) => Screens.recursos(data) },
   "#/carrera/vocacional": { kind: "detail", back: "#/carrera", title: "Analizador Vocacional", render: (data) => Screens.vocacional(data) },
+  "#/leccion/:day": { kind: "detail", back: () => "#/hoy", noHeader: true, render: (data, params) => Screens.leccion(data, params) },
   "#/carrera/progreso": { kind: "detail", back: "#/carrera", noHeader: true, render: (data) => Screens.progreso(data) },
   "#/carrera/perfil": { kind: "detail", back: "#/carrera", noHeader: true, render: (data) => Screens.perfil(data) },
 

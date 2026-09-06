@@ -18,6 +18,38 @@ const UI = (() => {
     return `<span class="material-symbols-rounded ${extraClass}">${name}</span>`;
   }
 
+  /**
+   * Minimal Markdown → HTML for the CURRICULUM_LESSONS_ES_90D.json content
+   * (see docs — each lessonEs uses only: "### " headings, **bold**,
+   * "1. " ordered lists and [text](url) links). Not a general renderer —
+   * escapes first, then applies exactly those four transforms, so it's
+   * safe even though this content is our own trusted JSON.
+   */
+  function inlineMarkdown(text) {
+    return escapeHtml(text)
+      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener" class="text-primary underline">$1</a>')
+      .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
+  }
+
+  function renderMarkdown(md) {
+    const blocks = String(md || "").split(/\n\s*\n/);
+    return blocks
+      .map((block) => {
+        const trimmed = block.trim();
+        if (!trimmed) return "";
+        if (trimmed.startsWith("### ")) {
+          return `<h3 class="font-headline-sm text-headline-sm uppercase text-primary mt-2">${inlineMarkdown(trimmed.slice(4))}</h3>`;
+        }
+        const lines = trimmed.split("\n").map((l) => l.trim());
+        if (lines.every((l) => /^\d+\.\s/.test(l))) {
+          const items = lines.map((l) => `<li class="pl-1">${inlineMarkdown(l.replace(/^\d+\.\s/, ""))}</li>`).join("");
+          return `<ol class="list-decimal list-inside flex flex-col gap-2 font-body-md text-body-md text-on-surface">${items}</ol>`;
+        }
+        return `<p class="font-body-md text-body-md text-on-surface leading-relaxed">${inlineMarkdown(trimmed)}</p>`;
+      })
+      .join("");
+  }
+
   function sectionCard(innerHtml, { bg = "bg-surface-container-lowest", border = true } = {}) {
     const borderCls = border ? "border-2 border-surface-container-high" : "";
     return `<div class="${bg} ${borderCls} rounded-xl p-space-md flex flex-col gap-space-sm">${innerHtml}</div>`;
@@ -119,6 +151,7 @@ const UI = (() => {
   return {
     escapeHtml,
     icon,
+    renderMarkdown,
     sectionCard,
     statusPill,
     disclaimerBanner,

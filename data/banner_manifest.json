@@ -1,0 +1,820 @@
+{
+  "version": "1.0",
+  "size": {
+    "width": 1600,
+    "height": 420
+  },
+  "count": 90,
+  "banners": [
+    {
+      "day": 1,
+      "week": 1,
+      "module": "foundations",
+      "moduleEs": "FUNDAMENTOS",
+      "titleEs": "Propósito y límites del curso",
+      "file": "assets/banners/day-01-proposito-y-limites-del-curso.png",
+      "altEs": "Banner del día 1: Propósito y límites del curso. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 2,
+      "week": 1,
+      "module": "foundations",
+      "moduleEs": "FUNDAMENTOS",
+      "titleEs": "Dignidad y enfoque centrado en la persona",
+      "file": "assets/banners/day-02-dignidad-y-enfoque-centrado-en-la-persona.png",
+      "altEs": "Banner del día 2: Dignidad y enfoque centrado en la persona. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 3,
+      "week": 1,
+      "module": "foundations",
+      "moduleEs": "FUNDAMENTOS",
+      "titleEs": "Consentimiento antes de ayudar",
+      "file": "assets/banners/day-03-consentimiento-antes-de-ayudar.png",
+      "altEs": "Banner del día 3: Consentimiento antes de ayudar. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 4,
+      "week": 1,
+      "module": "foundations",
+      "moduleEs": "FUNDAMENTOS",
+      "titleEs": "Privacidad y confidencialidad",
+      "file": "assets/banners/day-04-privacidad-y-confidencialidad.png",
+      "altEs": "Banner del día 4: Privacidad y confidencialidad. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 5,
+      "week": 1,
+      "module": "foundations",
+      "moduleEs": "FUNDAMENTOS",
+      "titleEs": "Alcance no médico",
+      "file": "assets/banners/day-05-alcance-no-medico.png",
+      "altEs": "Banner del día 5: Alcance no médico. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 6,
+      "week": 1,
+      "module": "foundations",
+      "moduleEs": "FUNDAMENTOS",
+      "titleEs": "Límites profesionales",
+      "file": "assets/banners/day-06-limites-profesionales.png",
+      "altEs": "Banner del día 6: Límites profesionales. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 7,
+      "week": 1,
+      "module": "foundations",
+      "moduleEs": "FUNDAMENTOS",
+      "titleEs": "Usar el plan de cuidado",
+      "file": "assets/banners/day-07-usar-el-plan-de-cuidado.png",
+      "altEs": "Banner del día 7: Usar el plan de cuidado. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 8,
+      "week": 2,
+      "module": "pathways",
+      "moduleEs": "RUTAS DE CALIFORNIA",
+      "titleEs": "Mapa de rutas de California",
+      "file": "assets/banners/day-08-mapa-de-rutas-de-california.png",
+      "altEs": "Banner del día 8: Mapa de rutas de California. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 9,
+      "week": 2,
+      "module": "pathways",
+      "moduleEs": "RUTAS DE CALIFORNIA",
+      "titleEs": "Ruta del cuidador familiar",
+      "file": "assets/banners/day-09-ruta-del-cuidador-familiar.png",
+      "altEs": "Banner del día 9: Ruta del cuidador familiar. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 10,
+      "week": 2,
+      "module": "pathways",
+      "moduleEs": "RUTAS DE CALIFORNIA",
+      "titleEs": "Inscripción IHSS",
+      "file": "assets/banners/day-10-inscripcion-ihss.png",
+      "altEs": "Banner del día 10: Inscripción IHSS. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 11,
+      "week": 2,
+      "module": "pathways",
+      "moduleEs": "RUTAS DE CALIFORNIA",
+      "titleEs": "HCA afiliado a una HCO",
+      "file": "assets/banners/day-11-hca-afiliado-a-una-hco.png",
+      "altEs": "Banner del día 11: HCA afiliado a una HCO. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 12,
+      "week": 2,
+      "module": "pathways",
+      "moduleEs": "RUTAS DE CALIFORNIA",
+      "titleEs": "Cuidador privado o directo",
+      "file": "assets/banners/day-12-cuidador-privado-o-directo.png",
+      "altEs": "Banner del día 12: Cuidador privado o directo. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 13,
+      "week": 2,
+      "module": "pathways",
+      "moduleEs": "RUTAS DE CALIFORNIA",
+      "titleEs": "HHA y CNA no son lo mismo",
+      "file": "assets/banners/day-13-hha-y-cna-no-son-lo-mismo.png",
+      "altEs": "Banner del día 13: HHA y CNA no son lo mismo. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 14,
+      "week": 2,
+      "module": "pathways",
+      "moduleEs": "RUTAS DE CALIFORNIA",
+      "titleEs": "Comprobar una fuente oficial",
+      "file": "assets/banners/day-14-comprobar-una-fuente-oficial.png",
+      "altEs": "Banner del día 14: Comprobar una fuente oficial. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 15,
+      "week": 3,
+      "module": "infection",
+      "moduleEs": "PREVENCIÓN DE INFECCIONES",
+      "titleEs": "Cómo se transmite una infección",
+      "file": "assets/banners/day-15-como-se-transmite-una-infeccion.png",
+      "altEs": "Banner del día 15: Cómo se transmite una infección. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 16,
+      "week": 3,
+      "module": "infection",
+      "moduleEs": "PREVENCIÓN DE INFECCIONES",
+      "titleEs": "Momentos de higiene de manos",
+      "file": "assets/banners/day-16-momentos-de-higiene-de-manos.png",
+      "altEs": "Banner del día 16: Momentos de higiene de manos. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 17,
+      "week": 3,
+      "module": "infection",
+      "moduleEs": "PREVENCIÓN DE INFECCIONES",
+      "titleEs": "Uso responsable de guantes y PPE",
+      "file": "assets/banners/day-17-uso-responsable-de-guantes-y-ppe.png",
+      "altEs": "Banner del día 17: Uso responsable de guantes y PPE. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 18,
+      "week": 3,
+      "module": "infection",
+      "moduleEs": "PREVENCIÓN DE INFECCIONES",
+      "titleEs": "Limpieza de superficies",
+      "file": "assets/banners/day-18-limpieza-de-superficies.png",
+      "altEs": "Banner del día 18: Limpieza de superficies. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 19,
+      "week": 3,
+      "module": "infection",
+      "moduleEs": "PREVENCIÓN DE INFECCIONES",
+      "titleEs": "Ropa, residuos y objetos personales",
+      "file": "assets/banners/day-19-ropa-residuos-y-objetos-personales.png",
+      "altEs": "Banner del día 19: Ropa, residuos y objetos personales. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 20,
+      "week": 3,
+      "module": "infection",
+      "moduleEs": "PREVENCIÓN DE INFECCIONES",
+      "titleEs": "Etiqueta respiratoria y enfermedad",
+      "file": "assets/banners/day-20-etiqueta-respiratoria-y-enfermedad.png",
+      "altEs": "Banner del día 20: Etiqueta respiratoria y enfermedad. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 21,
+      "week": 3,
+      "module": "infection",
+      "moduleEs": "PREVENCIÓN DE INFECCIONES",
+      "titleEs": "Caso integrado de control de infección",
+      "file": "assets/banners/day-21-caso-integrado-de-control-de-infeccion.png",
+      "altEs": "Banner del día 21: Caso integrado de control de infección. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 22,
+      "week": 4,
+      "module": "safety",
+      "moduleEs": "SEGURIDAD",
+      "titleEs": "Recorrido de seguridad del hogar",
+      "file": "assets/banners/day-22-recorrido-de-seguridad-del-hogar.png",
+      "altEs": "Banner del día 22: Recorrido de seguridad del hogar. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 23,
+      "week": 4,
+      "module": "safety",
+      "moduleEs": "SEGURIDAD",
+      "titleEs": "Plan de emergencia y contactos",
+      "file": "assets/banners/day-23-plan-de-emergencia-y-contactos.png",
+      "altEs": "Banner del día 23: Plan de emergencia y contactos. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 24,
+      "week": 4,
+      "module": "safety",
+      "moduleEs": "SEGURIDAD",
+      "titleEs": "Cuándo llamar al 911",
+      "file": "assets/banners/day-24-cuando-llamar-al-911.png",
+      "altEs": "Banner del día 24: Cuándo llamar al 911. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 25,
+      "week": 4,
+      "module": "safety",
+      "moduleEs": "SEGURIDAD",
+      "titleEs": "Prevención de caídas",
+      "file": "assets/banners/day-25-prevencion-de-caidas.png",
+      "altEs": "Banner del día 25: Prevención de caídas. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 26,
+      "week": 4,
+      "module": "safety",
+      "moduleEs": "SEGURIDAD",
+      "titleEs": "Atragantamiento: reconocer y activar ayuda",
+      "file": "assets/banners/day-26-atragantamiento-reconocer-y-activar-ayuda.png",
+      "altEs": "Banner del día 26: Atragantamiento: reconocer y activar ayuda. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 27,
+      "week": 4,
+      "module": "safety",
+      "moduleEs": "SEGURIDAD",
+      "titleEs": "Fuego, humo, calor y electricidad",
+      "file": "assets/banners/day-27-fuego-humo-calor-y-electricidad.png",
+      "altEs": "Banner del día 27: Fuego, humo, calor y electricidad. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 28,
+      "week": 4,
+      "module": "safety",
+      "moduleEs": "SEGURIDAD",
+      "titleEs": "Evaluación de seguridad",
+      "file": "assets/banners/day-28-evaluacion-de-seguridad.png",
+      "altEs": "Banner del día 28: Evaluación de seguridad. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 29,
+      "week": 5,
+      "module": "adl",
+      "moduleEs": "ACTIVIDADES DIARIAS",
+      "titleEs": "Ayudar sin quitar independencia",
+      "file": "assets/banners/day-29-ayudar-sin-quitar-independencia.png",
+      "altEs": "Banner del día 29: Ayudar sin quitar independencia. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 30,
+      "week": 5,
+      "module": "adl",
+      "moduleEs": "ACTIVIDADES DIARIAS",
+      "titleEs": "Baño, elección y rechazo",
+      "file": "assets/banners/day-30-bano-eleccion-y-rechazo.png",
+      "altEs": "Banner del día 30: Baño, elección y rechazo. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 31,
+      "week": 5,
+      "module": "adl",
+      "moduleEs": "ACTIVIDADES DIARIAS",
+      "titleEs": "Vestido y preferencias",
+      "file": "assets/banners/day-31-vestido-y-preferencias.png",
+      "altEs": "Banner del día 31: Vestido y preferencias. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 32,
+      "week": 5,
+      "module": "adl",
+      "moduleEs": "ACTIVIDADES DIARIAS",
+      "titleEs": "Toileting y dignidad",
+      "file": "assets/banners/day-32-toileting-y-dignidad.png",
+      "altEs": "Banner del día 32: Toileting y dignidad. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 33,
+      "week": 5,
+      "module": "adl",
+      "moduleEs": "ACTIVIDADES DIARIAS",
+      "titleEs": "Cuidado oral y observación de piel",
+      "file": "assets/banners/day-33-cuidado-oral-y-observacion-de-piel.png",
+      "altEs": "Banner del día 33: Cuidado oral y observación de piel. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 34,
+      "week": 5,
+      "module": "adl",
+      "moduleEs": "ACTIVIDADES DIARIAS",
+      "titleEs": "Rutina, descanso y sueño",
+      "file": "assets/banners/day-34-rutina-descanso-y-sueno.png",
+      "altEs": "Banner del día 34: Rutina, descanso y sueño. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 35,
+      "week": 5,
+      "module": "adl",
+      "moduleEs": "ACTIVIDADES DIARIAS",
+      "titleEs": "Caso integrado de actividades diarias",
+      "file": "assets/banners/day-35-caso-integrado-de-actividades-diarias.png",
+      "altEs": "Banner del día 35: Caso integrado de actividades diarias. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 36,
+      "week": 6,
+      "module": "mobility",
+      "moduleEs": "MOVILIDAD",
+      "titleEs": "Movilidad y elección",
+      "file": "assets/banners/day-36-movilidad-y-eleccion.png",
+      "altEs": "Banner del día 36: Movilidad y elección. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 37,
+      "week": 6,
+      "module": "mobility",
+      "moduleEs": "MOVILIDAD",
+      "titleEs": "Entorno, calzado y ayudas",
+      "file": "assets/banners/day-37-entorno-calzado-y-ayudas.png",
+      "altEs": "Banner del día 37: Entorno, calzado y ayudas. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 38,
+      "week": 6,
+      "module": "mobility",
+      "moduleEs": "MOVILIDAD",
+      "titleEs": "Mecánica corporal del cuidador",
+      "file": "assets/banners/day-38-mecanica-corporal-del-cuidador.png",
+      "altEs": "Banner del día 38: Mecánica corporal del cuidador. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 39,
+      "week": 6,
+      "module": "mobility",
+      "moduleEs": "MOVILIDAD",
+      "titleEs": "Límites de las transferencias",
+      "file": "assets/banners/day-39-limites-de-las-transferencias.png",
+      "altEs": "Banner del día 39: Límites de las transferencias. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 40,
+      "week": 6,
+      "module": "mobility",
+      "moduleEs": "MOVILIDAD",
+      "titleEs": "Grúas y equipos de movilidad",
+      "file": "assets/banners/day-40-gruas-y-equipos-de-movilidad.png",
+      "altEs": "Banner del día 40: Grúas y equipos de movilidad. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 41,
+      "week": 6,
+      "module": "mobility",
+      "moduleEs": "MOVILIDAD",
+      "titleEs": "Respuesta después de una caída",
+      "file": "assets/banners/day-41-respuesta-despues-de-una-caida.png",
+      "altEs": "Banner del día 41: Respuesta después de una caída. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 42,
+      "week": 6,
+      "module": "mobility",
+      "moduleEs": "MOVILIDAD",
+      "titleEs": "Evaluación de movilidad segura",
+      "file": "assets/banners/day-42-evaluacion-de-movilidad-segura.png",
+      "altEs": "Banner del día 42: Evaluación de movilidad segura. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 43,
+      "week": 7,
+      "module": "nutrition",
+      "moduleEs": "NUTRICIÓN",
+      "titleEs": "Plan, preferencias y dieta indicada",
+      "file": "assets/banners/day-43-plan-preferencias-y-dieta-indicada.png",
+      "altEs": "Banner del día 43: Plan, preferencias y dieta indicada. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 44,
+      "week": 7,
+      "module": "nutrition",
+      "moduleEs": "NUTRICIÓN",
+      "titleEs": "Observar hidratación",
+      "file": "assets/banners/day-44-observar-hidratacion.png",
+      "altEs": "Banner del día 44: Observar hidratación. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 45,
+      "week": 7,
+      "module": "nutrition",
+      "moduleEs": "NUTRICIÓN",
+      "titleEs": "Preparación de comidas segura",
+      "file": "assets/banners/day-45-preparacion-de-comidas-segura.png",
+      "altEs": "Banner del día 45: Preparación de comidas segura. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 46,
+      "week": 7,
+      "module": "nutrition",
+      "moduleEs": "NUTRICIÓN",
+      "titleEs": "Compras y presupuesto con límites",
+      "file": "assets/banners/day-46-compras-y-presupuesto-con-limites.png",
+      "altEs": "Banner del día 46: Compras y presupuesto con límites. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 47,
+      "week": 7,
+      "module": "nutrition",
+      "moduleEs": "NUTRICIÓN",
+      "titleEs": "Dificultad al tragar y señales de alarma",
+      "file": "assets/banners/day-47-dificultad-al-tragar-y-senales-de-alarma.png",
+      "altEs": "Banner del día 47: Dificultad al tragar y señales de alarma. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 48,
+      "week": 7,
+      "module": "nutrition",
+      "moduleEs": "NUTRICIÓN",
+      "titleEs": "Comidas con dignidad y autonomía",
+      "file": "assets/banners/day-48-comidas-con-dignidad-y-autonomia.png",
+      "altEs": "Banner del día 48: Comidas con dignidad y autonomía. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 49,
+      "week": 7,
+      "module": "nutrition",
+      "moduleEs": "NUTRICIÓN",
+      "titleEs": "Caso integrado de nutrición",
+      "file": "assets/banners/day-49-caso-integrado-de-nutricion.png",
+      "altEs": "Banner del día 49: Caso integrado de nutrición. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 50,
+      "week": 8,
+      "module": "dementia",
+      "moduleEs": "APOYO COGNITIVO",
+      "titleEs": "Lenguaje centrado en la persona",
+      "file": "assets/banners/day-50-lenguaje-centrado-en-la-persona.png",
+      "altEs": "Banner del día 50: Lenguaje centrado en la persona. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 51,
+      "week": 8,
+      "module": "dementia",
+      "moduleEs": "APOYO COGNITIVO",
+      "titleEs": "Comunicación calmada y simple",
+      "file": "assets/banners/day-51-comunicacion-calmada-y-simple.png",
+      "altEs": "Banner del día 51: Comunicación calmada y simple. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 52,
+      "week": 8,
+      "module": "dementia",
+      "moduleEs": "APOYO COGNITIVO",
+      "titleEs": "Rutinas y señales del entorno",
+      "file": "assets/banners/day-52-rutinas-y-senales-del-entorno.png",
+      "altEs": "Banner del día 52: Rutinas y señales del entorno. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 53,
+      "week": 8,
+      "module": "dementia",
+      "moduleEs": "APOYO COGNITIVO",
+      "titleEs": "La conducta comunica una necesidad",
+      "file": "assets/banners/day-53-la-conducta-comunica-una-necesidad.png",
+      "altEs": "Banner del día 53: La conducta comunica una necesidad. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 54,
+      "week": 8,
+      "module": "dementia",
+      "moduleEs": "APOYO COGNITIVO",
+      "titleEs": "Salida no planificada y seguridad",
+      "file": "assets/banners/day-54-salida-no-planificada-y-seguridad.png",
+      "altEs": "Banner del día 54: Salida no planificada y seguridad. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 55,
+      "week": 8,
+      "module": "dementia",
+      "moduleEs": "APOYO COGNITIVO",
+      "titleEs": "Cambio repentino no es rutina",
+      "file": "assets/banners/day-55-cambio-repentino-no-es-rutina.png",
+      "altEs": "Banner del día 55: Cambio repentino no es rutina. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 56,
+      "week": 8,
+      "module": "dementia",
+      "moduleEs": "APOYO COGNITIVO",
+      "titleEs": "Caso integrado de apoyo cognitivo",
+      "file": "assets/banners/day-56-caso-integrado-de-apoyo-cognitivo.png",
+      "altEs": "Banner del día 56: Caso integrado de apoyo cognitivo. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 57,
+      "week": 9,
+      "module": "communication",
+      "moduleEs": "COMUNICACIÓN",
+      "titleEs": "Escucha activa",
+      "file": "assets/banners/day-57-escucha-activa.png",
+      "altEs": "Banner del día 57: Escucha activa. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 58,
+      "week": 9,
+      "module": "communication",
+      "moduleEs": "COMUNICACIÓN",
+      "titleEs": "Lenguaje claro y una instrucción a la vez",
+      "file": "assets/banners/day-58-lenguaje-claro-y-una-instruccion-a-la-vez.png",
+      "altEs": "Banner del día 58: Lenguaje claro y una instrucción a la vez. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 59,
+      "week": 9,
+      "module": "communication",
+      "moduleEs": "COMUNICACIÓN",
+      "titleEs": "Teach-back sin examen",
+      "file": "assets/banners/day-59-teach-back-sin-examen.png",
+      "altEs": "Banner del día 59: Teach-back sin examen. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 60,
+      "week": 9,
+      "module": "communication",
+      "moduleEs": "COMUNICACIÓN",
+      "titleEs": "Apoyo bilingüe y límites",
+      "file": "assets/banners/day-60-apoyo-bilingue-y-limites.png",
+      "altEs": "Banner del día 60: Apoyo bilingüe y límites. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 61,
+      "week": 9,
+      "module": "communication",
+      "moduleEs": "COMUNICACIÓN",
+      "titleEs": "Frases esenciales de turno en inglés",
+      "file": "assets/banners/day-61-frases-esenciales-de-turno-en-ingles.png",
+      "altEs": "Banner del día 61: Frases esenciales de turno en inglés. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 62,
+      "week": 9,
+      "module": "communication",
+      "moduleEs": "COMUNICACIÓN",
+      "titleEs": "Pronunciación y aclaración segura",
+      "file": "assets/banners/day-62-pronunciacion-y-aclaracion-segura.png",
+      "altEs": "Banner del día 62: Pronunciación y aclaración segura. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 63,
+      "week": 9,
+      "module": "communication",
+      "moduleEs": "COMUNICACIÓN",
+      "titleEs": "Role-play bilingüe completo",
+      "file": "assets/banners/day-63-role-play-bilingue-completo.png",
+      "altEs": "Banner del día 63: Role-play bilingüe completo. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 64,
+      "week": 10,
+      "module": "documentation",
+      "moduleEs": "DOCUMENTACIÓN",
+      "titleEs": "Hechos, no diagnósticos",
+      "file": "assets/banners/day-64-hechos-no-diagnosticos.png",
+      "altEs": "Banner del día 64: Hechos, no diagnósticos. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 65,
+      "week": 10,
+      "module": "documentation",
+      "moduleEs": "DOCUMENTACIÓN",
+      "titleEs": "Hora, secuencia y exactitud",
+      "file": "assets/banners/day-65-hora-secuencia-y-exactitud.png",
+      "altEs": "Banner del día 65: Hora, secuencia y exactitud. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 66,
+      "week": 10,
+      "module": "documentation",
+      "moduleEs": "DOCUMENTACIÓN",
+      "titleEs": "DAR y SOAP como técnicas de práctica",
+      "file": "assets/banners/day-66-dar-y-soap-como-tecnicas-de-practica.png",
+      "altEs": "Banner del día 66: DAR y SOAP como técnicas de práctica. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 67,
+      "week": 10,
+      "module": "documentation",
+      "moduleEs": "DOCUMENTACIÓN",
+      "titleEs": "Medicamentos: registrar sin inventar",
+      "file": "assets/banners/day-67-medicamentos-registrar-sin-inventar.png",
+      "altEs": "Banner del día 67: Medicamentos: registrar sin inventar. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 68,
+      "week": 10,
+      "module": "documentation",
+      "moduleEs": "DOCUMENTACIÓN",
+      "titleEs": "Entrega de turno estructurada",
+      "file": "assets/banners/day-68-entrega-de-turno-estructurada.png",
+      "altEs": "Banner del día 68: Entrega de turno estructurada. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 69,
+      "week": 10,
+      "module": "documentation",
+      "moduleEs": "DOCUMENTACIÓN",
+      "titleEs": "Privacidad al comunicar",
+      "file": "assets/banners/day-69-privacidad-al-comunicar.png",
+      "altEs": "Banner del día 69: Privacidad al comunicar. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 70,
+      "week": 10,
+      "module": "documentation",
+      "moduleEs": "DOCUMENTACIÓN",
+      "titleEs": "Simulación completa de turno",
+      "file": "assets/banners/day-70-simulacion-completa-de-turno.png",
+      "altEs": "Banner del día 70: Simulación completa de turno. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 71,
+      "week": 11,
+      "module": "abuse",
+      "moduleEs": "PROTECCIÓN Y REPORTE",
+      "titleEs": "Tipos de abuso, neglect y explotación",
+      "file": "assets/banners/day-71-tipos-de-abuso-neglect-y-explotacion.png",
+      "altEs": "Banner del día 71: Tipos de abuso, neglect y explotación. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 72,
+      "week": 11,
+      "module": "abuse",
+      "moduleEs": "PROTECCIÓN Y REPORTE",
+      "titleEs": "Señales y sospecha razonable",
+      "file": "assets/banners/day-72-senales-y-sospecha-razonable.png",
+      "altEs": "Banner del día 72: Señales y sospecha razonable. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 73,
+      "week": 11,
+      "module": "abuse",
+      "moduleEs": "PROTECCIÓN Y REPORTE",
+      "titleEs": "Quién puede ser reportante obligatorio",
+      "file": "assets/banners/day-73-quien-puede-ser-reportante-obligatorio.png",
+      "altEs": "Banner del día 73: Quién puede ser reportante obligatorio. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 74,
+      "week": 11,
+      "module": "abuse",
+      "moduleEs": "PROTECCIÓN Y REPORTE",
+      "titleEs": "Peligro inmediato, APS y policía",
+      "file": "assets/banners/day-74-peligro-inmediato-aps-y-policia.png",
+      "altEs": "Banner del día 74: Peligro inmediato, APS y policía. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 75,
+      "week": 11,
+      "module": "abuse",
+      "moduleEs": "PROTECCIÓN Y REPORTE",
+      "titleEs": "Tiempo y seguimiento del reporte",
+      "file": "assets/banners/day-75-tiempo-y-seguimiento-del-reporte.png",
+      "altEs": "Banner del día 75: Tiempo y seguimiento del reporte. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 76,
+      "week": 11,
+      "module": "abuse",
+      "moduleEs": "PROTECCIÓN Y REPORTE",
+      "titleEs": "Documentar sin investigar",
+      "file": "assets/banners/day-76-documentar-sin-investigar.png",
+      "altEs": "Banner del día 76: Documentar sin investigar. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 77,
+      "week": 11,
+      "module": "abuse",
+      "moduleEs": "PROTECCIÓN Y REPORTE",
+      "titleEs": "Caso integrado de reporte",
+      "file": "assets/banners/day-77-caso-integrado-de-reporte.png",
+      "altEs": "Banner del día 77: Caso integrado de reporte. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 78,
+      "week": 12,
+      "module": "medication_support",
+      "moduleEs": "APOYO CON MEDICAMENTOS",
+      "titleEs": "Medicamentos autoadministrados y alcance",
+      "file": "assets/banners/day-78-medicamentos-autoadministrados-y-alcance.png",
+      "altEs": "Banner del día 78: Medicamentos autoadministrados y alcance. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 79,
+      "week": 12,
+      "module": "medication_support",
+      "moduleEs": "APOYO CON MEDICAMENTOS",
+      "titleEs": "Seguir el plan y la etiqueta",
+      "file": "assets/banners/day-79-seguir-el-plan-y-la-etiqueta.png",
+      "altEs": "Banner del día 79: Seguir el plan y la etiqueta. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 80,
+      "week": 12,
+      "module": "medication_support",
+      "moduleEs": "APOYO CON MEDICAMENTOS",
+      "titleEs": "Dosis omitida o rechazo",
+      "file": "assets/banners/day-80-dosis-omitida-o-rechazo.png",
+      "altEs": "Banner del día 80: Dosis omitida o rechazo. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 81,
+      "week": 12,
+      "module": "medication_support",
+      "moduleEs": "APOYO CON MEDICAMENTOS",
+      "titleEs": "Cambios observables y efectos reportados",
+      "file": "assets/banners/day-81-cambios-observables-y-efectos-reportados.png",
+      "altEs": "Banner del día 81: Cambios observables y efectos reportados. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 82,
+      "week": 12,
+      "module": "medication_support",
+      "moduleEs": "APOYO CON MEDICAMENTOS",
+      "titleEs": "Apoyo a condiciones crónicas",
+      "file": "assets/banners/day-82-apoyo-a-condiciones-cronicas.png",
+      "altEs": "Banner del día 82: Apoyo a condiciones crónicas. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 83,
+      "week": 12,
+      "module": "medication_support",
+      "moduleEs": "APOYO CON MEDICAMENTOS",
+      "titleEs": "Citas y comunicación con el equipo",
+      "file": "assets/banners/day-83-citas-y-comunicacion-con-el-equipo.png",
+      "altEs": "Banner del día 83: Citas y comunicación con el equipo. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 84,
+      "week": 12,
+      "module": "medication_support",
+      "moduleEs": "APOYO CON MEDICAMENTOS",
+      "titleEs": "Caso integrado de apoyo con medicación",
+      "file": "assets/banners/day-84-caso-integrado-de-apoyo-con-medicacion.png",
+      "altEs": "Banner del día 84: Caso integrado de apoyo con medicación. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 85,
+      "week": 13,
+      "module": "career",
+      "moduleEs": "CARRERA Y CONTINUIDAD",
+      "titleEs": "Confirmar mi ruta",
+      "file": "assets/banners/day-85-confirmar-mi-ruta.png",
+      "altEs": "Banner del día 85: Confirmar mi ruta. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 86,
+      "week": 13,
+      "module": "career",
+      "moduleEs": "CARRERA Y CONTINUIDAD",
+      "titleEs": "Checklist oficial de próximos pasos",
+      "file": "assets/banners/day-86-checklist-oficial-de-proximos-pasos.png",
+      "altEs": "Banner del día 86: Checklist oficial de próximos pasos. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 87,
+      "week": 13,
+      "module": "career",
+      "moduleEs": "CARRERA Y CONTINUIDAD",
+      "titleEs": "Guardian e IHSS: procesos distintos",
+      "file": "assets/banners/day-87-guardian-e-ihss-procesos-distintos.png",
+      "altEs": "Banner del día 87: Guardian e IHSS: procesos distintos. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 88,
+      "week": 13,
+      "module": "career",
+      "moduleEs": "CARRERA Y CONTINUIDAD",
+      "titleEs": "Comparar HHA y CNA",
+      "file": "assets/banners/day-88-comparar-hha-y-cna.png",
+      "altEs": "Banner del día 88: Comparar HHA y CNA. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 89,
+      "week": 13,
+      "module": "career",
+      "moduleEs": "CARRERA Y CONTINUIDAD",
+      "titleEs": "Portafolio, entrevista y autocuidado",
+      "file": "assets/banners/day-89-portafolio-entrevista-y-autocuidado.png",
+      "altEs": "Banner del día 89: Portafolio, entrevista y autocuidado. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    },
+    {
+      "day": 90,
+      "week": 13,
+      "module": "career",
+      "moduleEs": "CARRERA Y CONTINUIDAD",
+      "titleEs": "Evaluación final interna y plan de continuidad",
+      "file": "assets/banners/day-90-evaluacion-final-interna-y-plan-de-continuidad.png",
+      "altEs": "Banner del día 90: Evaluación final interna y plan de continuidad. Las dos protagonistas del currículo aparecen juntas a la derecha."
+    }
+  ]
+}

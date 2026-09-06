@@ -1,0 +1,79 @@
+{
+  "version": "1.0",
+  "identity": {
+    "descriptionEs": "Una mujer mayor y una caregiver adulta aparecen como protagonistas constantes. La relación visual comunica colaboración, autonomía, calidez y criterio profesional.",
+    "palette": {
+      "deepTeal": "#0C5960",
+      "teal": "#147D78",
+      "cream": "#FDF8EE",
+      "coral": "#E76F61",
+      "gold": "#F2B34C",
+      "ink": "#123F44"
+    }
+  },
+  "logos": [
+    {
+      "file": "assets/brand/mascots-duo-transparent.png",
+      "size": "1024x1536",
+      "useEs": "Personajes recortados para banners, pantallas y composiciones sobre fondos claros u oscuros.",
+      "altEs": "Mujer mayor de cabello gris y caregiver de uniforme verde azulado sonríen juntas; la caregiver sostiene una carpeta con una marca de verificación."
+    },
+    {
+      "file": "assets/brand/mascots-avatar-circle.png",
+      "size": "512x512",
+      "useEs": "Avatar circular, insignia de progreso, encabezado de perfil o icono dentro de la app.",
+      "altEs": "Avatar circular con las dos protagonistas del currículo."
+    },
+    {
+      "file": "assets/brand/mascots-avatar-square.png",
+      "size": "1024x1024",
+      "useEs": "Icono cuadrado redondeado, pantalla de bienvenida o tarjeta promocional.",
+      "altEs": "Icono cuadrado con las dos protagonistas del currículo sobre fondo crema y verde azulado."
+    }
+  ],
+  "scenes": [
+    {
+      "file": "assets/brand/scene-welcome-home.png",
+      "placementEs": "Bienvenida, onboarding o inicio de un día de estudio.",
+      "safeTextSide": "left",
+      "altEs": "Las protagonistas reciben al usuario en la entrada de un hogar luminoso; aparecen símbolos de cuidado, aprendizaje e ideas."
+    },
+    {
+      "file": "assets/brand/scene-practice.png",
+      "placementEs": "Inicio de práctica, simulación o actividad paso a paso.",
+      "safeTextSide": "right",
+      "altEs": "La caregiver explica una secuencia visual mientras la mujer mayor participa sentada y el espacio de práctica permanece preparado."
+    },
+    {
+      "file": "assets/brand/scene-progress.png",
+      "placementEs": "Progreso, logros, racha de estudio o cierre semanal.",
+      "safeTextSide": "none",
+      "altEs": "Las protagonistas celebran el avance con una gráfica ascendente, estrellas y una lista completada."
+    },
+    {
+      "file": "assets/brand/scene-safety-center.png",
+      "placementEs": "Centro de seguridad, evaluación de riesgos o acceso a emergencias.",
+      "safeTextSide": "left",
+      "altEs": "Las protagonistas revisan juntas una ruta despejada y una lista de seguridad dentro de un hogar."
+    },
+    {
+      "file": "assets/brand/scene-official-sources.png",
+      "placementEs": "Fuentes, recursos oficiales, comprobación o biblioteca.",
+      "safeTextSide": "right",
+      "altEs": "Las protagonistas comparan documentos y una computadora junto a símbolos de búsqueda, lectura y verificación."
+    },
+    {
+      "file": "assets/brand/scene-career-portfolio.png",
+      "placementEs": "Ruta profesional, portafolio, entrevista o final del programa.",
+      "safeTextSide": "left",
+      "altEs": "La caregiver prepara su portafolio mientras la mujer mayor la anima; al fondo aparece un camino de crecimiento."
+    }
+  ],
+  "lessonBanners": {
+    "manifest": "banner_manifest.json",
+    "directory": "assets/banners",
+    "count": 90,
+    "size": "1600x420",
+    "useEs": "Mostrar el banner correspondiente al inicio de cada lección. El texto fue compuesto de forma determinista para conservar exactamente el título del currículo."
+  }
+}

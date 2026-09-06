@@ -21,7 +21,9 @@ const DataStore = (() => {
       "rubrics",
       "glossary",
       "audio_episodes",
-      "illustrations",
+      "lesson_visual_manifest",
+      "banner_manifest",
+      "brand_manifest",
     ];
     const entries = await Promise.all(
       files.map(async (name) => {
@@ -70,6 +72,16 @@ const DataStore = (() => {
     return data.rubrics.find((r) => r.id === id) || null;
   }
 
+  /** The comic-style step-by-step lámina covering a given day, if any (a lámina can cover several days). */
+  function visualForDay(data, day) {
+    return data.lesson_visual_manifest.visuals.find((v) => v.days.includes(day)) || null;
+  }
+
+  /** The per-lesson banner image for a given day. */
+  function bannerForDay(data, day) {
+    return data.banner_manifest.banners.find((b) => b.day === day) || null;
+  }
+
   return {
     loadAll,
     pathwayById,
@@ -80,5 +92,7 @@ const DataStore = (() => {
     scenarioFor,
     audioEpisodeFor,
     rubricCriterion,
+    visualForDay,
+    bannerForDay,
   };
 })();

@@ -1,0 +1,184 @@
+{
+  "version": "2.0",
+  "language": "es",
+  "purpose": "Ilustraciones educativas de apoyo para el currículo interno de caregiver de 90 días",
+  "safetyNotice": "Cada lámina recuerda una secuencia. No sustituye el plan individual, la capacitación práctica, la política del empleador ni la intervención de personal autorizado.",
+  "visuals": [
+    {
+      "id": "VIS-01",
+      "file": "assets/comics/VIS-01-higiene-manos-guantes.png",
+      "titleEs": "Higiene de manos y guantes",
+      "days": [15, 16, 17, 18, 19, 20, 21],
+      "altEs": "Cuatro paneles muestran lavado de manos, colocación de guantes, retiro sin tocar la piel y nueva higiene de manos.",
+      "criticalStopEs": "Cambiar los guantes entre una tarea sucia y una limpia y realizar higiene de manos después."
+    },
+    {
+      "id": "VIS-02",
+      "file": "assets/comics/VIS-02-riesgos-hogar.png",
+      "titleEs": "Auditoría de riesgos del hogar",
+      "days": [22, 23, 25, 27, 28],
+      "altEs": "Cuatro paneles identifican alfombra suelta, cable, iluminación, artículos fuera de alcance y revisión de una ruta despejada.",
+      "criticalStopEs": "Reportar cualquier peligro que no pueda corregirse con permiso y seguridad."
+    },
+    {
+      "id": "VIS-03",
+      "file": "assets/comics/VIS-03-bano-asistido.png",
+      "titleEs": "Baño asistido con privacidad",
+      "days": [29, 30],
+      "altEs": "Preparación del baño, elección de horario, protección con toallas y participación de la persona durante el aseo.",
+      "criticalStopEs": "Detenerse ante mareo, dolor, miedo o pérdida de equilibrio."
+    },
+    {
+      "id": "VIS-04",
+      "file": "assets/comics/VIS-04-cuidado-oral-dentaduras.png",
+      "titleEs": "Cuidado oral y dentaduras",
+      "days": [33],
+      "altEs": "Preparación de materiales, cepillado con ayuda mínima, manejo de dentaduras sobre una superficie protegida y reporte de cambios.",
+      "criticalStopEs": "Detenerse ante sangrado, dolor intenso o dificultad para tragar."
+    },
+    {
+      "id": "VIS-05",
+      "file": "assets/comics/VIS-05-vestido-ayuda-minima.png",
+      "titleEs": "Vestido con ayuda mínima",
+      "days": [31, 34],
+      "altEs": "Elección entre dos prendas, ropa preparada en orden, participación de la persona y comprobación de comodidad.",
+      "criticalStopEs": "No tirar de una articulación ni vestir de pie cuando no sea seguro."
+    },
+    {
+      "id": "VIS-06",
+      "file": "assets/comics/VIS-06-ayuda-inodoro.png",
+      "titleEs": "Ayuda digna con el inodoro",
+      "days": [32],
+      "altEs": "Ruta preparada, consentimiento, transferencia según el plan, privacidad, llamada al alcance e higiene de manos.",
+      "criticalStopEs": "No dejar sola a una persona que requiere supervisión."
+    },
+    {
+      "id": "VIS-07",
+      "file": "assets/comics/VIS-07-reposicionamiento-cama.png",
+      "titleEs": "Reposicionamiento seguro en cama",
+      "days": [35, 40],
+      "altEs": "Revisión del plan, solicitud de segunda persona, uso coordinado de sábana de movimiento y apoyo con almohadas.",
+      "criticalStopEs": "No arrastrar la piel ni tirar de brazos o cuello."
+    },
+    {
+      "id": "VIS-08",
+      "file": "assets/comics/VIS-08-sentarse-ponerse-pie.png",
+      "titleEs": "De sentado a de pie",
+      "days": [36, 37],
+      "altEs": "Revisión del plan, colocación de pies, inclinación hacia delante, empuje desde reposabrazos y comprobación de equilibrio.",
+      "criticalStopEs": "Detenerse si la persona no sostiene su peso o cambia su estado."
+    },
+    {
+      "id": "VIS-09",
+      "file": "assets/comics/VIS-09-transferencia-cama-silla.png",
+      "titleEs": "Transferencia cama–silla",
+      "days": [38, 39, 42],
+      "altEs": "Silla de ruedas preparada con frenos, pies apoyados, giro con pasos pequeños y descenso controlado.",
+      "criticalStopEs": "Si no sostiene su peso, no continuar y usar ayuda o equipo autorizado."
+    },
+    {
+      "id": "VIS-10",
+      "file": "assets/comics/VIS-10-marcha-andador.png",
+      "titleEs": "Marcha con andador",
+      "days": [37, 39],
+      "altEs": "Ruta despejada, posición dentro del andador, avance por pasos cortos y pausa para comprobar síntomas.",
+      "criticalStopEs": "No tirar de los brazos ni utilizar el andador para levantar."
+    },
+    {
+      "id": "VIS-11",
+      "file": "assets/comics/VIS-11-respuesta-caida.png",
+      "titleEs": "Respuesta después de una caída",
+      "days": [41],
+      "altEs": "La persona permanece en el suelo mientras el caregiver revisa señales, activa ayuda y documenta después.",
+      "criticalStopEs": "No mover ante sospecha de lesión, salvo que exista otro peligro inmediato."
+    },
+    {
+      "id": "VIS-12",
+      "file": "assets/comics/VIS-12-alimentacion-digna.png",
+      "titleEs": "Alimentación digna y segura",
+      "days": [43, 44, 45, 46, 48],
+      "altEs": "Revisión de dieta, postura erguida, bocados pequeños, ayuda mínima y registro objetivo de consumo.",
+      "criticalStopEs": "Suspender ante tos persistente, voz húmeda o dificultad respiratoria."
+    },
+    {
+      "id": "VIS-13",
+      "file": "assets/comics/VIS-13-dificultad-tragar.png",
+      "titleEs": "Señales de dificultad para tragar",
+      "days": [26, 47, 49],
+      "altEs": "Reconocimiento de tos y voz húmeda, suspensión de comida, reporte estructurado y activación del 911 ante obstrucción grave.",
+      "criticalStopEs": "No cambiar la textura ni inventar una técnica sin instrucción autorizada."
+    },
+    {
+      "id": "VIS-14",
+      "file": "assets/comics/VIS-14-demencia-comunicacion.png",
+      "titleEs": "Comunicación calmada en demencia",
+      "days": [50, 51, 52, 53, 54, 56],
+      "altEs": "Acercamiento frontal, validación de la emoción, búsqueda de necesidades y oferta de dos opciones sencillas.",
+      "criticalStopEs": "Escalar cuando el cambio sea repentino o exista peligro."
+    },
+    {
+      "id": "VIS-15",
+      "file": "assets/comics/VIS-15-posible-abuso.png",
+      "titleEs": "Revelación de posible abuso",
+      "days": [71, 72, 73, 74, 75, 76, 77],
+      "altEs": "Protección, escucha sin interrogatorio, reporte por el canal aplicable y documentación de hechos y palabras exactas.",
+      "criticalStopEs": "No prometer secreto, no confrontar y llamar al 911 ante peligro inmediato."
+    },
+    {
+      "id": "VIS-16",
+      "file": "assets/comics/VIS-16-apoyo-medicamentos.png",
+      "titleEs": "Apoyo con medicamentos y rechazo",
+      "days": [78, 79, 80, 81, 82, 83, 84],
+      "altEs": "Verificación de persona, plan y etiqueta; ayuda autorizada; respeto del rechazo; registro y escalamiento.",
+      "criticalStopEs": "No cambiar ni duplicar dosis y pausar ante discrepancia o síntoma grave."
+    },
+    {
+      "id": "VIS-17",
+      "file": "assets/comics/VIS-17-senales-derrame-911.png",
+      "titleEs": "Señales repentinas y llamada al 911",
+      "days": [24, 55],
+      "altEs": "Cambio repentino en cara, brazo y habla, seguido de llamada al 911 y registro de la hora de inicio.",
+      "criticalStopEs": "Actuar inmediatamente aunque los síntomas parezcan mejorar."
+    },
+    {
+      "id": "VIS-18",
+      "file": "assets/comics/VIS-18-fundamentos-consentimiento-alcance.png",
+      "titleEs": "Fundamentos: consentimiento y alcance",
+      "days": [1, 2, 3, 4, 5, 6, 7],
+      "altEs": "Cuatro paneles muestran presentación respetuosa, petición de consentimiento, consulta del plan de cuidado y pausa para escalar una tarea fuera del alcance.",
+      "criticalStopEs": "Detenerse cuando falte consentimiento, la tarea contradiga el plan o exceda la función autorizada."
+    },
+    {
+      "id": "VIS-19",
+      "file": "assets/comics/VIS-19-rutas-california.png",
+      "titleEs": "Rutas de caregiver en California",
+      "days": [8, 9, 10, 11, 12, 13, 14],
+      "altEs": "La caregiver compara rutas de cuidador familiar, IHSS, HCA, HHA y CNA, y verifica cada requisito en una fuente oficial.",
+      "criticalStopEs": "No asumir que una ruta concede permisos, registro o credenciales de otra."
+    },
+    {
+      "id": "VIS-20",
+      "file": "assets/comics/VIS-20-comunicacion-bilingue-teachback.png",
+      "titleEs": "Comunicación bilingüe y teach-back",
+      "days": [57, 58, 59, 60, 61, 62, 63],
+      "altEs": "Cuatro paneles muestran escucha activa, una instrucción a la vez, comprobación teach-back y solicitud de apoyo lingüístico autorizado.",
+      "criticalStopEs": "No fingir que se entendieron números, síntomas, consentimiento o instrucciones sensibles."
+    },
+    {
+      "id": "VIS-21",
+      "file": "assets/comics/VIS-21-documentacion-entrega-turno.png",
+      "titleEs": "Documentación y entrega de turno",
+      "days": [64, 65, 66, 67, 68, 69, 70],
+      "altEs": "La caregiver registra hora y hechos observables, distingue palabras textuales de inferencias y entrega situación, acción y pendiente.",
+      "criticalStopEs": "Activar ayuda urgente antes de completar la nota y nunca firmar un hecho que no se presenció."
+    },
+    {
+      "id": "VIS-22",
+      "file": "assets/comics/VIS-22-carrera-ruta-oficial.png",
+      "titleEs": "Carrera y ruta oficial",
+      "days": [85, 86, 87, 88, 89, 90],
+      "altEs": "La caregiver define su meta, compara rutas oficiales, verifica un programa y presenta honestamente su aprendizaje interno.",
+      "criticalStopEs": "No presentar este currículo como credencial ni pagar a un programa sin comprobar la fuente oficial."
+    }
+  ]
+}

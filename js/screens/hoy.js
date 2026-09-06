@@ -24,8 +24,9 @@ Screens.hoy = async (data) => {
   const curriculumDay = DataStore.curriculumDayFor(data, day) || data.curriculum[0];
   const moduleTitle = data.module_titles[curriculumDay.moduleId] || curriculumDay.moduleId;
   const alreadyDone = AppState.isDayCompleted(day);
-  const illustration = data.illustrations[String(day)];
+  const banner = DataStore.bannerForDay(data, day);
   const streak = AppState.completedDayCount();
+  const lessonExcerpt = (curriculumDay.lessonEs || "").split(/\n\s*\n/)[0].slice(0, 220);
   const dayPct = Math.round((day / 90) * 100);
 
   const body = `
@@ -85,26 +86,17 @@ Screens.hoy = async (data) => {
           </a>
         </div>
 
-        ${
-          illustration
-            ? `<a href="#" id="illustration-teaser" class="bg-white border-2 border-surface-container-high rounded-2xl p-space-sm flex items-center gap-space-sm">
-                <div class="w-12 h-12 flex-shrink-0 rounded-xl bg-primary-container bg-cover bg-center" style="background-image:url('assets/illustrations/${illustration.file}'); background-size:230% auto; background-position:8% 62%"></div>
-                <div class="flex-1 min-w-0">
-                  <div class="text-[11px] font-extrabold tracking-wide text-primary">LÁMINA ILUSTRADA</div>
-                  <div class="font-headline-sm text-headline-sm uppercase text-on-surface leading-tight">${UI.escapeHtml(illustration.title)}</div>
-                </div>
-                ${UI.icon("arrow_forward", "text-secondary")}
-              </a>`
-            : ""
-        }
-
-        ${UI.sectionCard(`
-          <div class="flex items-center gap-space-xs">
-            ${UI.icon("menu_book", "text-primary")}
-            <h3 class="font-headline-sm text-headline-sm uppercase text-on-surface">Lección de hoy</h3>
+        <a href="#/leccion/${day}" class="block bg-white border-2 border-surface-container-high rounded-2xl overflow-hidden">
+          ${banner ? `<img src="${banner.file}" alt="${UI.escapeHtml(banner.altEs)}" class="w-full h-auto block" loading="lazy"/>` : ""}
+          <div class="p-space-sm flex flex-col gap-space-xs">
+            <div class="flex items-center gap-space-xs">
+              ${UI.icon("menu_book", "text-primary")}
+              <h3 class="font-headline-sm text-headline-sm uppercase text-on-surface">Lección de hoy</h3>
+            </div>
+            <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">${UI.escapeHtml(lessonExcerpt)}…</p>
+            <span class="font-label-md text-label-md text-primary self-start">Leer lección completa →</span>
           </div>
-          <p class="font-body-md text-body-md text-on-surface leading-relaxed">${UI.escapeHtml(curriculumDay.lessonEs || "")}</p>
-        `)}
+        </a>
 
         ${UI.sectionCard(`
           <h3 class="font-headline-sm text-headline-sm uppercase text-on-surface">Actividad de práctica</h3>
@@ -122,9 +114,6 @@ Screens.hoy = async (data) => {
         clearInterval(hoyTimer);
         hoyTimer = null;
       }
-      const illustrationTeaser = document.getElementById("illustration-teaser");
-      if (illustrationTeaser) illustrationTeaser.onclick = (e) => e.preventDefault();
-
       const startBtn = document.getElementById("start-session-btn");
       if (!startBtn || alreadyDone) return;
 
