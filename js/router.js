@@ -58,10 +58,12 @@ const ROUTES = {
   "#/shift/activo/:shiftId": { kind: "detail", noHeader: true, back: () => "#/shift", render: (data, params) => Screens.shiftActivo(data, params) },
   "#/shift/salida/:shiftId": { kind: "detail", noHeader: true, back: () => "#/shift", render: (data, params) => Screens.shiftSalida(data, params) },
 
-  // Placeholders — built in a follow-up pass (Emergencia, Buscar por
-  // Problema, Audio Manos Ocupadas, Práctica de Frase, Micro-sesión for
-  // "Ayuda"; hours ledger for "Horas"; certificates for "Constancia").
-  "#/shift/ayuda": { kind: "hub", navGroup: "shift", tab: "ayuda", noHeader: true, render: () => Screens.shiftComingSoon("Ayuda", "Emergencia, buscar por problema y audio manos libres.") },
+  "#/shift/ayuda": { kind: "hub", navGroup: "shift", tab: "ayuda", noHeader: true, render: (data) => Screens.shiftAyuda(data) },
+  "#/shift/problema/:id": { kind: "detail", noHeader: true, back: () => "#/shift/ayuda", render: (data, params) => Screens.shiftProblema(data, params) },
+
+  // Placeholders — built in a follow-up pass (Emergencia, Audio Manos
+  // Ocupadas, Práctica de Frase, Micro-sesión for "Ayuda"/"Aprender";
+  // hours ledger for "Horas"; certificates for "Constancia").
   "#/shift/horas": { kind: "hub", navGroup: "shift", tab: "horas", noHeader: true, render: () => Screens.shiftComingSoon("Mis Horas", "Historial de turnos, verificación y exportar PDF.") },
   "#/shift/constancia": { kind: "hub", navGroup: "shift", tab: "constancia", noHeader: true, render: () => Screens.shiftComingSoon("Constancia", "Certificados de horas y módulos completados.") },
 };

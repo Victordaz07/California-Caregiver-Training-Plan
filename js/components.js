@@ -50,6 +50,33 @@ const UI = (() => {
       .join("");
   }
 
+  /**
+   * Pulls the content under one "### Heading" out of a lessonEs Markdown
+   * string (e.g. "Cómo se hace, paso a paso" or "Punto crítico de
+   * seguridad") — every lesson uses this same fixed section structure.
+   * Handles both layouts the content uses: heading and text sharing one
+   * paragraph block (single newline, e.g. "Punto crítico..."), and heading
+   * as its own block followed by separate block(s) — e.g. the numbered
+   * steps list always has a blank line after its heading. Returns null if
+   * the lesson has no such section (e.g. non-critical days have no
+   * "Punto crítico de seguridad").
+   */
+  function findMarkdownBlock(md, headingText) {
+    const blocks = String(md || "")
+      .split(/\n\s*\n/)
+      .map((b) => b.trim());
+    const needle = "### " + headingText;
+    const idx = blocks.findIndex((b) => b.startsWith(needle));
+    if (idx === -1) return null;
+    const sameBlockRest = blocks[idx].slice(needle.length).trim();
+    if (sameBlockRest) return sameBlockRest;
+    const collected = [];
+    for (let i = idx + 1; i < blocks.length && !blocks[i].startsWith("### "); i++) {
+      if (blocks[i]) collected.push(blocks[i]);
+    }
+    return collected.join("\n\n") || null;
+  }
+
   function sectionCard(innerHtml, { bg = "bg-surface-container-lowest", border = true } = {}) {
     const borderCls = border ? "border-2 border-surface-container-high" : "";
     return `<div class="${bg} ${borderCls} rounded-xl p-space-md flex flex-col gap-space-sm">${innerHtml}</div>`;
@@ -166,6 +193,8 @@ const UI = (() => {
     escapeHtml,
     icon,
     renderMarkdown,
+    inlineMarkdown,
+    findMarkdownBlock,
     brandScene,
     sectionCard,
     statusPill,
