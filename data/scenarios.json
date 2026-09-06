@@ -1,0 +1,462 @@
+[
+  {
+    "id": "w01_bathing_refusal",
+    "week": 1,
+    "titleEs": "El baño que debe esperar",
+    "stemEs": "Escenario ficticio: Rosa dice con claridad que hoy no quiere bañarse. El plan permite ofrecer baño o aseo parcial; no hay peligro inmediato.",
+    "choices": [
+      {
+        "id": "a",
+        "textEs": "Insistir porque la higiene está programada",
+        "outcome": "CriticalFail",
+        "feedbackEs": "Una tarea programada no elimina consentimiento ni justifica coacción."
+      },
+      {
+        "id": "b",
+        "textEs": "Reconocer su decisión, ofrecer opciones y documentar/escalar la preocupación según el plan",
+        "outcome": "Safe",
+        "feedbackEs": "Protege dignidad, ofrece una alternativa y mantiene al equipo informado."
+      },
+      {
+        "id": "c",
+        "textEs": "Citar WIC §15610.05 para obligarla",
+        "outcome": "CriticalFail",
+        "feedbackEs": "Esa sección define abandono; no autoriza coacción ni es la fuente correcta sobre autonomía."
+      }
+    ],
+    "rubricIds": [
+      "consent",
+      "dignity",
+      "care_plan",
+      "objective_documentation"
+    ],
+    "sourceTags": [
+      "care_plan",
+      "WIC_15610_05_correction"
+    ]
+  },
+  {
+    "id": "w02_pathway_first",
+    "week": 2,
+    "titleEs": "¿Qué trámite corresponde?",
+    "stemEs": "Escenario ficticio: Devon dice que cuidará a su tía, quizá será pagado por IHSS y también considera una agencia. Pregunta si debe tomar el examen Guardian.",
+    "choices": [
+      {
+        "id": "a",
+        "textEs": "Decir que todo cuidador debe aprobar el examen Guardian",
+        "outcome": "CriticalFail",
+        "feedbackEs": "Guardian no se describe como examen y las rutas tienen procesos distintos."
+      },
+      {
+        "id": "b",
+        "textEs": "Aclarar primero si seguirá IHSS, HCO o contratación directa y mostrar el proceso específico",
+        "outcome": "Safe",
+        "feedbackEs": "La ruta y la relación laboral determinan qué información aplica."
+      },
+      {
+        "id": "c",
+        "textEs": "Emitirle una certificación combinada IHSS/HCA",
+        "outcome": "CriticalFail",
+        "feedbackEs": "La app no concede credenciales y esas rutas no se combinan."
+      }
+    ],
+    "rubricIds": [
+      "pathway_identification",
+      "accurate_language",
+      "source_use"
+    ],
+    "sourceTags": [
+      "CDSS_HCA",
+      "CDSS_IHSS"
+    ]
+  },
+  {
+    "id": "w03_glove_cross_contamination",
+    "week": 3,
+    "titleEs": "Los guantes no lo hacen todo",
+    "stemEs": "Escenario ficticio: Después de una tarea de cuidado personal, el alumno con los mismos guantes toca el teléfono y empieza a preparar comida.",
+    "choices": [
+      {
+        "id": "a",
+        "textEs": "Continuar porque los guantes siguen puestos",
+        "outcome": "CriticalFail",
+        "feedbackEs": "Los guantes contaminados pueden transferir microorganismos."
+      },
+      {
+        "id": "b",
+        "textEs": "Detenerse, retirar los guantes de forma segura, realizar higiene de manos y limpiar según política antes de seguir",
+        "outcome": "Safe",
+        "feedbackEs": "Interrumpe la contaminación cruzada y respeta la secuencia de tareas."
+      },
+      {
+        "id": "c",
+        "textEs": "Rociar las manos enguantadas con cualquier químico",
+        "outcome": "NeedsCorrection",
+        "feedbackEs": "No improvises con productos; sigue etiqueta, formación y política."
+      }
+    ],
+    "rubricIds": [
+      "hand_hygiene",
+      "ppe",
+      "task_sequence"
+    ],
+    "sourceTags": [
+      "infection_control",
+      "employer_policy"
+    ]
+  },
+  {
+    "id": "w04_immediate_danger",
+    "week": 4,
+    "titleEs": "El cronómetro no manda",
+    "stemEs": "Escenario ficticio: Durante una práctica, la persona cae, no responde y parece no respirar normalmente. El temporizador del bloque marca tres minutos restantes.",
+    "choices": [
+      {
+        "id": "a",
+        "textEs": "Terminar el bloque para conservar la racha",
+        "outcome": "CriticalFail",
+        "feedbackEs": "Nunca se retrasa una respuesta de emergencia por una lección o racha."
+      },
+      {
+        "id": "b",
+        "textEs": "Activar el plan de emergencia y llamar al 911 de inmediato; usar solo habilidades para las que se está entrenado",
+        "outcome": "Safe",
+        "feedbackEs": "La seguridad inmediata tiene prioridad. El temporizador debe pausarse automáticamente."
+      },
+      {
+        "id": "c",
+        "textEs": "Escribir primero una nota completa",
+        "outcome": "CriticalFail",
+        "feedbackEs": "La documentación viene después de activar ayuda inmediata."
+      }
+    ],
+    "rubricIds": [
+      "emergency_priority",
+      "911",
+      "scope"
+    ],
+    "sourceTags": [
+      "911",
+      "hands_on"
+    ]
+  },
+  {
+    "id": "w05_skin_observation",
+    "week": 5,
+    "titleEs": "Observar sin diagnosticar",
+    "stemEs": "Escenario ficticio: Mientras ayuda a vestirse, el alumno observa una zona roja nueva en el talón y la persona dice que duele.",
+    "choices": [
+      {
+        "id": "a",
+        "textEs": "Diagnosticar una lesión y aplicar un tratamiento no indicado",
+        "outcome": "CriticalFail",
+        "feedbackEs": "Diagnosticar y decidir tratamiento excede el alcance no médico."
+      },
+      {
+        "id": "b",
+        "textEs": "Registrar ubicación, apariencia observable, hora y palabras de la persona; escalar según el plan",
+        "outcome": "Safe",
+        "feedbackEs": "La nota objetiva permite una evaluación apropiada por quien corresponde."
+      },
+      {
+        "id": "c",
+        "textEs": "Ignorarlo porque no estaba en el turno anterior",
+        "outcome": "NeedsCorrection",
+        "feedbackEs": "Un cambio nuevo debe comunicarse según el plan."
+      }
+    ],
+    "rubricIds": [
+      "objective_observation",
+      "scope",
+      "escalation"
+    ],
+    "sourceTags": [
+      "care_plan",
+      "scope"
+    ]
+  },
+  {
+    "id": "w06_untrained_lift",
+    "week": 6,
+    "titleEs": "La grúa desconocida",
+    "stemEs": "Escenario ficticio: El plan menciona una grúa, pero el alumno nunca recibió práctica presencial con ese modelo y hoy no está la segunda persona indicada.",
+    "choices": [
+      {
+        "id": "a",
+        "textEs": "Ver un video rápido y hacer la transferencia solo",
+        "outcome": "CriticalFail",
+        "feedbackEs": "Un video no demuestra competencia ni reemplaza la ayuda indicada."
+      },
+      {
+        "id": "b",
+        "textEs": "No realizar la transferencia, mantener a la persona segura y pedir apoyo cualificado según el plan",
+        "outcome": "Safe",
+        "feedbackEs": "Reconocer límites evita improvisación de alto riesgo."
+      },
+      {
+        "id": "c",
+        "textEs": "Cambiar el plan para que ya no requiera dos personas",
+        "outcome": "CriticalFail",
+        "feedbackEs": "El alumno no puede alterar unilateralmente el plan."
+      }
+    ],
+    "rubricIds": [
+      "hands_on_limit",
+      "care_plan",
+      "escalation"
+    ],
+    "sourceTags": [
+      "hands_on",
+      "employer_policy"
+    ]
+  },
+  {
+    "id": "w07_swallowing_change",
+    "week": 7,
+    "titleEs": "Cambio durante la comida",
+    "stemEs": "Escenario ficticio: Durante el almuerzo, la persona comienza a toser repetidamente y su voz suena diferente. No hay obstrucción completa visible, pero es un cambio nuevo.",
+    "choices": [
+      {
+        "id": "a",
+        "textEs": "Cambiar la textura de la dieta por cuenta propia",
+        "outcome": "CriticalFail",
+        "feedbackEs": "No cambies una dieta indicada sin autoridad; detén la ayuda insegura y escala."
+      },
+      {
+        "id": "b",
+        "textEs": "Pausar la alimentación, observar, seguir el plan y pedir evaluación; llamar al 911 si aparece peligro inmediato",
+        "outcome": "Safe",
+        "feedbackEs": "Responde al cambio sin diagnosticar ni improvisar tratamiento."
+      },
+      {
+        "id": "c",
+        "textEs": "Animarla a comer más rápido para terminar",
+        "outcome": "CriticalFail",
+        "feedbackEs": "Aumenta el riesgo y no respeta las señales observadas."
+      }
+    ],
+    "rubricIds": [
+      "stop_unsafe_action",
+      "care_plan",
+      "emergency_escalation"
+    ],
+    "sourceTags": [
+      "care_plan",
+      "911"
+    ]
+  },
+  {
+    "id": "w08_sudden_confusion",
+    "week": 8,
+    "titleEs": "No todo cambio es demencia",
+    "stemEs": "Escenario ficticio: Una persona que usualmente conversa con claridad está de repente muy desorientada y somnolienta.",
+    "choices": [
+      {
+        "id": "a",
+        "textEs": "Asumir que es parte normal de la demencia y esperar al próximo turno",
+        "outcome": "CriticalFail",
+        "feedbackEs": "Un cambio repentino respecto a la línea base requiere escalamiento urgente."
+      },
+      {
+        "id": "b",
+        "textEs": "Proteger seguridad, observar hechos y activar el contacto urgente o 911 según el plan y el peligro",
+        "outcome": "Safe",
+        "feedbackEs": "La respuesta se basa en el cambio y el riesgo, no en un diagnóstico del cuidador."
+      },
+      {
+        "id": "c",
+        "textEs": "Dar un medicamento adicional",
+        "outcome": "CriticalFail",
+        "feedbackEs": "No se decide ni cambia una dosis para tratar un cambio observado."
+      }
+    ],
+    "rubricIds": [
+      "baseline_change",
+      "scope",
+      "urgent_escalation"
+    ],
+    "sourceTags": [
+      "care_plan",
+      "911"
+    ]
+  },
+  {
+    "id": "w09_language_uncertainty",
+    "week": 9,
+    "titleEs": "No fingir que entendiste",
+    "stemEs": "Escenario ficticio: Un supervisor da en inglés una instrucción nueva relacionada con una medicación. El alumno reconoce solo parte de la frase.",
+    "choices": [
+      {
+        "id": "a",
+        "textEs": "Decir que sí y adivinar después",
+        "outcome": "CriticalFail",
+        "feedbackEs": "Adivinar una instrucción de seguridad crea riesgo."
+      },
+      {
+        "id": "b",
+        "textEs": "Pedir que repita lentamente, confirmar con teach-back y usar apoyo lingüístico autorizado",
+        "outcome": "Safe",
+        "feedbackEs": "La aclaración explícita es una habilidad de seguridad."
+      },
+      {
+        "id": "c",
+        "textEs": "Traducir con una app personal incluyendo nombre y diagnóstico del cliente",
+        "outcome": "CriticalFail",
+        "feedbackEs": "Puede exponer información privada y no garantiza exactitud."
+      }
+    ],
+    "rubricIds": [
+      "clarification",
+      "teach_back",
+      "privacy"
+    ],
+    "sourceTags": [
+      "privacy",
+      "language_access"
+    ]
+  },
+  {
+    "id": "w10_objective_handoff",
+    "week": 10,
+    "titleEs": "Hechos en la entrega de turno",
+    "stemEs": "Escenario ficticio: La nota dice: “El cliente fue difícil y parece deprimido. No quiso comer”.",
+    "choices": [
+      {
+        "id": "a",
+        "textEs": "Copiar la frase porque es breve",
+        "outcome": "NeedsCorrection",
+        "feedbackEs": "Incluye juicio y diagnóstico no autorizado."
+      },
+      {
+        "id": "b",
+        "textEs": "Registrar hora, alimento ofrecido, cantidad observada, palabras exactas, acción y a quién se notificó",
+        "outcome": "Safe",
+        "feedbackEs": "La entrega queda objetiva y accionable."
+      },
+      {
+        "id": "c",
+        "textEs": "Eliminar todo para proteger privacidad",
+        "outcome": "NeedsCorrection",
+        "feedbackEs": "La privacidad exige canal adecuado, no omitir información necesaria del cuidado."
+      }
+    ],
+    "rubricIds": [
+      "objective_facts",
+      "chronology",
+      "action_and_notification"
+    ],
+    "sourceTags": [
+      "documentation",
+      "privacy"
+    ]
+  },
+  {
+    "id": "w11_financial_abuse_report",
+    "week": 11,
+    "titleEs": "La tarjeta bancaria",
+    "stemEs": "Escenario ficticio: Una persona mayor dice que un familiar tomó su tarjeta y retiró dinero sin permiso. El cuidador cubierto por WIC §15630 está en una casa particular.",
+    "choices": [
+      {
+        "id": "a",
+        "textEs": "Confrontar al familiar y esperar una confesión",
+        "outcome": "CriticalFail",
+        "feedbackEs": "No investigues ni retrases el reporte para obtener prueba."
+      },
+      {
+        "id": "b",
+        "textEs": "Proteger ante peligro, escuchar sin prometer secreto, reportar de inmediato o tan pronto como sea posible a APS o policía según corresponda y documentar hechos",
+        "outcome": "Safe",
+        "feedbackEs": "Sigue el flujo de entorno domiciliario y separa reporte de investigación."
+      },
+      {
+        "id": "c",
+        "textEs": "Publicar una advertencia con nombres en redes sociales",
+        "outcome": "CriticalFail",
+        "feedbackEs": "Viola privacidad y no sustituye un reporte legal."
+      }
+    ],
+    "rubricIds": [
+      "immediate_safety",
+      "report_timing",
+      "correct_channel",
+      "objective_documentation"
+    ],
+    "sourceTags": [
+      "WIC_15630",
+      "APS"
+    ]
+  },
+  {
+    "id": "w12_missed_medication",
+    "week": 12,
+    "titleEs": "La dosis que no aparece",
+    "stemEs": "Escenario ficticio: El organizador muestra una dosis todavía presente, pero el registro no aclara si fue omitida. La persona pregunta si debe tomar dos.",
+    "choices": [
+      {
+        "id": "a",
+        "textEs": "Recomendar dos dosis para compensar",
+        "outcome": "CriticalFail",
+        "feedbackEs": "El cuidador no debe decidir ni cambiar la dosis."
+      },
+      {
+        "id": "b",
+        "textEs": "No adivinar, mantener seguridad, seguir el plan y contactar al responsable autorizado para instrucciones",
+        "outcome": "Safe",
+        "feedbackEs": "Escala la discrepancia sin tomar una decisión clínica."
+      },
+      {
+        "id": "c",
+        "textEs": "Alterar el registro para que parezca administrada",
+        "outcome": "CriticalFail",
+        "feedbackEs": "Nunca falsifiques ni completes un registro de memoria."
+      }
+    ],
+    "rubricIds": [
+      "no_dose_change",
+      "care_plan",
+      "escalation",
+      "record_integrity"
+    ],
+    "sourceTags": [
+      "HSC_1796_12",
+      "care_plan"
+    ]
+  },
+  {
+    "id": "w13_false_school_claim",
+    "week": 13,
+    "titleEs": "La escuela “aprobada”",
+    "stemEs": "Escenario ficticio: Un anuncio promete que 110 horas dentro de una app otorgan certificación combinada HCA, IHSS, HHA y CNA de California.",
+    "choices": [
+      {
+        "id": "a",
+        "textEs": "Inscribirse porque aparecen logotipos oficiales",
+        "outcome": "CriticalFail",
+        "feedbackEs": "Un logo no demuestra aprobación y las rutas no forman una credencial combinada."
+      },
+      {
+        "id": "b",
+        "textEs": "Verificar la ruta, la agencia, el programa y la lista oficial; pedir por escrito qué credencial emite realmente",
+        "outcome": "Safe",
+        "feedbackEs": "La verificación separa formación complementaria de aprobación gubernamental."
+      },
+      {
+        "id": "c",
+        "textEs": "Asumir que HCA significa licencia clínica",
+        "outcome": "CriticalFail",
+        "feedbackEs": "HCA es un registro no médico en este contexto, no una licencia clínica."
+      }
+    ],
+    "rubricIds": [
+      "source_verification",
+      "pathway_separation",
+      "credential_language"
+    ],
+    "sourceTags": [
+      "CDSS_HCA",
+      "CDSS_IHSS",
+      "CDPH_HHA",
+      "CDPH_CNA"
+    ]
+  }
+]

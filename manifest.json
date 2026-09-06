@@ -1,0 +1,17 @@
+{
+  "name": "Caregiver Pro CA",
+  "short_name": "Caregiver Pro",
+  "description": "Plan de entrenamiento interno de 90 días para cuidadores no médicos en California.",
+  "start_url": "/index.html",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f7faf8",
+  "theme_color": "#115e59",
+  "lang": "es",
+  "icons": [
+    { "src": "assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

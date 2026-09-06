@@ -1,53 +1,54 @@
-# Caregiver Pro CA — Plan de Entrenamiento de 90 Días
+# Caregiver Pro CA — App Web (PWA)
 
-Prototipo de una app de entrenamiento y certificación para cuidadores no médicos, asistentes de enfermería (CNA) y trabajadores IHSS en California. El diseño fue generado con [Stitch](https://stitch.withgoogle.com) y se conserva aquí como páginas HTML estáticas y autocontenidas (Tailwind vía CDN, fuentes Manrope / JetBrains Mono, iconos Material Symbols).
+App de entrenamiento personal de 90 días para cuidadores no médicos en California — **de uso personal**, no un producto de certificación ni afiliado a ninguna agencia estatal. Nació como un prototipo HTML de [Stitch](https://stitch.withgoogle.com); ahora es una **PWA real e instalable**, funcional sin backend: todo el contenido y el progreso viven en el propio navegador (`localStorage`), con los mismos datos legales/curriculares ya corregidos y verificados que se usaron en la versión nativa de Android (`android/`).
 
-## Cómo verlo
+## Cómo verla
 
-Abre `index.html` en un navegador, o sirve la carpeta con cualquier servidor estático:
+Sirve la carpeta con cualquier servidor estático (no requiere build ni Node):
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Luego visita `http://localhost:8000`.
+Luego visita `http://localhost:8000`. Para instalarla como app (PWA), ábrela en Chrome/Edge y usa "Instalar app" en la barra de direcciones — funciona sin conexión después de la primera carga.
+
+## Desplegar en Vercel
+
+Es un sitio 100% estático — no necesita configuración especial. En [vercel.com](https://vercel.com), "Import Project" desde este repo y despliega tal cual (no hay comando de build ni carpeta de salida distinta a la raíz).
 
 ## Estructura
 
 ```
-index.html              Portada con enlaces a todas las pantallas
-screens/                 Las 10 pantallas del prototipo (HTML independientes)
-assets/logo.svg          Logo de la marca
-docs/design/DESIGN.md    Sistema de diseño (colores, tipografía, componentes)
-docs/design/previews/    Capturas de referencia de cada pantalla
+index.html          App shell (una sola página real, no una galería)
+manifest.json        Manifiesto de la PWA (íconos, nombre, modo standalone)
+sw.js                 Service worker: cachea todo para uso sin conexión
+css/app.css           Estilos base (además de Tailwind vía CDN)
+js/
+  data.js             Carga el contenido real (data/*.json)
+  state.js             Progreso/estado en localStorage (equivalente a DataStore/Room de Android)
+  scheduler.js          Repetición espaciada (mismo algoritmo que domain/ReviewScheduler.kt)
+  audio.js              Reproducción de narración real + grabación de tu voz (Web Audio/MediaRecorder)
+  components.js          Helpers de UI compartidos
+  router.js, app.js       Router por hash + shell de navegación (5 pestañas)
+  screens/*.js            Una pantalla por archivo (Hoy, Plan, Práctica, Audio, Carrera y sus detalles)
+data/*.json           Contenido real: 6 rutas, currículo de 90 días (con lección real por día),
+                        39 tarjetas, 13 escenarios, 34 rúbricas, 30 términos, requisitos y recursos
+                        oficiales — verbatim del mismo contenido auditado que usa la app Android.
+assets/audio/*.mp3    Los 13 episodios narrados reales (generados con Cloud Text-to-Speech)
+assets/illustrations/  Diagramas paso a paso (estilo cómic) para temas de movimiento físico
+docs/design/DESIGN.md  Sistema de diseño (colores, tipografía) — la fuente de los tokens de Tailwind
 ```
 
-## Pantallas
+## Qué es real (y qué no)
 
-| Pantalla | Descripción |
-|---|---|
-| `screens/rutina-diaria-75-minutos.html` | Panel principal: sesión guiada diaria y progreso de 90 días |
-| `screens/escenarios-y-flashcards.html` | Práctica con escenarios y flashcards |
-| `screens/simulacion-de-turno-y-handoff.html` | Simulación de entrega de turno (handoff) |
-| `screens/role-play-audio-bilingue-semana-10.html` | Role play de audio bilingüe (semana 10) |
-| `screens/audio-lecciones-gemini-manos-libres.html` | Lecciones de audio manos libres con repaso formal |
-| `screens/biblioteca-audios-offline-13-semanas.html` | Biblioteca de audios descargables (13 semanas) |
-| `screens/requisitos-y-certificacion-ca.html` | Requisitos y certificación en California |
-| `screens/recursos-oficiales-certificaciones-semana.html` | Recursos oficiales y certificaciones por semana |
-| `screens/analizador-vocacional-metas-carrera.html` | Analizador vocacional y metas de carrera |
-| `screens/plan-90-dias-evaluaciones.html` | Plan completo de 90 días y evaluaciones |
-
-## Sistema de diseño
-
-Ver `docs/design/DESIGN.md` para la paleta de colores, tipografía, espaciado, elevación, formas y especificaciones de componentes ("Modern Clinical-Humanist").
+- ✅ Currículo completo de 90 días, con lección de enseñanza real por día (no solo práctica).
+- ✅ Repetición espaciada real sobre las 39 tarjetas, persistida en tu navegador.
+- ✅ Escenarios ramificados, requisitos legales y recursos oficiales filtrados por tu ruta.
+- ✅ Audio narrado real (13 episodios) + grabación de tu propia voz para practicar.
+- ✅ Diagramas ilustrados paso a paso para temas de movimiento físico (mecánica corporal, respuesta tras una caída) — principios generales de referencia, no un sustituto de entrenamiento presencial supervisado.
+- ❌ Sin pruebas automatizadas todavía.
+- ❌ Los diagramas ilustrados solo cubren 2 días de muestra por ahora; el resto de temas de movimiento físico quedan pendientes de ilustrar.
 
 ## App nativa de Android
 
-En `android/` vive una app nativa (Kotlin + Jetpack Compose) construida a partir de este mismo diseño. Es un esqueleto navegable con las 10 pantallas y el sistema de diseño aplicado, pero todavía sin lógica real de audio/temporizadores. Ver `android/README.md` para cómo abrirla en Android Studio y los próximos pasos.
-
-## Próximos pasos sugeridos
-
-Estas pantallas HTML son un prototipo visual: los contadores, temporizadores y barras de progreso funcionan en el navegador (JS embebido por pantalla), pero no hay backend, autenticación ni persistencia de datos entre pantallas. Los siguientes pasos típicos serían:
-- Seguir desarrollando la app nativa de Android en `android/` (ver su README).
-- Añadir estado/persistencia compartida (progreso del plan de 90 días, resultados de evaluaciones).
-- Conectar contenido real (lecciones, audios, recursos oficiales de CDSS/IHSS).
+En `android/` vive una versión nativa (Kotlin + Jetpack Compose) construida a partir del mismo contenido y diseño. Ver `android/README.md` y `docs/caregiver_upgrade/` para su estado y los 5 informes de auditoría de contenido legal.

@@ -2,148 +2,48 @@
 <html lang="es">
 <head>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/>
 <title>Caregiver Pro CA</title>
+<meta name="theme-color" content="#115e59"/>
+<link rel="manifest" href="manifest.json"/>
+<link rel="icon" href="assets/icons/icon-192.png"/>
+<link rel="apple-touch-icon" href="assets/icons/icon-192.png"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com"></script>
-<script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          primary: '#115e59',
-          'on-primary': '#ffffff',
-          secondary: '#9a442d',
-          'secondary-fixed': '#ffdbd2',
-          'on-secondary-fixed-variant': '#7c2e19',
-          background: '#f7faf8',
-          'on-background': '#181c1b',
-          'surface-container-lowest': '#ffffff',
-          'surface-container-low': '#f1f4f2',
-          outline: '#6f7977',
-          'outline-variant': '#bec9c7',
-        },
-        fontFamily: {
-          sans: ['Manrope', 'sans-serif'],
-          mono: ['JetBrains Mono', 'monospace'],
-        },
-      },
-    },
-  };
-</script>
-<style>
-  body { font-family: 'Manrope', sans-serif; }
-  .material-symbols-outlined { font-variation-settings: 'FILL' 1; }
-</style>
+<script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'on-primary-container': '#91d5ce', 'primary': '#004541', 'inverse-surface': '#2d3130', 'surface-dim': '#d7dbd9', 'secondary-container': '#fc9174', 'surface-variant': '#e0e3e1', 'on-secondary-fixed-variant': '#7c2e19', 'on-surface': '#181c1b', 'on-secondary-container': '#742814', 'surface-bright': '#f7faf8', 'on-tertiary-fixed': '#001e2d', 'background': '#f7faf8', 'error-container': '#ffdad6', 'outline-variant': '#bec9c7', 'secondary-fixed-dim': '#ffb4a1', 'primary-container': '#115e59', 'primary-fixed': '#abefe8', 'on-error': '#ffffff', 'on-secondary-fixed': '#3c0800', 'on-background': '#181c1b', 'surface': '#f7faf8', 'on-tertiary': '#ffffff', 'on-primary': '#ffffff', 'inverse-on-surface': '#eef1ef', 'error': '#ba1a1a', 'secondary': '#9a442d', 'surface-container-highest': '#e0e3e1', 'primary-fixed-dim': '#8fd3cc', 'on-primary-fixed-variant': '#00504b', 'tertiary-fixed': '#c5e7ff', 'tertiary-container': '#2f5971', 'surface-container-lowest': '#ffffff', 'tertiary': '#134159', 'surface-tint': '#216963', 'inverse-primary': '#8fd3cc', 'secondary-fixed': '#ffdbd2', 'surface-container': '#ebefed', 'surface-container-low': '#f1f4f2', 'surface-container-high': '#e6e9e7', 'outline': '#6f7977', 'on-secondary': '#ffffff', 'tertiary-fixed-dim': '#a2cce8', 'on-tertiary-container': '#a5cfeb', 'on-tertiary-fixed-variant': '#1f4b63', 'on-surface-variant': '#3f4947', 'on-error-container': '#93000a', 'on-primary-fixed': '#00201e' }, borderRadius: { DEFAULT: '0.25rem', lg: '0.5rem', xl: '0.75rem', full: '9999px' }, spacing: { 'space-md': '1rem', 'space-lg': '1.5rem', 'space-2xl': '3rem', 'touch-target-min': '3rem', 'space-xxs': '0.25rem', 'space-xs': '0.5rem', 'margin-mobile': '1rem', 'space-xl': '2rem', 'gutter-tablet': '1.5rem', 'space-sm': '0.75rem', 'gutter-mobile': '1rem', 'margin-tablet': '2rem' }, fontFamily: { 'display-lg': ['Manrope', 'sans-serif'], 'headline-md': ['Manrope', 'sans-serif'], 'headline-lg': ['Manrope', 'sans-serif'], 'label-lg': ['JetBrains Mono', 'monospace'], 'body-sm': ['Manrope', 'sans-serif'], 'body-lg': ['Manrope', 'sans-serif'], 'label-sm': ['JetBrains Mono', 'monospace'], 'display-lg-mobile': ['Manrope', 'sans-serif'], 'headline-sm': ['Manrope', 'sans-serif'], 'label-md': ['JetBrains Mono', 'monospace'], 'body-md': ['Manrope', 'sans-serif'] }, fontSize: { 'display-lg': ['36px', { lineHeight: '44px', letterSpacing: '-0.02em', fontWeight: '700' }], 'headline-md': ['20px', { lineHeight: '28px', fontWeight: '600' }], 'headline-lg': ['24px', { lineHeight: '32px', letterSpacing: '-0.01em', fontWeight: '600' }], 'label-lg': ['14px', { lineHeight: '20px', letterSpacing: '0.02em', fontWeight: '500' }], 'body-sm': ['13px', { lineHeight: '18px', fontWeight: '400' }], 'body-lg': ['16px', { lineHeight: '24px', fontWeight: '400' }], 'label-sm': ['10px', { lineHeight: '14px', letterSpacing: '0.06em', fontWeight: '500' }], 'display-lg-mobile': ['28px', { lineHeight: '34px', letterSpacing: '-0.01em', fontWeight: '700' }], 'headline-sm': ['18px', { lineHeight: '24px', fontWeight: '600' }], 'label-md': ['12px', { lineHeight: '16px', letterSpacing: '0.04em', fontWeight: '500' }], 'body-md': ['14px', { lineHeight: '20px', fontWeight: '400' }] } } } };</script>
+<link rel="stylesheet" href="css/app.css"/>
 </head>
-<body class="bg-background text-on-background min-h-screen">
-<header class="border-b border-outline-variant/40 bg-surface-container-lowest">
-<div class="max-w-5xl mx-auto px-6 py-6 flex items-center gap-3">
-<img alt="Caregiver Pro California" class="h-10 w-10" src="assets/logo.svg"/>
-<div>
-<h1 class="text-2xl font-bold text-primary tracking-tight">Caregiver Pro CA</h1>
-<p class="text-sm text-outline">Plan de entrenamiento de 90 días para cuidadores en California</p>
-</div>
-</div>
-</header>
+<body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen">
 
-<main class="max-w-5xl mx-auto px-6 py-10">
-<section class="mb-10">
-<p class="text-base text-on-background/80 max-w-2xl">
-Diseño (Stitch) para una app de entrenamiento y certificación dirigida a cuidadores no médicos, asistentes de enfermería (CNA) y trabajadores IHSS en California. Cada tarjeta abre una pantalla independiente y funcional del prototipo.
-</p>
-</section>
+<header id="app-header" class="fixed top-0 w-full z-50 pt-safe bg-surface-bright/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"></header>
 
-<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+<main id="app-view" class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface"></main>
 
-<a class="group rounded-xl border border-outline-variant/50 bg-surface-container-lowest overflow-hidden hover:shadow-md hover:border-primary/40 transition" href="screens/rutina-diaria-75-minutos.html">
-<img alt="Rutina diaria de 75 minutos" class="w-full aspect-[9/16] object-cover object-top bg-surface-container-low" src="docs/design/previews/rutina-diaria-75-minutos.png"/>
-<div class="p-4">
-<h2 class="font-semibold text-on-background group-hover:text-primary">Rutina Diaria (75 min)</h2>
-<p class="text-sm text-outline mt-1">Panel principal con la sesión guiada del día y el progreso de 90 días.</p>
-</div>
-</a>
+<nav id="app-bottomnav" class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest border-t border-outline-variant/40"></nav>
 
-<a class="group rounded-xl border border-outline-variant/50 bg-surface-container-lowest overflow-hidden hover:shadow-md hover:border-primary/40 transition" href="screens/escenarios-y-flashcards.html">
-<img alt="Escenarios y flashcards" class="w-full aspect-[9/16] object-cover object-top bg-surface-container-low" src="docs/design/previews/escenarios-y-flashcards.png"/>
-<div class="p-4">
-<h2 class="font-semibold text-on-background group-hover:text-primary">Escenarios y Flashcards</h2>
-<p class="text-sm text-outline mt-1">Práctica de competencias con tarjetas y escenarios de decisión.</p>
-</div>
-</a>
-
-<a class="group rounded-xl border border-outline-variant/50 bg-surface-container-lowest overflow-hidden hover:shadow-md hover:border-primary/40 transition" href="screens/simulacion-de-turno-y-handoff.html">
-<img alt="Simulación de turno y handoff" class="w-full aspect-[9/16] object-cover object-top bg-surface-container-low" src="docs/design/previews/simulacion-de-turno-y-handoff.png"/>
-<div class="p-4">
-<h2 class="font-semibold text-on-background group-hover:text-primary">Simulación de Turno y Handoff</h2>
-<p class="text-sm text-outline mt-1">Práctica de entrega de turno y reporte estructurado.</p>
-</div>
-</a>
-
-<a class="group rounded-xl border border-outline-variant/50 bg-surface-container-lowest overflow-hidden hover:shadow-md hover:border-primary/40 transition" href="screens/role-play-audio-bilingue-semana-10.html">
-<img alt="Role play de audio bilingüe" class="w-full aspect-[9/16] object-cover object-top bg-surface-container-low" src="docs/design/previews/role-play-audio-bilingue-semana-10.png"/>
-<div class="p-4">
-<h2 class="font-semibold text-on-background group-hover:text-primary">Role Play Bilingüe (Semana 10)</h2>
-<p class="text-sm text-outline mt-1">Ejercicio de diálogo en audio en español e inglés.</p>
-</div>
-</a>
-
-<a class="group rounded-xl border border-outline-variant/50 bg-surface-container-lowest overflow-hidden hover:shadow-md hover:border-primary/40 transition" href="screens/audio-lecciones-gemini-manos-libres.html">
-<img alt="Audio lecciones Gemini manos libres" class="w-full aspect-[9/16] object-cover object-top bg-surface-container-low" src="docs/design/previews/audio-lecciones-gemini-manos-libres.png"/>
-<div class="p-4">
-<h2 class="font-semibold text-on-background group-hover:text-primary">Audio Lecciones (Manos Libres)</h2>
-<p class="text-sm text-outline mt-1">Repaso formal guiado por voz con Gemini para estudiar sin pantalla.</p>
-</div>
-</a>
-
-<a class="group rounded-xl border border-outline-variant/50 bg-surface-container-lowest overflow-hidden hover:shadow-md hover:border-primary/40 transition" href="screens/biblioteca-audios-offline-13-semanas.html">
-<img alt="Biblioteca de audios offline" class="w-full aspect-[9/16] object-cover object-top bg-surface-container-low" src="docs/design/previews/biblioteca-audios-offline-13-semanas.png"/>
-<div class="p-4">
-<h2 class="font-semibold text-on-background group-hover:text-primary">Biblioteca de Audios (13 Semanas)</h2>
-<p class="text-sm text-outline mt-1">Lecciones descargables para escuchar sin conexión.</p>
-</div>
-</a>
-
-<a class="group rounded-xl border border-outline-variant/50 bg-surface-container-lowest overflow-hidden hover:shadow-md hover:border-primary/40 transition" href="screens/requisitos-y-certificacion-ca.html">
-<img alt="Requisitos y certificación CA" class="w-full aspect-[9/16] object-cover object-top bg-surface-container-low" src="docs/design/previews/requisitos-y-certificacion-ca.png"/>
-<div class="p-4">
-<h2 class="font-semibold text-on-background group-hover:text-primary">Requisitos y Certificación CA</h2>
-<p class="text-sm text-outline mt-1">Guía de requisitos oficiales de California (CDSS Title 22, IHSS, CNA).</p>
-</div>
-</a>
-
-<a class="group rounded-xl border border-outline-variant/50 bg-surface-container-lowest overflow-hidden hover:shadow-md hover:border-primary/40 transition" href="screens/recursos-oficiales-certificaciones-semana.html">
-<img alt="Recursos oficiales y certificaciones por semana" class="w-full aspect-[9/16] object-cover object-top bg-surface-container-low" src="docs/design/previews/recursos-oficiales-certificaciones-semana.png"/>
-<div class="p-4">
-<h2 class="font-semibold text-on-background group-hover:text-primary">Recursos por Semana</h2>
-<p class="text-sm text-outline mt-1">Enlaces oficiales y certificaciones organizados por semana del plan.</p>
-</div>
-</a>
-
-<a class="group rounded-xl border border-outline-variant/50 bg-surface-container-lowest overflow-hidden hover:shadow-md hover:border-primary/40 transition" href="screens/analizador-vocacional-metas-carrera.html">
-<img alt="Analizador vocacional y metas de carrera" class="w-full aspect-[9/16] object-cover object-top bg-surface-container-low" src="docs/design/previews/analizador-vocacional-metas-carrera.png"/>
-<div class="p-4">
-<h2 class="font-semibold text-on-background group-hover:text-primary">Analizador Vocacional</h2>
-<p class="text-sm text-outline mt-1">Evaluación de metas de carrera dentro del cuidado no médico.</p>
-</div>
-</a>
-
-<a class="group rounded-xl border border-outline-variant/50 bg-surface-container-lowest overflow-hidden hover:shadow-md hover:border-primary/40 transition" href="screens/plan-90-dias-evaluaciones.html">
-<img alt="Plan de 90 días y evaluaciones" class="w-full aspect-[9/16] object-cover object-top bg-surface-container-low" src="docs/design/previews/plan-90-dias-evaluaciones.png"/>
-<div class="p-4">
-<h2 class="font-semibold text-on-background group-hover:text-primary">Plan de 90 Días y Evaluaciones</h2>
-<p class="text-sm text-outline mt-1">Línea de tiempo completa del programa y sus evaluaciones.</p>
-</div>
-</a>
-
-</section>
-</main>
-
-<footer class="max-w-5xl mx-auto px-6 py-10 text-sm text-outline">
-<p>Sistema de diseño: <a class="text-primary underline" href="docs/design/DESIGN.md">docs/design/DESIGN.md</a></p>
-</footer>
+<script src="js/scheduler.js"></script>
+<script src="js/data.js"></script>
+<script src="js/state.js"></script>
+<script src="js/components.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/screens/onboarding.js"></script>
+<script src="js/screens/hoy.js"></script>
+<script src="js/screens/plan.js"></script>
+<script src="js/screens/practicaHub.js"></script>
+<script src="js/screens/escenarios.js"></script>
+<script src="js/screens/roleplay.js"></script>
+<script src="js/screens/turno.js"></script>
+<script src="js/screens/audioHub.js"></script>
+<script src="js/screens/lecciones.js"></script>
+<script src="js/screens/biblioteca.js"></script>
+<script src="js/screens/carreraHub.js"></script>
+<script src="js/screens/requisitos.js"></script>
+<script src="js/screens/recursos.js"></script>
+<script src="js/screens/vocacional.js"></script>
+<script src="js/router.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>

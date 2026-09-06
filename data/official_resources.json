@@ -1,0 +1,235 @@
+[
+  {
+    "id": "hsc_article1",
+    "titleEs": "HSC, definiciones de Home Care Services",
+    "agency": "California Legislature",
+    "url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?article=1.&chapter=13.&division=2.&lawCode=HSC&part=&title=",
+    "pathwayIds": [
+      "HcaAffiliatedHco",
+      "DirectPrivateCaregiver"
+    ],
+    "phone": null,
+    "geography": null
+  },
+  {
+    "id": "hsc_article2",
+    "titleEs": "HSC, HCA independiente y contratación directa",
+    "agency": "California Legislature",
+    "url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?article=2.&chapter=13.&division=2.&lawCode=HSC&part=&title=",
+    "pathwayIds": [
+      "DirectPrivateCaregiver"
+    ],
+    "phone": null,
+    "geography": null
+  },
+  {
+    "id": "hsc_article7",
+    "titleEs": "HSC, requisitos de Home Care Aide",
+    "agency": "California Legislature",
+    "url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?article=7.&chapter=13.&division=2.&lawCode=HSC&part=&title=",
+    "pathwayIds": [
+      "HcaAffiliatedHco"
+    ],
+    "phone": null,
+    "geography": null
+  },
+  {
+    "id": "hsc_article8",
+    "titleEs": "HSC, formación y tuberculosis para HCA afiliado",
+    "agency": "California Legislature",
+    "url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?article=8.&chapter=13.&division=2.&lawCode=HSC&part=&title=",
+    "pathwayIds": [
+      "HcaAffiliatedHco"
+    ],
+    "phone": null,
+    "geography": null
+  },
+  {
+    "id": "hca_application",
+    "titleEs": "Solicitud y renovación HCA en Guardian",
+    "agency": "CDSS",
+    "url": "https://www.cdss.ca.gov/inforesources/community-care/home-care-services/home-care-aide-application-process",
+    "pathwayIds": [
+      "HcaAffiliatedHco",
+      "DirectPrivateCaregiver"
+    ],
+    "phone": null,
+    "geography": null
+  },
+  {
+    "id": "hca_fees",
+    "titleEs": "Tarifas de Home Care Services",
+    "agency": "CDSS",
+    "url": "https://www.cdss.ca.gov/inforesources/community-care/home-care-services/application-fees",
+    "pathwayIds": [
+      "HcaAffiliatedHco",
+      "DirectPrivateCaregiver"
+    ],
+    "phone": null,
+    "geography": null
+  },
+  {
+    "id": "hca_resources",
+    "titleEs": "Recursos para Home Care Aides",
+    "agency": "CDSS",
+    "url": "https://www.cdss.ca.gov/inforesources/community-care/home-care-services/resources-for-home-care-aides",
+    "pathwayIds": [
+      "HcaAffiliatedHco",
+      "DirectPrivateCaregiver"
+    ],
+    "phone": null,
+    "geography": null
+  },
+  {
+    "id": "ihss_orientation",
+    "titleEs": "Proceso de orientación e inscripción IHSS",
+    "agency": "CDSS",
+    "url": "https://www.cdss.ca.gov/inforesources/ihss/ihss-providers/orientation-process",
+    "pathwayIds": [
+      "IhssProvider"
+    ],
+    "phone": null,
+    "geography": null
+  },
+  {
+    "id": "ihss_soc426",
+    "titleEs": "Formulario SOC 426",
+    "agency": "CDSS",
+    "url": "https://www.cdss.ca.gov/cdssweb/entres/forms/English/SOC426.PDF",
+    "pathwayIds": [
+      "IhssProvider"
+    ],
+    "phone": null,
+    "geography": null
+  },
+  {
+    "id": "ihss_forms_es",
+    "titleEs": "Formularios CDSS traducidos al español",
+    "agency": "CDSS",
+    "url": "https://www.cdss.ca.gov/inforesources/forms-brochures/translated-forms-and-publications/spanish",
+    "pathwayIds": [
+      "IhssProvider"
+    ],
+    "phone": null,
+    "geography": null
+  },
+  {
+    "id": "wic_abandonment",
+    "titleEs": "WIC §15610.05 — Abandono",
+    "agency": "California Legislature",
+    "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=WIC&sectionNum=15610.05.",
+    "pathwayIds": "ALL",
+    "phone": null,
+    "geography": null
+  },
+  {
+    "id": "wic_reporting",
+    "titleEs": "WIC §15630 — Reporte obligatorio",
+    "agency": "California Legislature",
+    "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=WIC&sectionNum=15630.",
+    "pathwayIds": "ALL",
+    "phone": null,
+    "geography": null
+  },
+  {
+    "id": "ca_aps",
+    "titleEs": "Adult Protective Services y línea estatal",
+    "agency": "CDSS",
+    "url": "https://www.cdss.ca.gov/adult-protective-services",
+    "pathwayIds": "ALL",
+    "phone": "1-833-401-0832",
+    "geography": null
+  },
+  {
+    "id": "aps_forms",
+    "titleEs": "Formularios APS y SOC 341",
+    "agency": "CDSS",
+    "url": "https://www.cdss.ca.gov/inforesources/cdss-programs/adult-protective-services/program-forms",
+    "pathwayIds": [
+      "IhssProvider",
+      "HcaAffiliatedHco",
+      "DirectPrivateCaregiver",
+      "HomeHealthAide",
+      "CertifiedNurseAssistant"
+    ],
+    "phone": null,
+    "geography": null
+  },
+  {
+    "id": "cdph_cna_training",
+    "titleEs": "Nurse Assistant Training Program",
+    "agency": "CDPH",
+    "url": "https://www.cdph.ca.gov/Programs/CHCQ/LCP/Pages/Nurse-Assistant-Training-Program-Applicants.aspx",
+    "pathwayIds": [
+      "CertifiedNurseAssistant"
+    ],
+    "phone": null,
+    "geography": null
+  },
+  {
+    "id": "cdph_cna",
+    "titleEs": "Programas de formación Certified Nurse Assistant",
+    "agency": "CDPH",
+    "url": "https://www.cdph.ca.gov/Programs/CHCQ/LCP/Pages/Certified-Nurse-Assistant-Training-Programs.aspx",
+    "pathwayIds": [
+      "CertifiedNurseAssistant"
+    ],
+    "phone": null,
+    "geography": null
+  },
+  {
+    "id": "cdph_hha",
+    "titleEs": "Home Health Aide",
+    "agency": "CDPH",
+    "url": "https://www.cdph.ca.gov/Programs/CHCQ/LCP/Pages/hha.aspx",
+    "pathwayIds": [
+      "HomeHealthAide"
+    ],
+    "phone": null,
+    "geography": null
+  },
+  {
+    "id": "cdph_hha_120",
+    "titleEs": "Programa HHA de 120 horas",
+    "agency": "CDPH",
+    "url": "https://www.cdph.ca.gov/Programs/CHCQ/LCP/Pages/120-Hour-Home-Health-Aide-Training-Program-Applicants.aspx",
+    "pathwayIds": [
+      "HomeHealthAide"
+    ],
+    "phone": null,
+    "geography": null
+  },
+  {
+    "id": "cdph_hha_40",
+    "titleEs": "Programa HHA de 40 horas",
+    "agency": "CDPH",
+    "url": "https://www.cdph.ca.gov/Programs/CHCQ/LCP/Pages/40-Hour-Home-Health-Aide-Training-Program-Applicants.aspx",
+    "pathwayIds": [
+      "HomeHealthAide"
+    ],
+    "phone": null,
+    "geography": null
+  },
+  {
+    "id": "ca_aging",
+    "titleEs": "California Department of Aging",
+    "agency": "California Department of Aging",
+    "url": "https://aging.ca.gov/",
+    "pathwayIds": [
+      "FamilyCaregiver"
+    ],
+    "phone": null,
+    "geography": null
+  },
+  {
+    "id": "sf_ihss_benefits",
+    "titleEs": "Beneficios y capacitación para proveedores IHSS de San Francisco",
+    "agency": "San Francisco Human Services Agency",
+    "url": "https://www.sfhsa.org/services/disability-aging/home-care/home-supportive-services-ihss/provide-home-supportive-services-ihss/get-ihss-job-benefits-and-training",
+    "pathwayIds": [
+      "IhssProvider"
+    ],
+    "phone": null,
+    "geography": "San Francisco County"
+  }
+]

@@ -1,0 +1,167 @@
+[
+  {
+    "id": "hca_registration_affiliated",
+    "pathwayIds": [
+      "HcaAffiliatedHco"
+    ],
+    "titleEs": "Registro HCA para afiliación con HCO",
+    "status": "RequiredForPathway",
+    "summaryEs": "El HCA afiliado debe completar el registro y la verificación de antecedentes aplicables antes de prestar servicios conforme al proceso de la HCO.",
+    "effectiveFrom": null,
+    "feeUsd": null,
+    "sourceUrls": [
+      "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?article=7.&chapter=13.&division=2.&lawCode=HSC&part=&title=",
+      "https://www.cdss.ca.gov/inforesources/community-care/home-care-services/home-care-aide-application-process"
+    ]
+  },
+  {
+    "id": "hca_guardian_application",
+    "pathwayIds": [
+      "HcaAffiliatedHco",
+      "DirectPrivateCaregiver"
+    ],
+    "titleEs": "Solicitud Guardian y Live Scan",
+    "status": "ConditionalByPathway",
+    "summaryEs": "El proceso publicado incluye cuenta, solicitud, PIN del HCO o PIN independiente, tarifa verificada en esta fecha y Live Scan. No se describe un examen de conocimientos.",
+    "effectiveFrom": null,
+    "feeUsd": 35,
+    "sourceUrls": [
+      "https://www.cdss.ca.gov/inforesources/community-care/home-care-services/home-care-aide-application-process",
+      "https://www.cdss.ca.gov/inforesources/community-care/home-care-services/application-fees"
+    ]
+  },
+  {
+    "id": "hca_entry_training",
+    "pathwayIds": [
+      "HcaAffiliatedHco"
+    ],
+    "titleEs": "Cinco horas de formación inicial",
+    "status": "RequiredForPathway",
+    "summaryEs": "Antes de estar con un cliente, un HCA afiliado completa como mínimo dos horas de orientación y tres horas de seguridad, incluidas precauciones básicas, emergencias y control de infección.",
+    "effectiveFrom": "2016-01-01",
+    "feeUsd": null,
+    "sourceUrls": [
+      "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?article=8.&chapter=13.&division=2.&lawCode=HSC&part=&title="
+    ]
+  },
+  {
+    "id": "hca_annual_training",
+    "pathwayIds": [
+      "HcaAffiliatedHco"
+    ],
+    "titleEs": "Cinco horas anuales de formación",
+    "status": "RequiredForPathway",
+    "summaryEs": "La formación anual cubre competencias centrales y población específica, incluidos derechos y seguridad, necesidades diarias, abuso/neglect, higiene y transporte cuando corresponda.",
+    "effectiveFrom": null,
+    "feeUsd": null,
+    "sourceUrls": [
+      "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?article=8.&chapter=13.&division=2.&lawCode=HSC&part=&title="
+    ]
+  },
+  {
+    "id": "hca_dementia_2027",
+    "pathwayIds": [
+      "HcaAffiliatedHco"
+    ],
+    "titleEs": "Demencia como tema anual",
+    "status": "FutureRequirement",
+    "summaryEs": "La versión de HSC §1796.44 operativa el 1 de enero de 2027 incluye las necesidades especiales de clientes con demencia entre las áreas anuales.",
+    "effectiveFrom": "2027-01-01",
+    "feeUsd": null,
+    "sourceUrls": [
+      "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?article=8.&chapter=13.&division=2.&lawCode=HSC&part=&title="
+    ]
+  },
+  {
+    "id": "hca_tb",
+    "pathwayIds": [
+      "HcaAffiliatedHco"
+    ],
+    "titleEs": "Evaluación de tuberculosis",
+    "status": "RequiredForPathway",
+    "summaryEs": "Para la ruta afiliada, HSC §1796.45 exige examen dentro del periodo legal y documentación de ausencia de riesgo de enfermedad activa; un resultado negativo se repite al menos cada dos años, con reglas específicas para resultados positivos documentados.",
+    "effectiveFrom": null,
+    "feeUsd": null,
+    "sourceUrls": [
+      "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?article=8.&chapter=13.&division=2.&lawCode=HSC&part=&title="
+    ]
+  },
+  {
+    "id": "hca_cpr",
+    "pathwayIds": "ALL",
+    "titleEs": "CPR y primeros auxilios",
+    "status": "RecommendedOrExternalRequirement",
+    "summaryEs": "Puede ser recomendado o exigido por el empleador, programa, puesto o asegurador. HSC §1796.43 no debe citarse como mandato general de CPR/AED.",
+    "effectiveFrom": null,
+    "feeUsd": null,
+    "sourceUrls": [
+      "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?article=7.&chapter=13.&division=2.&lawCode=HSC&part=&title="
+    ]
+  },
+  {
+    "id": "ihss_enrollment",
+    "pathwayIds": [
+      "IhssProvider"
+    ],
+    "titleEs": "Inscripción de proveedor IHSS",
+    "status": "RequiredForPathway",
+    "summaryEs": "El proceso incluye SOC 426, orientación, SOC 846, huellas y verificación de antecedentes DOJ, gestionado con el condado.",
+    "effectiveFrom": null,
+    "feeUsd": null,
+    "sourceUrls": [
+      "https://www.cdss.ca.gov/inforesources/ihss/ihss-providers/orientation-process"
+    ]
+  },
+  {
+    "id": "mandated_reporting_home",
+    "pathwayIds": "ALL",
+    "titleEs": "Reporte de abuso en entorno domiciliario",
+    "status": "RoleAndFactDependent",
+    "summaryEs": "Quienes están cubiertos por WIC §15630 deben reportar conocimiento u observación, alegato o sospecha razonable según la ley. El reporte es inmediato o tan pronto como sea posible; si el inicial es telefónico, se presenta seguimiento escrito/Internet dentro de dos días laborables. En peligro inmediato, prioriza el 911.",
+    "effectiveFrom": null,
+    "feeUsd": null,
+    "sourceUrls": [
+      "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=WIC&sectionNum=15630.",
+      "https://www.cdss.ca.gov/adult-protective-services"
+    ]
+  },
+  {
+    "id": "cna_training",
+    "pathwayIds": [
+      "CertifiedNurseAssistant"
+    ],
+    "titleEs": "Programa aprobado CNA",
+    "status": "RequiredForPathway",
+    "summaryEs": "La ruta base publicada por CDPH incluye al menos 60 horas de aula y 100 horas de práctica clínica supervisada, además de los pasos oficiales aplicables.",
+    "effectiveFrom": null,
+    "feeUsd": null,
+    "sourceUrls": [
+      "https://www.cdph.ca.gov/Programs/CHCQ/LCP/Pages/Nurse-Assistant-Training-Program-Applicants.aspx"
+    ]
+  },
+  {
+    "id": "hha_training",
+    "pathwayIds": [
+      "HomeHealthAide"
+    ],
+    "titleEs": "Programa aprobado HHA",
+    "status": "RequiredForPathway",
+    "summaryEs": "CDPH publica una ruta básica HHA de 120 horas y una opción aprobada de 40 horas para candidatos elegibles con CNA/formación aplicable.",
+    "effectiveFrom": null,
+    "feeUsd": null,
+    "sourceUrls": [
+      "https://www.cdph.ca.gov/Programs/CHCQ/LCP/Pages/120-Hour-Home-Health-Aide-Training-Program-Applicants.aspx",
+      "https://www.cdph.ca.gov/Programs/CHCQ/LCP/Pages/40-Hour-Home-Health-Aide-Training-Program-Applicants.aspx"
+    ]
+  },
+  {
+    "id": "internal_completion",
+    "pathwayIds": "ALL",
+    "titleEs": "Finalización dentro de la app",
+    "status": "InternalOnly",
+    "summaryEs": "La app puede registrar horas internas, conocimiento, práctica y observaciones. No concede una licencia, registro o certificación gubernamental.",
+    "effectiveFrom": null,
+    "feeUsd": null,
+    "sourceUrls": []
+  }
+]

@@ -1,0 +1,206 @@
+[
+  {
+    "id": "911",
+    "labelEs": "Activación del 911",
+    "descriptionEs": "Llama al 911 ante peligro inmediato y no retrasa por la lección.",
+    "critical": true
+  },
+  {
+    "id": "accurate_language",
+    "labelEs": "Lenguaje regulatorio exacto",
+    "descriptionEs": "Usa registro, inscripción, certificación o práctica según la ruta real.",
+    "critical": true
+  },
+  {
+    "id": "action_and_notification",
+    "labelEs": "Acción y notificación",
+    "descriptionEs": "Indica qué se hizo y a quién se informó.",
+    "critical": false
+  },
+  {
+    "id": "baseline_change",
+    "labelEs": "Cambio de línea base",
+    "descriptionEs": "Reconoce y comunica un cambio nuevo sin diagnosticar.",
+    "critical": true
+  },
+  {
+    "id": "care_plan",
+    "labelEs": "Uso del plan de cuidado",
+    "descriptionEs": "Consulta y sigue instrucciones individualizadas y contactos.",
+    "critical": true
+  },
+  {
+    "id": "chronology",
+    "labelEs": "Cronología",
+    "descriptionEs": "Registra hora y secuencia sin rellenar datos desconocidos.",
+    "critical": false
+  },
+  {
+    "id": "clarification",
+    "labelEs": "Aclaración",
+    "descriptionEs": "Pide repetición o explicación cuando no entiende.",
+    "critical": true
+  },
+  {
+    "id": "consent",
+    "labelEs": "Consentimiento",
+    "descriptionEs": "Pide permiso y responde sin coacción a una pausa o rechazo.",
+    "critical": true
+  },
+  {
+    "id": "correct_channel",
+    "labelEs": "Canal correcto",
+    "descriptionEs": "Usa 911, APS, policía o responsable según peligro, entorno y regla.",
+    "critical": true
+  },
+  {
+    "id": "credential_language",
+    "labelEs": "Lenguaje de credenciales",
+    "descriptionEs": "No presenta formación interna como aprobación estatal.",
+    "critical": true
+  },
+  {
+    "id": "dignity",
+    "labelEs": "Dignidad",
+    "descriptionEs": "Mantiene respeto, elección y lenguaje no estigmatizante.",
+    "critical": false
+  },
+  {
+    "id": "emergency_escalation",
+    "labelEs": "Escalamiento de emergencia",
+    "descriptionEs": "Reconoce cuándo el plan o 911 requiere acción urgente.",
+    "critical": true
+  },
+  {
+    "id": "emergency_priority",
+    "labelEs": "Prioridad de emergencia",
+    "descriptionEs": "Actúa antes de timer, documentación o progreso.",
+    "critical": true
+  },
+  {
+    "id": "escalation",
+    "labelEs": "Escalamiento",
+    "descriptionEs": "Contacta a la persona autorizada con hechos útiles.",
+    "critical": true
+  },
+  {
+    "id": "hand_hygiene",
+    "labelEs": "Higiene de manos",
+    "descriptionEs": "La realiza en el momento correcto y no confía solo en guantes.",
+    "critical": true
+  },
+  {
+    "id": "hands_on_limit",
+    "labelEs": "Límite de práctica manual",
+    "descriptionEs": "No improvisa equipo o técnica sin formación/verificación.",
+    "critical": true
+  },
+  {
+    "id": "immediate_safety",
+    "labelEs": "Seguridad inmediata",
+    "descriptionEs": "Protege a la persona antes de tareas secundarias.",
+    "critical": true
+  },
+  {
+    "id": "no_dose_change",
+    "labelEs": "No cambiar dosis",
+    "descriptionEs": "No recomienda, duplica, omite o cambia una dosis por decisión propia.",
+    "critical": true
+  },
+  {
+    "id": "objective_documentation",
+    "labelEs": "Documentación objetiva",
+    "descriptionEs": "Registra hechos y palabras exactas sin juicio.",
+    "critical": false
+  },
+  {
+    "id": "objective_facts",
+    "labelEs": "Hechos observables",
+    "descriptionEs": "Distingue observación de interpretación o diagnóstico.",
+    "critical": false
+  },
+  {
+    "id": "objective_observation",
+    "labelEs": "Observación objetiva",
+    "descriptionEs": "Describe lugar, apariencia, hora y cambio observable.",
+    "critical": false
+  },
+  {
+    "id": "pathway_identification",
+    "labelEs": "Identificación de ruta",
+    "descriptionEs": "Pregunta la relación/objetivo antes de mostrar requisitos.",
+    "critical": true
+  },
+  {
+    "id": "pathway_separation",
+    "labelEs": "Separación de rutas",
+    "descriptionEs": "No combina HCA, IHSS, HHA y CNA.",
+    "critical": true
+  },
+  {
+    "id": "ppe",
+    "labelEs": "PPE adecuado",
+    "descriptionEs": "Usa, cambia y retira PPE según riesgo, formación y política.",
+    "critical": true
+  },
+  {
+    "id": "privacy",
+    "labelEs": "Privacidad",
+    "descriptionEs": "Minimiza datos, audiencia, canal y grabación.",
+    "critical": true
+  },
+  {
+    "id": "record_integrity",
+    "labelEs": "Integridad del registro",
+    "descriptionEs": "No falsifica, retrofecha ni completa de memoria.",
+    "critical": true
+  },
+  {
+    "id": "report_timing",
+    "labelEs": "Tiempo del reporte",
+    "descriptionEs": "No espera confirmación; respeta reporte inmediato y seguimiento aplicable.",
+    "critical": true
+  },
+  {
+    "id": "scope",
+    "labelEs": "Alcance de la función",
+    "descriptionEs": "No diagnostica, prescribe o ejecuta tarea no autorizada.",
+    "critical": true
+  },
+  {
+    "id": "source_use",
+    "labelEs": "Uso de fuente",
+    "descriptionEs": "Consulta autoridad oficial, fecha, jurisdicción y ruta.",
+    "critical": false
+  },
+  {
+    "id": "source_verification",
+    "labelEs": "Verificación de fuente",
+    "descriptionEs": "No confía solo en logos o marketing; verifica lista/página oficial.",
+    "critical": true
+  },
+  {
+    "id": "stop_unsafe_action",
+    "labelEs": "Detener acción insegura",
+    "descriptionEs": "Pausa una tarea cuando surge riesgo o cambio no resuelto.",
+    "critical": true
+  },
+  {
+    "id": "task_sequence",
+    "labelEs": "Secuencia de tareas",
+    "descriptionEs": "Evita trasladar contaminación o perder pasos esenciales.",
+    "critical": false
+  },
+  {
+    "id": "teach_back",
+    "labelEs": "Teach-back",
+    "descriptionEs": "Confirma comprensión sin culpar ni examinar a la persona.",
+    "critical": false
+  },
+  {
+    "id": "urgent_escalation",
+    "labelEs": "Escalamiento urgente",
+    "descriptionEs": "Comunica de inmediato un cambio agudo o riesgo alto.",
+    "critical": true
+  }
+]

@@ -1,0 +1,1282 @@
+[
+  {
+    "day": 1,
+    "week": 1,
+    "moduleId": "foundations",
+    "titleEs": "Propósito y límites del curso",
+    "objectiveEs": "Distinguir formación interna de una credencial estatal",
+    "practiceEs": "Clasificar cinco afirmaciones como educación, registro o certificación",
+    "evidence": "quiz+reflection",
+    "criticalSafety": false,
+    "sourceTags": [
+      "disclaimer"
+    ],
+    "lessonEs": "Esta formación te ayuda a practicar criterio, comunicación y seguridad, pero no sustituye los procesos que cada función profesional exige. Aprender una técnica dentro de la app significa que puedes reconocer sus pasos y ensayarlos; registrarte significa completar un trámite ante la entidad correspondiente; obtener una certificación requiere cumplir el programa, las horas y las evaluaciones que esa credencial establezca. Confundir esas tres cosas puede llevarte a presentarte como preparado para una tarea que todavía necesita instrucción presencial o autorización. Imagina que terminas una lección sobre transferencias: puedes explicar el procedimiento y detectar riesgos, pero eso no demuestra que estés autorizado para usar una grúa con una persona real. La respuesta profesional es reconocer lo aprendido, verificar tu ruta y pedir observación competente antes de actuar. Esta claridad no disminuye tu progreso; lo hace honesto y seguro. En la actividad siguiente clasificarás varias afirmaciones para comprobar que distingues educación, registro y certificación sin mezclarlos."
+  },
+  {
+    "day": 2,
+    "week": 1,
+    "moduleId": "foundations",
+    "titleEs": "Dignidad y enfoque centrado en la persona",
+    "objectiveEs": "Reconocer preferencias y capacidades antes de ayudar",
+    "practiceEs": "Reescribir órdenes como opciones respetuosas",
+    "evidence": "response+rubric",
+    "criticalSafety": false,
+    "sourceTags": [
+      "ethics"
+    ],
+    "lessonEs": "Cuidar de forma centrada en la persona comienza por descubrir quién es la persona antes de decidir qué ayuda necesita. Sus rutinas, creencias, gustos, idioma y capacidades importan tanto como la tarea pendiente. En vez de asumir que debes hacerlo todo, observa qué puede realizar con seguridad, pregunta cómo prefiere recibir apoyo y ofrece elecciones reales. La ayuda adecuada conserva control y evita convertir la rapidez del cuidador en dependencia del cliente. Por ejemplo, si Rosa puede abotonarse la blusa lentamente, no le quites la prenda para terminar más rápido. Puedes preparar la ropa, darle tiempo y ofrecer ayuda únicamente con los botones difíciles. También conviene preguntar si prefiere vestirse antes o después del desayuno. Esa pequeña elección protege dignidad y cooperación. El buen cuidado no se mide solo por completar actividades, sino por cómo se sintió y participó la persona. Ahora transformarás órdenes comunes en opciones respetuosas para practicar este cambio de enfoque."
+  },
+  {
+    "day": 3,
+    "week": 1,
+    "moduleId": "foundations",
+    "titleEs": "Consentimiento antes de ayudar",
+    "objectiveEs": "Pedir permiso y aceptar una pausa o rechazo seguro",
+    "practiceEs": "Practicar tres frases de consentimiento en español e inglés",
+    "evidence": "roleplay+audio",
+    "criticalSafety": false,
+    "sourceTags": [
+      "care_plan"
+    ],
+    "lessonEs": "Antes de tocar, mover o ayudar con el cuerpo de alguien, necesitas explicar lo que propones y obtener su permiso. El consentimiento no es una formalidad pronunciada una vez; continúa durante toda la actividad y puede retirarse si la persona siente dolor, miedo o incomodidad. Habla con claridad, ofrece una pausa y observa tanto las palabras como el lenguaje corporal. Cuando exista un rechazo no urgente, detente, pregunta la razón sin discutir y busca una alternativa compatible con el plan de cuidado. Supón que Luis acepta levantarse, pero al acercar el caminador dice que está mareado y retira las manos. No continúes porque había dicho que sí al principio. Déjalo seguro, escucha lo que siente y comunica el cambio según el plan. Si hay peligro inmediato, activa la ayuda correspondiente en vez de negociar. Pedir permiso protege autonomía y también revela información importante sobre el estado de la persona. A continuación practicarás tres frases breves de consentimiento en español e inglés hasta que suenen naturales."
+  },
+  {
+    "day": 4,
+    "week": 1,
+    "moduleId": "foundations",
+    "titleEs": "Privacidad y confidencialidad",
+    "objectiveEs": "Proteger conversaciones, cuerpo, hogar e información",
+    "practiceEs": "Detectar seis violaciones de privacidad en una escena ficticia",
+    "evidence": "scenario+quiz",
+    "criticalSafety": false,
+    "sourceTags": [
+      "privacy"
+    ],
+    "lessonEs": "La privacidad abarca mucho más que cerrar una puerta. Incluye proteger el cuerpo durante el aseo, evitar conversaciones que otras personas puedan oír, respetar el hogar y mantener documentos, fotografías y mensajes fuera del alcance de personas no autorizadas. Comparte solo la información necesaria, mediante el canal aprobado y con quien corresponda. Antes de entrar, toca; antes de mover pertenencias, pregunta; antes de hablar de salud frente a una visita, confirma que el cliente desea incluirla. Imagina que una hija llama y pide detalles de la medicación mientras el cliente nunca indicó que ella podía recibirlos. Ser familiar no basta para que tú reveles información. Puedes responder con respeto, verificar el plan y transferir la consulta al responsable. Del mismo modo, nunca uses tu teléfono personal para fotografiar una lesión o publicar una historia aparentemente anónima. La confianza se pierde con una sola exposición innecesaria. En la escena ficticia que sigue buscarás seis violaciones distintas para entrenar tu mirada de privacidad."
+  },
+  {
+    "day": 5,
+    "week": 1,
+    "moduleId": "foundations",
+    "titleEs": "Alcance no médico",
+    "objectiveEs": "Separar ayuda permitida de diagnóstico, prescripción o tareas no autorizadas",
+    "practiceEs": "Ordenar acciones en hacer, verificar o escalar",
+    "evidence": "classification+review",
+    "criticalSafety": true,
+    "sourceTags": [
+      "HSC_1796_12"
+    ],
+    "lessonEs": "El cuidado no médico ayuda a la persona con su vida diaria sin convertirte en quien diagnostica, prescribe o toma decisiones clínicas. Puedes observar, apoyar actividades autorizadas y comunicar cambios; no debes interpretar síntomas como una enfermedad, modificar tratamientos ni realizar una tarea para la que no tengas entrenamiento, autorización y respaldo en el plan. Usa tres categorías mentales: hacer cuando la acción está claramente permitida; verificar cuando falta información; y escalar cuando existe riesgo, contradicción o necesidad clínica. Por ejemplo, puedes anotar que Elena dijo sentir ardor y que la piel se veía enrojecida, pero no decidir que tiene una infección ni aplicar una crema nueva. Mantén el área segura según las instrucciones existentes y contacta al supervisor o profesional indicado. Este tema requiere especial cuidado porque una intervención bien intencionada puede ocultar un problema o causar daño. Si dudas, detenerte y preguntar es una acción profesional. Ahora ordenarás distintas acciones en hacer, verificar o escalar para fortalecer ese límite."
+  },
+  {
+    "day": 6,
+    "week": 1,
+    "moduleId": "foundations",
+    "titleEs": "Límites profesionales",
+    "objectiveEs": "Identificar conflictos, regalos, dinero y relaciones duales",
+    "practiceEs": "Responder a un ofrecimiento de préstamo sin avergonzar al cliente",
+    "evidence": "scenario+rubric",
+    "criticalSafety": false,
+    "sourceTags": [
+      "employer_policy"
+    ],
+    "lessonEs": "Una relación cálida puede seguir siendo profesional. Los límites evitan que el afecto, la culpa o la necesidad económica alteren tus decisiones. Debes reconocer situaciones con dinero, regalos costosos, préstamos, contraseñas, favores secretos o vínculos que te coloquen en dos papeles incompatibles. Agradece la confianza sin avergonzar al cliente, explica que debes seguir reglas claras y consulta la política o al supervisor antes de aceptar algo dudoso. Piensa en un señor que te ofrece prestar dinero para reparar tu automóvil porque aprecia tu trabajo. Rechazarlo no significa ser frío: puedes decir que valoras mucho el gesto, pero que no puedes mezclar finanzas personales con la relación de cuidado. Tampoco debes convertirte en beneficiario, firmar documentos que no comprendes ni usar cuentas del cliente fuera de una instrucción autorizada y transparente. Un límite temprano protege a ambos y conserva la confianza familiar. La práctica de hoy te permitirá responder a un ofrecimiento de préstamo con gratitud, firmeza y respeto."
+  },
+  {
+    "day": 7,
+    "week": 1,
+    "moduleId": "foundations",
+    "titleEs": "Usar el plan de cuidado",
+    "objectiveEs": "Consultar instrucciones individuales y registrar dudas",
+    "practiceEs": "Localizar tarea, preferencia, riesgo y contacto de escalamiento en un plan ficticio",
+    "evidence": "assessment+spaced_review",
+    "criticalSafety": true,
+    "sourceTags": [
+      "care_plan"
+    ],
+    "lessonEs": "El plan de cuidado convierte necesidades generales en instrucciones individuales. Allí debes buscar qué tarea está autorizada, cómo prefiere la persona recibir ayuda, qué riesgos conocidos existen y a quién contactar si algo cambia. No confíes únicamente en la memoria ni en lo que otro cuidador suele hacer con personas diferentes. Antes de comenzar una actividad nueva, confirma el procedimiento, el equipo permitido y cualquier restricción; si una instrucción es ambigua o contradice lo que observas, pausa y solicita aclaración. Imagina que el plan indica asistencia de dos personas para una transferencia, pero al llegar solo estás tú y el cliente insiste en intentarlo. No improvises para complacerlo. Mantén a la persona segura y llama al contacto indicado para conseguir apoyo o una alternativa. Este punto es crítico porque ignorar una sola condición del plan puede producir una caída, lesión o atención incorrecta. En la próxima actividad revisarás un plan ficticio y localizarás tarea, preferencia, riesgo y contacto de escalamiento."
+  },
+  {
+    "day": 8,
+    "week": 2,
+    "moduleId": "pathways",
+    "titleEs": "Mapa de rutas de California",
+    "objectiveEs": "Diferenciar cuidador familiar, IHSS, HCA/HCO, privado, HHA y CNA",
+    "practiceEs": "Elegir la ruta correcta para seis perfiles ficticios",
+    "evidence": "classification+quiz",
+    "criticalSafety": false,
+    "sourceTags": [
+      "pathways"
+    ],
+    "lessonEs": "En California, la palabra cuidador puede describir rutas muy distintas. Un familiar puede ayudar informalmente; un proveedor de IHSS participa en un programa administrado por el condado; un HCA puede trabajar afiliado a una organización de cuidado en el hogar o de manera directa; un cuidador privado acuerda servicios con el cliente; y HHA o CNA corresponden a trayectorias formativas y funciones diferentes. La pregunta útil no es cuál título suena mejor, sino quién paga, dónde se presta el servicio, qué tareas se esperan y qué proceso oficial corresponde. Por ejemplo, cuidar a tu madre sin cobrar no te convierte automáticamente en proveedor de IHSS ni en HCA afiliado. Si más adelante deseas recibir pagos de un programa o trabajar para una agencia, tendrás que revisar los pasos de esa ruta. Nunca uses requisitos de una categoría como si aplicaran a todas. Guarda documentos y enlaces oficiales separados por trayectoria. Para consolidar el mapa, elegirás la ruta más adecuada para seis perfiles ficticios y explicarás qué dato determinó cada decisión."
+  },
+  {
+    "day": 9,
+    "week": 2,
+    "moduleId": "pathways",
+    "titleEs": "Ruta del cuidador familiar",
+    "objectiveEs": "Explicar por qué no existe una credencial universal para todo cuidador familiar",
+    "practiceEs": "Crear un plan de límites y contactos para apoyo informal",
+    "evidence": "plan+reflection",
+    "criticalSafety": false,
+    "sourceTags": [
+      "ca_aging"
+    ],
+    "lessonEs": "Ser cuidador familiar suele comenzar por una necesidad, no por una contratación formal. No existe una única credencial que convierta a todo familiar en cuidador, pero eso no elimina la importancia de organizar el apoyo. Define qué puedes hacer con seguridad, qué tareas necesitan instrucción profesional, quién decide sobre la atención y a quién llamar ante cambios. También necesitas límites de horario, descanso y dinero para que el cuidado no dependa de sacrificios imposibles de mantener. Imagina que atiendes a un padre después de una operación. Puedes preparar comidas y acompañarlo, pero antes de manipular una herida o cambiar una rutina médica debes seguir las instrucciones del equipo clínico. Anota teléfonos, medicamentos tal como fueron indicados, alergias conocidas y el plan de emergencia sin asumir funciones que no te corresponden. Pedir relevo no es abandonar; es prevenir agotamiento y errores. En la actividad crearás un plan breve de límites y contactos para una situación informal, sin utilizar información personal real."
+  },
+  {
+    "day": 10,
+    "week": 2,
+    "moduleId": "pathways",
+    "titleEs": "Inscripción IHSS",
+    "objectiveEs": "Recordar SOC 426, orientación, SOC 846 y antecedentes DOJ",
+    "practiceEs": "Ordenar los cuatro pasos sin introducir datos reales",
+    "evidence": "sequence+review",
+    "criticalSafety": false,
+    "sourceTags": [
+      "CDSS_IHSS"
+    ],
+    "lessonEs": "La inscripción como proveedor de IHSS es un proceso específico y no debe confundirse con registrarse para otra ruta de cuidado. Para recordarlo, organiza cuatro componentes: completar el formulario de inscripción SOC 426, asistir a la orientación del condado, firmar el acuerdo SOC 846 y realizar las huellas para la revisión de antecedentes del Departamento de Justicia. El condado o la autoridad pública te indica cómo presentar cada elemento y confirma si falta algo; no envíes datos sensibles por canales improvisados. Supón que una persona completa un formulario encontrado en internet, pero nunca asiste a la orientación. Aunque haya realizado una parte, su proceso no está terminado. Lo correcto es revisar la lista oficial del condado y conservar comprobantes de cada paso. Tampoco uses una solicitud HCA como reemplazo, porque pertenece a otra trayectoria. Los nombres de los formularios funcionan como puntos de memoria, pero la fuente oficial vigente manda sobre cualquier captura antigua. Ahora ordenarás los cuatro pasos sin introducir nombres, números personales ni otros datos reales."
+  },
+  {
+    "day": 11,
+    "week": 2,
+    "moduleId": "pathways",
+    "titleEs": "HCA afiliado a una HCO",
+    "objectiveEs": "Identificar registro, cinco horas iniciales, formación anual y TB",
+    "practiceEs": "Construir una lista por momento: antes del cliente, anual y seguimiento",
+    "evidence": "quiz+checklist",
+    "criticalSafety": false,
+    "sourceTags": [
+      "HSC_1796_44",
+      "HSC_1796_45"
+    ],
+    "lessonEs": "Un HCA afiliado presta servicios a través de una Home Care Organization y debe separar lo que ocurre antes del primer cliente de lo que continúa después. En tu mapa práctico coloca primero el registro y las verificaciones requeridas, la formación inicial de cinco horas y la documentación de tuberculosis que corresponda. Después ubica la capacitación anual y cualquier seguimiento de registros o salud ocupacional. La organización empleadora debe darte instrucciones actuales y conservar la evidencia pertinente; tu responsabilidad es completar lo solicitado y avisar si algo está vencido o incierto. Por ejemplo, una agencia puede ofrecerte un turno inmediato mientras todavía falta confirmar un requisito. La urgencia de cubrir el turno no convierte el expediente incompleto en válido. Pide que verifiquen tu autorización antes del contacto con el cliente. Esta lección no sustituye la información legal que vive en la sección oficial de la app, por lo que siempre debes comparar fechas y fuente. En la práctica construirás una lista dividida entre antes del cliente, anual y seguimiento."
+  },
+  {
+    "day": 12,
+    "week": 2,
+    "moduleId": "pathways",
+    "titleEs": "Cuidador privado o directo",
+    "objectiveEs": "Distinguir acuerdo directo de afiliación HCO e IHSS",
+    "practiceEs": "Marcar qué asuntos requieren contrato, fuente oficial o asesoría",
+    "evidence": "scenario+reflection",
+    "criticalSafety": false,
+    "sourceTags": [
+      "HSC_1796_14",
+      "HSC_1796_15"
+    ],
+    "lessonEs": "Trabajar directamente para una persona o familia requiere acuerdos especialmente claros. Debes distinguir quién te contrata, qué tareas están incluidas, cuál es el horario, cómo se manejarán pagos y gastos, qué seguro o condición laboral aplica y qué hacer ante una emergencia. Algunas preguntas pueden resolverse con un contrato escrito; otras exigen consultar una fuente oficial o recibir asesoría profesional. No copies automáticamente las reglas de IHSS o de una HCO, porque el arreglo directo tiene responsabilidades distintas. Imagina que una familia ofrece pagarte en efectivo y añade transporte, administración de dinero y disponibilidad nocturna sin definir límites. Antes de aceptar, pide una descripción escrita y separa cada asunto que requiere confirmación. Un acuerdo verbal ambiguo puede terminar en tareas inseguras, horas no registradas o disputas sobre compras. Tampoco permitas que la cercanía personal reemplace la documentación. La actividad siguiente te presentará varios asuntos para decidir cuáles pertenecen al contrato, cuáles a una fuente oficial y cuáles requieren orientación especializada."
+  },
+  {
+    "day": 13,
+    "week": 2,
+    "moduleId": "pathways",
+    "titleEs": "HHA y CNA no son lo mismo",
+    "objectiveEs": "Comparar programas aprobados y límites de esta app",
+    "practiceEs": "Completar tabla 120 h HHA, 40 h elegible y 160 h CNA",
+    "evidence": "comparison+quiz",
+    "criticalSafety": false,
+    "sourceTags": [
+      "CDPH_HHA",
+      "CDPH_CNA"
+    ],
+    "lessonEs": "HHA y CNA no son nombres intercambiables ni simples niveles de una misma función. Cada trayectoria tiene programas aprobados, prácticas supervisadas y límites propios. Para construir una comparación inicial, recuerda tres referencias del currículo: la ruta HHA completa puede incluir 120 horas; ciertas personas elegibles pueden acceder a una opción HHA de 40 horas; y la formación CNA se organiza alrededor de 160 horas. Esos números sirven para reconocer anuncios sospechosos, no para decidir por sí solos si un programa es válido. Confirma siempre la aprobación actual, los requisitos de ingreso, la distribución de teoría y práctica y el proceso de evaluación. Por ejemplo, una escuela que promete convertir a cualquier principiante en HHA con 40 horas omite que esa alternativa no aplica universalmente. Pregunta quién es elegible y verifica la respuesta en la fuente oficial. Esta app apoya tu aprendizaje, pero no concede ninguna credencial. Ahora completarás una tabla comparativa con las tres rutas y marcarás dónde necesitas confirmación oficial."
+  },
+  {
+    "day": 14,
+    "week": 2,
+    "moduleId": "pathways",
+    "titleEs": "Comprobar una fuente oficial",
+    "objectiveEs": "Evaluar agencia, jurisdicción, fecha y aplicabilidad",
+    "practiceEs": "Auditar una tarjeta de requisito desactualizada",
+    "evidence": "source_audit+review",
+    "criticalSafety": false,
+    "sourceTags": [
+      "source_governance"
+    ],
+    "lessonEs": "Una fuente parece confiable solo cuando responde cuatro preguntas: qué agencia la publica, a qué jurisdicción pertenece, cuándo fue actualizada y a quién realmente aplica. Un folleto puede ser auténtico y aun así estar vencido, corresponder a otro estado o describir una función distinta. Empieza por localizar el dominio oficial y la fecha; después identifica palabras como afiliado, independiente, proveedor, empleado o certificado, porque cambian el alcance. Finalmente, compara la información con la situación concreta y guarda el enlace, no solo una captura. Por ejemplo, una tarjeta social afirma que todo caregiver necesita el mismo curso. Antes de compartirla, buscas la agencia responsable y descubres que habla únicamente de personal de una instalación específica. La corrección no consiste en reemplazarla con otro rumor, sino en documentar qué parte no aplica y enlazar la página vigente. Cuando haya dudas legales o laborales, consulta al programa, condado, empleador o profesional apropiado. Enseguida auditarás una tarjeta desactualizada siguiendo agencia, jurisdicción, fecha y aplicabilidad."
+  },
+  {
+    "day": 15,
+    "week": 3,
+    "moduleId": "infection",
+    "titleEs": "Cómo se transmite una infección",
+    "objectiveEs": "Reconocer cadena de transmisión sin diagnosticar",
+    "practiceEs": "Identificar puntos para cortar transmisión en un hogar ficticio",
+    "evidence": "diagram+quiz",
+    "criticalSafety": false,
+    "sourceTags": [
+      "infection_control"
+    ],
+    "lessonEs": "Una infección puede pasar desde una fuente hasta una persona susceptible mediante manos, superficies, gotas, alimentos u otros vehículos. Comprender esa cadena te permite interrumpirla sin intentar diagnosticar qué microorganismo existe. Observa dónde comienza el riesgo, cómo podría trasladarse y qué barrera autorizada lo reduce: higiene de manos, separación de objetos, limpieza correcta, ventilación o equipo de protección indicado. No conviertas la casa en un laboratorio ni aísles a alguien por tu cuenta; sigue el plan y reporta síntomas observables. Imagina que ayudas con el aseo, tocas una baranda con los guantes usados y luego abres el refrigerador. Aunque los guantes parezcan limpios, acabas de crear una ruta de contaminación. Retirarlos correctamente, higienizarte y limpiar lo que corresponda corta esa transmisión. La prevención funciona mejor cuando piensas en secuencias, no solo en productos. En la actividad identificarás distintos puntos donde puede romperse la cadena dentro de un hogar ficticio."
+  },
+  {
+    "day": 16,
+    "week": 3,
+    "moduleId": "infection",
+    "titleEs": "Momentos de higiene de manos",
+    "objectiveEs": "Elegir cuándo limpiar las manos según tarea y riesgo",
+    "practiceEs": "Secuenciar preparación, cuidado y limpieza",
+    "evidence": "scenario+review",
+    "criticalSafety": true,
+    "sourceTags": [
+      "infection_control"
+    ],
+    "lessonEs": "La higiene de manos debe ocurrir en el momento correcto, no solamente al comenzar el turno. Piensa en la tarea que vas a realizar y en lo que acabas de tocar. Limpia tus manos antes de preparar alimentos o realizar cuidado directo, después de contacto con fluidos o artículos contaminados, tras retirar los guantes y antes de pasar de una zona sucia a una limpia. Usa el método y producto indicados por el plan, el entorno y la condición de tus manos; si están visiblemente sucias, necesitas una limpieza apropiada con agua y jabón. Supón que cambias ropa de cama, retiras los guantes y enseguida ayudas al cliente con su vaso. Los guantes no protegieron la siguiente tarea: faltó higiene entre ambas acciones. Este tema es crítico porque una omisión invisible puede trasladar contaminación a una persona vulnerable, comida o equipo. Detente si no tienes acceso a los suministros necesarios y comunícalo. Ahora secuenciarás preparación, cuidado y limpieza para elegir cada momento de higiene."
+  },
+  {
+    "day": 17,
+    "week": 3,
+    "moduleId": "infection",
+    "titleEs": "Uso responsable de guantes y PPE",
+    "objectiveEs": "Entender que los guantes no sustituyen higiene ni política",
+    "practiceEs": "Detectar contaminación cruzada en cuatro decisiones",
+    "evidence": "scenario+rubric",
+    "criticalSafety": true,
+    "sourceTags": [
+      "employer_policy"
+    ],
+    "lessonEs": "Los guantes y demás equipo de protección crean una barrera para una tarea concreta; no vuelven limpias tus manos ni permiten tocarlo todo. Antes de usarlos, revisa qué indica el plan o la política, reúne los materiales y evita contaminar superficies durante la colocación y retirada. Cambia los guantes entre actividades incompatibles, retíralos cuando termine la exposición y realiza higiene de manos. Una mascarilla, bata o protección ocular solo funciona si corresponde al riesgo y se usa de la manera enseñada. Imagina que limpias después de un episodio de incontinencia y, con los mismos guantes, contestas el teléfono del hogar. Aunque no veas suciedad, has llevado contaminación a un objeto que otros tocarán. Debes detener la secuencia, retirar el equipo de forma segura, higienizarte y manejar la superficie según las instrucciones. Este contenido exige especial cuidado porque el uso incorrecto puede dar una falsa sensación de seguridad. En la práctica detectarás cuatro decisiones que producen contaminación cruzada."
+  },
+  {
+    "day": 18,
+    "week": 3,
+    "moduleId": "infection",
+    "titleEs": "Limpieza de superficies",
+    "objectiveEs": "Seguir etiqueta, ventilación y plan sin mezclar químicos",
+    "practiceEs": "Elegir una respuesta segura ante productos incompatibles",
+    "evidence": "quiz+checklist",
+    "criticalSafety": true,
+    "sourceTags": [
+      "product_label",
+      "care_plan"
+    ],
+    "lessonEs": "Limpiar una superficie implica respetar la etiqueta del producto, el tiempo de contacto, la ventilación y las instrucciones del hogar o la agencia. Más producto no significa mayor seguridad, y mezclar sustancias puede liberar vapores peligrosos o causar reacciones. Conserva cada químico en su envase identificado, usa la protección indicada, mantén al cliente alejado cuando corresponda y nunca improvises combinaciones. Primero distingue limpiar, que retira suciedad, de desinfectar según un procedimiento autorizado. Por ejemplo, encuentras dos botellas sin etiqueta debajo del fregadero y un familiar dice que juntas funcionan mejor. No las pruebes, huelas ni mezcles. Asegura el área sin exponerte y solicita un producto identificado o instrucciones. Este es un tema crítico: ante vapor fuerte, dificultad para respirar, derrame importante o exposición, aléjate, protege a la persona y activa la ayuda indicada, incluido el 911 si existe peligro inmediato. La siguiente actividad te pedirá elegir una respuesta segura frente a productos incompatibles."
+  },
+  {
+    "day": 19,
+    "week": 3,
+    "moduleId": "infection",
+    "titleEs": "Ropa, residuos y objetos personales",
+    "objectiveEs": "Reducir exposición y preservar dignidad",
+    "practiceEs": "Planear manipulación sin sacudir ni mezclar objetos personales",
+    "evidence": "response+review",
+    "criticalSafety": false,
+    "sourceTags": [
+      "infection_control"
+    ],
+    "lessonEs": "La ropa usada, los residuos y los objetos personales requieren una secuencia que reduzca exposición sin tratar a la persona como si fuera contaminante. Antes de comenzar, prepara bolsas o recipientes indicados y separa pertenencias que no deben mezclarse. Manipula la ropa lo menos posible, no la sacudas y evita apoyarla contra tu uniforme. Si está húmeda o sucia, sigue el método de contención previsto; después limpia tus manos y las superficies utilizadas. Imagina que cambias unas sábanas y descubres dentro un audífono. Tirar todo rápidamente en la bolsa podría dañarlo, pero buscar con las manos sin protección también sería inseguro. Detén la tarea, identifica el objeto sin contaminar otras áreas y colócalo en el lugar acordado, informando lo ocurrido. Con los residuos sucede algo similar: no comprimas bolsas ni introduzcas la mano para hacer espacio. La organización previa protege tanto la dignidad como la seguridad. Ahora planificarás cómo manipular ropa y objetos sin sacudir, mezclar ni perder pertenencias."
+  },
+  {
+    "day": 20,
+    "week": 3,
+    "moduleId": "infection",
+    "titleEs": "Etiqueta respiratoria y enfermedad",
+    "objectiveEs": "Aplicar medidas del plan y escalar síntomas observados",
+    "practiceEs": "Practicar un reporte objetivo al supervisor",
+    "evidence": "handoff+audio",
+    "criticalSafety": true,
+    "sourceTags": [
+      "care_plan",
+      "employer_policy"
+    ],
+    "lessonEs": "La etiqueta respiratoria combina acciones sencillas: cubrir tos o estornudo de forma apropiada, limpiar las manos, mantener la distancia o ventilación indicada y usar la protección que establezca el plan. Tu función no es decidir qué enfermedad tiene alguien, sino reconocer cambios observables y comunicar su inicio, intensidad y efecto. También debes informar si tú presentas síntomas, porque continuar un turno sin orientación puede exponer a una persona vulnerable. Por ejemplo, notas que el cliente comenzó a toser repetidamente, tiene voz más débil y dice que le cuesta respirar más que de costumbre. No escribas que tiene gripe ni elijas medicamentos. Déjalo en una posición segura según el plan, contacta de inmediato al responsable y activa emergencias si la respiración representa peligro. Esto importa de verdad: una dificultad respiratoria puede empeorar rápidamente y no debe quedar esperando al final del turno. En la práctica prepararás un reporte objetivo con hora, hechos, palabras de la persona y acción realizada."
+  },
+  {
+    "day": 21,
+    "week": 3,
+    "moduleId": "infection",
+    "titleEs": "Caso integrado de control de infección",
+    "objectiveEs": "Combinar higiene, PPE, limpieza y comunicación",
+    "practiceEs": "Resolver un escenario ramificado y reintentar fallos",
+    "evidence": "scenario+assessment",
+    "criticalSafety": true,
+    "sourceTags": [
+      "infection_control"
+    ],
+    "lessonEs": "El control de infección funciona como un sistema: manos limpias, equipo correcto, flujo de tareas, manejo de ropa, superficies y comunicación. Una sola decisión puede proteger o contaminar varios pasos posteriores. Antes de actuar, imagina una frontera entre lo limpio y lo usado; prepara materiales para no buscar objetos a mitad del cuidado y cambia de barrera cuando cambia el riesgo. Si ocurre una exposición o falta un suministro, no la ocultes ni inventes una solución: detente, protege y reporta. Considera un turno en el que ayudas con higiene, recoges una toalla húmeda y después debes preparar una merienda. La respuesta segura no es trabajar más rápido, sino cerrar correctamente la tarea sucia, retirar el equipo indicado, higienizarte, tratar las superficies necesarias y comenzar la preparación de alimentos con materiales limpios. Este caso es crítico porque encadena varias oportunidades de transmisión y exige reconocerlas antes de que haya daño. En el escenario ramificado de hoy tomarás decisiones sucesivas y volverás a intentar cualquier ruta insegura."
+  },
+  {
+    "day": 22,
+    "week": 4,
+    "moduleId": "safety",
+    "titleEs": "Recorrido de seguridad del hogar",
+    "objectiveEs": "Observar riesgos sin modificar el hogar sin permiso",
+    "practiceEs": "Documentar iluminación, cables, alfombras y salidas como hechos",
+    "evidence": "checklist+photo_free_note",
+    "criticalSafety": false,
+    "sourceTags": [
+      "care_plan"
+    ],
+    "lessonEs": "Un recorrido de seguridad consiste en mirar el hogar desde la ruta real de la persona, no en reorganizarlo según tus gustos. Observa iluminación, cables, alfombras, pasillos, escalones, salidas, muebles y objetos necesarios. Describe lo que ves y pregunta antes de mover pertenencias, porque el hogar sigue siendo del cliente. Prioriza los riesgos inmediatos, ofrece cambios pequeños y registra tanto la preocupación como la decisión de la persona. Por ejemplo, una alfombra se levanta en el trayecto nocturno al baño. No la tires sin permiso; explica el riesgo, pregunta si puede retirarse o fijarse mediante un método autorizado y comunica la situación si el cliente prefiere dejarla. Mientras se resuelve, sigue las precauciones previstas en el plan. Evita escribir que la casa es peligrosa: anota ubicación, condición y posible interferencia con el paso. Esta mirada objetiva permite que el equipo decida con información concreta. En el ejercicio documentarás iluminación, cables, alfombras y salidas como hechos verificables."
+  },
+  {
+    "day": 23,
+    "week": 4,
+    "moduleId": "safety",
+    "titleEs": "Plan de emergencia y contactos",
+    "objectiveEs": "Localizar dirección, contactos, salida y equipo autorizado",
+    "practiceEs": "Completar un plan ficticio sin datos personales",
+    "evidence": "plan+quiz",
+    "criticalSafety": true,
+    "sourceTags": [
+      "emergency"
+    ],
+    "lessonEs": "Un plan de emergencia debe poder usarse cuando hay presión, humo, temblor o una persona enferma. Antes de necesitarlo, localiza la dirección exacta, teléfonos autorizados, salidas disponibles, punto de reunión y equipo que sabes utilizar. Confirma dónde está la información sin copiar datos personales en aplicaciones o papeles no protegidos. Revisa también qué condiciones del cliente pueden afectar la evacuación y quién proporciona apoyo adicional. Imagina un corte de electricidad durante la noche: si desconoces dónde está la linterna o cuál salida evita los escalones, perderás tiempo importante. La preparación consiste en seguir el plan existente, verificar que la ruta esté accesible y reportar cualquier elemento ausente, no comprar o modificar equipos por tu cuenta. Este contenido es crítico porque durante una emergencia no hay espacio para adivinar direcciones, contactos ni procedimientos. Si el plan falta o resulta imposible de cumplir, informa antes de quedarte solo con el cliente. Ahora completarás un plan ficticio sin usar datos personales."
+  },
+  {
+    "day": 24,
+    "week": 4,
+    "moduleId": "safety",
+    "titleEs": "Cuándo llamar al 911",
+    "objectiveEs": "Priorizar peligro inmediato sobre temporizador o documentación",
+    "practiceEs": "Elegir acción inicial en seis situaciones",
+    "evidence": "critical_scenario+review",
+    "criticalSafety": true,
+    "sourceTags": [
+      "911"
+    ],
+    "lessonEs": "Llamar al 911 es una decisión basada en peligro inmediato, no en terminar primero la documentación o conseguir permiso de todas las personas. Señales como pérdida de conciencia, dificultad grave para respirar, dolor intenso repentino, síntomas compatibles con un evento neurológico, sangrado que no se controla o incendio requieren activar ayuda urgente. Mantén al cliente lo más seguro posible, sigue las instrucciones del operador y evita conducirlo por tu cuenta cuando una ambulancia es necesaria. Por ejemplo, durante el desayuno observas que un lado de la cara cae y el habla cambia de repente. No esperes a que llegue un familiar ni dediques varios minutos a completar una nota. Llama, registra la hora en que comenzó o fue visto normal por última vez y permanece disponible para informar hechos. Este día es crítico porque retrasar la activación puede cambiar el resultado. Cuando la situación no es inmediata, usa el contacto indicado por el plan. En el ejercicio elegirás la primera acción en seis situaciones distintas."
+  },
+  {
+    "day": 25,
+    "week": 4,
+    "moduleId": "safety",
+    "titleEs": "Prevención de caídas",
+    "objectiveEs": "Reducir riesgos respetando movilidad y autonomía",
+    "practiceEs": "Proponer cambios y pedir consentimiento antes de actuar",
+    "evidence": "scenario+rubric",
+    "criticalSafety": true,
+    "sourceTags": [
+      "care_plan"
+    ],
+    "lessonEs": "Prevenir caídas significa reducir riesgos sin impedir que la persona se mueva innecesariamente. Consulta el plan, observa su forma habitual de caminar y prepara el entorno antes de ofrecer contacto. Iluminación, calzado, piso seco, objetos al alcance y ayudas autorizadas importan; también importa no apresurar ni tirar de la persona. Propón cambios y pide permiso, salvo que debas apartar un peligro inmediato. Imagina que Manuel deja su caminador al otro lado de la habitación porque no quiere que estorbe. En vez de regañarlo o esconderlo, explica la preocupación, pregunta dónde le resultaría accesible y verifica el lugar acordado. Si notas una debilidad nueva, mareo o cambio de equilibrio, no continúes como si fuera su rutina: siéntalo de forma segura y escala según la condición. Este asunto es crítico porque una caída puede producir lesiones graves y el intento de evitarla también puede dañarlo si improvisas. A continuación propondrás cambios y practicarás cómo obtener consentimiento antes de realizarlos."
+  },
+  {
+    "day": 26,
+    "week": 4,
+    "moduleId": "safety",
+    "titleEs": "Atragantamiento: reconocer y activar ayuda",
+    "objectiveEs": "Reconocer una emergencia y usar formación presencial aplicable",
+    "practiceEs": "Distinguir tos efectiva, obstrucción grave y necesidad de 911 sin simular certificación",
+    "evidence": "quiz+hands_on_notice",
+    "criticalSafety": true,
+    "sourceTags": [
+      "911",
+      "CPR_training"
+    ],
+    "lessonEs": "Ante un posible atragantamiento, primero reconoce si la persona puede toser, hablar o respirar. Una tos efectiva permite movimiento de aire y requiere observación cercana; la incapacidad para hablar, respirar o toser eficazmente señala una obstrucción grave y exige llamar al 911 y aplicar únicamente la técnica que hayas aprendido de forma presencial y que sea apropiada para esa persona. No practiques maniobras reales sobre alguien ni confíes en una lectura como sustituto del entrenamiento. Por ejemplo, durante una comida, Ana tose con fuerza y responde cuando le preguntas si está bien. No introduzcas los dedos en su boca ni la golpees automáticamente; observa y prepárate para activar ayuda si la tos deja de ser efectiva. Si pierde capacidad para respirar, actúa de inmediato conforme a tu formación. Este tema es crítico porque una intervención incorrecta o tardía puede causar daño en segundos. La actividad te permitirá diferenciar tos efectiva, obstrucción grave y necesidad de emergencias sin simular una acreditación."
+  },
+  {
+    "day": 27,
+    "week": 4,
+    "moduleId": "safety",
+    "titleEs": "Fuego, humo, calor y electricidad",
+    "objectiveEs": "Seguir salida segura y plan de emergencia",
+    "practiceEs": "Seleccionar ruta de evacuación en escenario ficticio",
+    "evidence": "scenario+checklist",
+    "criticalSafety": true,
+    "sourceTags": [
+      "emergency"
+    ],
+    "lessonEs": "El fuego, el humo, el calor extremo y la electricidad presentan peligros que pueden empeorar mientras intentas investigar. Tu prioridad es retirar a la persona del riesgo por la ruta prevista, llamar a emergencias y seguir el plan; no regreses por objetos ni uses equipos para los que no estás entrenado. Mantén libres las salidas, conoce el punto de reunión y reporta cables dañados, enchufes calientes o dispositivos sobrecargados antes de que produzcan una crisis. Imagina que percibes humo procedente de la cocina y suena una alarma. No pierdas tiempo buscando el origen si eso retrasa la salida de un cliente con movilidad limitada. Activa el plan, ayuda según las instrucciones autorizadas y llama al 911 desde un lugar seguro. Durante una ola de calor, observa cambios y usa las medidas previstas sin ajustar equipos médicos por cuenta propia. Es un contenido crítico porque el tiempo, la ruta y tu propia seguridad determinan si podrás ayudar. En el escenario elegirás una evacuación segura."
+  },
+  {
+    "day": 28,
+    "week": 4,
+    "moduleId": "safety",
+    "titleEs": "Evaluación de seguridad",
+    "objectiveEs": "Integrar observación, acción inmediata y escalamiento",
+    "practiceEs": "Completar evaluación sin usar ayuda durante el primer intento",
+    "evidence": "assessment+spaced_review",
+    "criticalSafety": true,
+    "sourceTags": [
+      "emergency"
+    ],
+    "lessonEs": "Una evaluación de seguridad reúne tres decisiones: qué observas, qué necesita acción inmediata y qué puede documentarse para seguimiento. Empieza buscando peligro para la vida; después revisa entorno, conducta, equipo y diferencias respecto a la línea base. No intentes corregir simultáneamente todo ni uses una etiqueta general como inseguro. Describe cada condición, actúa dentro de tu alcance y comunica a la persona indicada. Supón que encuentras un pasillo oscuro, una alfombra doblada y al cliente más somnoliento de lo habitual. La luz y la alfombra pueden requerir permiso y corrección sencilla, pero la somnolencia nueva necesita valoración y escalamiento según su gravedad. Si además no responde normalmente, debes activar ayuda urgente. Esta evaluación es crítica porque un detalle importante puede perderse entre problemas menores. Tu seguridad también cuenta: no entres en humo, violencia, cables activos u otros peligros para rescatar sin recursos adecuados. Ahora completarás una evaluación sin ayuda en el primer intento y después compararás cada decisión con el criterio esperado."
+  },
+  {
+    "day": 29,
+    "week": 5,
+    "moduleId": "adl",
+    "titleEs": "Ayudar sin quitar independencia",
+    "objectiveEs": "Usar la menor ayuda segura necesaria",
+    "practiceEs": "Convertir cuatro tareas en indicación, preparación o asistencia",
+    "evidence": "classification+reflection",
+    "criticalSafety": false,
+    "sourceTags": [
+      "person_centered"
+    ],
+    "lessonEs": "La mejor asistencia en actividades diarias es la menor cantidad que permite completar la tarea con seguridad y dignidad. Puedes dividir el apoyo en tres niveles: indicación verbal cuando la persona necesita recordar el siguiente paso; preparación cuando debes colocar materiales o adaptar el entorno; y asistencia física cuando el plan la autoriza y realmente hace falta. Comienza por observar, no por tomar el control. Por ejemplo, Marta tarda en preparar el cepillo de dientes, pero puede cepillarse sola si colocas la pasta abierta y le recuerdas una instrucción a la vez. Hacer todo por ella sería más rápido, aunque reduciría práctica, elección y confianza. Ajusta el ritmo, ofrece descanso y reconoce el esfuerzo sin hablarle como a una niña. Si aparece dolor, debilidad o confusión nueva, detén la actividad y comunica el cambio. El objetivo no es demostrar cuánto puedes hacer tú, sino cuánto puede conservar la persona. En la práctica convertirás cuatro tareas en indicación, preparación o asistencia."
+  },
+  {
+    "day": 30,
+    "week": 5,
+    "moduleId": "adl",
+    "titleEs": "Baño, elección y rechazo",
+    "objectiveEs": "Responder a rechazo sin coacción y revisar riesgos/plan",
+    "practiceEs": "Role-play de ofrecer opciones y escalar una preocupación",
+    "evidence": "roleplay+rubric",
+    "criticalSafety": true,
+    "sourceTags": [
+      "consent",
+      "care_plan"
+    ],
+    "lessonEs": "El baño combina intimidad, temperatura, movilidad, riesgo de caída y preferencias personales, por eso un rechazo merece escucha antes que presión. Explica el propósito, pregunta qué incomoda y ofrece alternativas autorizadas: otra hora, baño parcial, cambio de temperatura o presencia de un cuidador preferido. Prepara todos los materiales, protege la privacidad y sigue el nivel de ayuda descrito en el plan. Nunca dejes sola a una persona cuando el plan exige supervisión. Imagina que José rechaza entrar a la ducha porque el piso se siente resbaloso. Decirle que tiene que hacerlo ignora una preocupación válida. Pausa, revisa el entorno, ofrece el método seguro establecido y comunica si el equipo necesario no está disponible. Este día es crítico porque forzar el baño puede provocar caída, lesión o pérdida de confianza; si observas debilidad, mareo, dolor o un cambio agudo, suspende y escala. En el role-play practicarás opciones respetuosas y cómo reportar una preocupación sin coacción."
+  },
+  {
+    "day": 31,
+    "week": 5,
+    "moduleId": "adl",
+    "titleEs": "Vestido y preferencias",
+    "objectiveEs": "Apoyar elección, privacidad y ritmo",
+    "practiceEs": "Preparar una secuencia de ayuda centrada en la persona",
+    "evidence": "sequence+review",
+    "criticalSafety": false,
+    "sourceTags": [
+      "ADL"
+    ],
+    "lessonEs": "Vestirse expresa identidad además de cubrir una necesidad básica. Pregunta qué ropa prefiere la persona, respeta su estilo y evita decidir por comodidad del cuidador. Prepara opciones adecuadas al clima y a las actividades previstas, permite tiempo suficiente y ofrece la menor ayuda necesaria. Si existe una secuencia indicada por limitación de movimiento, sigue el plan sin convertirla en una regla universal. Protege el cuerpo con una puerta o cortina cerrada y descubre únicamente lo indispensable. Por ejemplo, Isabel escoge una blusa que tarda más en abotonar. Puedes advertir con respeto que la cita se acerca, ofrecer otra prenda como alternativa y dejar que ella decida; no debes cambiarla sin consultarle. Mientras ayudas, observa malestar, hinchazón o dificultad nueva y comunica hechos, no diagnósticos. También confirma que el calzado y la ropa no interfieran con la movilidad prevista. La práctica de hoy te llevará a preparar una secuencia completa que mantenga elección, privacidad, ritmo e independencia."
+  },
+  {
+    "day": 32,
+    "week": 5,
+    "moduleId": "adl",
+    "titleEs": "Toileting y dignidad",
+    "objectiveEs": "Proteger privacidad, seguridad y control de infección",
+    "practiceEs": "Detectar lenguaje y acciones que deben cambiar",
+    "evidence": "scenario+quiz",
+    "criticalSafety": true,
+    "sourceTags": [
+      "ADL",
+      "infection_control"
+    ],
+    "lessonEs": "Ayudar con el uso del inodoro exige calma, privacidad y una organización que reduzca caídas y contaminación. Pregunta cómo prefiere la persona recibir asistencia, prepara el recorrido y los materiales antes de comenzar y sigue exactamente el nivel de apoyo del plan. Cierra puertas o cortinas, usa lenguaje adulto y permite que haga por sí misma cuanto pueda. Después, realiza higiene de manos y maneja ropa o residuos sin exponerlos innecesariamente. Imagina que Carlos tiene un accidente antes de llegar al baño. Evita expresiones de disgusto, bromas o regaños. Dile que está bien, protege su privacidad, ayúdalo según las instrucciones y registra cualquier cambio relevante en frecuencia, dolor o apariencia sin interpretar la causa. Este tema es crítico porque apresurar una transferencia, dejar a alguien sin la supervisión indicada o mezclar tareas limpias y sucias puede causar lesión o infección. Si observas sangrado, dolor intenso o una alteración repentina, detente y escala. Ahora detectarás lenguaje y acciones que deben reemplazarse."
+  },
+  {
+    "day": 33,
+    "week": 5,
+    "moduleId": "adl",
+    "titleEs": "Cuidado oral y observación de piel",
+    "objectiveEs": "Observar y reportar cambios sin diagnosticar ni tratar",
+    "practiceEs": "Redactar una nota de hechos visibles y malestar reportado",
+    "evidence": "documentation+rubric",
+    "criticalSafety": true,
+    "sourceTags": [
+      "scope",
+      "care_plan"
+    ],
+    "lessonEs": "El cuidado oral favorece comodidad, alimentación y comunicación, mientras que observar la piel permite notar cambios antes de que se agraven. Tu trabajo consiste en seguir la rutina autorizada, proteger la privacidad y describir lo que ves o lo que la persona expresa. No rasques, drenes, diagnostiques ni apliques productos nuevos por iniciativa propia. Usa palabras precisas sobre ubicación, tamaño aproximado, color, temperatura percibida solo si corresponde, integridad y dolor reportado. Por ejemplo, durante el aseo notas un área roja en el talón que no estaba mencionada en el registro y el cliente dice que le molesta. No declares que es una úlcera ni la masajees. Evita presión adicional según el plan, informa oportunamente y documenta la hora y las palabras exactas. Este contenido es crítico porque tratamientos improvisados o retrasos pueden empeorar una lesión o esconder una infección. En la boca, reporta sangrado, dolor, dificultad o piezas dañadas sin intentar procedimientos clínicos. La actividad te pedirá redactar una nota totalmente objetiva."
+  },
+  {
+    "day": 34,
+    "week": 5,
+    "moduleId": "adl",
+    "titleEs": "Rutina, descanso y sueño",
+    "objectiveEs": "Apoyar rutinas documentadas y notar cambios",
+    "practiceEs": "Planear una conversación sobre preferencias de descanso",
+    "evidence": "response+audio",
+    "criticalSafety": false,
+    "sourceTags": [
+      "care_plan"
+    ],
+    "lessonEs": "Las rutinas de descanso ayudan a la persona a conservar orientación, energía y sensación de control. Antes de imponer un horario, averigua cómo acostumbra dormir, qué rituales le resultan tranquilos y qué instrucciones incluye el plan. Reduce interrupciones evitables, prepara iluminación y camino al baño, coloca artículos autorizados al alcance y respeta preferencias culturales o espirituales. Tu función no es prescribir métodos para dormir ni cambiar medicamentos, sino apoyar una rutina segura y notar diferencias. Imagina que Teresa siempre escucha música suave antes de acostarse, pero un cuidador nuevo apaga todo a una hora fija porque quiere terminar. Preguntar y organizar la tarea unos minutos antes protege su costumbre sin comprometer el turno. Si comienza a dormir mucho más, se muestra difícil de despertar o pasa varias noches con un cambio marcado, registra hechos y comunica la alteración. Evita atribuirla a edad, demencia o falta de cooperación. Ahora planificarás una conversación abierta para conocer preferencias de descanso sin dirigir las respuestas."
+  },
+  {
+    "day": 35,
+    "week": 5,
+    "moduleId": "adl",
+    "titleEs": "Caso integrado de actividades diarias",
+    "objectiveEs": "Combinar consentimiento, privacidad, seguridad y alcance",
+    "practiceEs": "Resolver un turno matutino ficticio con varias decisiones",
+    "evidence": "scenario+assessment",
+    "criticalSafety": true,
+    "sourceTags": [
+      "ADL"
+    ],
+    "lessonEs": "Un turno matutino integra muchas decisiones pequeñas: saludar, verificar el plan, obtener consentimiento, preparar el entorno, apoyar higiene, vestido, toileting y alimentación, y documentar cambios. No ejecutes cada tarea de forma aislada; revisa cómo una decisión afecta la siguiente. Una persona cansada puede necesitar una pausa antes de levantarse, y un piso húmedo después del baño cambia el riesgo de movilidad. Supón que Ana rechaza ducharse, acepta aseo parcial y luego muestra debilidad nueva al vestirse. Respeta la alternativa acordada, pero no normalices la debilidad: siéntala de forma segura, compara con su línea base, informa y sigue la respuesta indicada. Mantén privacidad y no aceleres para recuperar el tiempo. Este caso es crítico porque combina consentimiento con señales que pueden requerir escalamiento; respetar una elección nunca significa ignorar peligro. Antes de cerrar el turno, registra hechos, ayuda prestada, rechazos y notificaciones. En el escenario integrado decidirás el orden de varias acciones y corregirás cualquier paso inseguro."
+  },
+  {
+    "day": 36,
+    "week": 6,
+    "moduleId": "mobility",
+    "titleEs": "Movilidad y elección",
+    "objectiveEs": "Preguntar cómo prefiere moverse y seguir el plan",
+    "practiceEs": "Practicar indicaciones breves antes de ofrecer contacto",
+    "evidence": "roleplay+review",
+    "criticalSafety": false,
+    "sourceTags": [
+      "care_plan"
+    ],
+    "lessonEs": "La movilidad pertenece a la persona, no al cuidador. Antes de ayudar, pregunta cómo suele levantarse o caminar, consulta el plan y observa qué apoyo utiliza. Explica cada paso antes del contacto y permite tiempo para que la persona responda; tirar de un brazo o sorprenderla puede alterar equilibrio y confianza. Colócate de manera estable, mantén libre el recorrido y ofrece solo la asistencia que tienes autorizada. Por ejemplo, David prefiere contar hasta tres antes de ponerse de pie. En vez de iniciar el movimiento cuando tú estás listo, confirma que tiene el calzado puesto, el dispositivo al alcance y que él también está preparado. Si dice sentirse mareado, detente y ayúdalo a permanecer seguro según el plan. No interpretes el mareo ni lo animes a superarlo caminando. Comunica el cambio si corresponde. En la práctica ensayarás indicaciones breves como preparar, preguntar, contar y verificar antes de ofrecer cualquier contacto físico."
+  },
+  {
+    "day": 37,
+    "week": 6,
+    "moduleId": "mobility",
+    "titleEs": "Entorno, calzado y ayudas",
+    "objectiveEs": "Revisar condiciones y equipo autorizado",
+    "practiceEs": "Identificar cinco riesgos sin mover pertenencias sin permiso",
+    "evidence": "checklist+quiz",
+    "criticalSafety": true,
+    "sourceTags": [
+      "fall_prevention"
+    ],
+    "lessonEs": "Antes de mover a alguien, revisa el espacio donde comenzará, la ruta y el lugar de llegada. El piso debe estar seco y despejado; el calzado debe ofrecer estabilidad; la silla, caminador o dispositivo debe ser el autorizado y encontrarse en la posición prevista. No ajustes equipos ni sustituyas una ayuda por otra porque parezca más conveniente. Tampoco muevas pertenencias del hogar sin permiso, salvo que exista peligro inmediato. Imagina que el caminador tiene una punta de goma deteriorada y el cliente quiere usarlo de todos modos. No lo escondas ni intentes repararlo con cinta. Explica lo observado, mantén a la persona en una situación segura y contacta a quien corresponda para verificar una alternativa. Este tema es crítico porque un dispositivo defectuoso o una ruta bloqueada puede convertir una actividad habitual en una caída. Revisa también mascotas, cables y ropa larga antes de iniciar. En la actividad identificarás cinco riesgos y decidirás cuáles corregir, consultar o escalar."
+  },
+  {
+    "day": 38,
+    "week": 6,
+    "moduleId": "mobility",
+    "titleEs": "Mecánica corporal del cuidador",
+    "objectiveEs": "Proteger al usuario y al cuidador sin improvisar",
+    "practiceEs": "Reconocer cuándo detenerse y pedir segunda persona o equipo",
+    "evidence": "scenario+reflection",
+    "criticalSafety": true,
+    "sourceTags": [
+      "hands_on"
+    ],
+    "lessonEs": "La mecánica corporal protege tu espalda y evita transmitir movimientos bruscos al cliente. Acércate a la tarea, crea una base estable, dobla caderas y rodillas según la técnica aprendida y evita girar el tronco mientras sostienes peso. Sin embargo, ninguna postura convierte en segura una transferencia que requiere otra persona o un equipo específico. Planifica antes de actuar, despeja el recorrido y comunica cada paso con quien recibe la ayuda. Por ejemplo, una silla quedó más lejos de lo previsto y el cliente comienza a perder fuerza a mitad del movimiento. No intentes compensar sosteniéndolo tú solo desde una posición incómoda. Sigue el procedimiento de seguridad aprendido, solicita apoyo y reporta que la configuración no era adecuada. Este contenido es crítico porque una maniobra improvisada puede lesionar simultáneamente al cliente y al cuidador. El dolor en tu cuerpo también es una señal para detenerte, no una prueba que debas superar. En el ejercicio reconocerás cuándo reposicionarte y cuándo pedir segunda persona o equipo."
+  },
+  {
+    "day": 39,
+    "week": 6,
+    "moduleId": "mobility",
+    "titleEs": "Límites de las transferencias",
+    "objectiveEs": "No ejecutar una transferencia no entrenada o fuera del plan",
+    "practiceEs": "Elegir entre asistir, pausar o escalar",
+    "evidence": "critical_scenario+rubric",
+    "criticalSafety": true,
+    "sourceTags": [
+      "hands_on",
+      "care_plan"
+    ],
+    "lessonEs": "Una transferencia segura depende del plan individual, la capacidad actual de la persona, el equipo disponible y tu entrenamiento demostrado. Haber observado una técnica o usarla con otro cliente no autoriza aplicarla aquí. Antes de comenzar, confirma cuánta ayuda necesita, si puede soportar peso, cuántas personas participan y qué dispositivo se utiliza. Si cualquiera de esos datos falta o ha cambiado, pausa. Imagina que el plan señala asistencia de dos personas, pero un compañero no llegó y el cliente necesita ir al baño. La urgencia es real, pero levantarlo solo no es una solución segura. Explica la demora, protege su comodidad mediante alternativas autorizadas y llama al contacto de escalamiento. Este punto es crítico: una transferencia fuera del plan puede terminar en caída, lesión de piel o daño musculoesquelético. Nunca uses fuerza para vencer resistencia, miedo o dolor. En la actividad elegirás entre asistir, pausar o escalar en varias situaciones, justificando cada decisión con el plan y el estado actual."
+  },
+  {
+    "day": 40,
+    "week": 6,
+    "moduleId": "mobility",
+    "titleEs": "Grúas y equipos de movilidad",
+    "objectiveEs": "Entender que la app no acredita uso de equipos",
+    "practiceEs": "Completar checklist previo y marcar verificación presencial requerida",
+    "evidence": "checklist+signoff_required",
+    "criticalSafety": true,
+    "sourceTags": [
+      "hands_on"
+    ],
+    "lessonEs": "Las grúas y otros equipos de movilidad requieren formación práctica específica, comprobación presencial y seguimiento exacto del plan. La app puede enseñarte qué preguntas hacer, pero no demostrar que sabes colocar un arnés, elegir una configuración o responder a una falla. Antes de usar cualquier equipo, verifica identidad y estado del dispositivo, instrucciones individuales, accesorios correctos, espacio, carga, participación requerida y disponibilidad de otra persona cuando se indique. Si algo no coincide, no pruebes hasta encontrar la combinación correcta. Por ejemplo, encuentras un arnés parecido al habitual, pero sin etiqueta legible. Aunque encaje visualmente, no puedes asumir que es el adecuado. Mantén al cliente seguro y solicita verificación. Este tema es crítico porque un accesorio incorrecto, freno mal colocado o maniobra sin entrenamiento puede provocar una caída grave. Tampoco repares ni modifiques el equipo por tu cuenta. Ahora completarás un checklist previo y marcarás claramente qué paso exige observación presencial antes de actuar con una persona."
+  },
+  {
+    "day": 41,
+    "week": 6,
+    "moduleId": "mobility",
+    "titleEs": "Respuesta después de una caída",
+    "objectiveEs": "Proteger seguridad, no improvisar levantamiento y activar ayuda según condición/plan",
+    "practiceEs": "Ordenar acciones en un escenario de caída con posible lesión",
+    "evidence": "critical_scenario+review",
+    "criticalSafety": true,
+    "sourceTags": [
+      "911",
+      "care_plan"
+    ],
+    "lessonEs": "Después de una caída, resiste el impulso de levantar inmediatamente a la persona. Primero comprueba peligro alrededor, respuesta, respiración y signos observables de lesión; activa el 911 si existe una emergencia y sigue el plan para situaciones no urgentes. No muevas a alguien con dolor importante, golpe en la cabeza, deformidad, sangrado o cambio de conciencia salvo que permanecer allí represente un peligro mayor. Mantén comodidad y privacidad mientras llega ayuda. Imagina que Raúl está sentado en el piso junto a la cama y dice que le duele la cadera. Aunque insista en que lo levantes, no improvises una transferencia. Pregunta qué ocurrió sin interrogar, evita comida o bebida si el protocolo no lo permite, llama al apoyo indicado y registra hora, posición, declaraciones y acciones. Este día es crítico porque levantar sin evaluación puede empeorar una lesión y borrar información sobre lo ocurrido. Nunca culpes ni prometas ocultar la caída. En la práctica ordenarás las acciones de un escenario con posible lesión."
+  },
+  {
+    "day": 42,
+    "week": 6,
+    "moduleId": "mobility",
+    "titleEs": "Evaluación de movilidad segura",
+    "objectiveEs": "Integrar consentimiento, entorno, límites y escalamiento",
+    "practiceEs": "Resolver escenario y solicitar firma de observación separada",
+    "evidence": "assessment+signoff_optional",
+    "criticalSafety": true,
+    "sourceTags": [
+      "hands_on"
+    ],
+    "lessonEs": "Evaluar movilidad segura significa integrar elección, entorno, capacidad actual, equipo, límites y comunicación. Antes de tocar, pide permiso y compara cómo se mueve la persona hoy con su línea base. Revisa ruta, calzado y dispositivo; explica una instrucción por vez y detente ante dolor, mareo, debilidad o miedo inesperado. Después documenta lo que ocurrió y solicita una observación competente cuando debas demostrar la técnica. Supón que una persona normalmente camina con bastón, pero hoy arrastra un pie y necesita apoyarse en los muebles. No aumentes la fuerza de tu agarre ni cambies a un caminador sin autorización. Siéntala de manera segura según el plan y escala el cambio. Esta evaluación es crítica porque completar la distancia no demuestra que el recorrido haya sido seguro. Tu puntuación debe considerar decisiones y límites, no valentía ni velocidad. En el escenario final de movilidad resolverás el caso primero y luego separarás el conocimiento de la app de la habilidad que requiere firma presencial."
+  },
+  {
+    "day": 43,
+    "week": 7,
+    "moduleId": "nutrition",
+    "titleEs": "Plan, preferencias y dieta indicada",
+    "objectiveEs": "Seguir preferencias y restricciones documentadas sin prescribir",
+    "practiceEs": "Distinguir elección personal, orden del plan y cambio que requiere consulta",
+    "evidence": "classification+quiz",
+    "criticalSafety": true,
+    "sourceTags": [
+      "care_plan"
+    ],
+    "lessonEs": "La alimentación comienza con el plan y las preferencias de la persona. Distingue entre una elección personal permitida, una restricción documentada y un cambio que requiere consultar. No prescribas dietas, elimines grupos de alimentos ni cambies consistencias porque algo parezca más saludable. Confirma alergias, instrucciones, textura y nivel de ayuda antes de preparar o servir. Después ofrece opciones dentro de esos límites y respeta cultura, apetito y ritmo. Por ejemplo, María pide una sopa que suele comer, pero el plan muestra una textura específica y la receta disponible no coincide. No decidas licuarla ni servirla tal cual. Detén la preparación y verifica con el contacto indicado qué alternativa está autorizada. Este tema es crítico porque ignorar una restricción puede causar una reacción, atragantamiento o descontrol de una condición. Si la persona rechaza comer, no la fuerces ni negocies con amenazas; observa, documenta y reporta según el plan. Ahora clasificarás varias decisiones como preferencia, instrucción o consulta necesaria."
+  },
+  {
+    "day": 44,
+    "week": 7,
+    "moduleId": "nutrition",
+    "titleEs": "Observar hidratación",
+    "objectiveEs": "Ofrecer líquidos permitidos y reportar cambios observables",
+    "practiceEs": "Registrar ingesta ficticia y una preocupación sin diagnosticar",
+    "evidence": "documentation+review",
+    "criticalSafety": false,
+    "sourceTags": [
+      "scope"
+    ],
+    "lessonEs": "Observar hidratación significa registrar cuánto se ofrece y consume cuando el plan lo pide, notar cambios y facilitar líquidos permitidos. No todas las personas deben beber la misma cantidad ni pueden recibir cualquier bebida, por lo que evita metas universales y sigue restricciones documentadas. Coloca el vaso al alcance, ofrece pequeñas oportunidades durante el turno y verifica que la persona pueda beber con seguridad. Describe boca seca, orina diferente, mareo, somnolencia o rechazo como observaciones, no como diagnóstico de deshidratación. Por ejemplo, notas que Elena tomó solo unos sorbos durante varias horas y dice que siente náuseas. No la obligues ni decidas darle una bebida deportiva. Registra cantidades aproximadas con honestidad, ofrece opciones autorizadas y comunica el cambio. Si aparece confusión repentina, dificultad para tragar o deterioro marcado, escala con rapidez. La precisión vale más que rellenar una cifra al final del turno. En la actividad registrarás una ingesta ficticia y redactarás una preocupación objetiva."
+  },
+  {
+    "day": 45,
+    "week": 7,
+    "moduleId": "nutrition",
+    "titleEs": "Preparación de comidas segura",
+    "objectiveEs": "Prevenir contaminación y respetar restricciones",
+    "practiceEs": "Secuenciar lavado, separación, cocción y almacenamiento",
+    "evidence": "sequence+quiz",
+    "criticalSafety": true,
+    "sourceTags": [
+      "food_safety"
+    ],
+    "lessonEs": "Preparar comidas seguras exige controlar el recorrido de los alimentos desde tus manos hasta el almacenamiento. Comienza con higiene y superficies limpias; separa alimentos crudos de los listos para comer, sigue instrucciones de cocción y conserva las sobras con identificación y tiempo apropiados según la política. No adivines si algo está en buen estado por olor o apariencia cuando faltan fechas o condiciones de almacenamiento. Respeta alergias y restricciones del plan durante toda la secuencia, incluidos utensilios y condimentos. Imagina que cortas pollo crudo y luego ves verduras listas sobre la misma tabla. No basta con pasar una servilleta: detén la preparación, evita servir lo contaminado y aplica el procedimiento de limpieza y sustitución indicado. Este contenido es crítico porque la contaminación cruzada puede no verse y afectar gravemente a una persona vulnerable. Si hubo una exposición a un alérgeno o aparecen síntomas urgentes, activa ayuda. Ahora ordenarás lavado, separación, cocción y almacenamiento en una cocina ficticia."
+  },
+  {
+    "day": 46,
+    "week": 7,
+    "moduleId": "nutrition",
+    "titleEs": "Compras y presupuesto con límites",
+    "objectiveEs": "Manejar listas, recibos y dinero con transparencia",
+    "practiceEs": "Resolver discrepancia de recibo sin mezclar fondos",
+    "evidence": "scenario+rubric",
+    "criticalSafety": false,
+    "sourceTags": [
+      "boundaries"
+    ],
+    "lessonEs": "Hacer compras con dinero ajeno requiere transparencia desde la lista hasta el cambio devuelto. Confirma presupuesto, artículos autorizados, método de pago y sustituciones permitidas antes de salir. Mantén separados tus fondos y los del cliente, solicita recibos, registra cualquier cambio y entrega dinero, tarjeta y comprobantes según el procedimiento acordado. No agregues compras personales para pagarlas después ni uses puntos, cupones o beneficios sin autorización clara. Por ejemplo, el total del recibo es menor que el cargo anotado porque el cajero corrigió un producto después de pagar. No ajustes la cifra de memoria ni guardes la diferencia. Conserva ambos comprobantes, cuenta el cambio con calma y explica la discrepancia al cliente o supervisor. Si se pierde dinero o una transacción parece incorrecta, informa inmediatamente en vez de intentar compensarla con fondos propios. La confianza financiera se construye con trazabilidad, no con buenas intenciones. En el escenario de hoy resolverás una discrepancia de recibo sin mezclar cuentas ni ocultar el error."
+  },
+  {
+    "day": 47,
+    "week": 7,
+    "moduleId": "nutrition",
+    "titleEs": "Dificultad al tragar y señales de alarma",
+    "objectiveEs": "Observar, detener la ayuda insegura y escalar según plan; 911 ante emergencia",
+    "practiceEs": "Responder a tos/cambio repentino sin cambiar textura por cuenta propia",
+    "evidence": "critical_scenario+review",
+    "criticalSafety": true,
+    "sourceTags": [
+      "911",
+      "care_plan"
+    ],
+    "lessonEs": "La dificultad para tragar puede aparecer como tos durante la comida, voz húmeda, incapacidad para manejar saliva, alimento retenido o cambio repentino en respiración. Tu tarea es seguir la textura, posición, ritmo y nivel de ayuda descritos en el plan; no espesarlas, licuarlas ni modificar la dieta por decisión propia. Si surge una señal nueva, detén la alimentación, mantén a la persona segura y solicita orientación. Cuando no puede hablar, respirar o toser eficazmente, llama al 911 y actúa únicamente conforme a tu entrenamiento presencial. Por ejemplo, Miguel comienza a toser con cada sorbo aunque normalmente bebe sin dificultad. No pruebes con una pajilla diferente ni continúes para ver si se adapta. Suspende, observa hechos y comunica el cambio. Este tema es crítico porque insistir con comida o líquidos puede empeorar una obstrucción o permitir que material entre en la vía respiratoria. En la práctica responderás a una tos nueva sin cambiar textura ni diagnosticar."
+  },
+  {
+    "day": 48,
+    "week": 7,
+    "moduleId": "nutrition",
+    "titleEs": "Comidas con dignidad y autonomía",
+    "objectiveEs": "Dar tiempo, opciones y la ayuda mínima necesaria",
+    "practiceEs": "Role-play bilingüe durante una comida",
+    "evidence": "roleplay+audio",
+    "criticalSafety": false,
+    "sourceTags": [
+      "person_centered"
+    ],
+    "lessonEs": "Una comida digna permite que la persona elija, participe y avance a su propio ritmo. Coloca alimentos y utensilios de forma accesible, describe las opciones disponibles y ofrece solamente la ayuda necesaria. Si el plan permite asistencia, pregunta antes de cada cambio y espera a que termine de masticar o tragar; no limpies la boca sin avisar ni hables sobre la persona como si no estuviera presente. Por ejemplo, Carmen tarda en llevar la cuchara, pero puede hacerlo si el plato está más cerca. En vez de alimentarla para ganar tiempo, ajusta el entorno y dile: ¿Prefiere intentarlo o desea ayuda con esta cucharada? En inglés puedes usar: Would you like to try, or would you like some help? Si rechaza un alimento, busca otra opción autorizada y registra el cambio cuando corresponda. La autonomía también forma parte de la nutrición. Ahora representarás una comida bilingüe usando opciones, pausas y ayuda mínima sin infantilizar a la persona."
+  },
+  {
+    "day": 49,
+    "week": 7,
+    "moduleId": "nutrition",
+    "titleEs": "Caso integrado de nutrición",
+    "objectiveEs": "Combinar plan, seguridad alimentaria, observación y límites",
+    "practiceEs": "Completar caso ramificado de una comida y documentar",
+    "evidence": "scenario+assessment",
+    "criticalSafety": true,
+    "sourceTags": [
+      "food_safety",
+      "care_plan"
+    ],
+    "lessonEs": "Durante una comida debes combinar plan, higiene, restricciones, participación, observación y documentación. Empieza verificando qué se servirá y cómo; prepara el área limpia, ofrece opciones permitidas y observa la respuesta sin distraerte con otras tareas. Si aparece una discrepancia o señal de dificultad, pausa antes de improvisar. Imagina que el plan indica una textura concreta, el cliente rechaza el plato y un familiar sugiere darle comida común porque ayer pudo comerla. Respeta el rechazo, pero no aceptes el cambio de textura sin autorización. Ofrece una alternativa compatible, informa y registra qué se presentó, cuánto consumió y qué dijo o hizo la persona. Si aparece incapacidad para respirar o una reacción grave, llama al 911. Este caso es crítico porque una decisión aparentemente pequeña puede unir contaminación, restricción y riesgo de atragantamiento. Tu objetivo no es lograr que el plato quede vacío, sino completar una experiencia segura y respetuosa. En el ejercicio ramificado tomarás cada decisión y redactarás la nota final."
+  },
+  {
+    "day": 50,
+    "week": 8,
+    "moduleId": "dementia",
+    "titleEs": "Lenguaje centrado en la persona",
+    "objectiveEs": "Separar a la persona de un diagnóstico o conducta",
+    "practiceEs": "Reformular cinco etiquetas estigmatizantes",
+    "evidence": "response+quiz",
+    "criticalSafety": false,
+    "sourceTags": [
+      "dementia"
+    ],
+    "lessonEs": "El lenguaje centrado en la persona evita convertir un diagnóstico o una conducta en toda su identidad. En vez de decir el demente, la difícil o el que se escapa, usa su nombre y describe lo que ocurre: una persona que vive con demencia, que rechazó una actividad o que caminó hacia la puerta. Las etiquetas pueden hacer que dejes de buscar dolor, miedo, ruido, hambre o una preferencia detrás de la conducta. También influyen en cómo otros cuidadores la tratan. Por ejemplo, afirmar que Roberto es agresivo no explica nada. Es más útil registrar que levantó la voz y apartó la mano cuando intentaron quitarle la camisa sin explicarle. Esa descripción revela un posible desencadenante y permite cambiar el enfoque. Habla directamente con la persona, no solamente con su familia, y evita tonos infantiles. Cuando no entiendas una respuesta, pregunta con calma en vez de asumir incapacidad. En la actividad reformularás cinco etiquetas para convertirlas en lenguaje humano, observable y útil."
+  },
+  {
+    "day": 51,
+    "week": 8,
+    "moduleId": "dementia",
+    "titleEs": "Comunicación calmada y simple",
+    "objectiveEs": "Usar una idea por vez, tiempo y validación",
+    "practiceEs": "Grabar tres respuestas cortas en español e inglés",
+    "evidence": "roleplay+audio",
+    "criticalSafety": false,
+    "sourceTags": [
+      "dementia"
+    ],
+    "lessonEs": "Una comunicación calmada reduce la cantidad de información que la persona debe procesar. Acércate de frente, identifica quién eres, usa una idea por vez y deja silencio suficiente para responder. En lugar de corregir repetidamente, valida la emoción y ofrece una opción sencilla. Tu tono, velocidad y expresión pueden importar más que una explicación larga. Si no comprende, cambia las palabras sin elevar el volumen automáticamente. Supón que Elena pregunta por su madre fallecida y parece preocupada. Decirle que está equivocada puede aumentar angustia. Puedes responder: Parece que la extraña; estoy aquí con usted. Luego ofrece una actividad o pregunta relacionada con seguridad. En inglés, practica frases cortas: You are safe. I am here with you. Would you like to sit here or by the window? Evita promesas falsas y sigue el plan individual. Ahora grabarás tres respuestas breves en ambos idiomas, escuchando si tu voz transmite tranquilidad, respeto y una sola idea."
+  },
+  {
+    "day": 52,
+    "week": 8,
+    "moduleId": "dementia",
+    "titleEs": "Rutinas y señales del entorno",
+    "objectiveEs": "Apoyar previsibilidad sin controlar innecesariamente",
+    "practiceEs": "Diseñar una rutina ficticia basada en preferencias",
+    "evidence": "plan+review",
+    "criticalSafety": false,
+    "sourceTags": [
+      "care_plan"
+    ],
+    "lessonEs": "Las rutinas y señales del entorno pueden hacer que una actividad resulte reconocible sin obligar a la persona. Repetir un horario aproximado, colocar objetos familiares en lugares consistentes y reducir ruido innecesario favorece orientación. Sin embargo, una rutina debe basarse en preferencias y adaptarse al día; no se usa para controlar a alguien porque así conviene al turno. Introduce una transición sencilla, muestra un objeto relacionado y ofrece una opción limitada. Por ejemplo, antes del aseo nocturno puedes encender la lámpara habitual, mostrar el cepillo y preguntar si prefiere comenzar por la cara o los dientes. Si la persona se inquieta, pausa y revisa ambiente, dolor, necesidad de baño, hambre o cansancio. No reorganices fotos, muebles o señales personales sin permiso, porque pueden funcionar como puntos de referencia. Documenta qué apoyo facilitó o dificultó la actividad. La práctica te pedirá diseñar una rutina ficticia construida desde los gustos y capacidades de la persona, no desde la conveniencia del cuidador."
+  },
+  {
+    "day": 53,
+    "week": 8,
+    "moduleId": "dementia",
+    "titleEs": "La conducta comunica una necesidad",
+    "objectiveEs": "Observar desencadenantes y necesidades sin diagnosticar",
+    "practiceEs": "Completar antecedente, hecho observable y respuesta segura",
+    "evidence": "scenario+rubric",
+    "criticalSafety": true,
+    "sourceTags": [
+      "scope"
+    ],
+    "lessonEs": "Una conducta suele comunicar una necesidad aunque la persona no pueda explicarla claramente. Para comprenderla sin diagnosticar, registra tres elementos: qué ocurrió justo antes, qué viste u oíste exactamente y qué respuesta segura probaste. Busca patrones como ruido, prisa, contacto inesperado, dolor expresado, hambre, necesidad de baño o cambio de cuidador. No atribuyas automáticamente todo a la demencia. Por ejemplo, Samuel golpea la mesa cuando colocas el plato. Observas que la comida está muy caliente y que aparta la mano al acercarla. En vez de llamarlo agresivo, retira el riesgo, valida su molestia y sigue una alternativa autorizada. Si la conducta representa peligro inmediato para él o para otros, crea distancia segura y activa ayuda según el plan. Este tema es crítico porque confrontar, sujetar o insistir puede escalar la situación y ocultar una emergencia médica. En la actividad completarás antecedente, hecho observable y respuesta para varias escenas, separando siempre descripción de interpretación."
+  },
+  {
+    "day": 54,
+    "week": 8,
+    "moduleId": "dementia",
+    "titleEs": "Salida no planificada y seguridad",
+    "objectiveEs": "Aplicar plan, supervisión autorizada y escalamiento inmediato",
+    "practiceEs": "Resolver un escenario de puerta abierta sin restricción improvisada",
+    "evidence": "critical_scenario+review",
+    "criticalSafety": true,
+    "sourceTags": [
+      "emergency",
+      "care_plan"
+    ],
+    "lessonEs": "Cuando una persona sale o intenta salir de manera no planificada, tu respuesta debe protegerla sin recurrir a encierros, fuerza o restricciones improvisadas. Conoce previamente el plan: nivel de supervisión, contactos, lugares habituales y acciones autorizadas. Si observas la puerta abierta, comprueba dónde está la persona, mantén una presencia calmada y solicita apoyo de inmediato cuando no puedas garantizar su seguridad. Usa conversación y redirección respetuosa si están contempladas, sin discutir sobre quién tiene razón. Imagina que Alicia camina hacia la calle diciendo que debe ir al trabajo. En vez de bloquearla físicamente o decirle que ese trabajo ya no existe, acércate con calma, reconoce que tiene algo importante que hacer y ofrece acompañarla a un lugar seguro mientras activas el plan. Si está desaparecida o en peligro, llama a emergencias según corresponda. Este asunto es crítico porque cada minuto puede aumentar el riesgo. Ahora resolverás el escenario de una puerta abierta sin inventar una restricción."
+  },
+  {
+    "day": 55,
+    "week": 8,
+    "moduleId": "dementia",
+    "titleEs": "Cambio repentino no es rutina",
+    "objectiveEs": "Tratar un cambio agudo como preocupación que requiere escalamiento",
+    "practiceEs": "Comunicar inicio, hechos y diferencia respecto a la línea base",
+    "evidence": "handoff+quiz",
+    "criticalSafety": true,
+    "sourceTags": [
+      "scope",
+      "emergency"
+    ],
+    "lessonEs": "Un cambio repentino en atención, habla, movimiento, conducta o nivel de conciencia no debe descartarse como parte normal de la demencia. Compara lo que ocurre con la línea base: cuándo comenzó, qué podía hacer antes, qué observas ahora y qué palabras usa la persona. Mantén seguridad, revisa el plan y comunica con rapidez; si hay dificultad grave para respirar, pérdida de conciencia, signos neurológicos nuevos u otro peligro inmediato, llama al 911. Por ejemplo, una clienta que normalmente conversa comienza en una hora a responder con palabras incoherentes y no reconoce su habitación. No escribas que tuvo un mal día ni esperes al siguiente turno. Registra la última vez que se observó como de costumbre, describe el cambio y activa la respuesta indicada. Este contenido es crítico porque asumir que todo proviene de un diagnóstico conocido puede retrasar atención urgente. La práctica de hoy te hará comunicar inicio, hechos y diferencia respecto a la línea base sin ofrecer una explicación clínica."
+  },
+  {
+    "day": 56,
+    "week": 8,
+    "moduleId": "dementia",
+    "titleEs": "Caso integrado de apoyo cognitivo",
+    "objectiveEs": "Usar validación, opciones, seguridad y documentación",
+    "practiceEs": "Completar escenario y autoevaluar tono y claridad",
+    "evidence": "scenario+assessment",
+    "criticalSafety": true,
+    "sourceTags": [
+      "dementia"
+    ],
+    "lessonEs": "Apoyar a una persona con cambios cognitivos exige unir tono calmado, instrucciones simples, rutinas conocidas, opciones limitadas y vigilancia de cambios agudos. Empieza por regular tu propia voz y postura; luego observa el entorno y la necesidad que podría estar comunicándose. Valida la emoción sin confirmar información falsa y conserva una salida segura para ambos. Imagina que Jorge insiste en salir, aparta el desayuno y repite que llegará tarde. Puedes decir que parece preocupado, reducir el ruido, preguntarle si desea ponerse el abrigo o sentarse contigo y activar el plan de supervisión. Si este comportamiento apareció de forma súbita junto con debilidad o confusión diferente, no lo trates solo como redirección: escala. Es un caso crítico porque la misma conducta puede requerir apoyo emocional, una modificación ambiental o atención urgente según el contexto. Documenta palabras, desencadenante aparente y respuesta, sin etiquetarlo. En el escenario integrado evaluarás también si tu tono y cantidad de palabras ayudaron o aumentaron la tensión."
+  },
+  {
+    "day": 57,
+    "week": 9,
+    "moduleId": "communication",
+    "titleEs": "Escucha activa",
+    "objectiveEs": "Reflejar necesidad y comprobar comprensión",
+    "practiceEs": "Responder sin interrumpir ni asumir",
+    "evidence": "roleplay+rubric",
+    "criticalSafety": false,
+    "sourceTags": [
+      "communication"
+    ],
+    "lessonEs": "Escuchar activamente significa dejar espacio, reflejar la necesidad y comprobar que entendiste antes de responder. Mira a la persona, reduce distracciones y evita preparar tu defensa mientras habla. Resume con tus propias palabras y usa preguntas abiertas cuando haya tiempo: Parece que le preocupa quedarse solo, ¿es así? No completes frases ni transformes inmediatamente cada emoción en una solución. A veces la persona necesita ser comprendida antes de aceptar ayuda. Por ejemplo, un cliente dice que nadie respeta su horario y rechaza vestirse. En lugar de repetir que la cita es pronto, reconoce el mensaje: Usted quiere decidir cuándo comenzar. Después pregunta qué parte puede ajustarse y explica cualquier límite real. Si escuchas una señal de peligro, abuso o síntoma urgente, la empatía debe ir acompañada del escalamiento correspondiente; escuchar no implica guardar secretos inseguros. La actividad te presentará varias respuestas para que elijas o redactes una que refleje, aclare y compruebe comprensión sin interrumpir ni asumir."
+  },
+  {
+    "day": 58,
+    "week": 9,
+    "moduleId": "communication",
+    "titleEs": "Lenguaje claro y una instrucción a la vez",
+    "objectiveEs": "Reducir jerga y carga cognitiva",
+    "practiceEs": "Simplificar seis frases de cuidado",
+    "evidence": "rewrite+review",
+    "criticalSafety": false,
+    "sourceTags": [
+      "communication"
+    ],
+    "lessonEs": "Las instrucciones largas aumentan la carga mental y facilitan errores, especialmente cuando hay cansancio, ansiedad, pérdida auditiva o cambios cognitivos. Ofrece una acción concreta por vez, usando palabras comunes y una pausa para que la persona procese. Señala o muestra un objeto cuando sea útil, pero no hagas todo sin darle oportunidad. Evita combinar preguntas, órdenes y explicaciones en una sola frase. Por ejemplo, en vez de decir levántese, agarre el caminador, gire y siéntese porque tenemos que irnos, comienza con: Coloque ambos pies en el piso. Espera la respuesta y continúa únicamente según el plan de movilidad. Hablar claro no significa hablar como a un niño ni elevar la voz. Confirma que escuchó, observa su reacción y reformula si es necesario. Cuando una tarea es compleja o implica riesgo, detente si no existe comprensión suficiente y solicita apoyo. En el ejercicio simplificarás seis frases conservando respeto, exactitud y una sola instrucción principal."
+  },
+  {
+    "day": 59,
+    "week": 9,
+    "moduleId": "communication",
+    "titleEs": "Teach-back sin examen",
+    "objectiveEs": "Comprobar cómo explicaste, no culpar al oyente",
+    "practiceEs": "Practicar una invitación respetuosa a repetir el plan",
+    "evidence": "roleplay+audio",
+    "criticalSafety": false,
+    "sourceTags": [
+      "communication"
+    ],
+    "lessonEs": "Teach-back comprueba la calidad de tu explicación, no examina la inteligencia de la persona. Después de explicar un plan sencillo, invítala a mostrar o decir cómo lo entendió y asume responsabilidad si algo no quedó claro. Puedes decir: Quiero asegurarme de que lo expliqué bien; ¿qué haremos antes de levantarnos? Si la respuesta no coincide, no digas que falló. Repite con menos palabras, utiliza una demostración autorizada y vuelve a comprobar. Imagina que explicas que debe llamar antes de caminar al baño y la persona responde que dejará el timbre después de levantarse. Esa respuesta revela que tu mensaje necesita aclaración. Reformula: Primero pulse el timbre y espere aquí; yo vendré a ayudar según su plan. Teach-back no sustituye consentimiento ni permite forzar una conducta, pero descubre malentendidos antes de que causen daño. La práctica te permitirá formular una invitación respetuosa a repetir el plan sin usar frases que suenen a prueba escolar."
+  },
+  {
+    "day": 60,
+    "week": 9,
+    "moduleId": "communication",
+    "titleEs": "Apoyo bilingüe y límites",
+    "objectiveEs": "Reconocer cuándo el idioma propio no basta y pedir apoyo autorizado",
+    "practiceEs": "Elegir respuesta ante información compleja o sensible",
+    "evidence": "scenario+quiz",
+    "criticalSafety": true,
+    "sourceTags": [
+      "language_access"
+    ],
+    "lessonEs": "Ser bilingüe puede acercarte al cliente, pero también debes reconocer cuándo una conversación supera tu dominio del idioma. Para indicaciones cotidianas, usa frases cortas, repite datos clave y pide confirmación. Cuando se trate de consentimiento complejo, síntomas, cambios de tratamiento, documentos o conflictos, solicita el apoyo autorizado en vez de traducir palabras que no comprendes completamente. No uses a un menor ni una aplicación informal para sustituir el recurso que el plan o la organización exige. Por ejemplo, una enfermera transmite una nueva instrucción rápida en inglés y solo entiendes una parte. Fingir comprensión sería peligroso. Di: I want to make sure I understood correctly. Please repeat that slowly, y pide deletreo o intérprete según corresponda. Este tema es crítico porque una palabra omitida puede cambiar una restricción, una dosis o una acción de emergencia. Registra la instrucción únicamente después de confirmarla por el canal adecuado. Ahora elegirás respuestas seguras ante información compleja o sensible en otro idioma."
+  },
+  {
+    "day": 61,
+    "week": 9,
+    "moduleId": "communication",
+    "titleEs": "Frases esenciales de turno en inglés",
+    "objectiveEs": "Comunicar observación, acción y pendiente con lenguaje sencillo",
+    "practiceEs": "Shadowing a velocidad lenta y normal",
+    "evidence": "audio+recording",
+    "criticalSafety": false,
+    "sourceTags": [
+      "bilingual"
+    ],
+    "lessonEs": "Una entrega de turno útil comunica tres cosas con claridad: qué observaste, qué hiciste y qué queda pendiente. En inglés sencillo puedes usar: I noticed…, I helped…, I reported…, y The next caregiver needs to…. Incluye horas y hechos verificables, no conclusiones clínicas. Por ejemplo: At 5:20 p.m., I noticed she ate about half of her meal. I offered water and informed the supervisor. Repite nombres, cantidades y horas lentamente; después confirma que la otra persona entendió el pendiente. Evita palabras vagas como fine, bad o normal cuando puedes describir conducta, apariencia o respuesta. Tampoco agregues información privada que no sea necesaria para el cuidado. Si no sabes una palabra, describe el hecho con vocabulario que controles o pide ayuda antes de improvisar. Una entrega breve puede ser completa cuando sigue un orden estable. En la práctica harás shadowing: escucharás y repetirás frases primero a velocidad lenta y después a velocidad natural, manteniendo observación, acción y pendiente."
+  },
+  {
+    "day": 62,
+    "week": 9,
+    "moduleId": "communication",
+    "titleEs": "Pronunciación y aclaración segura",
+    "objectiveEs": "Pedir repetición, deletreo o confirmación sin fingir entender",
+    "practiceEs": "Grabar y comparar cinco frases funcionales",
+    "evidence": "audio+rubric",
+    "criticalSafety": false,
+    "sourceTags": [
+      "bilingual"
+    ],
+    "lessonEs": "La pronunciación perfecta no es el objetivo; la comprensión segura sí lo es. Fingir que entendiste puede convertir una duda pequeña en una acción equivocada. Cuando no comprendas, usa una estrategia concreta: pide repetición más lenta, solicita que deletreen la palabra clave o repite el mensaje con tus propias palabras para confirmarlo. Frases útiles son: Could you say that again slowly?, How do you spell that? y Let me repeat what I understood. Presta especial atención a números, horas, nombres de medicamentos y palabras que suenan parecidas. Por ejemplo, si escuchas una instrucción sobre fifteen o fifty, no adivines: repite el número y espera confirmación. Habla por grupos cortos de palabras, marca la sílaba fuerte y deja pausas naturales; gritar no mejora la claridad. Si la duda afecta seguridad, movilidad, alimentación o medicamentos, detente y consulta por el canal autorizado. A continuación grabarás cinco frases funcionales, las compararás con un modelo y repetirás solamente las partes que todavía no se entienden con claridad."
+  },
+  {
+    "day": 63,
+    "week": 9,
+    "moduleId": "communication",
+    "titleEs": "Role-play bilingüe completo",
+    "objectiveEs": "Mantener dignidad, alcance y exactitud entre idiomas",
+    "practiceEs": "Completar conversación ramificada y reintento",
+    "evidence": "scenario+assessment",
+    "criticalSafety": true,
+    "sourceTags": [
+      "bilingual"
+    ],
+    "lessonEs": "En una conversación bilingüe debes conservar el significado, la dignidad y tus límites profesionales. Primero identifica el propósito: ofrecer una opción, informar una observación o confirmar una instrucción. Usa frases breves, evita resumir de memoria y comprueba comprensión mediante una repetición sencilla. Si el cliente dice que le duele el pecho, no suavices el mensaje ni lo conviertas en diagnóstico; comunica sus palabras, la hora y lo que observas. Tampoco respondas por la persona cuando ella puede expresarse. Este día es crítico porque una traducción incompleta puede alterar el consentimiento, ocultar una señal urgente o producir una acción fuera del plan. Ante información clínica compleja, contradicciones o palabras esenciales que no comprendes, detén la tarea y solicita al supervisor o al recurso lingüístico autorizado. Por ejemplo: I heard you say the pain started now. I need to get help and confirm the next step. En la conversación ramificada practicarás una respuesta, recibirás una dificultad nueva y harás un segundo intento más exacto y seguro."
+  },
+  {
+    "day": 64,
+    "week": 10,
+    "moduleId": "documentation",
+    "titleEs": "Hechos, no diagnósticos",
+    "objectiveEs": "Documentar lo observado, oído y realizado",
+    "practiceEs": "Corregir notas con juicios o diagnósticos",
+    "evidence": "rewrite+quiz",
+    "criticalSafety": true,
+    "sourceTags": [
+      "scope"
+    ],
+    "lessonEs": "Una nota profesional registra hechos, no diagnósticos ni juicios sobre la persona. Escribe lo que viste, escuchaste, mediste o hiciste: hora, conducta observable, palabras textuales, acción y persona notificada. Sustituye expresiones como estaba agresivo por una descripción: A las 2:10 p. m., levantó la voz, empujó la bandeja y dijo que quería estar solo. Evita atribuir intenciones, copiar rumores o usar términos clínicos que nadie autorizado haya establecido. También distingue una cita directa de tu observación: Cliente dijo: Me siento mareado, frente a caminaba con pasos más cortos que al inicio del turno. Este contenido es crítico porque una nota imprecisa puede retrasar ayuda, confundir al siguiente cuidador o presentar una opinión como si fuera un hecho. Si observas un cambio repentino o peligroso, documentar no sustituye actuar: protege a la persona, activa ayuda y luego registra según el procedimiento. En el ejercicio corregirás notas con diagnósticos, etiquetas y datos ambiguos hasta convertirlas en registros objetivos."
+  },
+  {
+    "day": 65,
+    "week": 10,
+    "moduleId": "documentation",
+    "titleEs": "Hora, secuencia y exactitud",
+    "objectiveEs": "Registrar cronología sin alterar ni rellenar memoria",
+    "practiceEs": "Ordenar eventos y marcar dato desconocido",
+    "evidence": "timeline+review",
+    "criticalSafety": false,
+    "sourceTags": [
+      "documentation"
+    ],
+    "lessonEs": "La cronología permite reconstruir qué ocurrió y qué respuesta recibió la persona. Registra tan pronto como el procedimiento lo permita y separa la hora del evento de la hora en que escribes. Ordena observación, acción, notificación y resultado; no rellenes espacios con lo que crees que probablemente sucedió. Si desconoces un dato, indícalo como desconocido o no observado conforme al formato autorizado. Por ejemplo: A las 4:05 p. m. encontré el vaso volcado junto a la silla; no observé cuándo ocurrió. Se secó el piso y se informó al supervisor a las 4:12 p. m. Si recuerdas información después, sigue la política para una entrada tardía y nunca alteres silenciosamente el registro original. Usa relojes y unidades consistentes y comprueba nombres antes de guardar. La exactitud importa más que producir una historia perfecta. En la actividad recibirás eventos desordenados, construirás la secuencia correcta y marcarás con honestidad cualquier dato que el escenario no proporcione."
+  },
+  {
+    "day": 66,
+    "week": 10,
+    "moduleId": "documentation",
+    "titleEs": "DAR y SOAP como técnicas de práctica",
+    "objectiveEs": "Usar estructuras solo cuando el empleador las acepte",
+    "practiceEs": "Convertir hechos en dos formatos y comparar límites",
+    "evidence": "documentation+rubric",
+    "criticalSafety": false,
+    "sourceTags": [
+      "employer_policy"
+    ],
+    "lessonEs": "DAR y SOAP son estructuras para organizar una práctica de documentación; solo debes usarlas en el trabajo si tu empleador las acepta y te enseña su formato. En DAR, separas datos observados, acción realizada y respuesta. En SOAP, organizas información subjetiva expresada por la persona, datos objetivos, evaluación autorizada y plan; un caregiver no debe inventar una evaluación clínica para completar una casilla. Por ejemplo, la frase Me arde la garganta pertenece a lo que la persona reporta, mientras que tomó tres sorbos de agua describe un hecho observado. En ambos formatos debes conservar hora, palabras exactas, acciones dentro de tu función y notificaciones. No fuerces un dato en una categoría si no existe ni copies conclusiones de otro turno sin verificar la fuente. La estructura ayuda a que otros encuentren información, pero no convierte una opinión en evidencia ni reemplaza la política de la organización. Ahora transformarás el mismo conjunto de hechos en DAR y SOAP, y señalarás qué apartados requieren personal autorizado o quedarían sin completar."
+  },
+  {
+    "day": 67,
+    "week": 10,
+    "moduleId": "documentation",
+    "titleEs": "Medicamentos: registrar sin inventar",
+    "objectiveEs": "Seguir plan/formato autorizado y no corregir un registro de memoria",
+    "practiceEs": "Resolver una discrepancia escalando antes de firmar",
+    "evidence": "critical_scenario+quiz",
+    "criticalSafety": true,
+    "sourceTags": [
+      "medication_scope"
+    ],
+    "lessonEs": "Un registro relacionado con medicamentos debe coincidir con la actividad realmente autorizada y realizada. Comprueba la identidad de la persona, el plan o formato vigente y la entrada correspondiente antes de registrar; nunca firmes por adelantado ni marques una dosis que no presenciaste según tu función. Si la etiqueta, el plan y el registro no coinciden, no elijas cuál parece correcto y no reconstruyas la respuesta de memoria. Detente, evita cualquier acción dudosa y comunícate con el supervisor o profesional indicado. Por ejemplo, el registro muestra una hora distinta a la etiqueta. Anotas la discrepancia según el procedimiento, mantienes el medicamento sin cambios y esperas una instrucción confirmada. Este tema es crítico porque una marca incorrecta puede ocultar una omisión, favorecer una repetición o dar al equipo información falsa. No borres, sobrescribas ni corrijas de manera informal; utiliza el proceso autorizado para errores o entradas tardías. En la simulación resolverás una discrepancia escalando antes de firmar y explicarás por qué cada atajo sería inseguro."
+  },
+  {
+    "day": 68,
+    "week": 10,
+    "moduleId": "documentation",
+    "titleEs": "Entrega de turno estructurada",
+    "objectiveEs": "Comunicar situación, hechos, acciones y pendiente",
+    "practiceEs": "Realizar una entrega de 60 segundos",
+    "evidence": "audio+rubric",
+    "criticalSafety": true,
+    "sourceTags": [
+      "handoff"
+    ],
+    "lessonEs": "La entrega de turno conecta el cuidado de una persona con el siguiente responsable. Organízala en cuatro partes: situación actual, hechos relevantes, acciones realizadas y asuntos pendientes. Prioriza cambios, riesgos y límites de tiempo; después añade preferencias o rutinas necesarias. Por ejemplo: Desde las 5:30 p. m. bebió menos de lo habitual; ofrecí líquidos dos veces, aceptó medio vaso, informé a la supervisora y queda pendiente seguir el plan de observación. Distingue claramente lo que viste de lo que otra persona te contó. Confirma quién recibe la entrega y ofrece una oportunidad breve para repetir el pendiente. Este contenido es crítico porque una omisión puede interrumpir una precaución, duplicar una acción o retrasar la respuesta a un cambio importante. Si existe peligro inmediato, no esperes al cambio de turno: activa ayuda en ese momento y entrega después el resumen. Evita conversaciones en pasillos o con personas no autorizadas. En la práctica realizarás una entrega de 60 segundos que sea breve, cronológica y accionable."
+  },
+  {
+    "day": 69,
+    "week": 10,
+    "moduleId": "documentation",
+    "titleEs": "Privacidad al comunicar",
+    "objectiveEs": "Usar canal, audiencia y contenido mínimos",
+    "practiceEs": "Elegir dónde y con quién compartir una actualización",
+    "evidence": "scenario+review",
+    "criticalSafety": true,
+    "sourceTags": [
+      "privacy"
+    ],
+    "lessonEs": "Proteger la privacidad significa controlar tres elementos cada vez que comunicas: audiencia, canal y contenido. Verifica que la persona receptora esté autorizada, utiliza el sistema aprobado y comparte únicamente lo necesario para cumplir el propósito del cuidado. Un familiar conocido no queda automáticamente autorizado para recibir detalles. Tampoco uses mensajes personales, redes sociales, altavoz en espacios compartidos ni fotografías desde tu teléfono. Por ejemplo, si una vecina pregunta por qué llegó una ambulancia, no confirmas el estado del cliente; remites cualquier comunicación al responsable indicado. Este punto es crítico porque una divulgación puede causar daño, romper la confianza o exponer información sensible que después no puede recuperarse. La urgencia tampoco justifica contar detalles a cualquiera: llama al servicio adecuado y proporciona la información pertinente para obtener ayuda. Antes de enviar una actualización, revisa nombre del destinatario, archivo adjunto y lugar desde donde hablas. En el ejercicio elegirás con quién, dónde y mediante qué canal compartir varias actualizaciones ficticias."
+  },
+  {
+    "day": 70,
+    "week": 10,
+    "moduleId": "documentation",
+    "titleEs": "Simulación completa de turno",
+    "objectiveEs": "Integrar cuidado, notas y entrega sin omisiones internas",
+    "practiceEs": "Completar un turno ficticio; cero omisiones es criterio de la simulación",
+    "evidence": "scenario+assessment",
+    "criticalSafety": true,
+    "sourceTags": [
+      "handoff"
+    ],
+    "lessonEs": "Un turno completo exige mantener continuidad desde la primera observación hasta la entrega final. Antes de comenzar, revisa el plan y las prioridades; durante el cuidado, confirma consentimiento, registra hechos y comunica cambios; al cerrar, verifica que cada acción y pendiente aparezca en el lugar autorizado. Usa una lista interna: cuidado previsto, rechazo o cambio, medidas tomadas, persona notificada, respuesta y pendiente. Imagina que el cliente rechaza parte de la cena, bebe agua, informa náusea y luego descansa. No basta escribir comió poco: conserva horas, palabras, cantidad aproximada, acciones y notificación sin diagnosticar. Esta integración es crítica porque una omisión interna puede hacer que el equipo repita, ignore o interprete mal una situación. Si la simulación incluye una señal urgente, actúa primero y documenta después; ninguna nota compensa una respuesta tardía. Hoy completarás un turno ficticio de principio a fin. El criterio de práctica es cero omisiones dentro de los datos proporcionados, seguido de una revisión para corregir cualquier salto de secuencia."
+  },
+  {
+    "day": 71,
+    "week": 11,
+    "moduleId": "abuse",
+    "titleEs": "Tipos de abuso, neglect y explotación",
+    "objectiveEs": "Reconocer categorías sin investigar ni confrontar",
+    "practiceEs": "Clasificar señales ficticias y separar hecho de inferencia",
+    "evidence": "classification+quiz",
+    "criticalSafety": true,
+    "sourceTags": [
+      "WIC_15630"
+    ],
+    "lessonEs": "El maltrato puede presentarse como daño físico, sexual o emocional, abandono, negligencia, autonegligencia o explotación financiera. Tu tarea no es demostrar una categoría, sino reconocer señales, proteger a la persona y seguir el deber de reporte que corresponda a tu función y entorno. Separa hechos de inferencias: un moretón nuevo es una observación; afirmar quién lo causó sin evidencia es una conclusión. Otras señales pueden ser temor ante alguien, necesidades básicas desatendidas, cambios financieros inusuales o palabras directas de la persona. Este tema es crítico porque esperar una prueba definitiva puede prolongar el peligro, mientras investigar por tu cuenta puede aumentar el riesgo o alterar información importante. No confrontes al presunto responsable ni prometas guardar secreto. Ante peligro inmediato, llama al 911; en otras situaciones, utiliza sin demora el canal oficial aplicable y la política de tu organización. En la práctica clasificarás señales ficticias y escribirás, por separado, el hecho observado y la posible preocupación que requiere reporte o consulta."
+  },
+  {
+    "day": 72,
+    "week": 11,
+    "moduleId": "abuse",
+    "titleEs": "Señales y sospecha razonable",
+    "objectiveEs": "Entender que no se necesita prueba definitiva para activar el deber aplicable",
+    "practiceEs": "Decidir qué observación requiere reporte o consulta inmediata",
+    "evidence": "scenario+review",
+    "criticalSafety": true,
+    "sourceTags": [
+      "WIC_15630"
+    ],
+    "lessonEs": "La sospecha razonable nace de hechos, declaraciones o circunstancias que harían pensar a una persona prudente que puede existir maltrato, aunque tú no tengas una prueba completa. Puede surgir de una sola observación grave o de un patrón: lesiones repetidas, explicaciones incompatibles, temor, falta de alimento o movimientos financieros inesperados. Escucha con calma, permite que la persona use sus propias palabras y formula solo preguntas mínimas para atender la seguridad inmediata. No realices interrogatorios, búsquedas ni promesas sobre el resultado. Este aprendizaje es crítico porque exigir certeza puede retrasar una protección necesaria y tratar de investigar puede poner a la persona en mayor peligro. Documenta lo que observaste y las frases exactas, identifica dónde ocurrió y sigue de inmediato el proceso aplicable a tu puesto y entorno. Si hay peligro actual o una emergencia médica, llama al 911 antes de completar formularios. En los casos de hoy decidirás qué hechos requieren un reporte inmediato, una consulta urgente o seguimiento ordinario, explicando la razón sin convertir sospecha en acusación."
+  },
+  {
+    "day": 73,
+    "week": 11,
+    "moduleId": "abuse",
+    "titleEs": "Quién puede ser reportante obligatorio",
+    "objectiveEs": "Relacionar responsabilidad de cuidado con la definición legal y el entorno",
+    "practiceEs": "Evaluar perfiles ficticios sin dar asesoría legal personalizada",
+    "evidence": "quiz+source_check",
+    "criticalSafety": true,
+    "sourceTags": [
+      "WIC_15630"
+    ],
+    "lessonEs": "Ser reportante obligatorio depende de la responsabilidad que desempeñas, del lugar donde ocurre la atención y de las reglas vigentes; no debe decidirse por intuición ni por el nombre informal de tu trabajo. Si cuidas o supervisas a una persona mayor o adulta dependiente, trata cualquier sospecha con seriedad y consulta la fuente oficial y la política de tu organización para confirmar tu obligación. Un supervisor puede orientarte, pero no asumas que avisarle siempre sustituye el reporte que tú debas efectuar. Por ejemplo, dos personas llamadas caregiver pueden trabajar en entornos distintos y tener procedimientos diferentes. Este tema es crítico porque clasificar mal tu función puede retrasar el aviso o enviarlo al canal equivocado. Nunca prometas confidencialidad absoluta a quien revela daño; explica que necesitas buscar ayuda para protegerle. Ante peligro inmediato, llama al 911 y después cumple el proceso aplicable. En la actividad evaluarás perfiles ficticios, identificarás qué dato falta y localizarás orientación oficial sin ofrecer asesoría legal personalizada ni inventar una conclusión."
+  },
+  {
+    "day": 74,
+    "week": 11,
+    "moduleId": "abuse",
+    "titleEs": "Peligro inmediato, APS y policía",
+    "objectiveEs": "Elegir 911 ante peligro y canal apropiado para reporte en el hogar",
+    "practiceEs": "Resolver cuatro ramas con ubicación ficticia",
+    "evidence": "critical_scenario+rubric",
+    "criticalSafety": true,
+    "sourceTags": [
+      "WIC_15630",
+      "APS"
+    ],
+    "lessonEs": "El primer filtro es sencillo: ¿existe peligro inmediato, lesión grave o necesidad médica urgente? Si la respuesta es sí, llama al 911 y protege a la persona sin confrontar al posible agresor. Si no hay emergencia inmediata y la situación ocurre en un hogar, el reporte puede dirigirse a Adult Protective Services o a la autoridad policial correspondiente, según el tipo de hecho y las reglas aplicables. Usa información oficial de la ubicación real, porque las oficinas y procedimientos cambian por condado y entorno. Comunica quién está en riesgo, qué observaste o escuchaste, cuándo y dónde ocurrió, y cualquier necesidad inmediata; no necesitas resolver el caso. Este aprendizaje es crítico porque elegir un canal incorrecto o esperar al siguiente turno puede dejar a la persona expuesta. Notificar únicamente a un familiar posiblemente involucrado no constituye una respuesta segura. Documenta también la hora y el canal utilizado conforme a la política. En cuatro ramas ficticias decidirás entre 911, APS, policía o consulta inmediata y justificarás cada decisión con hechos."
+  },
+  {
+    "day": 75,
+    "week": 11,
+    "moduleId": "abuse",
+    "titleEs": "Tiempo y seguimiento del reporte",
+    "objectiveEs": "Recordar inmediato/tan pronto como sea posible y seguimiento en dos días laborables tras teléfono",
+    "practiceEs": "Construir línea de tiempo de un reporte ficticio",
+    "evidence": "timeline+quiz",
+    "criticalSafety": true,
+    "sourceTags": [
+      "WIC_15630"
+    ],
+    "lessonEs": "Cuando aplica el deber de reporte por sospecha de maltrato a una persona mayor o adulta dependiente, el tiempo importa. La respuesta de práctica es iniciar el reporte telefónico de inmediato o tan pronto como sea posible y completar el seguimiento escrito dentro de dos días laborables, verificando siempre el procedimiento oficial vigente para tu función y entorno. No esperes a reunir pruebas, terminar tu turno o recibir permiso de la familia. Registra por separado cuándo ocurrió o se descubrió el hecho, cuándo llamaste, con quién hablaste y cuándo enviaste el seguimiento; conserva solo la información por el medio autorizado. Por ejemplo, si una revelación ocurre el viernes por la tarde, actúas en ese momento y calculas el plazo con la guía oficial, no con una suposición personal. Este contenido es crítico porque una demora puede prolongar el riesgo y hacer que se pierdan detalles esenciales. Una emergencia continúa requiriendo 911 primero. En la práctica construirás una línea de tiempo ficticia desde la observación hasta el seguimiento y señalarás cada punto de escalamiento."
+  },
+  {
+    "day": 76,
+    "week": 11,
+    "moduleId": "abuse",
+    "titleEs": "Documentar sin investigar",
+    "objectiveEs": "Registrar palabras exactas y hechos sin prometer secreto",
+    "practiceEs": "Reescribir una nota que confronta al presunto agresor",
+    "evidence": "rewrite+review",
+    "criticalSafety": true,
+    "sourceTags": [
+      "WIC_15630"
+    ],
+    "lessonEs": "Después de observar o recibir una revelación, registra las palabras exactas y los hechos esenciales sin convertirte en investigador. Incluye fecha, hora, lugar, quién estaba presente, lo que viste o escuchaste, medidas de seguridad y canal de reporte. Usa una cita directa cuando sea posible y distingue lo dicho por la persona de tu propia observación. No hagas preguntas sugestivas, no confrontes al presunto agresor y no busques evidencia en pertenencias privadas. Por ejemplo, reemplaza Confesó que su hijo le roba por: A las 10:15 a. m., la persona dijo: Mi hijo tomó dinero de mi cartera sin preguntarme. Este contenido es crítico porque una nota interpretativa puede distorsionar la revelación, mientras una confrontación puede aumentar el peligro o provocar represalias. No prometas secreto; explica con calma que debes buscar ayuda. Si existe riesgo inmediato, llama al 911 antes de escribir. En el ejercicio reescribirás una nota que acusa e interroga hasta dejar una cronología objetiva, limitada y útil para el reporte."
+  },
+  {
+    "day": 77,
+    "week": 11,
+    "moduleId": "abuse",
+    "titleEs": "Caso integrado de reporte",
+    "objectiveEs": "Proteger, reportar y documentar según entorno",
+    "practiceEs": "Completar caso crítico y localizar fuente oficial",
+    "evidence": "scenario+assessment",
+    "criticalSafety": true,
+    "sourceTags": [
+      "WIC_15630",
+      "APS"
+    ],
+    "lessonEs": "Un caso de posible maltrato se maneja con una secuencia estable: protege, escucha, reporta y documenta. Primero determina si hay peligro inmediato y llama al 911 cuando corresponda. Después escucha sin interrogar, conserva las palabras de la persona y activa el canal oficial adecuado al entorno. Finalmente registra hechos, acciones, horas y destinatarios por el sistema autorizado. No intentes confirmar la historia con el presunto agresor ni retrases el reporte para obtener pruebas. Este caso es crítico porque varios errores pequeños —una promesa de secreto, una llamada tardía o una opinión escrita como hecho— pueden dejar a la persona sin protección. Imagina que un cliente muestra temor, tiene moretones nuevos y dice que alguien le empujó. No diagnosticas la lesión ni decides culpabilidad; atiendes necesidades urgentes y sigues el proceso aplicable. En la simulación completarás las cuatro etapas, localizarás la fuente oficial correspondiente a una ubicación ficticia y revisarás que tu respuesta no dependa de suposiciones."
+  },
+  {
+    "day": 78,
+    "week": 12,
+    "moduleId": "medication_support",
+    "titleEs": "Medicamentos autoadministrados y alcance",
+    "objectiveEs": "Distinguir asistencia permitida de prescribir, decidir o cambiar dosis",
+    "practiceEs": "Clasificar ocho acciones en ayudar, verificar o escalar",
+    "evidence": "classification+quiz",
+    "criticalSafety": true,
+    "sourceTags": [
+      "HSC_1796_12"
+    ],
+    "lessonEs": "Apoyar la autoadministración no significa prescribir, seleccionar o cambiar un medicamento. La persona conserva la acción que el plan define como propia, mientras tú brindas únicamente la ayuda autorizada: por ejemplo, recordar la hora, acercar un envase etiquetado o abrirlo cuando el plan y tu función lo permiten. Nunca decides una dosis, recomiendas suspenderla, partes una tableta por iniciativa propia ni compartes medicamentos entre personas. Comprueba siempre el plan, la etiqueta, la identidad y el límite específico de tu puesto. Este tema es crítico porque una ayuda aparentemente pequeña puede convertirse en una decisión clínica y causar daño si se realiza fuera de instrucciones. Si la persona no puede completar la acción esperada, existe una discrepancia o tienes duda, detente y consulta al supervisor o profesional indicado; en una emergencia, llama al 911. Por ejemplo, si pide tomar dos tabletas porque una no funcionó, no accedes ni discutes el tratamiento: observas, comunicas y sigues el plan. Ahora clasificarás ocho acciones como ayudar, verificar o escalar."
+  },
+  {
+    "day": 79,
+    "week": 12,
+    "moduleId": "medication_support",
+    "titleEs": "Seguir el plan y la etiqueta",
+    "objectiveEs": "Comparar instrucciones autorizadas sin interpretar cambios",
+    "practiceEs": "Responder a una etiqueta y plan que no coinciden",
+    "evidence": "critical_scenario+review",
+    "criticalSafety": true,
+    "sourceTags": [
+      "care_plan"
+    ],
+    "lessonEs": "El plan de cuidado y la etiqueta autorizada orientan el apoyo, pero tú no debes interpretar una diferencia entre ambos. Antes de ayudar, compara nombre de la persona, medicamento, instrucciones visibles, momento previsto y cualquier indicación específica del plan dentro de tu función. Si algo no coincide, permanece en pausa: no elijas la versión más reciente por apariencia, no corrijas la etiqueta y no uses una instrucción verbal de origen incierto. Por ejemplo, el plan menciona una tableta y el envase parece indicar dos. Mantén el medicamento sin cambios, informa exactamente qué documentos difieren y espera confirmación por el canal autorizado. Este contenido es crítico porque adivinar puede producir una dosis incorrecta o esconder un cambio que el equipo debe resolver. Una instrucción familiar no sustituye el plan ni una orden profesional válida. Si la persona presenta síntomas graves mientras verificas, activa atención de emergencia. En la práctica responderás paso a paso a una etiqueta y un plan que no coinciden, identificando qué puedes observar, qué debes comunicar y qué no puedes decidir."
+  },
+  {
+    "day": 80,
+    "week": 12,
+    "moduleId": "medication_support",
+    "titleEs": "Dosis omitida o rechazo",
+    "objectiveEs": "No forzar, duplicar ni decidir; observar y escalar según plan",
+    "practiceEs": "Role-play de respuesta y notificación",
+    "evidence": "scenario+rubric",
+    "criticalSafety": true,
+    "sourceTags": [
+      "medication_scope"
+    ],
+    "lessonEs": "Una dosis omitida o el rechazo de un medicamento no te autoriza a compensar, duplicar, reprogramar ni forzar. Mantén la calma, confirma qué ocurrió sin acusar y sigue las instrucciones específicas del plan para notificar. Registra la hora, las palabras de la persona, cualquier hecho observable y la acción tomada; no marques como administrado algo que no sucedió. Si encuentras una tableta fuera del envase y no sabes a quién pertenece o cuándo cayó, no la entregues ni la deseches por iniciativa propia: asegura el área y consulta. Este aprendizaje es crítico porque improvisar después de una omisión puede provocar una repetición o una interacción peligrosa. Respeta el derecho de la persona a rechazar, ofrece la información permitida y comunica el rechazo sin demora según el plan. Ante dificultad para respirar, pérdida de conciencia u otra emergencia, llama al 911. En el role-play practicarás una respuesta respetuosa, una notificación objetiva y un registro que no contiene decisiones clínicas."
+  },
+  {
+    "day": 81,
+    "week": 12,
+    "moduleId": "medication_support",
+    "titleEs": "Cambios observables y efectos reportados",
+    "objectiveEs": "Comunicar hechos y palabras de la persona sin diagnosticar",
+    "practiceEs": "Preparar llamada estructurada con hora, hecho y acción",
+    "evidence": "handoff+audio",
+    "criticalSafety": true,
+    "sourceTags": [
+      "scope"
+    ],
+    "lessonEs": "Tu aporte ante un posible efecto de un medicamento es observar y comunicar, no diagnosticar la causa. Describe cuándo empezó el cambio, qué ves o mides dentro de tu función, qué dice la persona y qué acción realizaste. Evita frases como el medicamento le bajó la presión si no existe una determinación profesional; escribe, por ejemplo: A las 8:40 a. m., después de levantarse, dijo Me siento mareada y se sentó nuevamente. Informa por el canal y con la urgencia establecidos en el plan. Este contenido es crítico porque atribuir un síntoma a una causa equivocada puede retrasar la evaluación correcta. Si aparecen señales graves o un deterioro rápido, activa el 911 en vez de esperar respuesta ordinaria. No aconsejes suspender, repetir o cambiar una dosis mientras llega orientación. Ten a mano la información autorizada, pero protege la privacidad y no manipules envases innecesariamente. En la práctica prepararás una llamada estructurada con hora, hecho observable, palabras textuales, acción y respuesta pendiente."
+  },
+  {
+    "day": 82,
+    "week": 12,
+    "moduleId": "medication_support",
+    "titleEs": "Apoyo a condiciones crónicas",
+    "objectiveEs": "Seguir rutinas autorizadas y reconocer límites",
+    "practiceEs": "Elegir apoyo no médico y cuándo llamar ayuda",
+    "evidence": "scenario+quiz",
+    "criticalSafety": true,
+    "sourceTags": [
+      "care_plan"
+    ],
+    "lessonEs": "Las condiciones crónicas suelen requerir rutinas consistentes, pero un caregiver no médico no sustituye al profesional que evalúa o modifica el tratamiento. Tu apoyo puede incluir recordar actividades autorizadas, preparar el entorno, acompañar, observar cambios y favorecer decisiones cotidianas seguras. Sigue el plan individual; no apliques automáticamente lo aprendido con otra persona. Por ejemplo, si el plan indica registrar una medida obtenida por la propia persona, puedes anotar el resultado según tu función, pero no interpretarlo ni ajustar alimentos o medicamentos por cuenta propia. Compara el estado actual con el patrón conocido usando hechos: más cansancio al caminar, menor consumo o nuevas palabras de malestar. Comunica cambios en el plazo indicado y activa el 911 ante una emergencia. Respeta también la autonomía: ofrece opciones compatibles con el plan y evita regañar por una elección. Este tema es crítico porque atribuir todo cambio a una condición conocida puede retrasar ayuda necesaria. En los escenarios elegirás entre apoyo no médico, consulta al supervisor y ayuda urgente, explicando el límite que determina cada respuesta."
+  },
+  {
+    "day": 83,
+    "week": 12,
+    "moduleId": "medication_support",
+    "titleEs": "Citas y comunicación con el equipo",
+    "objectiveEs": "Preparar observaciones/preguntas sin hablar por la persona innecesariamente",
+    "practiceEs": "Crear lista breve centrada en preferencias",
+    "evidence": "plan+reflection",
+    "criticalSafety": false,
+    "sourceTags": [
+      "consent",
+      "privacy"
+    ],
+    "lessonEs": "Preparar una cita ayuda a que la persona comunique lo importante sin quitarle su voz. Antes de salir, reúne únicamente los documentos y observaciones autorizados, confirma horario y transporte, y pregunta qué desea consultar. Organiza una lista breve por prioridad: cambios observables con fecha, preguntas de la persona y asuntos del plan que necesitan aclaración. Durante la conversación, permite que responda cuando pueda; complementa solo con permiso o cuando tu función lo requiera. No traduzcas instrucciones complejas que no comprendes ni prometas ejecutar un cambio hasta que llegue por el canal válido. Por ejemplo, puedes decir: Durante tres cenas comió aproximadamente la mitad y dijo sentirse llena, en lugar de diagnosticar pérdida de apetito. Después de la cita, confirma las instrucciones mediante teach-back y entrégalas al responsable autorizado; no dependas solo de memoria. Protege los papeles y evita comentar detalles en salas públicas. En la práctica crearás una lista centrada en las preferencias del cliente y marcarás qué preguntas corresponden al equipo profesional."
+  },
+  {
+    "day": 84,
+    "week": 12,
+    "moduleId": "medication_support",
+    "titleEs": "Caso integrado de apoyo con medicación",
+    "objectiveEs": "Combinar plan, rechazo, observación y escalamiento",
+    "practiceEs": "Resolver caso crítico sin tomar decisiones clínicas",
+    "evidence": "scenario+assessment",
+    "criticalSafety": true,
+    "sourceTags": [
+      "HSC_1796_12"
+    ],
+    "lessonEs": "El apoyo seguro con medicamentos combina cuatro decisiones: verificar el plan, permanecer dentro de tu función, respetar el rechazo y escalar cambios o discrepancias. Imagina que la persona rechaza una tableta, dice que le produce mareo y el registro ya aparece marcado. No la obligas, no borras la marca, no recomiendas otra dosis y no decides qué documento es correcto. Compruebas seguridad inmediata, conservas sus palabras y la hora, notificas por el canal indicado y utilizas el procedimiento autorizado para la discrepancia. Este caso es crítico porque actuar sobre una sola parte puede ocultar un error o añadir otro. Si el estado se vuelve grave, llama al 911; el registro y las llamadas ordinarias pueden esperar. Distingue en todo momento entre observación, asistencia permitida y decisión clínica. La familia tampoco puede ampliar tu alcance con una instrucción informal. En el caso integrado ordenarás los pasos, redactarás la notificación y explicarás por qué cada acción permanece segura sin que tú tomes decisiones sobre el tratamiento."
+  },
+  {
+    "day": 85,
+    "week": 13,
+    "moduleId": "career",
+    "titleEs": "Confirmar mi ruta",
+    "objectiveEs": "Elegir una ruta y reconocer cuándo debe cambiar",
+    "practiceEs": "Actualizar perfil y explicar la elección con dos fuentes",
+    "evidence": "pathway_check+reflection",
+    "criticalSafety": false,
+    "sourceTags": [
+      "pathways"
+    ],
+    "lessonEs": "Tu ruta profesional debe coincidir con el lugar donde deseas trabajar y el tipo de tareas que quieres realizar. En California puedes explorar, entre otras opciones, empleo mediante una organización de cuidado en el hogar, trabajo como proveedor de IHSS o formación aprobada para funciones como HHA o CNA. Estos caminos tienen autoridades, requisitos y alcances distintos; completar este currículo no te inscribe ni te otorga una credencial. Elige una ruta provisional comparando tres criterios: población y entorno de trabajo, tareas permitidas y pasos oficiales de ingreso. Por ejemplo, si prefieres apoyar a una persona en su hogar mediante IHSS, revisa el proceso del condado; si buscas una función clínica más amplia, investiga programas aprobados y sus requisitos actuales. Usa al menos dos fuentes oficiales y anota la fecha de consulta, porque los procedimientos pueden cambiar. No pagues a una escuela solo por una promesa publicitaria. En la actividad actualizarás tu perfil, escogerás una ruta y explicarás tu elección con evidencia verificable."
+  },
+  {
+    "day": 86,
+    "week": 13,
+    "moduleId": "career",
+    "titleEs": "Checklist oficial de próximos pasos",
+    "objectiveEs": "Separar tareas dentro de la app de acciones con agencia, condado o programa",
+    "practiceEs": "Crear lista fechada con enlaces oficiales",
+    "evidence": "plan+source_check",
+    "criticalSafety": false,
+    "sourceTags": [
+      "official_resources"
+    ],
+    "lessonEs": "Un buen checklist separa lo que puedes preparar ahora de lo que debe realizar una agencia, un condado, un programa educativo o una autoridad. Comienza por identificar tu ruta y localizar su página oficial. Después anota cada acción con responsable, documento requerido, fecha objetivo, enlace y estado. Las tareas personales pueden incluir reunir identificación, revisar disponibilidad, practicar entrevista y guardar copias seguras; otros pasos, como orientación, verificación de antecedentes, matrícula o evaluación, siguen procesos externos que no debes simular dentro de una aplicación. Por ejemplo, escribir completar verificación no basta: especifica consultar instrucciones oficiales, presentar la solicitud por el canal indicado y esperar confirmación. No envíes números sensibles por mensajes informales ni a sitios cuya identidad no hayas verificado. Marca también dependencias: una cita puede requerir una solicitud previa. Los requisitos cambian, por lo que debes confirmar su vigencia y conservar la fecha de revisión. En la práctica crearás una lista fechada con enlaces oficiales, responsables claros y un siguiente paso realizable."
+  },
+  {
+    "day": 87,
+    "week": 13,
+    "moduleId": "career",
+    "titleEs": "Guardian e IHSS: procesos distintos",
+    "objectiveEs": "Explicar diferencias sin compartir datos sensibles",
+    "practiceEs": "Comparar solicitud HCA con inscripción IHSS",
+    "evidence": "comparison+quiz",
+    "criticalSafety": false,
+    "sourceTags": [
+      "CDSS_HCA",
+      "CDSS_IHSS"
+    ],
+    "lessonEs": "Guardian e IHSS pertenecen a procesos distintos. Guardian es un sistema relacionado con verificaciones de antecedentes para ciertas funciones y organizaciones de cuidado; IHSS gestiona mediante el condado la inscripción y participación de proveedores que apoyan a personas elegibles en el hogar. Una acción completada en un proceso no demuestra automáticamente que terminaste el otro. Compara siempre autoridad, propósito, destinatario y confirmación final. Por ejemplo, crear o revisar información para una verificación no sustituye la orientación ni los demás pasos que el condado exige a un proveedor de IHSS. Del mismo modo, completar la inscripción de IHSS no autoriza por sí sola cualquier empleo o tarea fuera de ese programa. Utiliza únicamente portales y contactos oficiales, y no compartas identificadores, huellas o documentos sensibles con terceros que prometan acelerar el trámite. Como los procedimientos pueden cambiar, verifica la guía vigente antes de actuar. En el ejercicio elaborarás una tabla que separe solicitud, orientación, antecedentes y confirmación para ambos caminos, dejando como pendiente cualquier dato no comprobado."
+  },
+  {
+    "day": 88,
+    "week": 13,
+    "moduleId": "career",
+    "titleEs": "Comparar HHA y CNA",
+    "objectiveEs": "Elegir preguntas para un programa aprobado y reconocer horas supervisadas",
+    "practiceEs": "Auditar una publicidad ficticia de escuela",
+    "evidence": "source_audit+rubric",
+    "criticalSafety": false,
+    "sourceTags": [
+      "CDPH_HHA",
+      "CDPH_CNA"
+    ],
+    "lessonEs": "HHA y CNA son rutas diferentes, aunque ambas pueden incluir formación teórica y práctica supervisada. Antes de elegir un programa, confirma en la fuente oficial que esté aprobado, pregunta qué función prepara, qué requisitos de ingreso tiene, cómo organiza las horas supervisadas y qué pasos siguen al finalizar. No confundas un certificado de asistencia emitido por una escuela con la credencial o autorización que una autoridad pueda requerir. Una publicidad que promete terminar en pocos días, trabajar en cualquier entorno y omitir práctica merece verificación adicional. Pide por escrito costo total, política de reembolso, ubicación de la práctica, requisitos de asistencia y nombre exacto del programa. Compara esas respuestas con el directorio o la orientación oficial vigente, no solo con reseñas. También considera si las tareas reales y el entorno encajan con tus metas. Completar estas lecciones no reemplaza formación aprobada ni evaluación externa. En la auditoría examinarás una publicidad ficticia, marcarás señales de alerta y redactarás preguntas concretas antes de pagar o entregar documentos."
+  },
+  {
+    "day": 89,
+    "week": 13,
+    "moduleId": "career",
+    "titleEs": "Portafolio, entrevista y autocuidado",
+    "objectiveEs": "Presentar aprendizaje honestamente y planificar límites saludables",
+    "practiceEs": "Redactar logro sin afirmar credencial y una pregunta de entrevista",
+    "evidence": "portfolio+reflection",
+    "criticalSafety": false,
+    "sourceTags": [
+      "career"
+    ],
+    "lessonEs": "Tu portafolio debe demostrar aprendizaje sin afirmar experiencia o credenciales que no posees. Puedes incluir escenarios resueltos, ejemplos ficticios de documentación, listas de seguridad, reflexiones Feynman y resultados de práctica claramente etiquetados. Describe logros con evidencia: Completé 90 sesiones de práctica y corregí mis respuestas mediante casos, en vez de presentarte como certificado por este currículo. En una entrevista, explica cómo actuarías, reconoce límites y pregunta por plan de cuidado, supervisión, capacitación, comunicación de cambios y políticas de emergencia. Evalúa también condiciones que sostienen un cuidado seguro: horario realista, pausas, apoyo para tareas físicas y forma de reportar preocupaciones. El autocuidado profesional no es abandonar responsabilidades; es prevenir fatiga, pedir ayuda antes de exceder tu capacidad y mantener límites con clientes y familias. Por ejemplo, ante una transferencia que requiere más ayuda, demuestras criterio al detenerte y solicitar apoyo. En la práctica redactarás un logro honesto, una pregunta de entrevista y un límite saludable que puedas comunicar con respeto."
+  },
+  {
+    "day": 90,
+    "week": 13,
+    "moduleId": "career",
+    "titleEs": "Evaluación final interna y plan de continuidad",
+    "objectiveEs": "Integrar seguridad, alcance, comunicación, reporte y ruta profesional",
+    "practiceEs": "Completar evaluación, revisar errores y crear próximos pasos oficiales",
+    "evidence": "final_assessment+spaced_review",
+    "criticalSafety": true,
+    "sourceTags": [
+      "all"
+    ],
+    "lessonEs": "La evaluación final comprueba si puedes integrar criterio seguro, no si memorizaste palabras. Ante cada caso, sigue un orden: identifica peligro, obtiene consentimiento cuando sea posible, revisa tu alcance y el plan, actúa o escala, y documenta hechos. Debes distinguir una rutina de una emergencia, una observación de un diagnóstico, una ayuda permitida de una decisión clínica y una preocupación de maltrato de una investigación. Este día es crítico porque los errores de prioridad —documentar antes de proteger, improvisar una dosis o esperar pruebas de abuso— pueden causar daño. Si fallas una situación crítica, no compenses con un promedio alto: estudia el razonamiento, repite el caso y demuestra una respuesta segura. Por ejemplo, ante habla repentinamente alterada, no terminas primero la nota; activas ayuda inmediata y registras después. Esta evaluación es interna y no concede una credencial ni reemplaza requisitos oficiales. Hoy completarás los casos finales, revisarás cada error y crearás un plan con repaso espaciado, práctica supervisada y próximos pasos verificados en fuentes oficiales."
+  }
+]

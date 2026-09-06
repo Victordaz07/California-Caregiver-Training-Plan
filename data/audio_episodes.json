@@ -1,0 +1,168 @@
+[
+  {
+    "episodeId": "audio_w01",
+    "week": 1,
+    "titleEs": "Dignidad, consentimiento y alcance",
+    "targetMinutes": 12,
+    "keyPhraseEn": "How would you like me to help?",
+    "pronunciationEs": "jau wud yu laik mi tu jelp",
+    "learnerPromptEs": "Explica en 60 segundos cómo pedir permiso y mantenerte en tu función",
+    "sourceTags": [
+      "consent",
+      "scope"
+    ]
+  },
+  {
+    "episodeId": "audio_w02",
+    "week": 2,
+    "titleEs": "Seis rutas, seis procesos",
+    "targetMinutes": 14,
+    "keyPhraseEn": "Which pathway applies to me?",
+    "pronunciationEs": "uich PATH-uei a-PLAIS tu mi",
+    "learnerPromptEs": "Compara IHSS con HCA afiliado sin usar la palabra certificación",
+    "sourceTags": [
+      "CDSS_HCA",
+      "CDSS_IHSS"
+    ]
+  },
+  {
+    "episodeId": "audio_w03",
+    "week": 3,
+    "titleEs": "Cortar la contaminación cruzada",
+    "targetMinutes": 12,
+    "keyPhraseEn": "I need to clean my hands before the next task.",
+    "pronunciationEs": "ai nid tu klin mai jands bi-FOR de nekst task",
+    "learnerPromptEs": "Describe una secuencia segura entre cuidado personal y comida",
+    "sourceTags": [
+      "infection_control"
+    ]
+  },
+  {
+    "episodeId": "audio_w04",
+    "week": 4,
+    "titleEs": "La emergencia primero",
+    "targetMinutes": 10,
+    "keyPhraseEn": "Call 911 now.",
+    "pronunciationEs": "kol nain uan uan nau",
+    "learnerPromptEs": "Di qué ocurre con el temporizador ante peligro inmediato",
+    "sourceTags": [
+      "911"
+    ]
+  },
+  {
+    "episodeId": "audio_w05",
+    "week": 5,
+    "titleEs": "Ayudar sin tomar control",
+    "targetMinutes": 12,
+    "keyPhraseEn": "Would you like a full bath or a partial wash?",
+    "pronunciationEs": "wud yu laik a ful bath or a PAR-shal uash",
+    "learnerPromptEs": "Ofrece dos opciones respetuosas ante una tarea diaria",
+    "sourceTags": [
+      "consent",
+      "ADL"
+    ]
+  },
+  {
+    "episodeId": "audio_w06",
+    "week": 6,
+    "titleEs": "Movilidad: saber cuándo detenerse",
+    "targetMinutes": 13,
+    "keyPhraseEn": "I am not trained to use this lift safely.",
+    "pronunciationEs": "ai am not treind tu ius dis lift SEIF-li",
+    "learnerPromptEs": "Practica pedir apoyo sin culpar a la persona",
+    "sourceTags": [
+      "hands_on",
+      "care_plan"
+    ]
+  },
+  {
+    "episodeId": "audio_w07",
+    "week": 7,
+    "titleEs": "Comidas, hidratación y cambios",
+    "targetMinutes": 12,
+    "keyPhraseEn": "I noticed a new change while you were eating.",
+    "pronunciationEs": "ai NOU-tist a niu cheinch uail yu uer I-ting",
+    "learnerPromptEs": "Entrega un reporte objetivo de un cambio durante la comida",
+    "sourceTags": [
+      "care_plan",
+      "scope"
+    ]
+  },
+  {
+    "episodeId": "audio_w08",
+    "week": 8,
+    "titleEs": "Apoyo cognitivo centrado en la persona",
+    "targetMinutes": 14,
+    "keyPhraseEn": "You seem worried. I am here with you.",
+    "pronunciationEs": "yu sim UO-rid, ai am jir uiz yu",
+    "learnerPromptEs": "Valida una emoción sin confirmar un hecho falso",
+    "sourceTags": [
+      "dementia",
+      "communication"
+    ]
+  },
+  {
+    "episodeId": "audio_w09",
+    "week": 9,
+    "titleEs": "Aclarar en inglés con seguridad",
+    "targetMinutes": 15,
+    "keyPhraseEn": "Please say that again slowly, and let me repeat it back.",
+    "pronunciationEs": "plis sei dat a-GUEN SLOU-li, and let mi ri-PIT it bak",
+    "learnerPromptEs": "Practica pedir repetición y usar teach-back",
+    "sourceTags": [
+      "language_access",
+      "teach_back"
+    ]
+  },
+  {
+    "episodeId": "audio_w10",
+    "week": 10,
+    "titleEs": "Una entrega de turno objetiva",
+    "targetMinutes": 13,
+    "keyPhraseEn": "At 5:45, I observed... I notified... The next step is...",
+    "pronunciationEs": "at faiv FOR-ti faiv, ai ob-SERVD; ai NOU-ti-faid; de nekst step is",
+    "learnerPromptEs": "Graba una entrega de 60 segundos con hora, hecho, acción y pendiente",
+    "sourceTags": [
+      "handoff",
+      "documentation"
+    ]
+  },
+  {
+    "episodeId": "audio_w11",
+    "week": 11,
+    "titleEs": "Reportar sin investigar",
+    "targetMinutes": 14,
+    "keyPhraseEn": "I need to report this concern right away.",
+    "pronunciationEs": "ai nid tu ri-PORT dis kon-SERN rait a-UEI",
+    "learnerPromptEs": "Explica por qué no debes esperar una confesión",
+    "sourceTags": [
+      "WIC_15630",
+      "APS"
+    ]
+  },
+  {
+    "episodeId": "audio_w12",
+    "week": 12,
+    "titleEs": "Ayuda con medicación dentro del alcance",
+    "targetMinutes": 13,
+    "keyPhraseEn": "I cannot change the dose. I will follow the plan and call the authorized person.",
+    "pronunciationEs": "ai KA-not cheinch de dous; ai uil FA-lou de plan and kol di O-tho-raizd PER-son",
+    "learnerPromptEs": "Responde a una dosis dudosa sin dar consejo clínico",
+    "sourceTags": [
+      "HSC_1796_12"
+    ]
+  },
+  {
+    "episodeId": "audio_w13",
+    "week": 13,
+    "titleEs": "Próximos pasos sin promesas falsas",
+    "targetMinutes": 12,
+    "keyPhraseEn": "This is internal training, not a state credential.",
+    "pronunciationEs": "dis is in-TER-nal TREI-ning, not a steit kri-DEN-shal",
+    "learnerPromptEs": "Presenta tu aprendizaje en una entrevista con lenguaje honesto",
+    "sourceTags": [
+      "disclaimer",
+      "pathways"
+    ]
+  }
+]

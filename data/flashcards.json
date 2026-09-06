@@ -1,0 +1,395 @@
+[
+  {
+    "id": "fc001",
+    "week": 1,
+    "questionEs": "¿Qué credencial estatal entrega esta app?",
+    "answerEs": "Ninguna. Puede emitir un certificado interno de finalización, claramente no gubernamental.",
+    "sourceTags": [
+      "disclaimer"
+    ],
+    "critical": true
+  },
+  {
+    "id": "fc002",
+    "week": 1,
+    "questionEs": "¿Cuál es la regla corta del alcance?",
+    "answerEs": "Seguir rol, formación, autorización y plan; observar y escalar en vez de diagnosticar o prescribir.",
+    "sourceTags": [
+      "HSC_1796_12"
+    ],
+    "critical": true
+  },
+  {
+    "id": "fc003",
+    "week": 1,
+    "questionEs": "¿Qué haces ante un rechazo sin peligro inmediato?",
+    "answerEs": "Reconocer la decisión, ofrecer opciones permitidas, documentar hechos y escalar según el plan.",
+    "sourceTags": [
+      "consent",
+      "care_plan"
+    ],
+    "critical": false
+  },
+  {
+    "id": "fc004",
+    "week": 2,
+    "questionEs": "¿Existe un examen HCA Guardian en el proceso CDSS citado?",
+    "answerEs": "No. El proceso publicado describe cuenta, solicitud, PIN, tarifa y Live Scan/antecedentes.",
+    "sourceTags": [
+      "CDSS_HCA"
+    ],
+    "critical": true
+  },
+  {
+    "id": "fc005",
+    "week": 2,
+    "questionEs": "¿Cuáles son cuatro pasos centrales de inscripción IHSS?",
+    "answerEs": "SOC 426, orientación, SOC 846 y huellas/verificación DOJ, siguiendo al condado.",
+    "sourceTags": [
+      "CDSS_IHSS"
+    ],
+    "critical": false
+  },
+  {
+    "id": "fc006",
+    "week": 2,
+    "questionEs": "¿HCA es licencia o registro?",
+    "answerEs": "Registro. Usa “registro HCA” o “HCA registrado”, no licencia clínica.",
+    "sourceTags": [
+      "CDSS_HCA"
+    ],
+    "critical": true
+  },
+  {
+    "id": "fc007",
+    "week": 3,
+    "questionEs": "¿Los guantes sustituyen la higiene de manos?",
+    "answerEs": "No. Se usan según riesgo/política y se realiza higiene en los momentos indicados.",
+    "sourceTags": [
+      "infection_control"
+    ],
+    "critical": true
+  },
+  {
+    "id": "fc008",
+    "week": 3,
+    "questionEs": "¿Qué es contaminación cruzada?",
+    "answerEs": "Transferir microorganismos entre manos, objetos, superficies, alimentos o personas durante tareas.",
+    "sourceTags": [
+      "infection_control"
+    ],
+    "critical": false
+  },
+  {
+    "id": "fc009",
+    "week": 3,
+    "questionEs": "¿Puedes mezclar limpiadores si quieres más potencia?",
+    "answerEs": "No. Sigue etiqueta, ventilación, formación y política; no improvises mezclas.",
+    "sourceTags": [
+      "product_label"
+    ],
+    "critical": true
+  },
+  {
+    "id": "fc010",
+    "week": 4,
+    "questionEs": "¿Qué pasa con el temporizador ante una emergencia?",
+    "answerEs": "Se pausa o ignora. La seguridad inmediata y 911 tienen prioridad.",
+    "sourceTags": [
+      "911"
+    ],
+    "critical": true
+  },
+  {
+    "id": "fc011",
+    "week": 4,
+    "questionEs": "¿Debes levantar de inmediato a alguien después de una caída?",
+    "answerEs": "No improvises. Protege seguridad, evalúa peligro observable, sigue el plan y activa ayuda; 911 si corresponde.",
+    "sourceTags": [
+      "care_plan",
+      "911"
+    ],
+    "critical": true
+  },
+  {
+    "id": "fc012",
+    "week": 4,
+    "questionEs": "¿Una lección digital certifica respuesta a atragantamiento o CPR?",
+    "answerEs": "No. Las habilidades manuales requieren formación y verificación práctica cualificada.",
+    "sourceTags": [
+      "hands_on"
+    ],
+    "critical": true
+  },
+  {
+    "id": "fc013",
+    "week": 5,
+    "questionEs": "¿Qué hace objetiva una observación?",
+    "answerEs": "Describe hora, lugar, aspecto, cantidad, conducta visible y palabras exactas sin juicio ni diagnóstico.",
+    "sourceTags": [
+      "documentation"
+    ],
+    "critical": false
+  },
+  {
+    "id": "fc014",
+    "week": 5,
+    "questionEs": "¿Qué significa ayudar con la menor asistencia segura?",
+    "answerEs": "Permitir que la persona haga lo que puede y ofrecer solo la pista, preparación o ayuda necesaria.",
+    "sourceTags": [
+      "person_centered"
+    ],
+    "critical": false
+  },
+  {
+    "id": "fc015",
+    "week": 5,
+    "questionEs": "¿Un horario de baño elimina el consentimiento?",
+    "answerEs": "No. Ofrece opciones, respeta el rechazo seguro y sigue el plan para documentar/escalar.",
+    "sourceTags": [
+      "consent"
+    ],
+    "critical": true
+  },
+  {
+    "id": "fc016",
+    "week": 6,
+    "questionEs": "¿Qué haces si no fuiste entrenado con una grúa?",
+    "answerEs": "No la uses por improvisación. Mantén seguridad y solicita ayuda/formación cualificada según el plan.",
+    "sourceTags": [
+      "hands_on"
+    ],
+    "critical": true
+  },
+  {
+    "id": "fc017",
+    "week": 6,
+    "questionEs": "¿“Práctica completada” equivale a habilidad observada?",
+    "answerEs": "No. La observación requiere evidencia separada y un verificador cualificado identificado.",
+    "sourceTags": [
+      "competency"
+    ],
+    "critical": false
+  },
+  {
+    "id": "fc018",
+    "week": 6,
+    "questionEs": "¿Quién puede cambiar unilateralmente un requisito de dos personas en el plan?",
+    "answerEs": "El alumno no. Debe detenerse y escalar al responsable autorizado.",
+    "sourceTags": [
+      "care_plan"
+    ],
+    "critical": true
+  },
+  {
+    "id": "fc019",
+    "week": 7,
+    "questionEs": "¿Puede un cuidador cambiar por su cuenta una textura de dieta indicada?",
+    "answerEs": "No. Pausa la ayuda insegura y consulta al responsable autorizado según el plan.",
+    "sourceTags": [
+      "care_plan"
+    ],
+    "critical": true
+  },
+  {
+    "id": "fc020",
+    "week": 7,
+    "questionEs": "¿Cómo reportas una preocupación de hidratación?",
+    "answerEs": "Con cantidades/horas observadas, cambios respecto a rutina y palabras de la persona; sin diagnosticar.",
+    "sourceTags": [
+      "scope"
+    ],
+    "critical": false
+  },
+  {
+    "id": "fc021",
+    "week": 7,
+    "questionEs": "¿Qué haces si aparece peligro inmediato durante una comida?",
+    "answerEs": "Detén la ayuda insegura y activa 911/plan de emergencia; no esperes al temporizador.",
+    "sourceTags": [
+      "911"
+    ],
+    "critical": true
+  },
+  {
+    "id": "fc022",
+    "week": 8,
+    "questionEs": "¿Cómo se trata un cambio repentino respecto a la línea base?",
+    "answerEs": "Como una preocupación nueva que requiere observación y escalamiento urgente según peligro y plan, no como “demencia normal”.",
+    "sourceTags": [
+      "care_plan"
+    ],
+    "critical": true
+  },
+  {
+    "id": "fc023",
+    "week": 8,
+    "questionEs": "¿Qué puede comunicar una conducta?",
+    "answerEs": "Una necesidad, emoción, dolor reportado, confusión, entorno o preferencia; observa patrones sin diagnosticar.",
+    "sourceTags": [
+      "dementia"
+    ],
+    "critical": false
+  },
+  {
+    "id": "fc024",
+    "week": 8,
+    "questionEs": "¿Validar significa confirmar un hecho falso?",
+    "answerEs": "No. Significa reconocer la emoción o necesidad sin discutir, engañar ni reforzar peligro.",
+    "sourceTags": [
+      "communication"
+    ],
+    "critical": false
+  },
+  {
+    "id": "fc025",
+    "week": 9,
+    "questionEs": "¿Para qué sirve teach-back?",
+    "answerEs": "Para comprobar si explicaste con claridad: invita a la otra persona a mostrar el plan con sus palabras, sin examinarla.",
+    "sourceTags": [
+      "communication"
+    ],
+    "critical": false
+  },
+  {
+    "id": "fc026",
+    "week": 9,
+    "questionEs": "¿Qué haces si no entiendes una instrucción de seguridad en inglés?",
+    "answerEs": "No adivines. Pide repetición, lenguaje sencillo, confirmación y apoyo lingüístico autorizado.",
+    "sourceTags": [
+      "language_access"
+    ],
+    "critical": true
+  },
+  {
+    "id": "fc027",
+    "week": 9,
+    "questionEs": "¿La práctica de voz permite grabar a un cliente?",
+    "answerEs": "No. Graba solo tu propia voz y nunca conversaciones de cuidado o información de salud.",
+    "sourceTags": [
+      "privacy"
+    ],
+    "critical": true
+  },
+  {
+    "id": "fc028",
+    "week": 10,
+    "questionEs": "¿Qué debe incluir una entrega breve?",
+    "answerEs": "Situación, hechos observables, acciones realizadas, respuesta y pendiente/persona notificada.",
+    "sourceTags": [
+      "handoff"
+    ],
+    "critical": false
+  },
+  {
+    "id": "fc029",
+    "week": 10,
+    "questionEs": "¿DAR o SOAP son siempre formatos oficiales de CDSS para HCA?",
+    "answerEs": "No. Son estructuras de práctica; usa el formato autorizado por empleador y plan.",
+    "sourceTags": [
+      "documentation"
+    ],
+    "critical": true
+  },
+  {
+    "id": "fc030",
+    "week": 10,
+    "questionEs": "¿“Cero omisiones” es una política CDSS universal?",
+    "answerEs": "No. Puede ser un criterio interno de una simulación, claramente rotulado como tal.",
+    "sourceTags": [
+      "claim_correction"
+    ],
+    "critical": true
+  },
+  {
+    "id": "fc031",
+    "week": 11,
+    "questionEs": "¿Qué define WIC §15610.05?",
+    "answerEs": "Abandono. No es la cita correcta para justificar autonomía o rechazo del baño.",
+    "sourceTags": [
+      "WIC_15610_05"
+    ],
+    "critical": true
+  },
+  {
+    "id": "fc032",
+    "week": 11,
+    "questionEs": "¿Cuándo reporta una persona cubierta por WIC §15630?",
+    "answerEs": "Por teléfono o Internet inmediatamente o tan pronto como sea posible; si fue por teléfono, seguimiento escrito/Internet dentro de dos días laborables.",
+    "sourceTags": [
+      "WIC_15630"
+    ],
+    "critical": true
+  },
+  {
+    "id": "fc033",
+    "week": 11,
+    "questionEs": "¿Cuál es la línea estatal de APS que enruta por código postal?",
+    "answerEs": "1-833-401-0832. Ante peligro inmediato, llama al 911.",
+    "sourceTags": [
+      "APS"
+    ],
+    "critical": true
+  },
+  {
+    "id": "fc034",
+    "week": 12,
+    "questionEs": "¿Qué puede significar asistencia con medicación autoadministrada?",
+    "answerEs": "Ayuda permitida por el plan sin diagnosticar, prescribir, seleccionar ni cambiar dosis, y sin tareas que requieren autoridad clínica.",
+    "sourceTags": [
+      "HSC_1796_12"
+    ],
+    "critical": true
+  },
+  {
+    "id": "fc035",
+    "week": 12,
+    "questionEs": "¿Qué haces ante una dosis dudosa u omitida?",
+    "answerEs": "No duplicas ni adivinas; sigues el plan y consultas al responsable autorizado.",
+    "sourceTags": [
+      "medication_scope"
+    ],
+    "critical": true
+  },
+  {
+    "id": "fc036",
+    "week": 12,
+    "questionEs": "¿Qué datos no debe guardar la app?",
+    "answerEs": "SSN, huellas o resultados, credenciales Guardian y PHI de clientes.",
+    "sourceTags": [
+      "privacy"
+    ],
+    "critical": true
+  },
+  {
+    "id": "fc037",
+    "week": 13,
+    "questionEs": "¿Cuántas horas iniciales establece HSC §1796.44 para HCA afiliado?",
+    "answerEs": "Cinco antes del cliente: dos de orientación y tres de seguridad; además, cinco anuales.",
+    "sourceTags": [
+      "HSC_1796_44"
+    ],
+    "critical": false
+  },
+  {
+    "id": "fc038",
+    "week": 13,
+    "questionEs": "¿Cómo se distinguen las horas base CNA y HHA publicadas?",
+    "answerEs": "CNA: 60 aula + 100 clínicas supervisadas. HHA: ruta base 120 h; opción aprobada 40 h para candidatos elegibles con CNA/formación aplicable.",
+    "sourceTags": [
+      "CDPH_CNA",
+      "CDPH_HHA"
+    ],
+    "critical": true
+  },
+  {
+    "id": "fc039",
+    "week": 13,
+    "questionEs": "¿Qué necesita una cifra de salario o beneficio en la app?",
+    "answerEs": "Fuente, fecha, condado/ubicación, metodología y lenguaje de estimación; sin eso, no se publica.",
+    "sourceTags": [
+      "claims_governance"
+    ],
+    "critical": false
+  }
+]

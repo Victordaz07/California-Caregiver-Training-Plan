@@ -1,0 +1,212 @@
+[
+  {
+    "id": "scope",
+    "spanish": "alcance de la función",
+    "english": "scope",
+    "plainPronunciationEs": "skoup",
+    "meaningEs": "Tareas que puedes realizar según tu rol, formación, autorización y plan"
+  },
+  {
+    "id": "care_plan",
+    "spanish": "plan de cuidado",
+    "english": "care plan",
+    "plainPronunciationEs": "ker plan",
+    "meaningEs": "Instrucciones individualizadas que guían el apoyo"
+  },
+  {
+    "id": "consent",
+    "spanish": "consentimiento",
+    "english": "consent",
+    "plainPronunciationEs": "kon-SENT",
+    "meaningEs": "Permiso informado y voluntario de la persona"
+  },
+  {
+    "id": "privacy",
+    "spanish": "privacidad",
+    "english": "privacy",
+    "plainPronunciationEs": "PRAI-va-si",
+    "meaningEs": "Protección de información y espacio personal"
+  },
+  {
+    "id": "dignity",
+    "spanish": "dignidad",
+    "english": "dignity",
+    "plainPronunciationEs": "DIG-ni-ti",
+    "meaningEs": "Trato respetuoso que reconoce valor y autonomía"
+  },
+  {
+    "id": "handoff",
+    "spanish": "entrega de turno",
+    "english": "handoff",
+    "plainPronunciationEs": "JAND-of",
+    "meaningEs": "Comunicación estructurada de hechos, acciones y pendientes"
+  },
+  {
+    "id": "observe",
+    "spanish": "observar",
+    "english": "observe",
+    "plainPronunciationEs": "ob-SERV",
+    "meaningEs": "Notar hechos visibles sin diagnosticar"
+  },
+  {
+    "id": "report",
+    "spanish": "reportar",
+    "english": "report",
+    "plainPronunciationEs": "ri-PORT",
+    "meaningEs": "Comunicar hechos por el canal requerido"
+  },
+  {
+    "id": "escalate",
+    "spanish": "escalar o pedir ayuda",
+    "english": "escalate",
+    "plainPronunciationEs": "ES-ka-leit",
+    "meaningEs": "Contactar a la persona responsable o servicio de emergencia"
+  },
+  {
+    "id": "emergency",
+    "spanish": "emergencia",
+    "english": "emergency",
+    "plainPronunciationEs": "i-MER-yen-si",
+    "meaningEs": "Situación de peligro que requiere respuesta inmediata"
+  },
+  {
+    "id": "fall",
+    "spanish": "caída",
+    "english": "fall",
+    "plainPronunciationEs": "fol",
+    "meaningEs": "Descenso accidental al suelo o nivel inferior"
+  },
+  {
+    "id": "choking",
+    "spanish": "atragantamiento",
+    "english": "choking",
+    "plainPronunciationEs": "CHOU-king",
+    "meaningEs": "Bloqueo de la vía aérea por alimento u objeto"
+  },
+  {
+    "id": "infection_control",
+    "spanish": "control de infección",
+    "english": "infection control",
+    "plainPronunciationEs": "in-FEK-shon kon-TROL",
+    "meaningEs": "Medidas para reducir transmisión de microorganismos"
+  },
+  {
+    "id": "hand_hygiene",
+    "spanish": "higiene de manos",
+    "english": "hand hygiene",
+    "plainPronunciationEs": "jand JAI-yin",
+    "meaningEs": "Limpieza adecuada de manos en momentos clave"
+  },
+  {
+    "id": "PPE",
+    "spanish": "equipo de protección personal",
+    "english": "personal protective equipment",
+    "plainPronunciationEs": "PER-so-nal pro-TEK-tiv i-KUIP-ment",
+    "meaningEs": "Barreras como guantes según riesgo y política"
+  },
+  {
+    "id": "ADL",
+    "spanish": "actividad de la vida diaria",
+    "english": "activity of daily living",
+    "plainPronunciationEs": "ak-TI-vi-ti ov DEI-li LI-ving",
+    "meaningEs": "Tarea cotidiana como baño, vestido o alimentación"
+  },
+  {
+    "id": "IADL",
+    "spanish": "actividad instrumental de la vida diaria",
+    "english": "instrumental activity of daily living",
+    "plainPronunciationEs": "in-stru-MEN-tal ak-TI-vi-ti",
+    "meaningEs": "Tarea como compras, comidas o limpieza ligera"
+  },
+  {
+    "id": "mobility",
+    "spanish": "movilidad",
+    "english": "mobility",
+    "plainPronunciationEs": "mou-BI-li-ti",
+    "meaningEs": "Capacidad de moverse de forma segura"
+  },
+  {
+    "id": "transfer",
+    "spanish": "transferencia",
+    "english": "transfer",
+    "plainPronunciationEs": "trans-FER",
+    "meaningEs": "Movimiento entre superficies con técnica/equipo autorizado"
+  },
+  {
+    "id": "assist",
+    "spanish": "ayudar",
+    "english": "assist",
+    "plainPronunciationEs": "a-SIST",
+    "meaningEs": "Dar apoyo sin quitar independencia innecesariamente"
+  },
+  {
+    "id": "cue",
+    "spanish": "indicación o pista",
+    "english": "cue",
+    "plainPronunciationEs": "kiu",
+    "meaningEs": "Señal verbal o visual breve para apoyar una acción"
+  },
+  {
+    "id": "redirection",
+    "spanish": "redirección",
+    "english": "redirection",
+    "plainPronunciationEs": "ri-da-REK-shon",
+    "meaningEs": "Cambio calmado de atención hacia una opción segura"
+  },
+  {
+    "id": "mandated_reporter",
+    "spanish": "reportante obligatorio",
+    "english": "mandated reporter",
+    "plainPronunciationEs": "MAN-dei-tid ri-POR-ter",
+    "meaningEs": "Persona a quien la ley exige reportar ciertas sospechas o hechos"
+  },
+  {
+    "id": "APS",
+    "spanish": "Servicios de Protección para Adultos",
+    "english": "Adult Protective Services",
+    "plainPronunciationEs": "A-dolt pro-TEK-tiv SER-vi-ses",
+    "meaningEs": "Agencia que recibe y evalúa reportes de abuso en la comunidad"
+  },
+  {
+    "id": "Live_Scan",
+    "spanish": "Live Scan",
+    "english": "Live Scan",
+    "plainPronunciationEs": "laiv skan",
+    "meaningEs": "Servicio electrónico de huellas para verificación de antecedentes"
+  },
+  {
+    "id": "registry",
+    "spanish": "registro",
+    "english": "registry",
+    "plainPronunciationEs": "RE-yis-tri",
+    "meaningEs": "Lista o estado administrativo; no equivale automáticamente a licencia"
+  },
+  {
+    "id": "credential",
+    "spanish": "credencial",
+    "english": "credential",
+    "plainPronunciationEs": "kri-DEN-shal",
+    "meaningEs": "Reconocimiento formal emitido por una entidad autorizada"
+  },
+  {
+    "id": "supervisor",
+    "spanish": "supervisor",
+    "english": "supervisor",
+    "plainPronunciationEs": "SU-per-vai-zor",
+    "meaningEs": "Persona designada para orientar, revisar o recibir escalamiento"
+  },
+  {
+    "id": "due_review",
+    "spanish": "repaso pendiente",
+    "english": "due review",
+    "plainPronunciationEs": "diu ri-VIU",
+    "meaningEs": "Elemento que el programador marca para revisar ahora"
+  },
+  {
+    "id": "fictional",
+    "spanish": "ficticio",
+    "english": "fictional",
+    "plainPronunciationEs": "FIK-sho-nal",
+    "meaningEs": "Creado para practicar; no corresponde a una persona real"
+  }
+]
