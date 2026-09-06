@@ -76,6 +76,19 @@
 <script src="js/state.js"></script>
 <script src="js/components.js"></script>
 <script src="js/audio.js"></script>
+
+<!-- Modo Turno (js/shift/*): separate module, needs its own account system
+     (Firebase) because an agency admin has to see a caregiver's shift data
+     too — see docs/FIREBASE_SETUP.md. Fails soft when not configured. -->
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+<script src="js/shift/firebase-config.js"></script>
+<script src="js/shift/firebase.js"></script>
+<script src="js/shift/authStore.js"></script>
+<script src="js/shift/screens/shiftAuth.js"></script>
+<script src="js/shift/screens/shiftHub.js"></script>
+
 <script src="js/screens/onboarding.js"></script>
 <script src="js/screens/hoy.js"></script>
 <script src="js/screens/plan.js"></script>

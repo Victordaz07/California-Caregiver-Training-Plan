@@ -16,6 +16,7 @@ Screens.perfil = async (data) => {
     { icon: "mic", label: "Mis grabaciones", value: `${state.recordingsCount} practicada${state.recordingsCount === 1 ? "" : "s"}` },
     { icon: "headphones", label: "Audios escuchados", value: `${state.audiosListened.length} de ${data.audio_episodes.length}` },
     { icon: "badge", label: "Cambiar de ruta", value: pathway ? pathway.titleEs : "Sin elegir", action: "change-pathway" },
+    { icon: "work_history", label: "Modo Turno", value: "Pacientes, entrada/salida, horas", action: "shift-mode" },
     { icon: "gavel", label: "Avisos legales", value: "Alcance, fuentes, emergencias", action: "legal" },
     { icon: "restart_alt", label: "Reiniciar progreso", value: "Borra todo lo guardado en este navegador", action: "reset", danger: true },
   ];
@@ -52,6 +53,7 @@ Screens.perfil = async (data) => {
     body,
     afterRender: () => {
       document.querySelectorAll('[data-action="change-pathway"]').forEach((b) => (b.onclick = () => (window.location.hash = "#/pathway")));
+      document.querySelectorAll('[data-action="shift-mode"]').forEach((b) => (b.onclick = () => (window.location.hash = "#/shift")));
       document.querySelectorAll('[data-action="legal"]').forEach((b) => (b.onclick = () => (window.location.hash = "#/carrera/requisitos")));
       document.querySelectorAll('[data-action="reset"]').forEach(
         (b) =>

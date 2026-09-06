@@ -1,0 +1,89 @@
+// Security rules for the "Modo Turno" module (on-shift assistant: patients,
+// geofenced check-in/out, hours, agency panel). Deploy from the Firebase
+// console: Firestore Database > Rules > paste this file > Publish.
+//
+// Data model:
+//   users/{uid}            profile: { role: 'caregiver'|'agency', agencyId,
+//                           displayName, createdAt }
+//   agencies/{agencyId}    { name, ownerUid, createdAt }
+//   agencies/{agencyId}/patients/{patientId}
+//                           { name, address, lat, lng, geofenceRadiusMeters,
+//                             ageYears, mobilityAid, conditions[], allergies[],
+//                             preferences[], tasks[], scheduleNote }
+//   shifts/{shiftId}       { agencyId, patientId, caregiverUid,
+//                             scheduledStart, scheduledEnd, status,
+//                             checkIn{at,lat,lng,accuracy,withinGeofence},
+//                             checkOut{at,lat,lng,accuracy},
+//                             tasksCompleted[], mood, hardParts[],
+//                             familyPin, familyConfirmed, totalMinutes }
+//
+// A caregiver only ever sees their own agency's patients and their own
+// shifts. An agency admin (role=='agency') sees everything scoped to their
+// agencyId, never another agency's data.
+
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function myProfile() {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data;
+    }
+
+    function myAgencyId() {
+      return myProfile().agencyId;
+    }
+
+    function isAgencyAdmin() {
+      return signedIn() && myProfile().role == 'agency';
+    }
+
+    function inSameAgency(agencyId) {
+      return signedIn() && myAgencyId() == agencyId;
+    }
+
+    // Each user manages their own profile document; an agency admin can read
+    // (never write) the roster of users belonging to their own agency.
+    match /users/{uid} {
+      allow read: if signedIn() && (request.auth.uid == uid ||
+                    (isAgencyAdmin() && resource.data.agencyId == myAgencyId()));
+      allow create: if signedIn() && request.auth.uid == uid;
+      allow update: if signedIn() && request.auth.uid == uid &&
+                    request.resource.data.agencyId == resource.data.agencyId &&
+                    request.resource.data.role == resource.data.role;
+      allow delete: if false;
+    }
+
+    match /agencies/{agencyId} {
+      allow read: if inSameAgency(agencyId);
+      allow create: if signedIn() && request.resource.data.ownerUid == request.auth.uid;
+      allow update, delete: if inSameAgency(agencyId) && isAgencyAdmin() &&
+                    resource.data.ownerUid == request.auth.uid;
+
+      match /patients/{patientId} {
+        allow read: if inSameAgency(agencyId);
+        allow write: if inSameAgency(agencyId) && isAgencyAdmin();
+      }
+    }
+
+    match /shifts/{shiftId} {
+      allow read: if signedIn() && (
+                    resource.data.caregiverUid == request.auth.uid ||
+                    (isAgencyAdmin() && resource.data.agencyId == myAgencyId()));
+      allow create: if signedIn() && (
+                    request.resource.data.caregiverUid == request.auth.uid ||
+                    (isAgencyAdmin() && request.resource.data.agencyId == myAgencyId()));
+      // A caregiver may only update their own shift (check-in/out, tasks,
+      // mood) and may never reassign it to someone else or another agency.
+      allow update: if signedIn() && (
+                    (resource.data.caregiverUid == request.auth.uid &&
+                     request.resource.data.caregiverUid == resource.data.caregiverUid &&
+                     request.resource.data.agencyId == resource.data.agencyId) ||
+                    (isAgencyAdmin() && resource.data.agencyId == myAgencyId()));
+      allow delete: if isAgencyAdmin() && resource.data.agencyId == myAgencyId();
+    }
+  }
+}

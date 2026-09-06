@@ -8,6 +8,8 @@
     navigator.serviceWorker.register("sw.js").catch((err) => console.warn("SW no registrado:", err));
   }
 
+  AuthStore.init();
+
   let data;
   try {
     data = await DataStore.loadAll();
@@ -28,7 +30,7 @@
           : "";
     } else if (route.kind === "detail") {
       header.innerHTML = UI.detailHeader(route.title, route.back);
-    } else if (route.kind === "onboarding") {
+    } else if (route.kind === "onboarding" || route.kind === "shift-auth") {
       header.innerHTML = "";
     } else {
       const state = AppState.get();
@@ -45,7 +47,8 @@
       return;
     }
     nav.classList.remove("hidden");
-    nav.innerHTML = `<div class="flex">${TABS.map(
+    const tabs = route.navGroup === "shift" ? SHIFT_TABS : TRAINING_TABS;
+    nav.innerHTML = `<div class="flex">${tabs.map(
       (t) => `<a href="${t.path}" class="nav-tab ${t.id === route.tab ? "active" : ""}">
         ${UI.icon(t.icon)}
         <span class="nav-tab-label">${t.label}</span>
@@ -57,13 +60,28 @@
     const state = AppState.get();
     const path = currentPath();
 
-    if (!state.onboardingCompleted && path !== "#/welcome" && path !== "#/pathway") {
+    if (!state.onboardingCompleted && path !== "#/welcome" && path !== "#/pathway" && !path.startsWith("#/shift")) {
       window.location.hash = "#/welcome";
       return;
     }
     if (state.onboardingCompleted && (path === "#/welcome" || path === "#/pathway")) {
       window.location.hash = "#/hoy";
       return;
+    }
+
+    // Modo Turno has its own account system (Firebase), separate from the
+    // 90-day course's onboarding gate above.
+    if (path.startsWith("#/shift") && path !== "#/shift/login" && path !== "#/shift/signup") {
+      if (!AuthStore.isReady()) {
+        // Wait for the pending onAuthStateChanged callback; it re-triggers
+        // render() via the AuthStore.subscribe() call below once resolved.
+        document.getElementById("app-view").innerHTML = `<div class="p-8 text-center font-body-md text-body-md text-outline">Cargando…</div>`;
+        return;
+      }
+      if (FirebaseApp.isConfigured() && !AuthStore.get()) {
+        window.location.hash = "#/shift/login";
+        return;
+      }
     }
 
     const route = ROUTES[path] || ROUTES["#/hoy"];
@@ -82,5 +100,8 @@
   // Re-render on any state change triggered from within a screen (e.g.
   // completing a day, rating a flashcard) so header/body reflect it live.
   AppState.subscribe(() => render());
+  // Re-render once Firebase resolves the signed-in user (Modo Turno) and on
+  // every subsequent sign-in/sign-out.
+  AuthStore.subscribe(() => render());
   render();
 })();
