@@ -1,3 +1,32 @@
+/* Design system ported from the "Caregiver Pro v2" Claude Design canvas
+   (uploaded redesign, synced to this repo — see github.md in the export).
+   Colors/fonts are literal values from that canvas, not approximations. */
+
+:root {
+  --teal-dark: #0F5A63;
+  --teal: #17727E;
+  --teal-bg: #E7F3F6;
+  --page-bg: #E4EFF2;
+  --coral: #EE5B4E;
+  --coral-dark: #C7422F;
+  --coral-bg: #FDE7E3;
+  --cream: #FBF3E3;
+  --cream-border: #EADFC5;
+  --offwhite: #FFFDF8;
+  --amber-bg: #FDF0D9;
+  --amber-text: #B97708;
+  --tan: #FBD9B0;
+  --tan-text: #7C2E19;
+  --mint: #8FD3CC;
+  --text-dark: #12262B;
+  --text-muted: #5C7176;
+  --text-muted-2: #8A9B9E;
+  --border-light: #E4EFF2;
+  --lock: #CFE6EC;
+  --lock-2: #B4C6C9;
+  --success: #2F9E5F;
+}
+
 html, body {
   width: 100vw;
   margin: 0;
@@ -6,14 +35,59 @@ html, body {
 }
 body {
   overscroll-behavior: none;
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Figtree', system-ui, sans-serif;
+  background: var(--page-bg);
+  color: var(--text-dark);
+  -webkit-font-smoothing: antialiased;
 }
 .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); }
 .pt-safe { padding-top: env(safe-area-inset-top, 0px); }
 main > :first-child { margin-top: 0 !important; }
 main > :last-child { margin-bottom: 0 !important; }
 ::-webkit-scrollbar { display: none; }
-.material-symbols-outlined { font-variation-settings: 'FILL' 1; }
+.material-symbols-outlined, .material-symbols-rounded {
+  font-family: 'Material Symbols Rounded';
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+.font-display { font-family: 'Anton', sans-serif; text-transform: uppercase; }
+.font-hand { font-family: 'Caveat', cursive; }
+
+@keyframes omPulse { 0% { transform: scale(1); opacity: .55 } 70% { transform: scale(1.9); opacity: 0 } 100% { transform: scale(1.9); opacity: 0 } }
+@keyframes omWave { 0%, 100% { transform: scaleY(.32) } 50% { transform: scaleY(1) } }
+@keyframes omFloat { 0%, 100% { transform: translateY(0) } 50% { transform: translateY(-6px) } }
+@keyframes omShine { 0% { transform: translateX(-120%) } 100% { transform: translateX(320%) } }
+
+/* Card with the signature "3D pressed" bottom shadow, used for primary CTAs */
+.btn-solid {
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 1px;
+  text-align: center;
+  border-radius: 16px;
+  cursor: pointer;
+  border: none;
+  transition: transform .08s ease;
+}
+.btn-solid:active { transform: translateY(3px); box-shadow: none !important; }
+.btn-coral { background: var(--coral); color: #fff; box-shadow: 0 5px 0 var(--coral-dark); }
+.btn-teal { background: var(--teal-dark); color: #fff; box-shadow: 0 5px 0 #0A444B; }
+
+.card { background: #fff; border: 2px solid var(--border-light); border-radius: 20px; }
+.card-cream { background: var(--cream); border: 2px solid var(--cream-border); border-radius: 20px; }
+
+.pill { display: inline-flex; align-items: center; font-size: 11px; font-weight: 900; letter-spacing: 1px; padding: 5px 10px; border-radius: 999px; }
+
+.phone-frame {
+  width: 100%;
+  max-width: 430px;
+  margin: 0 auto;
+  min-height: 100dvh;
+  background: var(--offwhite);
+  display: flex;
+  flex-direction: column;
+}
 
 .nav-tab {
   flex: 1;
@@ -21,18 +95,12 @@ main > :last-child { margin-bottom: 0 !important; }
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2px;
-  padding: 8px 0;
+  gap: 3px;
+  padding: 9px 0 4px;
   min-height: 56px;
-  color: #6f7977;
+  color: var(--text-muted-2);
+  font-size: 10px;
+  font-weight: 800;
 }
-.nav-tab.active {
-  color: #115e59;
-}
-.nav-tab .material-symbols-outlined {
-  font-size: 24px;
-}
-.nav-tab-label {
-  font-size: 11px;
-  font-weight: 500;
-}
+.nav-tab .material-symbols-rounded { font-size: 25px; }
+.nav-tab.active { color: var(--coral); font-weight: 900; }

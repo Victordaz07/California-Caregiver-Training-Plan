@@ -12,34 +12,80 @@
  */
 const Narration = (() => {
   let player = null;
+  let currentEpisodeId = null;
   let onEndCallback = null;
+  let onTimeCallback = null;
+  let rate = 1.0;
 
   function play(episodeId, onEnd) {
     stop();
     player = new Audio(`assets/audio/${episodeId}.mp3`);
+    player.playbackRate = rate;
+    currentEpisodeId = episodeId;
     onEndCallback = onEnd;
     player.addEventListener("ended", () => {
       player = null;
+      currentEpisodeId = null;
       if (onEndCallback) onEndCallback();
     });
+    if (onTimeCallback) {
+      player.addEventListener("timeupdate", () => onTimeCallback(player.currentTime, player.duration || 0));
+    }
     player.play().catch((err) => {
       console.warn("No se pudo reproducir el audio:", err);
       if (onEndCallback) onEndCallback();
     });
   }
 
+  /** Pause/resume the currently loaded episode without resetting position. */
+  function togglePause() {
+    if (!player) return null;
+    if (player.paused) {
+      player.play();
+      return "playing";
+    }
+    player.pause();
+    return "paused";
+  }
+
+  function seekBy(deltaSeconds) {
+    if (!player) return;
+    player.currentTime = Math.max(0, Math.min(player.duration || 0, player.currentTime + deltaSeconds));
+  }
+
+  function cycleRate() {
+    const rates = [1.0, 1.25, 1.5, 0.75];
+    const idx = rates.indexOf(rate);
+    rate = rates[(idx + 1) % rates.length];
+    if (player) player.playbackRate = rate;
+    return rate;
+  }
+
+  function setOnTimeUpdate(cb) {
+    onTimeCallback = cb;
+  }
+
+  function isPaused() {
+    return !player || player.paused;
+  }
+
   function stop() {
     if (player) {
       player.pause();
       player = null;
+      currentEpisodeId = null;
     }
   }
 
   function isPlayingId(episodeId) {
-    return !!player && player.src.endsWith(`${episodeId}.mp3`);
+    return currentEpisodeId === episodeId;
   }
 
-  return { play, stop, isPlayingId };
+  function currentRate() {
+    return rate;
+  }
+
+  return { play, stop, isPlayingId, togglePause, seekBy, cycleRate, currentRate, setOnTimeUpdate, isPaused };
 })();
 
 const VoiceRecorder = (() => {
@@ -169,6 +215,7 @@ function attachVoiceRecordCard(containerId, promptLabel) {
     if (stopBtn) stopBtn.onclick = async () => {
       blobUrl = await VoiceRecorder.stopRecording();
       state = "recorded";
+      AppState.incrementRecordingsCount();
       render();
     };
     if (retry) retry.onclick = () => { VoiceRecorder.discard(); state = "rationale"; render(); };

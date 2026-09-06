@@ -51,6 +51,7 @@ Screens.biblioteca = async (data) => {
             btn.innerHTML = UI.icon("stop_circle");
             Narration.play(id, () => {
               btn.innerHTML = UI.icon("play_circle");
+              AppState.markAudioListened(id);
             });
           }
         };

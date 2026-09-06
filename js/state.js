@@ -15,6 +15,9 @@ const AppState = (() => {
       completedBlocksToday: 0,
       curriculumProgress: {}, // { [day: number]: true }
       reviewState: {}, // { [cardId: string]: ReviewState }
+      audiosListened: [], // episodeIds fully played at least once
+      scenariosCompleted: [], // scenario ids answered at least once
+      recordingsCount: 0, // practice recordings made this device (count only, audio itself isn't persisted)
     };
   }
 
@@ -100,6 +103,25 @@ const AppState = (() => {
     return dueCardIds(allCardIds, nowMs).length;
   }
 
+  function markAudioListened(episodeId) {
+    if (!state.audiosListened.includes(episodeId)) {
+      state.audiosListened.push(episodeId);
+      save();
+    }
+  }
+
+  function markScenarioCompleted(scenarioId) {
+    if (!state.scenariosCompleted.includes(scenarioId)) {
+      state.scenariosCompleted.push(scenarioId);
+      save();
+    }
+  }
+
+  function incrementRecordingsCount() {
+    state.recordingsCount += 1;
+    save();
+  }
+
   function reset() {
     state = defaultState();
     save();
@@ -117,6 +139,9 @@ const AppState = (() => {
     dueReviewCount,
     reviewStateFor,
     rateCard,
+    markAudioListened,
+    markScenarioCompleted,
+    incrementRecordingsCount,
     reset,
   };
 })();

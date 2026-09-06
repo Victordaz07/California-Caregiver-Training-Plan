@@ -19,7 +19,14 @@
 
   function renderHeader(route) {
     const header = document.getElementById("app-header");
-    if (route.kind === "detail") {
+    if (route.noHeader) {
+      // Screen renders its own full-bleed banner; only float a back button
+      // over it for pushed (detail) screens — hub tabs need no back arrow.
+      header.innerHTML =
+        route.kind === "detail"
+          ? `<a href="${route.back}" aria-label="Volver" class="absolute top-4 left-4 w-10 h-10 rounded-full bg-white/90 flex items-center justify-center" style="color:var(--teal-dark)">${UI.icon("arrow_back")}</a>`
+          : "";
+    } else if (route.kind === "detail") {
       header.innerHTML = UI.detailHeader(route.title, route.back);
     } else if (route.kind === "onboarding") {
       header.innerHTML = "";
@@ -64,6 +71,7 @@
     renderBottomNav(route);
 
     const view = document.getElementById("app-view");
+    view.classList.toggle("pt-16", !route.noHeader);
     const result = await route.render(data);
     view.innerHTML = result.body;
     window.scrollTo(0, 0);

@@ -89,6 +89,7 @@ Screens.escenarios = async (data) => {
         btn.onclick = () => {
           const choice = scenario.choices.find((c) => c.id === btn.dataset.choice);
           const style = OUTCOME_STYLE[choice.outcome];
+          AppState.markScenarioCompleted(scenario.id);
           const feedback = document.getElementById("scenario-feedback");
           feedback.className = `${style.bg} ${style.color} rounded-lg p-space-sm flex flex-col gap-1`;
           feedback.innerHTML = `<span class="font-label-sm text-label-sm uppercase font-semibold">${style.label}</span><p class="font-body-sm text-body-sm">${UI.escapeHtml(choice.feedbackEs)}</p>`;
