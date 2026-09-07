@@ -35,8 +35,8 @@ function shiftEmptyStateBody() {
 function firstSetupCardHtml() {
   return `
     <div class="mx-margin-mobile mt-space-md bg-primary-container border-2 border-primary/30 rounded-2xl p-space-md flex flex-col gap-space-sm">
-      <div class="font-headline-sm text-headline-sm uppercase text-on-primary-container">Configuración inicial (agencia)</div>
-      <p class="font-body-sm text-body-sm text-on-primary-container">Crea tu primer paciente para probar el módulo completo. Los pacientes reales y los turnos de tu equipo se administran desde el Panel de la Agencia.</p>
+      <div class="font-headline-sm text-headline-sm uppercase text-on-primary-container">Agrega tu primer paciente</div>
+      <p class="font-body-sm text-body-sm text-on-primary-container">Crea un paciente para empezar a usar el módulo. Si administras una agencia con más personas, el resto de pacientes y turnos del equipo se manejan desde el Panel de la Agencia.</p>
       <label class="flex flex-col gap-1"><span class="font-label-sm text-label-sm text-outline uppercase">Nombre del paciente</span><input id="setup-name" class="border-2 border-surface-container-high rounded-xl px-3 py-2 bg-white" placeholder="Doña Elena"/></label>
       <label class="flex flex-col gap-1"><span class="font-label-sm text-label-sm text-outline uppercase">Dirección</span><input id="setup-address" class="border-2 border-surface-container-high rounded-xl px-3 py-2 bg-white" placeholder="1420 W Olive Ave, Fresno"/></label>
       <button id="setup-use-location" class="font-label-md text-label-md text-primary underline self-start">Usar mi ubicación actual como geocerca</button>

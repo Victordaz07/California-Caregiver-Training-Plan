@@ -57,6 +57,17 @@ var AuthStore = (() => {
     });
   }
 
+  /**
+   * Someone who works alone, with no agency employing them, needs no code
+   * from anyone else. Under the hood this is the same shape as an agency
+   * account (role 'agency', owns a one-person "agency" record) — that's
+   * exactly the permissions a solo worker needs: add their own patients,
+   * manage their own shifts, nothing shared with anyone else.
+   */
+  async function signUpIndependent({ email, password, displayName }) {
+    return signUpAgency({ email, password, displayName, agencyName: `${displayName.trim()} (independiente)` });
+  }
+
   async function signIn({ email, password }) {
     await FirebaseApp.auth.signInWithEmailAndPassword(email, password);
   }
@@ -74,6 +85,7 @@ var AuthStore = (() => {
     init,
     signUpCaregiver,
     signUpAgency,
+    signUpIndependent,
     signIn,
     signOut,
     subscribe,
